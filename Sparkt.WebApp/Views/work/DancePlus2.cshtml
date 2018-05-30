@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Dance+2";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/banners/dance-plus-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/Mr9m3LEtgrg" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/dance-plus-cover.jpg);"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Dance+2</h1>
+                <div class="clear"></div>
+                <span>Getting the nation to dance to our tune with <br>video innovations and thumbstopping content</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+
+        <div class="awards-wrap">
+            <ul>
+                <li class="tooltip small-awards" title="mCube: Best Social Media Marketing Campaign - Gold"><img src="~/Content/work/images/awards/mCube-gold.png" class="responsive-img" alt="" /> </li>
+
+            </ul>
+        </div>
+       
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel youtube-bg ">
+                <div class="slider">
+                    <div>
+                        <div class="creative-assets " style="background-image: url(../Content/work/images/nach-slide-2-bg.jpg);">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h4>ELEVATING THE EMOTIONAL VALUE OF THE FILM BY <br>BLURRING THE LINES BETWEEN REEL AND REAL</h4>
+                                </div>
+                                <div class="slickSlider-3d">
+                                    <span class="mobileOverlay"> <img src="~/Content/work/images/mobileoverlayimg.png" class="portrait" alt="" /> <img src="~/Content/work/images/mobileoverlayimgHorizen.png" class="horizontal" alt="" /> </span>
+                                    <div class="slickContainer">
+                                        <div class="slickSlider">
+                                            <div class="pinkGradient">
+                                                <video loop poster="~/Content/work/media/socailMediavideo1.jpg" id="first-video">
+                                                    <source src="~/Content/work/media/socailMediavideo1.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="redGradient">
+                                                <video loop poster="~/Content/work/media/socailMediavideo2.jpg">
+                                                    <source src="~/Content/work/media/socailMediavideo2.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="greenGradient">
+                                                <video loop poster="~/Content/work/media/socailMediavideo3.jpg">
+                                                    <source src="~/Content/work/media/socailMediavideo3.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="redGradient">
+                                                <video loop poster="~/Content/work/media/socailMediavideo4.jpg">
+                                                    <source src="~/Content/work/media/socailMediavideo4.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="pinkGradient">
+                                                <video loop poster="~/Content/work/media/socailMediavideo5.jpg">
+                                                    <source src="~/Content/work/media/socailMediavideo5.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                            <div class="purpleGradient">
+                                                <video loop poster="~/Content/work/media/socailMediavideo6.jpg">
+                                                    <source src="~/Content/work/media/socailMediavideo6.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>DRIVING DANCE HYSTERIA ACROSS THE COUNTRY FOR THE <br>AUDITIONS WITH A SOCIALLY INTEGRATED WEBSITE</h3>
+                                </div>
+                                <div class="project fadeIn" data-t-show="1">
+                                    <div class="project__card">
+                                        <a class="project__image"><img src="~/Content/work/images/dance-plus-2-creative-approch.png" alt=""></a>
+                                        <!--<div class="project__detail">
+                                          <h2 class="project__title"><a href="#">CREATIVE APPROACH</a></h2>
+                                            <small class="project__category"><a href="#">MAKE YOUR OWN VIRTUAL JERSEY ON A GOOGLE LIGHTBOX BANNER</a></small>
+                                        </div>-->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="creative-assets dance-plus-bg">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>UNLEASHING A SERIES OF DANCE BASED CONTENT <br>IN POPULAR FORMATS TO BOOST ENGAGEMENT</h3>
+                                </div>
+                                <div class="website-operation">
+                                    <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                    <div class="desktop-video">
+
+
+                                        <video id="desktop" poster="~/Content/work/images/dance-plus-2-desktop.jpg" style="max-width: 100%;" preload="none" controls="False" autoplay playsinline webkit-playsinline>
+                                            <!--<source  src="media/desktop.mp4" type="video/mp4" >
+                                            <source src="media/desktop.ogg" type="video/ogg" >-->
+                                        </video>
+                                        <script> document.getElementById( "desktop" ).controls = false;
+                                        </script>
+                                    </div>
+                                    <div class="mobile-video">
+                                        <video id="mobile" poster="~/Content/work/images/dance-plus-2-mobile.jpg" style="max-width: 100%;" preload="none" controls="false" autoplay playsinline webkit-playsinline>
+                                            <!--<source  src="media/mobile.mp4" type="video/mp4" >
+                                            <source src="media/mobile.ogg" type="video/ogg" >-->
+                                        </video>
+                                        <script>document.getElementById("mobile").controls = false;
+                                        </script>
+                                    </div>
+
+                                    <!--<a href="#" class="view-website" >VIEW WEBSITE</a>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Results</h2>
+        </div>
+        <div class="container bottom-padding-none">
+            <div class="result-wrapp">
+                <ul class="fadeUp t-infinity">
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">FACEBOOK VIEWS</span> <span class="result-points">16</span> <span class="result">MILLION</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">YOUTUBE VIEWS</span> <span class="result-points">9.9</span> <span class="result">MILLION</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">TOTAL IMPRESSIONS</span> <span class="result-points">35</span> <span class="result">MILLION</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">TOTAL ENGAGEMENT</span> <span class="result-points">100,000+</span> <span class="result">THOUSAND</span> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>Coming Soon</h3>
+                    <span class="quotes-writer"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

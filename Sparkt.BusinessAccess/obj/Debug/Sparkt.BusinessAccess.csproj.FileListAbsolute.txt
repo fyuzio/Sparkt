@@ -1,0 +1,6 @@
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.BusinessAccess.dll
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.BusinessAccess.pdb
+C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.csprojResolveAssemblyReference.cache
+C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.csproj.CoreCompileInputs.cache
+C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.dll
+C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.pdb

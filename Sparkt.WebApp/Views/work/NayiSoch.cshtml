@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Nayi Soch";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/nayosoch-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/WlLUKHjWYtc" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/nayosoch-cover.jpg);"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>NAYI SOCH</h1>
+                <div class="clear"></div>
+                <span>Wear your Mother's name with pride.</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+
+        <div class="awards-wrap">
+            <ul>
+                <li class="tooltip" title="DIGIXX: Social Media - Gold"><img src="~/Content/work/images/awards/digx-gold.png" class="responsive-img" alt="" /> </li>
+                <li class="tooltip" title="DIGIXX: Digital & Direct Marketing - Silver"><img src="~/Content/work/images/awards/digx-silver.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="ABBYS MEDIA: Best use of Digital as a Medium - Silver"><img src="~/Content/work/images/awards/abbys-silver.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="ACEF: Effectiveness - Gold"><img src="~/Content/work/images/awards/acef-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="ACEF: Innovation - Silver"><img src="~/Content/work/images/awards/acef-silver.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip small-awards" title="mCube: Best Digital Integrated Marketing - Gold"><img src="~/Content/work/images/awards/mCube-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="CAMPAIGN INDIA: Integrated - Gold"><img src="~/Content/work/images/awards/campaign-india-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="CAMPAIGN INDIA: Online Marketing - Grand Prix"><img src="~/Content/work/images/awards/campaign-india-bronz.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="ICMA: Best Marketed Branded Content - Gold"><img src="~/Content/work/images/awards/icma-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="MOBEXX: Excellence in use of Social Media - Gold"><img src="~/Content/work/images/awards/mobexx-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="MOBEXX: Excellence in a Integrated campaign - Gold"><img src="~/Content/work/images/awards/mobexx-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip small-awards" title="IMA: Best Use of Digital Marketing / Social Media - Gold"><img src="~/Content/work/images/awards/ima-gold.png" class="responsive-img" alt="" /></li>
+
+            </ul>
+        </div>
+
+      
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel youtube-bg ">
+                <div class="slider">
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>
+                                        DISRUPTIONS ON GOOGLE AND YOUTUBE TO EXPERIENCE <br>
+                                        THE FILMS AND CREATE A VIRTUAL JERSEY
+                                    </h3>
+                                </div>
+                                <div class="project fadeIn" data-t-show="1">
+                                    <div class="project__card">
+                                        <a class="project__image"><img src="~/Content/work/images/nayi-soch-creative-approch.png" alt=""></a>
+                                        <!--<div class="project__detail">
+                                          <h2 class="project__title"><a href="#">CREATIVE APPROACH</a></h2>
+                                            <small class="project__category"><a href="#">MAKE YOUR OWN VIRTUAL JERSEY ON A GOOGLE LIGHTBOX BANNER</a></small>
+                                        </div>-->
+                                    </div>
+                                    <div class="project-text"><p>MAKE YOUR OWN VIRTUAL JERSEY ON A GOOGLE LIGHTBOX BANNER</p></div>
+                                    <div class="project-text right bottom"><p>WATCH THE SERIES OF NAYI SOCH FILMS ON THE YOUTUBE MASTHEAD</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="creative-assets twitter-bg">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>TWITTER INNOVATION TO FLAUNT A JERSEY WITH <br>YOUR MOTHER’S NAME AS THE PROFILE PICTURE</h3>
+                                </div>
+                                <div class="twitter-tweets">
+                                    <ul>
+                                        <li class="col-5">
+                                            <figure class="hvr-bubble-float-right">
+                                                <span><img src="~/Content/work/images/nayisoch-twitter-tweets-1.jpg" alt=""></span>
+                                                <figcaption>STAR PLUS INVITES USERS TO JOIN THE #NayiSoch CAMPAIGN</figcaption>
+                                            </figure>
+
+                                        </li>
+                                        <li class="col-5">
+                                            <figure class="hvr-bubble-float-right">
+                                                <span><img src="~/Content/work/images/nayisoch-twitter-tweets-2.jpg" alt=""></span>
+                                                <figcaption>USERS INTERACT WITH @ViewBag.At STARPLUS WITH #NayiSoch</figcaption>
+                                            </figure>
+
+                                        </li>
+                                        <li class="col-5">
+                                            <figure class="hvr-bubble-float-right">
+                                                <span><img src="~/Content/work/images/nayisoch-twitter-tweets-3.jpg" alt=""></span>
+                                                <figcaption>THE CHANNEL RESPONDS TO THEM WITH A LINK TO MAKE THEIR CUSTOMISED JERSEY</figcaption>
+                                            </figure>
+
+                                        </li>
+                                        <li class="col-5">
+                                            <figure class="hvr-bubble-float-right">
+                                                <span><img src="~/Content/work/images/nayisoch-twitter-tweets-4.jpg" alt=""></span>
+                                                <figcaption>USERS INPUT THEIR MOTHERS’ NAMES AND DESIRED JERSEY NUMBERS</figcaption>
+                                            </figure>
+
+                                        </li>
+                                        <li class="col-5">
+                                            <figure class="hvr-bubble-float-left">
+                                                <span><img src="images/nayisoch-twitter-tweets-5.jpg" alt=""></span>
+                                                <figcaption>USERS FLAUNT A NAYI SOCH ON THEIR TWITTER PROFILES</figcaption>
+                                            </figure>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+            <h2>Results</h2>
+        </div>
+        <div class="container bottom-padding-none">
+            <div class="result-wrapp">
+                <ul class="fadeUp t-infinity">
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">Video VIEWS</span> <span class="result-points">30</span> <span class="result">MILLION</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">PROFILE PICTURE CHANGES</span> <span class="result-points">2,000</span> <span class="result">THOUSAND +</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">MENTIONS</span> <span class="result-points">100,000</span> <span class="result">THOUSAND +</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">POTENTIAL IMPRESSIONS</span> <span class="result-points">7</span> <span class="result">BILLION</span> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>Star Plus has always challenged the stereotypes that come in the way of progress for women. Sparkt ignited conversations and engaged the audience from every corner of the nation with digital innovations, compelling them to embrace the ideology of #NayiSoch with open arms.</h3>
+                    <span class="quotes-writer">Aijaz Nakhuda - Digital Marketing Head - Star Plus</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

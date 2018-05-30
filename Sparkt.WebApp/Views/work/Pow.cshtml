@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | POW - Bandhi Yuddh Ke";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/banners/pow-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/Wq3rDzMC730" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/pow-cover.jpg);"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>POW-BANDHI YUDDH KE</h1>
+                <div class="clear"></div>
+                <span>A first-of-a-kind banner that created true 'shock' value</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+
+        <div class="awards-wrap">
+            <ul>
+                <li class="tooltip" title="DIGIXX: Content Marketing - Silver"><img src="~/Content/work/images/awards/digx-silver.png" class="responsive-img" alt="" /> </li>
+                <li class="tooltip" title="MEDIA ABBYS: Mobile Technology - Bronze"><img src="~/Content/work/images/awards/abbys-bronze.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="mCube: Best Engagement Through Mobile Marketing - Gold"><img src="~/Content/work/images/awards/mCube-gold.png" class="responsive-img" alt="" /> </li>
+                <li class="tooltip" title="IDMA: Best Innovation in Mobile Marketing - Bronze"><img src="~/Content/work/images/awards/idma-bronze.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="IDMA: Best Integrated Media Campaign - Films/ TV Shows / News Shows / Events - Silver"><img src="~/Content/work/images/awards/idma-silver.png" class="responsive-img" alt="" /> </li>
+                <li class="tooltip" title="MOBEXX: Excellence in a launch campaign - Gold"><img src="~/Content/work/images/awards/mobexx-gold.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="MOBEXX: Excellence in a Rich Media campaign - Silver"><img src="~/Content/work/images/awards/mobexx-silver.png" class="responsive-img" alt="" /></li>
+                <li class="tooltip" title="IAMAI: Best Display Campaign - Silver"><img src="~/Content/work/images/awards/iamai-silver.png" class="responsive-img" alt="" /> </li>
+            </ul>
+        </div>
+
+       
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel fixed " style="background-image: url(../Content/work/images/pow-creative-assets-bg.jpg);">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <!-- <div class="assets-title">
+                                                  <h3>DISRUPTIONS ON GOOGLE AND YOUTUBE TO EXPERIENCE <br>
+                                THE FILMS AND CREATE A VIRTUAL JERSEY</h3>
+                                                </div>-->
+                                <div class="mobile-experience">
+                                    <figure>
+                                        <div class="vibrate-img">
+                                            <img src="~/Content/work/images/pow-mobile-creative.png" alt="" />
+                                        </div>
+                                        <figcaption>
+                                            <a class="hvr-sweep-to-right">ONLY FOR <span>ANDROID PHONES</span></a>
+                                            <div class="clear"></div>
+                                            <span class="hvr-sweep-to-right"> experience creative</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Results</h2>
+        </div>
+        <div class="container bottom-padding-none">
+            <div class="result-wrapp">
+                <ul class="fadeUp t-infinity">
+                    <li class="col-3 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">IMPRESSIONS</span> <span class="result-points">1.5</span> <span class="result">MILLION</span> </div>
+                    </li>
+                    <li class="col-3 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">ENGAGEMENTS</span> <span class="result-points">37,678</span> <span class="result">THOUSAND</span> </div>
+                    </li>
+                    <li class="col-3 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">TOTAL REACH</span> <span class="result-points">2.5%</span> <span class="result"></span> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>Star Plus has always been at the forefront of bringing the best of the world to Indian television by relentlessly redefining the grammar of storytelling. For a show like POW we teamed up with Sparkt to leave no stone unturned and ensured our innovations gave the users a digital experience like never before.</h3>
+                    <span class="quotes-writer">Aijaz Nakhuda - Digital Marketing Head - Star Plus</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

@@ -1,0 +1,1244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75E66C61-D5ED-4F20-A35A-58E4D5904D41}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sparkt.WebApp</RootNamespace>
+    <AssemblyName>Sparkt.WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\workController.cs" />
+    <Compile Include="Core\Extensions\ContactUsExtension.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactUsModal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\airplay.png" />
+    <Content Include="Content\css\airplay.svg" />
+    <Content Include="Content\css\ajax-loader.gif" />
+    <Content Include="Content\css\common.css" />
+    <Content Include="Content\css\hompage.css" />
+    <Content Include="Content\css\hover-min.css" />
+    <Content Include="Content\css\mejs-controls.png" />
+    <Content Include="Content\css\mejs-controls.svg" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\images\achievements1.jpg" />
+    <Content Include="Content\images\achievements2.jpg" />
+    <Content Include="Content\images\achievements3.jpg" />
+    <Content Include="Content\images\achievements4.jpg" />
+    <Content Include="Content\images\achievements5.jpg" />
+    <Content Include="Content\images\clients\brickex-logo.png" />
+    <Content Include="Content\images\clients\editage.png" />
+    <Content Include="Content\images\clients\indo-count-logo.png" />
+    <Content Include="Content\images\clients\lkp-logo.png" />
+    <Content Include="Content\images\clients\m-gage-logo.png" />
+    <Content Include="Content\images\clients\mahindra-mf-logo.png" />
+    <Content Include="Content\images\clients\one-plus-logo.png" />
+    <Content Include="Content\images\clients\phfl-logo.png" />
+    <Content Include="Content\images\clients\piramalCapital-logo.png" />
+    <Content Include="Content\images\clients\piramalRealty-logo.png" />
+    <Content Include="Content\images\clients\pro-kabaddi.png" />
+    <Content Include="Content\images\clients\rf-india-logo.png" />
+    <Content Include="Content\images\clients\star-logo.png" />
+    <Content Include="Content\images\clients\star-plus-logo.png" />
+    <Content Include="Content\images\clients\times-network-logo.png" />
+    <Content Include="Content\images\clients\uCypher-logo.png" />
+    <Content Include="Content\images\clients\uSports-logo.png" />
+    <Content Include="Content\images\clients\your-brand-here.png" />
+    <Content Include="Content\images\contact-bg.jpg" />
+    <Content Include="Content\images\contact.jpg" />
+    <Content Include="Content\images\cultureImg1.jpg" />
+    <Content Include="Content\images\cultureImg2.jpg" />
+    <Content Include="Content\images\cultureImg3.jpg" />
+    <Content Include="Content\images\cultureImg4.png" />
+    <Content Include="Content\images\cultureImg5.png" />
+    <Content Include="Content\images\cultureImg6.jpg" />
+    <Content Include="Content\images\cultureImg7.jpg" />
+    <Content Include="Content\images\cultureImg8.jpg" />
+    <Content Include="Content\images\favicon\._android-icon-144x144.png" />
+    <Content Include="Content\images\favicon\._android-icon-192x192.png" />
+    <Content Include="Content\images\favicon\._android-icon-36x36.png" />
+    <Content Include="Content\images\favicon\._android-icon-48x48.png" />
+    <Content Include="Content\images\favicon\._android-icon-72x72.png" />
+    <Content Include="Content\images\favicon\._android-icon-96x96.png" />
+    <Content Include="Content\images\favicon\._apple-icon-114x114.png" />
+    <Content Include="Content\images\favicon\._apple-icon-120x120.png" />
+    <Content Include="Content\images\favicon\._apple-icon-144x144.png" />
+    <Content Include="Content\images\favicon\._apple-icon-152x152.png" />
+    <Content Include="Content\images\favicon\._apple-icon-180x180.png" />
+    <Content Include="Content\images\favicon\._apple-icon-57x57.png" />
+    <Content Include="Content\images\favicon\._apple-icon-60x60.png" />
+    <Content Include="Content\images\favicon\._apple-icon-72x72.png" />
+    <Content Include="Content\images\favicon\._apple-icon-76x76.png" />
+    <Content Include="Content\images\favicon\._apple-icon-precomposed.png" />
+    <Content Include="Content\images\favicon\._apple-icon.png" />
+    <Content Include="Content\images\favicon\._browserconfig.xml" />
+    <Content Include="Content\images\favicon\._favicon-16x16.png" />
+    <Content Include="Content\images\favicon\._favicon-32x32.png" />
+    <Content Include="Content\images\favicon\._favicon-96x96.png" />
+    <Content Include="Content\images\favicon\._favicon.ico" />
+    <Content Include="Content\images\favicon\._ms-icon-144x144.png" />
+    <Content Include="Content\images\favicon\._ms-icon-150x150.png" />
+    <Content Include="Content\images\favicon\._ms-icon-310x310.png" />
+    <Content Include="Content\images\favicon\._ms-icon-70x70.png" />
+    <Content Include="Content\images\favicon\android-icon-144x144.png" />
+    <Content Include="Content\images\favicon\android-icon-192x192.png" />
+    <Content Include="Content\images\favicon\android-icon-36x36.png" />
+    <Content Include="Content\images\favicon\android-icon-48x48.png" />
+    <Content Include="Content\images\favicon\android-icon-72x72.png" />
+    <Content Include="Content\images\favicon\android-icon-96x96.png" />
+    <Content Include="Content\images\favicon\apple-icon-114x114.png" />
+    <Content Include="Content\images\favicon\apple-icon-120x120.png" />
+    <Content Include="Content\images\favicon\apple-icon-144x144.png" />
+    <Content Include="Content\images\favicon\apple-icon-152x152.png" />
+    <Content Include="Content\images\favicon\apple-icon-180x180.png" />
+    <Content Include="Content\images\favicon\apple-icon-57x57.png" />
+    <Content Include="Content\images\favicon\apple-icon-60x60.png" />
+    <Content Include="Content\images\favicon\apple-icon-72x72.png" />
+    <Content Include="Content\images\favicon\apple-icon-76x76.png" />
+    <Content Include="Content\images\favicon\apple-icon-precomposed.png" />
+    <Content Include="Content\images\favicon\apple-icon.png" />
+    <Content Include="Content\images\favicon\browserconfig.xml" />
+    <Content Include="Content\images\favicon\favicon-16x16.png" />
+    <Content Include="Content\images\favicon\favicon-32x32.png" />
+    <Content Include="Content\images\favicon\favicon-96x96.png" />
+    <Content Include="Content\images\favicon\favicon.ico" />
+    <Content Include="Content\images\favicon\ms-icon-144x144.png" />
+    <Content Include="Content\images\favicon\ms-icon-150x150.png" />
+    <Content Include="Content\images\favicon\ms-icon-310x310.png" />
+    <Content Include="Content\images\favicon\ms-icon-70x70.png" />
+    <Content Include="Content\images\future.jpg" />
+    <Content Include="Content\images\home.jpg" />
+    <Content Include="Content\images\spakt.png" />
+    <Content Include="Content\images\spaktLogo-text.png" />
+    <Content Include="Content\images\spaktLogo.png" />
+    <Content Include="Content\images\sparhtLive.jpg" />
+    <Content Include="Content\images\sparkt-border.png" />
+    <Content Include="Content\images\sparkt-fav.png" />
+    <Content Include="Content\images\sqoud-border.png" />
+    <Content Include="Content\images\squad\alefiya.png" />
+    <Content Include="Content\images\squad\ankit-verma.png" />
+    <Content Include="Content\images\squad\anmol-mahajan.png" />
+    <Content Include="Content\images\squad\dhruv-chauhan.png" />
+    <Content Include="Content\images\squad\donald-samy-down-art.png" />
+    <Content Include="Content\images\squad\ipshita-khan.png" />
+    <Content Include="Content\images\squad\jinit-ghelani-down-art.png" />
+    <Content Include="Content\images\squad\keegan.png" />
+    <Content Include="Content\images\squad\pooja-mokashi.png" />
+    <Content Include="Content\images\squad\prasad-bandkar.png" />
+    <Content Include="Content\images\squad\prathamesh-mirashi.png" />
+    <Content Include="Content\images\squad\pritesh.png" />
+    <Content Include="Content\images\squad\rahul-lall.png" />
+    <Content Include="Content\images\squad\ramananda.png" />
+    <Content Include="Content\images\squad\ramesh-pai.png" />
+    <Content Include="Content\images\squad\ritesh.png" />
+    <Content Include="Content\images\squad\rohit-makwana.png" />
+    <Content Include="Content\images\squad\samia-iqbal.png" />
+    <Content Include="Content\images\squad\shazeb.png" />
+    <Content Include="Content\images\squad\sheldon.png" />
+    <Content Include="Content\images\squad\shruti-ganu.png" />
+    <Content Include="Content\images\squad\shubham.png" />
+    <Content Include="Content\images\squad\squad.png" />
+    <Content Include="Content\images\squad\sudhakar.png" />
+    <Content Include="Content\images\squad\sukumar-.png" />
+    <Content Include="Content\images\squad\sunil-nalawade.png" />
+    <Content Include="Content\images\squad\sybil-braganza.png" />
+    <Content Include="Content\images\squad\vikas-pawar.png" />
+    <Content Include="Content\images\squad\vinod-jadhav.png" />
+    <Content Include="Content\images\squad\vrushabh.png" />
+    <Content Include="Content\images\squad\waqt-shaikh.png" />
+    <Content Include="Content\images\squad\warren-pinto.png" />
+    <Content Include="Content\images\table-shadow.png" />
+    <Content Include="Content\images\table-sparkt-office.png" />
+    <Content Include="Content\images\tableBg.png" />
+    <Content Include="Content\images\title-icon.png" />
+    <Content Include="Content\images\we.jpg" />
+    <Content Include="Content\images\work.jpg" />
+    <Content Include="Content\js\functions.js" />
+    <Content Include="Content\js\jquery-3.1.1.min.js" />
+    <Content Include="Content\js\text-animation.js" />
+    <Content Include="Content\media\sparkt-office.jpg" />
+    <Content Include="Content\media\sparkt-office.mp4" />
+    <Content Include="Content\media\sparkt-office.webm" />
+    <Content Include="Content\plugins\backgroundVideo\js\backgroundVideo.js" />
+    <Content Include="Content\plugins\flow-flow\admin.php" />
+    <Content Include="Content\plugins\flow-flow\assets\67.png" />
+    <Content Include="Content\plugins\flow-flow\assets\7.jpg" />
+    <Content Include="Content\plugins\flow-flow\assets\admin-icons.png" />
+    <Content Include="Content\plugins\flow-flow\assets\avatar_default.png" />
+    <Content Include="Content\plugins\flow-flow\assets\avatar_default_rss.png" />
+    <Content Include="Content\plugins\flow-flow\assets\chevy.jpeg" />
+    <Content Include="Content\plugins\flow-flow\assets\compact.jpg" />
+    <Content Include="Content\plugins\flow-flow\assets\dismiss.png" />
+    <Content Include="Content\plugins\flow-flow\assets\extension-ads.png" />
+    <Content Include="Content\plugins\flow-flow\assets\extension-secret.png" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\ff-icon.svg" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\flaticon.svg" />
+    <Content Include="Content\plugins\flow-flow\assets\fs.png" />
+    <Content Include="Content\plugins\flow-flow\assets\icon_ff_addon_1.png" />
+    <Content Include="Content\plugins\flow-flow\assets\icon_ff_addon_2.png" />
+    <Content Include="Content\plugins\flow-flow\assets\LogoFF.png" />
+    <Content Include="Content\plugins\flow-flow\assets\oval.svg" />
+    <Content Include="Content\plugins\flow-flow\assets\oval_dark.svg" />
+    <Content Include="Content\plugins\flow-flow\assets\play.png" />
+    <Content Include="Content\plugins\flow-flow\assets\Steve-Zissou.png" />
+    <Content Include="Content\plugins\flow-flow\assets\stream-icon.png" />
+    <Content Include="Content\plugins\flow-flow\assets\tab-icon-settings.png" />
+    <Content Include="Content\plugins\flow-flow\assets\tab-icon-streams.png" />
+    <Content Include="Content\plugins\flow-flow\assets\ticker-alert.png" />
+    <Content Include="Content\plugins\flow-flow\assets\ticker-lightbulb.png" />
+    <Content Include="Content\plugins\flow-flow\assets\ticker-megaphone.png" />
+    <Content Include="Content\plugins\flow-flow\assets\ticker-news.png" />
+    <Content Include="Content\plugins\flow-flow\assets\ticker-settings.png" />
+    <Content Include="Content\plugins\flow-flow\css\admin-icon.css" />
+    <Content Include="Content\plugins\flow-flow\css\admin.css" />
+    <Content Include="Content\plugins\flow-flow\css\jquery-colorpickersliders.css" />
+    <Content Include="Content\plugins\flow-flow\css\public.css" />
+    <Content Include="Content\plugins\flow-flow\ff-config-live-bk.php" />
+    <Content Include="Content\plugins\flow-flow\ff-config.php" />
+    <Content Include="Content\plugins\flow-flow\ff-config_old.php" />
+    <Content Include="Content\plugins\flow-flow\ff-init.php" />
+    <Content Include="Content\plugins\flow-flow\ff-injector.php" />
+    <Content Include="Content\plugins\flow-flow\ff-injectorold.php" />
+    <Content Include="Content\plugins\flow-flow\ff.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFAdminModerationCacheManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFCache.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFCacheAdapter.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFCacheManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFFacebookCacheAdapter.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFFacebookCacheManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFFacebookCacheManager2.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFImageSizeCacheManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\FFModerationCacheManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\cache\LAFacebookCacheManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\FFDB.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\FFDBManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\FFDBMigration.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\FFDBUpdate.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\FFWPDB.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\LADBManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_0.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_1.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_10.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_11.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_12.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_13.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_14.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_2.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_3.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_4.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_5.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_6.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_7.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_8.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\migrations\FFMigration_2_9.php" />
+    <Content Include="Content\plugins\flow-flow\includes\db\SafeMySQL.php" />
+    <Content Include="Content\plugins\flow-flow\includes\FlowFlow.php" />
+    <Content Include="Content\plugins\flow-flow\includes\FlowFlowAdmin.php" />
+    <Content Include="Content\plugins\flow-flow\includes\FlowFlowException.php" />
+    <Content Include="Content\plugins\flow-flow\includes\FlowFlowWPWidget.php" />
+    <Content Include="Content\plugins\flow-flow\includes\LAAdminBase.php" />
+    <Content Include="Content\plugins\flow-flow\includes\settings\FFGeneralSettings.php" />
+    <Content Include="Content\plugins\flow-flow\includes\settings\FFSettingsUtils.php" />
+    <Content Include="Content\plugins\flow-flow\includes\settings\FFSnapshotManager.php" />
+    <Content Include="Content\plugins\flow-flow\includes\settings\FFStreamSettings.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFBaseFeed.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFComments.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFDribbble.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFFacebook.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFFeed.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFFeedUtils.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFFlickr.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFFoursquare.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFGoogle.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFHttpRequestFeed.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFInstagram.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFLinkedIn.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFPinterest.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFPosts.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFRss.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFSoundcloud.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFTumblr.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFTwitter.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFTwitterAPIExchange.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFVimeo.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFVine.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\FFYoutube.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\timelines\FFFavorites.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\timelines\FFHomeTimeline.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\timelines\FFListTimeline.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\timelines\FFSearch.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\timelines\FFTimeline.php" />
+    <Content Include="Content\plugins\flow-flow\includes\social\timelines\FFUserTimeline.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFAddonsTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFAuthTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFBackupTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFLicenseTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFModerationTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFStreamsTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\FFSuggestionsTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\LAGeneralTab.php" />
+    <Content Include="Content\plugins\flow-flow\includes\tabs\LATab.php" />
+    <Content Include="Content\plugins\flow-flow\js\admin.js" />
+    <Content Include="Content\plugins\flow-flow\js\global_admin.js" />
+    <Content Include="Content\plugins\flow-flow\js\jquery.colorpickersliders.js" />
+    <Content Include="Content\plugins\flow-flow\js\public.js" />
+    <Content Include="Content\plugins\flow-flow\js\require-utils.js" />
+    <Content Include="Content\plugins\flow-flow\js\streams.js" />
+    <Content Include="Content\plugins\flow-flow\js\tinycolor.js" />
+    <Content Include="Content\plugins\flow-flow\js\zeroclipboard\ZeroClipboard.Core.min.js" />
+    <Content Include="Content\plugins\flow-flow\js\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="Content\plugins\flow-flow\js\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="Content\plugins\flow-flow\LAClassLoader.php" />
+    <Content Include="Content\plugins\flow-flow\views\addons.php" />
+    <Content Include="Content\plugins\flow-flow\views\admin.php" />
+    <Content Include="Content\plugins\flow-flow\views\auth.php" />
+    <Content Include="Content\plugins\flow-flow\views\backup.php" />
+    <Content Include="Content\plugins\flow-flow\views\general.php" />
+    <Content Include="Content\plugins\flow-flow\views\license.php" />
+    <Content Include="Content\plugins\flow-flow\views\moderation.php" />
+    <Content Include="Content\plugins\flow-flow\views\public.php" />
+    <Content Include="Content\plugins\flow-flow\views\suggestions.php" />
+    <Content Include="Content\plugins\hover3d\js\jquery.hover3d.min.js" />
+    <Content Include="Content\plugins\intro-page\css\._demo.css" />
+    <Content Include="Content\plugins\intro-page\css\demo.css" />
+    <Content Include="Content\plugins\intro-page\js\._anime.min.js" />
+    <Content Include="Content\plugins\intro-page\js\._charming.min.js" />
+    <Content Include="Content\plugins\intro-page\js\._demo1.js" />
+    <Content Include="Content\plugins\intro-page\js\._demo2.js" />
+    <Content Include="Content\plugins\intro-page\js\._demo3.js" />
+    <Content Include="Content\plugins\intro-page\js\._demo4.js" />
+    <Content Include="Content\plugins\intro-page\js\._imagesloaded.pkgd.min.js" />
+    <Content Include="Content\plugins\intro-page\js\anime.min.js" />
+    <Content Include="Content\plugins\intro-page\js\charming.min.js" />
+    <Content Include="Content\plugins\intro-page\js\demo1.js" />
+    <Content Include="Content\plugins\intro-page\js\demo2.js" />
+    <Content Include="Content\plugins\intro-page\js\demo3.js" />
+    <Content Include="Content\plugins\intro-page\js\demo4.js" />
+    <Content Include="Content\plugins\intro-page\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\css\._jquery.mCustomScrollbar.css" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\css\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\js\._jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Content\plugins\malihu-pagescroll\js\jquery.malihu.PageScroll2id.min.js" />
+    <Content Include="Content\plugins\materialize\css\materialize.min.css" />
+    <Content Include="Content\plugins\materialize\js\materialize.min.js" />
+    <Content Include="Content\plugins\mediaelementplayer\css\airplay.min.css" />
+    <Content Include="Content\plugins\mediaelementplayer\css\airplay.png" />
+    <Content Include="Content\plugins\mediaelementplayer\css\airplay.svg" />
+    <Content Include="Content\plugins\mediaelementplayer\css\mediaelementplayer-legacy.css" />
+    <Content Include="Content\plugins\mediaelementplayer\css\mediaelementplayer-legacy.min.css" />
+    <Content Include="Content\plugins\mediaelementplayer\css\mediaelementplayer.css" />
+    <Content Include="Content\plugins\mediaelementplayer\css\mejs-controls.png" />
+    <Content Include="Content\plugins\mediaelementplayer\css\mejs-controls.svg" />
+    <Content Include="Content\plugins\mediaelementplayer\js\airplay.min.js" />
+    <Content Include="Content\plugins\mediaelementplayer\js\mediaelement-and-player.min.js" />
+    <Content Include="Content\plugins\mediaelementplayer\js\mediaelementplayer.min.css" />
+    <Content Include="Content\plugins\scrollmagic\js\functions.js" />
+    <Content Include="Content\plugins\scrollmagic\js\jquery-3.1.1.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\easing\EasePack.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\jquery.gsap.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\AttrPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\BezierPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\ColorPropsPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\CSSPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\CSSRulePlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\DirectionalRotationPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\EaselPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\EndArrayPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\KineticPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\RaphaelPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\RoundPropsPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\ScrollToPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\plugins\TextPlugin.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\TimelineLite.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\TimelineMax.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\TweenLite.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\TweenMax.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\utils\Draggable.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\highlight.pack.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\iscroll-probe.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\jquery.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\modernizr.custom.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\velocity.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\pinfunctions.js" />
+    <Content Include="Content\plugins\scrollmagic\js\plugins\animation.gsap.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\plugins\animation.velocity.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\plugins\debug.addIndicators.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\plugins\jquery.ScrollMagic.min.js" />
+    <Content Include="Content\plugins\scrollmagic\js\ScrollMagic.min.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\css\._swiper.css" />
+    <Content Include="Content\plugins\swiper-4.2.6\css\._swiper.min.css" />
+    <Content Include="Content\plugins\swiper-4.2.6\css\swiper.css" />
+    <Content Include="Content\plugins\swiper-4.2.6\css\swiper.min.css" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\._swiper.esm.bundle.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\._swiper.esm.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\._swiper.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\._swiper.min.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\swiper.esm.bundle.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\swiper.esm.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\swiper.js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\swiper.min.js" />
+    <Content Include="Content\plugins\tabs-accordion\css\easy-responsive-tabs.css" />
+    <Content Include="Content\plugins\tabs-accordion\js\easy-responsive-tabs.js" />
+    <Content Include="Content\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="Content\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-light.min.css" />
+    <Content Include="Content\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-noir.min.css" />
+    <Content Include="Content\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-punk.min.css" />
+    <Content Include="Content\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-shadow.min.css" />
+    <Content Include="Content\plugins\tooltipster\css\tooltipster.bundle.min.css" />
+    <Content Include="Content\plugins\tooltipster\css\tooltipster.main.css" />
+    <Content Include="Content\plugins\tooltipster\css\tooltipster.main.min.css" />
+    <Content Include="Content\plugins\tooltipster\js\plugins\tooltipster\SVG\tooltipster-SVG.js" />
+    <Content Include="Content\plugins\tooltipster\js\plugins\tooltipster\SVG\tooltipster-SVG.min.js" />
+    <Content Include="Content\plugins\tooltipster\js\tooltipster.bundle.js" />
+    <Content Include="Content\plugins\tooltipster\js\tooltipster.bundle.min.js" />
+    <Content Include="Content\plugins\tooltipster\js\tooltipster.main.js" />
+    <Content Include="Content\plugins\tooltipster\js\tooltipster.main.min.js" />
+    <Content Include="Content\work\css\._style.css" />
+    <Content Include="Content\work\css\airplay.png" />
+    <Content Include="Content\work\css\airplay.svg" />
+    <Content Include="Content\work\css\ajax-loader.gif" />
+    <Content Include="Content\work\css\bundle.css" />
+    <Content Include="Content\work\css\hover-min.css" />
+    <Content Include="Content\work\css\mejs-controls.png" />
+    <Content Include="Content\work\css\mejs-controls.svg" />
+    <Content Include="Content\work\css\reset.css" />
+    <Content Include="Content\work\css\style--bk.css" />
+    <Content Include="Content\work\css\style.css" />
+    <Content Include="Content\work\images\._mobile-vector.png" />
+    <Content Include="Content\work\images\._usports-scratch-phone.png" />
+    <Content Include="Content\work\images\andar-ka-sona.jpg" />
+    <Content Include="Content\work\images\awards\abbys-bronze.png" />
+    <Content Include="Content\work\images\awards\abbys-gold.png" />
+    <Content Include="Content\work\images\awards\abbys-silver.png" />
+    <Content Include="Content\work\images\awards\acef-bronze.png" />
+    <Content Include="Content\work\images\awards\acef-gold-social-media-brand-of-the-year.png" />
+    <Content Include="Content\work\images\awards\acef-gold.png" />
+    <Content Include="Content\work\images\awards\acef-silver.png" />
+    <Content Include="Content\work\images\awards\awards.png" />
+    <Content Include="Content\work\images\awards\campaign-india-bronz.png" />
+    <Content Include="Content\work\images\awards\campaign-india-gold.png" />
+    <Content Include="Content\work\images\awards\campaign-india-silver.png" />
+    <Content Include="Content\work\images\awards\digx-bronze.png" />
+    <Content Include="Content\work\images\awards\digx-gold.png" />
+    <Content Include="Content\work\images\awards\digx-silver.png" />
+    <Content Include="Content\work\images\awards\iamai-silver.png" />
+    <Content Include="Content\work\images\awards\icma-gold.png" />
+    <Content Include="Content\work\images\awards\idma-bronze.png" />
+    <Content Include="Content\work\images\awards\idma-silver.png" />
+    <Content Include="Content\work\images\awards\ima-gold.png" />
+    <Content Include="Content\work\images\awards\maddies-gold.png" />
+    <Content Include="Content\work\images\awards\mCube-gold.png" />
+    <Content Include="Content\work\images\awards\mobexx-gold.png" />
+    <Content Include="Content\work\images\awards\mobexx-silver.png" />
+    <Content Include="Content\work\images\awards\sp.png" />
+    <Content Include="Content\work\images\banner-video-trans.png" />
+    <Content Include="Content\work\images\banners\._mahindra-textmoji.jpg" />
+    <Content Include="Content\work\images\banners\._usports-hamnurger-cover.jpg" />
+    <Content Include="Content\work\images\banners\._usports-scratch.jpg" />
+    <Content Include="Content\work\images\banners\bql-cover.jpg" />
+    <Content Include="Content\work\images\banners\brickex-cover.jpg" />
+    <Content Include="Content\work\images\banners\dance-plus-cover.jpg" />
+    <Content Include="Content\work\images\banners\dhoni-cover.jpg" />
+    <Content Include="Content\work\images\banners\hsubh-cover.jpg" />
+    <Content Include="Content\work\images\banners\ikyawann-cover.jpg" />
+    <Content Include="Content\work\images\banners\india-rf-cover.jpg" />
+    <Content Include="Content\work\images\banners\insta-fight-top.png" />
+    <Content Include="Content\work\images\banners\instafight-bg.jpg" />
+    <Content Include="Content\work\images\banners\ishaqbaaaz-cover.jpg" />
+    <Content Include="Content\work\images\banners\jungle-book-cover.jpg" />
+    <Content Include="Content\work\images\banners\kulfi-cover.jpg" />
+    <Content Include="Content\work\images\banners\m-gage-cover.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-badhat-yojana-cover.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-mmf-cover.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-nfo-cover.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-tah-cover.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-textmoji.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-unnati-cover.jpg" />
+    <Content Include="Content\work\images\banners\mothers-day-cover.jpg" />
+    <Content Include="Content\work\images\banners\nfo-digram-bk.png" />
+    <Content Include="Content\work\images\banners\nfo-digram.png" />
+    <Content Include="Content\work\images\banners\oneplus-cover.jpg" />
+    <Content Include="Content\work\images\banners\phfl-cover.jpg" />
+    <Content Include="Content\work\images\banners\piramal-capital-cover.jpg" />
+    <Content Include="Content\work\images\banners\pow-cover.jpg" />
+    <Content Include="Content\work\images\banners\swp-cover.jpg" />
+    <Content Include="Content\work\images\banners\ted-cover.jpg" />
+    <Content Include="Content\work\images\banners\ucypher-cover.jpg" />
+    <Content Include="Content\work\images\banners\usports-cover.jpg" />
+    <Content Include="Content\work\images\banners\usports-hamnurger-cover.jpg" />
+    <Content Include="Content\work\images\banners\usports-insta-fight-cover.jpg" />
+    <Content Include="Content\work\images\banners\usports-scratch.jpg" />
+    <Content Include="Content\work\images\banners\womens-day-cover.jpg" />
+    <Content Include="Content\work\images\black-iphone.png" />
+    <Content Include="Content\work\images\bombay-times.png" />
+    <Content Include="Content\work\images\bql-creative2.jpg" />
+    <Content Include="Content\work\images\bql-creative3.jpg" />
+    <Content Include="Content\work\images\bql-desktop.jpg" />
+    <Content Include="Content\work\images\bql-mobile.jpg" />
+    <Content Include="Content\work\images\brickex-desktop.jpg" />
+    <Content Include="Content\work\images\brickex-mobile.jpg" />
+    <Content Include="Content\work\images\chaitulal-aaj-ki-adalat-bg.jpg" />
+    <Content Include="Content\work\images\chaitulal-aaj-ki-adalat.png" />
+    <Content Include="Content\work\images\chaitulala-elem-1.png" />
+    <Content Include="Content\work\images\chaitulala-elem-2.png" />
+    <Content Include="Content\work\images\chaitulala-elem-3.png" />
+    <Content Include="Content\work\images\chaitulala-elem-4.png" />
+    <Content Include="Content\work\images\chaitulala-elem-5.png" />
+    <Content Include="Content\work\images\chaitulala-elem-6.png" />
+    <Content Include="Content\work\images\chaitulala-elem-7.png" />
+    <Content Include="Content\work\images\clients\boutique.png" />
+    <Content Include="Content\work\images\clients\mahindra.png" />
+    <Content Include="Content\work\images\clients\mgage.png" />
+    <Content Include="Content\work\images\clients\oneplus.png" />
+    <Content Include="Content\work\images\clients\piramal.png" />
+    <Content Include="Content\work\images\clients\star.png" />
+    <Content Include="Content\work\images\clients\starplus.png" />
+    <Content Include="Content\work\images\clients\times-network.png" />
+    <Content Include="Content\work\images\clients\usports.png" />
+    <Content Include="Content\work\images\contact.jpg" />
+    <Content Include="Content\work\images\dance-plus-2-creative-approch.png" />
+    <Content Include="Content\work\images\dance-plus-2-desktop.jpg" />
+    <Content Include="Content\work\images\dance-plus-2-mobile.jpg" />
+    <Content Include="Content\work\images\desktop.jpg" />
+    <Content Include="Content\work\images\dhoni-boomerang1.gif" />
+    <Content Include="Content\work\images\dhoni-boomerang2.gif" />
+    <Content Include="Content\work\images\dhoni-boomerang3.gif" />
+    <Content Include="Content\work\images\fb-live-icon.png" />
+    <Content Include="Content\work\images\fevicon.png" />
+    <Content Include="Content\work\images\future.jpg" />
+    <Content Include="Content\work\images\home.jpg" />
+    <Content Include="Content\work\images\hotstar-elem-1.png" />
+    <Content Include="Content\work\images\hotstar-logo.png" />
+    <Content Include="Content\work\images\i-phone.png" />
+    <Content Include="Content\work\images\icons\insta-icon.png" />
+    <Content Include="Content\work\images\icons\loading.png" />
+    <Content Include="Content\work\images\icons\play.png" />
+    <Content Include="Content\work\images\icons\quotes.png" />
+    <Content Include="Content\work\images\ikyawan-creative-assets-bg.jpg" />
+    <Content Include="Content\work\images\ikyawann-creative-approch.png" />
+    <Content Include="Content\work\images\india-rf-desktop.jpg" />
+    <Content Include="Content\work\images\india-rf-mobile.jpg" />
+    <Content Include="Content\work\images\insta-data-1.png" />
+    <Content Include="Content\work\images\insta-data-2.png" />
+    <Content Include="Content\work\images\insta-data-3.png" />
+    <Content Include="Content\work\images\insta-data-4.png" />
+    <Content Include="Content\work\images\insta-data.png" />
+    <Content Include="Content\work\images\insta-fight-data-analytics.png" />
+    <Content Include="Content\work\images\insta-fight-video-cover.jpg" />
+    <Content Include="Content\work\images\laptop-fb-img.jpg" />
+    <Content Include="Content\work\images\laptop-img.png" />
+    <Content Include="Content\work\images\laptop-side-angle.png" />
+    <Content Include="Content\work\images\live-srk.jpg" />
+    <Content Include="Content\work\images\m-gage-desktop.jpg" />
+    <Content Include="Content\work\images\m-gage-mobile.jpg" />
+    <Content Include="Content\work\images\mahindra-badhat-creative-assest1.png" />
+    <Content Include="Content\work\images\mahindra-mmf-cover.jpg" />
+    <Content Include="Content\work\images\mahindra-nfo-creative-assest1-bk.png" />
+    <Content Include="Content\work\images\mahindra-nfo-creative-assest1.png" />
+    <Content Include="Content\work\images\mahindra-nfo-creative-assest2-bk.png" />
+    <Content Include="Content\work\images\mahindra-nfo-creative-assest2.jpg" />
+    <Content Include="Content\work\images\mahindra-nfo-creative-assest2.png" />
+    <Content Include="Content\work\images\mahindra-nfo-creative-assest3.png" />
+    <Content Include="Content\work\images\mahindra-tah-desktop.jpg" />
+    <Content Include="Content\work\images\mahindra-tah-mobile.jpg" />
+    <Content Include="Content\work\images\mahindra-unnati-creative-assest1.png" />
+    <Content Include="Content\work\images\mahindra-unnati-creative-assest2.png" />
+    <Content Include="Content\work\images\mahindra-veo-1.jpg" />
+    <Content Include="Content\work\images\mahindra-veo-2.jpg" />
+    <Content Include="Content\work\images\mahindra-veo-3.jpg" />
+    <Content Include="Content\work\images\mahindra-veo-4.jpg" />
+    <Content Include="Content\work\images\mahindra-veo-5.jpg" />
+    <Content Include="Content\work\images\mobile-slider.png" />
+    <Content Include="Content\work\images\mobile-vector.png" />
+    <Content Include="Content\work\images\mobile.jpg" />
+    <Content Include="Content\work\images\mobileoverlayimg.png" />
+    <Content Include="Content\work\images\mobileoverlayimgHorizen.png" />
+    <Content Include="Content\work\images\mothers-day-creative-approch.png" />
+    <Content Include="Content\work\images\mothersday-twitter-tweets-1.jpg" />
+    <Content Include="Content\work\images\mothersday-twitter-tweets-2.jpg" />
+    <Content Include="Content\work\images\mothersday-twitter-tweets-3.jpg" />
+    <Content Include="Content\work\images\mothersday-twitter-tweets-4.jpg" />
+    <Content Include="Content\work\images\mothersday-twitter-tweets-5.jpg" />
+    <Content Include="Content\work\images\mowgli-creative.gif" />
+    <Content Include="Content\work\images\mowgli-creative2.gif" />
+    <Content Include="Content\work\images\mowgli-creative3.mp4" />
+    <Content Include="Content\work\images\mowgli-creative4.gif" />
+    <Content Include="Content\work\images\mowgli-creative5.gif" />
+    <Content Include="Content\work\images\mowgli-creative6.gif" />
+    <Content Include="Content\work\images\nach-baliye-8-cover.jpg" />
+    <Content Include="Content\work\images\nach-baliye-8-creative-approch.png" />
+    <Content Include="Content\work\images\nach-creative-assets-bg.jpg" />
+    <Content Include="Content\work\images\nach-fb-web.png" />
+    <Content Include="Content\work\images\nach-slide-2-bg.jpg" />
+    <Content Include="Content\work\images\nayi-soch-creative-approch.png" />
+    <Content Include="Content\work\images\nayisoch-twitter-tweets-1.jpg" />
+    <Content Include="Content\work\images\nayisoch-twitter-tweets-2.jpg" />
+    <Content Include="Content\work\images\nayisoch-twitter-tweets-3.jpg" />
+    <Content Include="Content\work\images\nayisoch-twitter-tweets-4.jpg" />
+    <Content Include="Content\work\images\nayisoch-twitter-tweets-5.jpg" />
+    <Content Include="Content\work\images\nayosoch-cover-star.jpg" />
+    <Content Include="Content\work\images\nayosoch-cover.jpg" />
+    <Content Include="Content\work\images\phfl-desktop.jpg" />
+    <Content Include="Content\work\images\phfl-mobile.jpg" />
+    <Content Include="Content\work\images\piramal-capital-desktop.jpg" />
+    <Content Include="Content\work\images\piramal-capital-mobile.jpg" />
+    <Content Include="Content\work\images\pow-creative-assets-bg.jpg" />
+    <Content Include="Content\work\images\pow-mobile-creative.png" />
+    <Content Include="Content\work\images\revent-logo.png" />
+    <Content Include="Content\work\images\social-work.png" />
+    <Content Include="Content\work\images\spaktLogo-text.png" />
+    <Content Include="Content\work\images\spaktLogo.png" />
+    <Content Include="Content\work\images\sparhtLive.jpg" />
+    <Content Include="Content\work\images\sparkt-border.png" />
+    <Content Include="Content\work\images\star-bg.jpg" />
+    <Content Include="Content\work\images\success-vs-happiness.jpg" />
+    <Content Include="Content\work\images\swp-desktop.jpg" />
+    <Content Include="Content\work\images\swp-mobile.jpg" />
+    <Content Include="Content\work\images\ted-ajay-kakkar.jpg" />
+    <Content Include="Content\work\images\ted-andar-ka-sona.jpg" />
+    <Content Include="Content\work\images\ted-ashish-basin.jpg" />
+    <Content Include="Content\work\images\ted-bg.jpg" />
+    <Content Include="Content\work\images\ted-bobby-pawar.jpg" />
+    <Content Include="Content\work\images\ted-creative-approch.png" />
+    <Content Include="Content\work\images\ted-dont-kill-ideas-campaign.png" />
+    <Content Include="Content\work\images\ted-dont-kill-ideas.png" />
+    <Content Include="Content\work\images\ted-dr-velumani.jpg" />
+    <Content Include="Content\work\images\ted-drone.jpg" />
+    <Content Include="Content\work\images\ted-iphone.png" />
+    <Content Include="Content\work\images\ted-kashyap-vadpilli.jpg" />
+    <Content Include="Content\work\images\ted-laptop.png" />
+    <Content Include="Content\work\images\ted-live-with-virdass.jpg" />
+    <Content Include="Content\work\images\ted-mentions-phone.png" />
+    <Content Include="Content\work\images\ted-onir.jpg" />
+    <Content Include="Content\work\images\ted-ramesh-narayan.jpg" />
+    <Content Include="Content\work\images\ted-rana-barua.jpg" />
+    <Content Include="Content\work\images\ted-remo.jpg" />
+    <Content Include="Content\work\images\ted-roti-maker.jpg" />
+    <Content Include="Content\work\images\ted-sam-balsara.jpg" />
+    <Content Include="Content\work\images\ted-siddharth-bannerjee.jpg" />
+    <Content Include="Content\work\images\ted-social-work.png" />
+    <Content Include="Content\work\images\ted-sonali-dhawan.jpg" />
+    <Content Include="Content\work\images\ted-speakers-anirudh-sharma.jpg" />
+    <Content Include="Content\work\images\ted-speakers-gautam-bhan.jpg" />
+    <Content Include="Content\work\images\ted-speakers-karan-johar.jpg" />
+    <Content Include="Content\work\images\ted-speakers-manju-kapur.jpg" />
+    <Content Include="Content\work\images\ted-speakers-manu-prakash-.jpg" />
+    <Content Include="Content\work\images\ted-speakers.png" />
+    <Content Include="Content\work\images\ted-subhash-kamath.jpg" />
+    <Content Include="Content\work\images\ted-success-vs-happiness.jpg" />
+    <Content Include="Content\work\images\ted-tag1.png" />
+    <Content Include="Content\work\images\ted-tag2.png" />
+    <Content Include="Content\work\images\ted-tag3.png" />
+    <Content Include="Content\work\images\ted-tag4.png" />
+    <Content Include="Content\work\images\ted-tag5.png" />
+    <Content Include="Content\work\images\ted-tag6.png" />
+    <Content Include="Content\work\images\ted-tag7.png" />
+    <Content Include="Content\work\images\ted-terence-lewis.jpg" />
+    <Content Include="Content\work\images\ted-unapologetic-walking.jpg" />
+    <Content Include="Content\work\images\thums\badhat-yojana-thum.jpg" />
+    <Content Include="Content\work\images\thums\boutique-thum.jpg" />
+    <Content Include="Content\work\images\thums\brickex-thum.jpg" />
+    <Content Include="Content\work\images\thums\danceplus-thum.jpg" />
+    <Content Include="Content\work\images\thums\hsubh-thum.jpg" />
+    <Content Include="Content\work\images\thums\ikyawann-thum.jpg" />
+    <Content Include="Content\work\images\thums\india-rf-thum.jpg" />
+    <Content Include="Content\work\images\thums\insta-fight-top.png" />
+    <Content Include="Content\work\images\thums\ishqbaaaz-thum.jpg" />
+    <Content Include="Content\work\images\thums\junglebook-thum.jpg" />
+    <Content Include="Content\work\images\thums\kullfi-thum.jpg" />
+    <Content Include="Content\work\images\thums\mahindra-unnati-thum.jpg" />
+    <Content Include="Content\work\images\thums\mGage-thum.jpg" />
+    <Content Include="Content\work\images\thums\mmf-info-thum.jpg" />
+    <Content Include="Content\work\images\thums\mmf-thum.jpg" />
+    <Content Include="Content\work\images\thums\mouthers-day-thum.jpg" />
+    <Content Include="Content\work\images\thums\ms-dhoni-thum.jpg" />
+    <Content Include="Content\work\images\thums\nach-baliye-8-thum.jpg" />
+    <Content Include="Content\work\images\thums\nayosoch-thum.jpg" />
+    <Content Include="Content\work\images\thums\oneplus-thum.jpg" />
+    <Content Include="Content\work\images\thums\phfl-thum.jpg" />
+    <Content Include="Content\work\images\thums\piramalcapital-thum.jpg" />
+    <Content Include="Content\work\images\thums\pow-thum.jpg" />
+    <Content Include="Content\work\images\thums\swp-thum.jpg" />
+    <Content Include="Content\work\images\thums\tah-thum.jpg" />
+    <Content Include="Content\work\images\thums\ted-thum.jpg" />
+    <Content Include="Content\work\images\thums\u-cypher-insta-fight-thum.jpg" />
+    <Content Include="Content\work\images\thums\ucypher-thum.jpg" />
+    <Content Include="Content\work\images\thums\usports-thum.jpg" />
+    <Content Include="Content\work\images\thums\womens-day-thum.jpg" />
+    <Content Include="Content\work\images\title-icon.png" />
+    <Content Include="Content\work\images\u-cypher-akshay-akramaks.jpg" />
+    <Content Include="Content\work\images\u-cypher-bg.jpg" />
+    <Content Include="Content\work\images\u-cypher-creative-assets-water-flow.png" />
+    <Content Include="Content\work\images\u-cypher-creative-assets.jpg" />
+    <Content Include="Content\work\images\u-cypher-fb-post-1.png" />
+    <Content Include="Content\work\images\u-cypher-fb-post-2.png" />
+    <Content Include="Content\work\images\u-cypher-music-bits.png" />
+    <Content Include="Content\work\images\u-cypher-music-video-bg.png" />
+    <Content Include="Content\work\images\u-cypher-twitt-1.jpg" />
+    <Content Include="Content\work\images\u-cypher-twitt-2.jpg" />
+    <Content Include="Content\work\images\u-cypher-twitt-3.jpg" />
+    <Content Include="Content\work\images\u-cypher-twitt-4.jpg" />
+    <Content Include="Content\work\images\u-cypher-twitt-5.jpg" />
+    <Content Include="Content\work\images\ucypher-christmas.jpg" />
+    <Content Include="Content\work\images\ucypher-diwali.jpg" />
+    <Content Include="Content\work\images\ucypher-new-year.jpg" />
+    <Content Include="Content\work\images\ucypher-vector1.png" />
+    <Content Include="Content\work\images\ucypher-vector1a.png" />
+    <Content Include="Content\work\images\ucypher-vector1b.png" />
+    <Content Include="Content\work\images\ucypher-vector2.png" />
+    <Content Include="Content\work\images\ucypher-vector2a.png" />
+    <Content Include="Content\work\images\unapologetic-walking.jpg" />
+    <Content Include="Content\work\images\unnati-creative-1.jpg" />
+    <Content Include="Content\work\images\unnati-creative-2.jpg" />
+    <Content Include="Content\work\images\unnati-creative-3.jpg" />
+    <Content Include="Content\work\images\unnati-post1.gif" />
+    <Content Include="Content\work\images\unnati-post2.gif" />
+    <Content Include="Content\work\images\usports-creative-asset.png" />
+    <Content Include="Content\work\images\usports-desktop.jpg" />
+    <Content Include="Content\work\images\usports-mobile.jpg" />
+    <Content Include="Content\work\images\usports-scratch-phone.png" />
+    <Content Include="Content\work\images\verticle-phone.png" />
+    <Content Include="Content\work\images\video-thums\bharti-haarsh-nach8.png" />
+    <Content Include="Content\work\images\video-thums\chaitulal-aaj-ki-adalat-1.jpg" />
+    <Content Include="Content\work\images\video-thums\chaitulal-anim-thum-1.jpg" />
+    <Content Include="Content\work\images\video-thums\chaitulal-anim-thum-2.jpg" />
+    <Content Include="Content\work\images\video-thums\chaitulal-anim-thum-3.jpg" />
+    <Content Include="Content\work\images\video-thums\devising-a-ritual-video.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb1.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb2.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb3.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb4.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb5.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb6.jpg" />
+    <Content Include="Content\work\images\video-thums\dhoni-video-thumb7.jpg" />
+    <Content Include="Content\work\images\video-thums\divyank-vivek-nach8.png" />
+    <Content Include="Content\work\images\video-thums\ikyawann-not-shadi-material-myth1.jpg" />
+    <Content Include="Content\work\images\video-thums\ikyawann-not-shadi-material-myth2.jpg" />
+    <Content Include="Content\work\images\video-thums\ikyawann-not-shadi-material-myth3.jpg" />
+    <Content Include="Content\work\images\video-thums\ikyawann-not-shadi-material.jpg" />
+    <Content Include="Content\work\images\video-thums\ikyawann-what-is-shadi-material.jpg" />
+    <Content Include="Content\work\images\video-thums\mohit-sanaya-nach8.png" />
+    <Content Include="Content\work\images\video-thums\monalisa-vikrant-nach8.png" />
+    <Content Include="Content\work\images\video-thums\pritam-amanjjot-nach8.png" />
+    <Content Include="Content\work\images\video-thums\sanam-abigali-nach8.png" />
+    <Content Include="Content\work\images\video-thums\shohaib-dipika-nach8.png" />
+    <Content Include="Content\work\images\video-thums\siddharth-tripti-nach8.png" />
+    <Content Include="Content\work\images\video-thums\ted-video-1.png" />
+    <Content Include="Content\work\images\video-thums\ted-video-2.png" />
+    <Content Include="Content\work\images\video-thums\ted-video-3.png" />
+    <Content Include="Content\work\images\video-thums\ted-video-4.png" />
+    <Content Include="Content\work\images\video-thums\womens-devendra-and-akshali-shah.jpg" />
+    <Content Include="Content\work\images\video-thums\womens-manmohan-and-aarati-shetty.jpg" />
+    <Content Include="Content\work\images\video-thums\womens-rajiv-and-sakshi-vij.jpg" />
+    <Content Include="Content\work\images\video-thums\womens-ramesh-anushre-tainwala.jpg" />
+    <Content Include="Content\work\images\video-thums\womens-rana-and-roshni-kapoor.jpg" />
+    <Content Include="Content\work\images\video-thums\womens-sam-and-lara-balsara.jpg" />
+    <Content Include="Content\work\images\video-thums\womens-subhash-and-meghna-ghai.jpg" />
+    <Content Include="Content\work\images\we.jpg" />
+    <Content Include="Content\work\images\womens-twitter-tweets-1.jpg" />
+    <Content Include="Content\work\images\womens-twitter-tweets-2.jpg" />
+    <Content Include="Content\work\images\womens-twitter-tweets-3.jpg" />
+    <Content Include="Content\work\images\work.jpg" />
+    <Content Include="Content\work\images\youtube-c-panel.png" />
+    <Content Include="Content\work\images\youtube.png" />
+    <Content Include="Content\work\js\bundle.js" />
+    <Content Include="Content\work\js\functions---.js" />
+    <Content Include="Content\work\js\functions.js" />
+    <Content Include="Content\work\js\jquery-2.2.4.min.js" />
+    <Content Include="Content\work\js\jquery-3.1.1.min.js" />
+    <Content Include="Content\work\js\text-animation.js" />
+    <Content Include="Content\work\media\brickex-desktop.mp4" />
+    <Content Include="Content\work\media\brickex-mob.mp4" />
+    <Content Include="Content\work\media\insta-fight.mp4" />
+    <Content Include="Content\work\media\piramal-desktop.mp4" />
+    <Content Include="Content\work\media\piramal-mobile.mp4" />
+    <Content Include="Content\work\media\socailMediavideo1.jpg" />
+    <Content Include="Content\work\media\socailMediavideo1.mp4" />
+    <Content Include="Content\work\media\socailMediavideo2.jpg" />
+    <Content Include="Content\work\media\socailMediavideo2.mp4" />
+    <Content Include="Content\work\media\socailMediavideo3.jpg" />
+    <Content Include="Content\work\media\socailMediavideo3.mp4" />
+    <Content Include="Content\work\media\socailMediavideo4.jpg" />
+    <Content Include="Content\work\media\socailMediavideo4.mp4" />
+    <Content Include="Content\work\media\socailMediavideo5.jpg" />
+    <Content Include="Content\work\media\socailMediavideo5.mp4" />
+    <Content Include="Content\work\media\socailMediavideo6.jpg" />
+    <Content Include="Content\work\media\socailMediavideo6.mp4" />
+    <Content Include="Content\work\media\sparkt-office.jpg" />
+    <Content Include="Content\work\media\sparkt-office.mp4" />
+    <Content Include="Content\work\media\sparkt-office.webm" />
+    <Content Include="Content\work\media\textomoji.mp4" />
+    <Content Include="Content\work\media\usports-desktop.mp4" />
+    <Content Include="Content\work\media\usports-mobile.mp4" />
+    <Content Include="Content\work\media\usports-scratch.mp4" />
+    <Content Include="Content\work\plugins\hover3d\js\jquery.hover3d.min.js" />
+    <Content Include="Content\work\plugins\lightgallery\css\lg-fb-comment-box.css" />
+    <Content Include="Content\work\plugins\lightgallery\css\lg-fb-comment-box.min.css" />
+    <Content Include="Content\work\plugins\lightgallery\css\lg-transitions.css" />
+    <Content Include="Content\work\plugins\lightgallery\css\lg-transitions.min.css" />
+    <Content Include="Content\work\plugins\lightgallery\css\lightgallery.css" />
+    <Content Include="Content\work\plugins\lightgallery\css\lightgallery.min.css" />
+    <Content Include="Content\work\plugins\lightgallery\fonts\lg.svg" />
+    <Content Include="Content\work\plugins\lightgallery\img\loading.gif" />
+    <Content Include="Content\work\plugins\lightgallery\img\video-play.png" />
+    <Content Include="Content\work\plugins\lightgallery\img\vimeo-play.png" />
+    <Content Include="Content\work\plugins\lightgallery\img\youtube-play.png" />
+    <Content Include="Content\work\plugins\lightgallery\js\lightgallery-all.js" />
+    <Content Include="Content\work\plugins\lightgallery\js\lightgallery-all.min.js" />
+    <Content Include="Content\work\plugins\lightgallery\js\lightgallery.js" />
+    <Content Include="Content\work\plugins\lightgallery\js\lightgallery.min.js" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\airplay.min.css" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\airplay.png" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\airplay.svg" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\mediaelementplayer-legacy.css" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\mediaelementplayer-legacy.min.css" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\mediaelementplayer.css" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\mejs-controls.png" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\mejs-controls.svg" />
+    <Content Include="Content\work\plugins\mediaelementplayer\js\airplay.min.js" />
+    <Content Include="Content\work\plugins\mediaelementplayer\js\mediaelement-and-player.min.js" />
+    <Content Include="Content\work\plugins\mediaelementplayer\js\mediaelementplayer.min.css" />
+    <Content Include="Content\work\plugins\scrollmagic\js\functions.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\jquery-3.1.1.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\easing\EasePack.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\jquery.gsap.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\AttrPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\BezierPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\ColorPropsPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\CSSPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\CSSRulePlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\DirectionalRotationPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\EaselPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\EndArrayPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\KineticPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\RaphaelPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\RoundPropsPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\ScrollToPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\plugins\TextPlugin.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\TimelineLite.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\TimelineMax.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\TweenLite.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\TweenMax.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\utils\Draggable.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\highlight.pack.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\iscroll-probe.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\jquery.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\modernizr.custom.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\velocity.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\pinfunctions.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\plugins\animation.gsap.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\plugins\animation.velocity.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\plugins\debug.addIndicators.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\plugins\jquery.ScrollMagic.min.js" />
+    <Content Include="Content\work\plugins\scrollmagic\js\ScrollMagic.min.js" />
+    <Content Include="Content\work\plugins\slick\css\ajax-loader.gif" />
+    <Content Include="Content\work\plugins\slick\css\slick-theme.css" />
+    <Content Include="Content\work\plugins\slick\css\slick.css" />
+    <Content Include="Content\work\plugins\slick\js\slick.min.js" />
+    <Content Include="Content\work\plugins\t-scroll-master\css\t-scroll.min.css" />
+    <Content Include="Content\work\plugins\t-scroll-master\js\t-scroll.min.js" />
+    <Content Include="Content\work\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-light.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-noir.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-punk.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-shadow.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\tooltipster.bundle.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\tooltipster.main.css" />
+    <Content Include="Content\work\plugins\tooltipster\css\tooltipster.main.min.css" />
+    <Content Include="Content\work\plugins\tooltipster\js\plugins\tooltipster\SVG\tooltipster-SVG.js" />
+    <Content Include="Content\work\plugins\tooltipster\js\plugins\tooltipster\SVG\tooltipster-SVG.min.js" />
+    <Content Include="Content\work\plugins\tooltipster\js\tooltipster.bundle.js" />
+    <Content Include="Content\work\plugins\tooltipster\js\tooltipster.bundle.min.js" />
+    <Content Include="Content\work\plugins\tooltipster\js\tooltipster.main.js" />
+    <Content Include="Content\work\plugins\tooltipster\js\tooltipster.main.min.js" />
+    <Content Include="Content\work\plugins\waterwheelCarousel\js\jquery.waterwheelCarousel.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\fonts\.DS_Store" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="Content\css\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="Content\images\favicon\.DS_Store" />
+    <Content Include="Content\images\favicon\._.DS_Store" />
+    <Content Include="Content\images\favicon\._manifest.json" />
+    <Content Include="Content\images\favicon\manifest.json" />
+    <Content Include="Content\plugins\backgroundVideo\.DS_Store" />
+    <Content Include="Content\plugins\flow-flow\.DS_Store" />
+    <Content Include="Content\plugins\flow-flow\assets\.DS_Store" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\ff-icon.eot" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\ff-icon.ttf" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\ff-icon.woff" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\flaticon.eot" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\flaticon.ttf" />
+    <Content Include="Content\plugins\flow-flow\assets\fonts\flaticon.woff" />
+    <Content Include="Content\plugins\flow-flow\css\admin-icon.css.map" />
+    <Content Include="Content\plugins\flow-flow\css\admin.css.map" />
+    <Content Include="Content\plugins\flow-flow\css\jquery-colorpickersliders.css.map" />
+    <Content Include="Content\plugins\flow-flow\css\public.css.map" />
+    <Content Include="Content\plugins\flow-flow\includes\.DS_Store" />
+    <Content Include="Content\plugins\flow-flow\includes\db\.DS_Store" />
+    <Content Include="Content\plugins\flow-flow\js\.DS_Store" />
+    <Content Include="Content\plugins\flow-flow\js\zeroclipboard\ZeroClipboard.Core.min.map" />
+    <Content Include="Content\plugins\flow-flow\js\zeroclipboard\ZeroClipboard.min.map" />
+    <Content Include="Content\plugins\hover3d\.DS_Store" />
+    <Content Include="Content\plugins\intro-page\.DS_Store" />
+    <Content Include="Content\plugins\intro-page\._.DS_Store" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\.DS_Store" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\._.DS_Store" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\js\.DS_Store" />
+    <Content Include="Content\plugins\malihu-custom-scrollbar\js\._.DS_Store" />
+    <Content Include="Content\plugins\malihu-pagescroll\.DS_Store" />
+    <Content Include="Content\plugins\materialize\.DS_Store" />
+    <Content Include="Content\plugins\materialize\css\.DS_Store" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="Content\plugins\materialize\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="Content\plugins\materialize\js\.DS_Store" />
+    <Content Include="Content\plugins\mediaelementplayer\.DS_Store" />
+    <Content Include="Content\plugins\mediaelementplayer\css\.DS_Store" />
+    <Content Include="Content\plugins\scrollmagic\.DS_Store" />
+    <Content Include="Content\plugins\scrollmagic\js\.DS_Store" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\.DS_Store" />
+    <Content Include="Content\plugins\scrollmagic\js\lib\greensock\.DS_Store" />
+    <Content Include="Content\plugins\swiper-4.2.6\.DS_Store" />
+    <Content Include="Content\plugins\swiper-4.2.6\._.DS_Store" />
+    <Content Include="Content\plugins\swiper-4.2.6\._css" />
+    <Content Include="Content\plugins\swiper-4.2.6\._js" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\._swiper.min.js.map" />
+    <Content Include="Content\plugins\swiper-4.2.6\js\swiper.min.js.map" />
+    <Content Include="Content\plugins\tabs-accordion\.DS_Store" />
+    <Content Include="Content\plugins\tabs-accordion\js\.DS_Store" />
+    <Content Include="Content\plugins\tooltipster\css\.DS_Store" />
+    <Content Include="Content\work\css\.DS_Store" />
+    <Content Include="Content\work\css\fonts\.DS_Store" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="Content\work\css\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="Content\work\images\.DS_Store" />
+    <Content Include="Content\work\images\awards\.DS_Store" />
+    <Content Include="Content\work\images\banners\.DS_Store" />
+    <Content Include="Content\work\images\icons\.DS_Store" />
+    <Content Include="Content\work\images\thums\.DS_Store" />
+    <Content Include="Content\work\images\video-thums\.DS_Store" />
+    <Content Include="Content\work\js\.DS_Store" />
+    <Content Include="Content\work\media\.DS_Store" />
+    <Content Include="Content\work\plugins\.DS_Store" />
+    <Content Include="Content\work\plugins\hover3d\.DS_Store" />
+    <Content Include="Content\work\plugins\lightgallery\fonts\lg.eot" />
+    <Content Include="Content\work\plugins\lightgallery\fonts\lg.ttf" />
+    <Content Include="Content\work\plugins\lightgallery\fonts\lg.woff" />
+    <Content Include="Content\work\plugins\mediaelementplayer\.DS_Store" />
+    <Content Include="Content\work\plugins\mediaelementplayer\css\.DS_Store" />
+    <Content Include="Content\work\plugins\scrollmagic\.DS_Store" />
+    <Content Include="Content\work\plugins\scrollmagic\js\.DS_Store" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\.DS_Store" />
+    <Content Include="Content\work\plugins\scrollmagic\js\lib\greensock\.DS_Store" />
+    <Content Include="Content\work\plugins\slick\.DS_Store" />
+    <Content Include="Content\work\plugins\slick\css\.DS_Store" />
+    <Content Include="Content\work\plugins\slick\js\.DS_Store" />
+    <Content Include="Content\work\plugins\t-scroll-master\.DS_Store" />
+    <Content Include="Content\work\plugins\t-scroll-master\css\.DS_Store" />
+    <Content Include="Content\work\plugins\tooltipster\css\.DS_Store" />
+    <Content Include="Content\work\plugins\waterwheelCarousel\.DS_Store" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\User\GoogleCaptcha.js" />
+    <Content Include="Scripts\User\SparktHelper.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\work\Index.cshtml" />
+    <Content Include="Views\work\bql.cshtml" />
+    <Content Include="Views\work\brickex.cshtml" />
+    <Content Include="Views\Shared\_LayoutWork.cshtml" />
+    <Content Include="Views\Shared\_WorkMenu.cshtml" />
+    <Content Include="Views\work\DancePlus2.cshtml" />
+    <Content Include="Views\work\Dhoni.cshtml" />
+    <Content Include="Views\work\HSPubh.cshtml" />
+    <Content Include="Views\work\Ikyawann.cshtml" />
+    <Content Include="Views\work\IndiaRF.cshtml" />
+    <Content Include="Views\work\IshqBaaaz.cshtml" />
+    <Content Include="Views\work\JungleBook.cshtml" />
+    <Content Include="Views\work\Khichdi.cshtml" />
+    <Content Include="Views\work\Kullfi.cshtml" />
+    <Content Include="Views\work\MadeByMom.cshtml" />
+    <Content Include="Views\work\MahindraBadhatYojana.cshtml" />
+    <Content Include="Views\work\MahindraMMF.cshtml" />
+    <Content Include="Views\work\MahindraNfoLaunches.cshtml" />
+    <Content Include="Views\work\MahindraTah.cshtml" />
+    <Content Include="Views\work\MahindraTextMoji.cshtml" />
+    <Content Include="Views\work\MahindraUnnati.cshtml" />
+    <Content Include="Views\work\MGage.cshtml" />
+    <Content Include="Views\work\NachBaliye8.cshtml" />
+    <Content Include="Views\work\NayiSoch.cshtml" />
+    <Content Include="Views\work\OnePlus.cshtml" />
+    <Content Include="Views\work\Phfl.cshtml" />
+    <Content Include="Views\work\PiramalCapital.cshtml" />
+    <Content Include="Views\work\Pow.cshtml" />
+    <Content Include="Views\work\Swp.cshtml" />
+    <Content Include="Views\work\Ted.cshtml" />
+    <Content Include="Views\work\TedGoogleCards.cshtml" />
+    <Content Include="Views\work\Tgilc.cshtml" />
+    <Content Include="Views\work\UCypher.cshtml" />
+    <Content Include="Views\work\UCypherInstafight.cshtml" />
+    <Content Include="Views\work\USports.cshtml" />
+    <Content Include="Views\work\USportsHamburger.cshtml" />
+    <Content Include="Views\work\USportsScratch.cshtml" />
+    <Content Include="Views\work\WomensDay.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\work\plugins\waterwheelCarousel\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sparkt.Utility\Sparkt.Utility.csproj">
+      <Project>{b50ef359-dab5-4918-87cf-83c751aaa96e}</Project>
+      <Name>Sparkt.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54518</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost.sparkt.com</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

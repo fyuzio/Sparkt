@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | mGage";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url(../Content/work/images/banners/m-gage-cover.jpg);">
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1><span style="text-transform:lowercase">m</span>G<span style="text-transform:lowercase">age</span> India</h1>
+                <div class="clear"></div>
+                <span>Powered by insights. Driven by mobile.</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+       
+
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Experience</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel m-gage-bg ">
+                <div class="slider">
+
+
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Revisiting the information architecture to create a responsive website with better comprehensibility </h3>
+                                </div>
+                                <div class="website-operation">
+                                    <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                    <div class="desktop-video">
+
+
+                                        <video id="desktop" poster="~/Content/work/images/m-gage-desktop.jpg" style="max-width: 100%;" preload="none" controls="False" autoplay playsinline webkit-playsinline>
+                                            <!--<source  src="media/desktop.mp4" type="video/mp4" >
+                                            <source src="media/desktop.ogg" type="video/ogg" >-->
+                                        </video>
+                                        <script> document.getElementById( "desktop" ).controls = false;
+                                        </script>
+                                    </div>
+                                    <div class="mobile-video">
+                                        <video id="mobile" poster="~/Content/work/images/m-gage-mobile.jpg" style="max-width: 100%;" preload="none" controls="false" autoplay playsinline webkit-playsinline>
+                                            <!--<source  src="media/mobile.mp4" type="video/mp4" >
+                                            <source src="media/mobile.ogg" type="video/ogg" >-->
+                                        </video>
+                                        <script>document.getElementById("mobile").controls = false;
+                                        </script>
+                                    </div>
+
+                                    <a href="https://www.mgageindia.com/" target="_blank" class="view-website">VIEW WEBSITE</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

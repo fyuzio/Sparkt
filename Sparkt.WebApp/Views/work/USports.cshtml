@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | USports";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url(../Content/work/images/banners/usports-cover.jpg);">
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>USports</h1>
+                <div class="clear"></div>
+                <span>A new-age multifaceted sports company</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Experience</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel black-orange-bg ">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Reflecting the raw energy of a future-facing sports company their online presence</h3>
+                                </div>
+                                <div class="website-operation">
+                                    <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                    <div class="desktop-video">
+
+
+                                        <video id="desktop" poster="~/Content/work/images/usports-desktop.jpg" style="max-width: 100%;" preload="none" controls="False" autoplay playsinline webkit-playsinline>
+                                            <source src="media/usports-desktop.mp4" type="video/mp4">
+
+                                        </video>
+                                        <script> document.getElementById( "desktop" ).controls = false;
+                                        </script>
+
+                                    </div>
+                                    <div class="mobile-video">
+                                        <video id="mobile" poster="~/Content/work/images/usports-mobile.jpg" style="max-width: 100%;" preload="none" controls="false" autoplay playsinline webkit-playsinline>
+                                            <source src="~/Content/work/media/usports-mobile.mp4" type="video/mp4">
+                                        </video>
+                                        <script>document.getElementById("mobile").controls = false;
+                                        </script>
+                                    </div>
+
+                                    <a href="http://usports.in/" target="_blank" class="view-website">VIEW WEBSITE</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Showcasing emerging sports, <br>teams and sporting stars in all their glory </h3>
+                                </div>
+                                <div class="project fadeIn" data-t-show="1">
+                                    <div class="project__card">
+                                        <a class="project__image"><img src="~/Content/work/images/usports-creative-asset.png" alt=""></a>
+                                        <!--<div class="project__detail">
+                                          <h2 class="project__title"><a href="#">CREATIVE APPROACH</a></h2>
+                                            <small class="project__category"><a href="#">MAKE YOUR OWN VIRTUAL JERSEY ON A GOOGLE LIGHTBOX BANNER</a></small>
+                                        </div>-->
+                                    </div>
+                                    <a href="http://usports.in/" target="_blank" class="view-website">VIEW WEBSITE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>
+                        The objective of the website re-launch was to make it a one stop hub for all our sports properties. We wanted the user experience to be complete and also cross pollinate sports enthusiasts. Sparkt understood the brief perfectly and built a very simple, easy to browse and viewer friendly platform. <br>U Cypher which was our latest property was visualised beautifully for gamers giving visitors a feel of what international E-Sports is like. Sparkt has done a superb job on the same and the website overall helping us reflect our true identity as a new age sports brand.
+                    </h3>
+                    <span class="quotes-writer">Jason Nath - VP Marketing - USports</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

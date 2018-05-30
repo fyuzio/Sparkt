@@ -1,0 +1,6 @@
+C:\Projects\Sparkt\Sparkt.DataAccess\bin\Debug\Sparkt.DataAccess.dll
+C:\Projects\Sparkt\Sparkt.DataAccess\bin\Debug\Sparkt.DataAccess.pdb
+C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.csprojResolveAssemblyReference.cache
+C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.dll
+C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.pdb

@@ -1,0 +1,2 @@
+C:\Projects\Sparkt\Sparkt.Utility\obj\Debug\Sparkt.Utility.csprojResolveAssemblyReference.cache
+C:\Projects\Sparkt\Sparkt.Utility\obj\Debug\Sparkt.Utility.csproj.CoreCompileInputs.cache

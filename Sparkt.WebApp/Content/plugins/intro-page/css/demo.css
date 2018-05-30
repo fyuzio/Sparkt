@@ -1,0 +1,142 @@
+.content--intro {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #00182e;
+}
+.content__inner {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	-webkit-flex-direction: column;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+.content--intro .content__inner {
+	background: var(--color-content);
+}
+.content--intro h2 {
+	margin: 0;
+}
+.shape-wrap {
+	position: relative;
+	z-index: 10;
+	margin: -5px 0 0 0; /* Hide the gap */
+}
+.shape {
+	height: 100vh;
+	width: 100%;
+	display: block;
+	fill: #00182e;
+}
+.enter, .explore {
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+	font-weight: bold;
+	white-space: pre;
+	color: #FFFFFF;
+	pointer-events: auto;
+	display: inline-block;
+}
+
+.enter:hover, .enter:focus {
+	color: #d9248a;
+}
+.enter span {
+	display: inline-block;
+}
+
+.intro-logo {
+    max-width: 200px;
+    display: inline-block;
+    width: 22%;
+    min-width: 110px;
+}
+.intro-logo img{ width: 100%; vertical-align: top; }
+.intro-nav{display: block; margin: 4rem auto; text-align: center; overflow: hidden; }
+.intro-nav li { display: inline-block; float: left; border-right: 2px solid #fff; }
+.intro-nav li:last-child{ border-right: none; }
+.intro-nav li:nth-child(1){border-right-color:#ff533d; }
+.intro-nav li:nth-child(2){border-right-color:#f7c331; }
+.intro-nav li:nth-child(3){border-right-color:#d9248a; }
+.intro-nav li:nth-child(4){border-right-color:#1c9bd1; }
+.intro-nav li:nth-child(5){border-right-color:#2d926b; }
+
+.intro-nav li a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 16px;
+    height: 24px;
+    line-height: 24px;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	transition: all ease 0.4s;
+}
+
+.intro-nav li a:hover{ color: #ff533d; }
+
+
+@media screen and (max-width: 1600px) {
+	
+.intro-logo {
+    width: 20%;
+}	
+.intro-nav li a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 12px;
+    height: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.intro-nav {
+	margin: 3rem auto; }	
+	
+.enter, .explore {
+    font-size: 16px;
+	letter-spacing: 1px;}	
+	
+}
+
+@media screen and (max-width: 863px) {
+.frame {
+	z-index: 1000;
+	display: block;
+	padding: 0.85em 0;
+}
+.demos {
+	font-size: 0.85em;
+	padding: 0 0.25em;
+}
+.intro-nav li a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 10px;
+    height: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.intro-nav li{ float: none; margin-bottom: 8px; }
+	
+}
+
+
+

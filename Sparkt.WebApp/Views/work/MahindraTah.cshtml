@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Kar Bachat Yojana";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/banners/mahindra-tah-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/6je1hqd0-qs" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/mahindra-tah-cover.jpg);"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Kar Bachat Yojana</h1>
+                <div class="clear"></div>
+                <span>Igniting a national debate on ‘Taxes Acche Hain’ ahead of Budget 2017</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+
+        <div class="awards-wrap">
+            <ul>
+                <li class="tooltip" title="DIGIXX: Insights & Research - Bronze"><img src="~/Content/work/images/awards/digx-bronze.png" class="responsive-img" alt="" /> </li>
+
+            </ul>
+        </div>
+       
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel youtube-bg ">
+                <div class="slider">
+
+
+                    <div>
+                        <div class="creative-assets mahindra-bg">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>TRIGGERING THE CONVERSATION ON TWITTER AND AGGREGATING POLARIZED OPINIONS ON A MICROSITE</h3>
+                                </div>
+                                <div class="website-operation">
+                                    <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                    <div class="desktop-video">
+
+
+                                        <video id="desktop" poster="~/Content/work/images/mahindra-tah-desktop.jpg" style="max-width: 100%;" preload="none" controls="False" autoplay playsinline webkit-playsinline>
+                                            <!--<source  src="media/desktop.mp4" type="video/mp4" >
+                                            <source src="media/desktop.ogg" type="video/ogg" >-->
+                                        </video>
+                                        <script> document.getElementById( "desktop" ).controls = false;
+                                        </script>
+                                    </div>
+                                    <div class="mobile-video">
+                                        <video id="mobile" poster="~/Content/work/images/mahindra-tah-mobile.jpg" style="max-width: 100%;" preload="none" controls="false" autoplay playsinline webkit-playsinline>
+                                            <!--<source  src="media/mobile.mp4" type="video/mp4" >
+                                            <source src="media/mobile.ogg" type="video/ogg" >-->
+                                        </video>
+                                        <script>document.getElementById("mobile").controls = false;
+                                        </script>
+                                    </div>
+
+                                    <!--<a href="#" class="view-website" >VIEW WEBSITE</a>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Results</h2>
+        </div>
+        <div class="container bottom-padding-none">
+            <div class="result-wrapp">
+                <ul class="fadeUp t-infinity">
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">IMPRESSIONS</span> <span class="result-points">1.06</span> <span class="result">MILLION</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">TWEETS</span> <span class="result-points">4581</span> <span class="result">Thousand</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">WEBSITE VISITS</span> <span class="result-points">4.7x</span> <span class="result">INCREASE</span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">QUALIFIED LEADS</span> <span class="result-points">3x</span> <span class="result">INCREASE</span> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>Two days before the Union budget we delivered a counter intuitive statement on Twitter that helped us cut through all the existing noise during the JFM and truly deliver relevant eyeballs for our tax-saving fund Kar Bachat Yojana.</h3>
+                    <span class="quotes-writer">Mr. Ashutosh Bishnoi : MD & CEO Mahindra Mutual Fund</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

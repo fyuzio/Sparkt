@@ -1,0 +1,5 @@
+C:\Projects\Sparkt\Sparkt.Entities\bin\Debug\Sparkt.Entities.dll
+C:\Projects\Sparkt\Sparkt.Entities\bin\Debug\Sparkt.Entities.pdb
+C:\Projects\Sparkt\Sparkt.Entities\obj\Debug\Sparkt.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\Sparkt\Sparkt.Entities\obj\Debug\Sparkt.Entities.dll
+C:\Projects\Sparkt\Sparkt.Entities\obj\Debug\Sparkt.Entities.pdb

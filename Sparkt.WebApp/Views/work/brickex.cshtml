@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "'Sparkt Work | Brickex'";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url(../Content/work/images/banners/brickex-cover.jpg);">
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                   <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Brickex</h1>
+                <div class="clear"></div>
+                <span>India’s leading B2B platform providing real estate and financial services</span>
+            </div>
+            @Html.Partial("_WorkMenu");
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Experience</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel piramal-bg ">
+                <div class="slider">
+
+
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>
+                                        A PLATFORM CONNECTING THE PAN-INDIAN REAL-ESTATE COMMUNITY <br>AND THE CONSUMER WITH A SEAMLESS EXPERIENCE
+                                    </h3>
+                                </div>
+                                <div class="website-operation">
+                                    <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                    <div class="desktop-video">
+
+
+                                        <video id="desktop" poster="~/Content/work/images/brickex-desktop.jpg" style="max-width: 100%;" preload="none" controls="False" autoplay loop playsinline webkit-playsinline>
+                                            <source src="~/Content/work/media/brickex-desktop.mp4" type="video/mp4">
+
+                                        </video>
+                                        <script> document.getElementById( "desktop" ).controls = false;
+                                        </script>
+                                    </div>
+                                    <div class="mobile-video">
+                                        <video id="mobile" poster="~/Content/work/images/brickex-mobile.jpg" style="max-width: 100%;" preload="none" controls="false" autoplay loop playsinline webkit-playsinline>
+                                            <source src="~/Content/work/media/brickex-mob.mp4" type="video/mp4">
+
+                                        </video>
+                                        <script>document.getElementById("mobile").controls = false;
+                                        </script>
+                                    </div>
+
+                                    <a href="https://brickex.com" target="_blank" class="view-website">VIEW WEBSITE</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <!-- <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+           <h2>Results</h2>
+         </div>-->
+
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>Coming Soon</h3>
+                    <span class="quotes-writer"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link href="~/Content/work/css/style.css" rel="stylesheet" />
+</main>
+
