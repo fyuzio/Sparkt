@@ -40,7 +40,7 @@ namespace Sparkt.WebApp.Controllers
         //    return View();
         //}
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         [Route("contact")]
         public ActionResult Contact(ContactUsViewModel viewModel)
         {
