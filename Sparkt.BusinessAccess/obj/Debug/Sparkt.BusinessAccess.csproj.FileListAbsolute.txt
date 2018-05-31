@@ -4,3 +4,13 @@ C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.csprojR
 C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.csproj.CoreCompileInputs.cache
 C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.dll
 C:\Projects\Sparkt\Sparkt.BusinessAccess\obj\Debug\Sparkt.BusinessAccess.pdb
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.BusinessAccess.dll.config
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.DataAccess.dll
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.Entities.dll
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.Utility.dll
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Dapper.dll
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.DataAccess.pdb
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.Entities.pdb
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.Utility.pdb
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Sparkt.Utility.dll.config
+C:\Projects\Sparkt\Sparkt.BusinessAccess\bin\Debug\Dapper.xml

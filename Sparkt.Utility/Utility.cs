@@ -65,38 +65,38 @@ namespace Sparkt.Utility
 			return response;
 		}
 
-		public static void SendMailViaApi(string emailAddress, string emailSubject, string emailTemplateString)
-		{
-			string statusCode = string.Empty;
-			try
-			{
-				string smtpEnvironmentKey = ConfigurationManager.AppSettings["SMTPEnvironmentKey"].ToString();
-				string sendGridApiKey = ConfigurationManager.AppSettings["SendGridApiKey"].ToString();
-				string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
-				string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
-				var apiKey = Environment.GetEnvironmentVariable(smtpEnvironmentKey);
-				var client = new SendGridClient(sendGridApiKey);
+		//public static void SendMailViaApi(string emailAddress, string emailSubject, string emailTemplateString)
+		//{
+		//	string statusCode = string.Empty;
+		//	try
+		//	{
+		//		string smtpEnvironmentKey = ConfigurationManager.AppSettings["SMTPEnvironmentKey"].ToString();
+		//		string sendGridApiKey = ConfigurationManager.AppSettings["SendGridApiKey"].ToString();
+		//		string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
+		//		string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
+		//		var apiKey = Environment.GetEnvironmentVariable(smtpEnvironmentKey);
+		//		var client = new SendGridClient(sendGridApiKey);
 
 			
-				var from = new EmailAddress(mailFrom, displayName);			
-				var to = new EmailAddress(emailAddress, null);				
-				var msg = MailHelper.CreateSingleEmail(from, to, emailSubject, "", emailTemplateString);
-				var response = client.SendEmailAsync(msg);
-				//statusCode = response.StatusCode.ToString();
-			}
-			catch (Exception ex)
-			{
-				throw ex;
-			}			
-		}
+		//		var from = new EmailAddress(mailFrom, displayName);			
+		//		var to = new EmailAddress(emailAddress, null);				
+		//		var msg = MailHelper.CreateSingleEmail(from, to, emailSubject, "", emailTemplateString);
+		//		var response = client.SendEmailAsync(msg);
+		//		//statusCode = response.StatusCode.ToString();
+		//	}
+		//	catch (Exception ex)
+		//	{
+		//		throw ex;
+		//	}			
+		//}
 
-		public static Task SendMail(string emailAddress, string emailSubject, string emailTemplateString)
-		{
-			return Task.Run(() =>
-			{
-				SendMailViaApi(emailAddress, emailSubject, emailTemplateString);
-			});
-		}
+		//public static Task SendMail(string emailAddress, string emailSubject, string emailTemplateString)
+		//{
+		//	return Task.Run(() =>
+		//	{
+		//		SendMailViaApi(emailAddress, emailSubject, emailTemplateString);
+		//	});
+		//}
 
 
         public static T ParseEnum<T>(string value, T defaultValue) where T : struct
@@ -116,35 +116,35 @@ namespace Sparkt.Utility
             }
         }
 
-        public static async Task SendMailViaApiAsync(string [] emailAddress, string emailSubject, string emailTemplateString)
-        {
-            string statusCode = string.Empty;
-            try
-            {
-                //string smtpEnvironmentKey = ConfigurationManager.AppSettings["SMTPEnvironmentKey"].ToString();
-                string sendGridApiKey = ConfigurationManager.AppSettings["SendGridApiKey"].ToString();
-                string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
-                string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
-                var apiKey = Environment.GetEnvironmentVariable("SendGridKey", EnvironmentVariableTarget.Machine);
-                var client = new SendGridClient(sendGridApiKey);
+        //public static async Task SendMailViaApiAsync(string [] emailAddress, string emailSubject, string emailTemplateString)
+        //{
+        //    string statusCode = string.Empty;
+        //    try
+        //    {
+        //        //string smtpEnvironmentKey = ConfigurationManager.AppSettings["SMTPEnvironmentKey"].ToString();
+        //        string sendGridApiKey = ConfigurationManager.AppSettings["SendGridApiKey"].ToString();
+        //        string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
+        //        string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
+        //        var apiKey = Environment.GetEnvironmentVariable("SendGridKey", EnvironmentVariableTarget.Machine);
+        //        var client = new SendGridClient(sendGridApiKey);
 
 
-                var from = new EmailAddress(mailFrom, displayName);
-                var emailIds = new List<EmailAddress>();
-                foreach (var item in emailAddress)
-                {
-                    emailIds.Add(new EmailAddress(item, null));
-                }
+        //        var from = new EmailAddress(mailFrom, displayName);
+        //        var emailIds = new List<EmailAddress>();
+        //        foreach (var item in emailAddress)
+        //        {
+        //            emailIds.Add(new EmailAddress(item, null));
+        //        }
 
-                var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, emailIds, emailSubject, "", emailTemplateString);
-                var response = await client.SendEmailAsync(msg);
-                //statusCode = response.StatusCode.ToString();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //        var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, emailIds, emailSubject, "", emailTemplateString);
+        //        var response = await client.SendEmailAsync(msg);
+        //        //statusCode = response.StatusCode.ToString();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
         public static DataTable ToDataTable<T>(List<T> items)
         {
@@ -200,51 +200,51 @@ namespace Sparkt.Utility
             value.Replace("\"", "\"\""), "\"");
         }
 
-        public static async Task SendMailViaApiWithAttachments(string [] emailAddress, string emailSubject, string emailTemplateString, List<byte[]> listattach)
-        {
-            string statusCode = string.Empty;
-            try
-            {
-                //string smtpEnvironmentKey = ConfigurationManager.AppSettings["SMTPEnvironmentKey"].ToString();
-                string sendGridApiKey = ConfigurationManager.AppSettings["SendGridApiKey"].ToString();
-                string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
-                string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
-                var apiKey = Environment.GetEnvironmentVariable("SendGridKey", EnvironmentVariableTarget.Machine);
-                var client = new SendGridClient(sendGridApiKey);
+        //public static async Task SendMailViaApiWithAttachments(string [] emailAddress, string emailSubject, string emailTemplateString, List<byte[]> listattach)
+        //{
+        //    string statusCode = string.Empty;
+        //    try
+        //    {
+        //        //string smtpEnvironmentKey = ConfigurationManager.AppSettings["SMTPEnvironmentKey"].ToString();
+        //        string sendGridApiKey = ConfigurationManager.AppSettings["SendGridApiKey"].ToString();
+        //        string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
+        //        string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
+        //        var apiKey = Environment.GetEnvironmentVariable("SendGridKey", EnvironmentVariableTarget.Machine);
+        //        var client = new SendGridClient(sendGridApiKey);
 
 
-                var from = new EmailAddress(mailFrom, displayName);
-                var emailIds = new List<EmailAddress>();
-                foreach (var item in emailAddress)
-                {
-                    emailIds.Add(new EmailAddress(item, null));
-                }
+        //        var from = new EmailAddress(mailFrom, displayName);
+        //        var emailIds = new List<EmailAddress>();
+        //        foreach (var item in emailAddress)
+        //        {
+        //            emailIds.Add(new EmailAddress(item, null));
+        //        }
 
-                var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, emailIds, emailSubject, "", emailTemplateString);
-                List<SendGrid.Helpers.Mail.Attachment> listattachment = new List<SendGrid.Helpers.Mail.Attachment>();
-                if(listattach!=null)
-                {
-                    foreach (byte[] attach in listattach)
-                    {
-                        string fileContentsAsBase64 = Convert.ToBase64String(attach);
+        //        var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, emailIds, emailSubject, "", emailTemplateString);
+        //        List<SendGrid.Helpers.Mail.Attachment> listattachment = new List<SendGrid.Helpers.Mail.Attachment>();
+        //        if(listattach!=null)
+        //        {
+        //            foreach (byte[] attach in listattach)
+        //            {
+        //                string fileContentsAsBase64 = Convert.ToBase64String(attach);
 
-                        var attachment = new SendGrid.Helpers.Mail.Attachment
-                        {
-                            Filename = "FailedLeads.csv",
-                            Type = "txt/csv",
-                            Content = fileContentsAsBase64
-                        };
-                        listattachment.Add(attachment);
-                    }
-                    msg.AddAttachments(listattachment);
-                }
-                var response = await client.SendEmailAsync(msg);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        //                var attachment = new SendGrid.Helpers.Mail.Attachment
+        //                {
+        //                    Filename = "FailedLeads.csv",
+        //                    Type = "txt/csv",
+        //                    Content = fileContentsAsBase64
+        //                };
+        //                listattachment.Add(attachment);
+        //            }
+        //            msg.AddAttachments(listattachment);
+        //        }
+        //        var response = await client.SendEmailAsync(msg);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
 
     }
 }

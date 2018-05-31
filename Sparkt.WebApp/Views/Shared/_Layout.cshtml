@@ -201,6 +201,20 @@
                 </li>
             </ul>
         </div>
+
+        <div id="divCommonMessage" class="modal thank-u-modal">
+            <div class="modal-content  ">
+                <figure>
+                    <span class="icon"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></i></span>
+                    <figcaption>
+                        @*<span class="title">Alert!</span>*@
+                        <p id="pMessage"></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnCommonMessageClose">X</a>
+        </div>
+
         <div class="footer-band">
             <div class="social-links">
                 <ul>
@@ -221,7 +235,7 @@
     @RenderSection("scripts", required: false)
     <!--  Scripts-->
 
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/intro-page/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/intro-page/js/charming.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/intro-page/js/anime.min.js"></script>
@@ -239,6 +253,8 @@
     <script type="text/javascript" src="~/Content/plugins/scrollmagic/js/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/swiper-4.2.6/js/swiper.min.js"></script>
     <script type="text/javascript" src="~/Content/js/functions.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/User/UserManager.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {

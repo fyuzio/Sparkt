@@ -40,3 +40,43 @@
     }
     return false;
 }
+
+
+function VerifyReCaptcha(submittedFrom, captchaResponse) {
+    //var captchaResponse= grecaptcha.getResponse();
+    $.ajax({
+        type: "POST",
+        url: "/VerifyGResponse",
+        dataType: 'json',
+        contentType: 'application/json',
+        processData: false,
+        data: JSON.stringify({ gresponse: captchaResponse }),
+        success: function (response) {
+            grecaptcha.reset();
+            if (response.Status == true) {
+                //alert("Captcha Verified.")
+                if (submittedFrom == submitType.Connector) {
+                    CreateConnector();
+                }
+                else if (submittedFrom == submitType.Contact) {
+                    ContactSubmitClick();
+                }
+                else {
+                    //CheckPincode($("#txtHPinCode").val(), submittedFrom);
+                    SetSaveType(submittedFrom);
+                }
+            }
+            else if (response.Status == false) {
+                //alert("Captcha not Submitted.");
+                $("#pMessage").html("Captcha not Submitted.");
+                $("#divCommonMessage").modal("open");
+            }
+            //var url = $("#RedirectTo").val();
+            //location.href = url;
+        },
+        error: function (error) {
+            alert(error);
+        }
+
+    });
+}

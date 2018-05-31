@@ -4,3 +4,7 @@ C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.csprojResolveAs
 C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.csproj.CoreCompileInputs.cache
 C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.dll
 C:\Projects\Sparkt\Sparkt.DataAccess\obj\Debug\Sparkt.DataAccess.pdb
+C:\Projects\Sparkt\Sparkt.DataAccess\bin\Debug\Dapper.dll
+C:\Projects\Sparkt\Sparkt.DataAccess\bin\Debug\Sparkt.Entities.dll
+C:\Projects\Sparkt\Sparkt.DataAccess\bin\Debug\Sparkt.Entities.pdb
+C:\Projects\Sparkt\Sparkt.DataAccess\bin\Debug\Dapper.xml

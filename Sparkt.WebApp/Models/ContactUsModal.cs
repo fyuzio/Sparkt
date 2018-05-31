@@ -6,9 +6,9 @@ using System.Web;
 
 namespace Sparkt.WebApp.Models
 {
-    public class ContactUsModal
+    public class ContactUsViewModel
     {
-        public int Id { get; set; }
+        public int SparktId { get; set; }
 
         [Required(ErrorMessage = "Please enter your Name")]
         [MaxLength(50, ErrorMessage = "Name must be atmsot 50 characters long")]

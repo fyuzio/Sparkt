@@ -66,3 +66,14 @@ C:\Projects\Sparkt\Sparkt.WebApp\obj\Debug\Sparkt.WebApp.csprojResolveAssemblyRe
 C:\Projects\Sparkt\Sparkt.WebApp\obj\Debug\Sparkt.WebApp.csproj.CoreCompileInputs.cache
 C:\Projects\Sparkt\Sparkt.WebApp\obj\Debug\Sparkt.WebApp.dll
 C:\Projects\Sparkt\Sparkt.WebApp\obj\Debug\Sparkt.WebApp.pdb
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.Utility.dll
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.Utility.pdb
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.Utility.dll.config
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.Entities.pdb
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.BusinessAccess.dll
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.DataAccess.dll
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Dapper.dll
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.BusinessAccess.pdb
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.BusinessAccess.dll.config
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Sparkt.DataAccess.pdb
+C:\Projects\Sparkt\Sparkt.WebApp\bin\Dapper.xml
