@@ -52,46 +52,37 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/css/reset.css" />
-    <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/intro-page/css/demo.css" />
+    @*<link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/intro-page/css/demo.css" />*@
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/materialize/css/materialize.min.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/tabs-accordion/css/easy-responsive-tabs.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/css/hover-min.css" />
-    <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/tooltipster/css/tooltipster.bundle.min.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/mediaelementplayer/css/mediaelementplayer.css" />
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/mediaelementplayer/css/airplay.min.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/swiper-4.2.6/css/swiper.min.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/malihu-custom-scrollbar/css/jquery.mCustomScrollbar.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/css/common.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/css/hompage.css" />
-    <script src="~/Scripts/User/SparktHelper.js"></script>
-
+  
     <script src='https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit' async defer></script>
     <script src="~/Scripts/User/GoogleCaptcha.js"></script>
 </head>
 <body>
     @if (ViewBag.Page == "Home")
     {
-        <div class=" content--intro">
+        <div class="content--intro">
             <div class="content__inner">
-
                 <div class="intro-blk">
                     <span class="intro-logo"><img src="~/Content/images/spakt.png" alt="sparkt"></span>
                     <ul class="intro-nav">
-                        <li><a href="#"><span>Consulting</span></a></li>
-                        <li><a href="#"><span>Communication</span></a></li>
-                        <li><a href="#"><span>Content</span></a></li>
-                        <li><a href="#"><span>Platforms</span></a></li>
-                        <li><a href="#"><span>Experiences</span></a></li>
-                        <li><a href="#"><span>Marketing Sciences</span></a></li>
+                        <li><a href="#offering"><span>Consulting</span></a></li>
+                        <li><a href="#offering"><span>Communication</span></a></li>
+                        <li><a href="#offering"><span>Content</span></a></li>
+                        <li><a href="#offering"><span>Platforms</span></a></li>
+                        <li><a href="#offering"><span>Experiences</span></a></li>
+                        <li><a href="#offering"><span>Marketing Sciences</span></a></li>
                     </ul>
                 </div>
-
                 <a href="#" class="enter">Explore Sparkt</a>
-
-            </div>
-
-            <div class="shape-wrap">
-                <svg class="shape" width="100%" height="100vh" fill="red" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
-                    <path d="M -30.45,-43.86 -30.45,0 53.8,0 53.8,0 179.5,0 179.5,0 193.3,0 193.3,0 253.1,0 253.1,0 276.1,0 276.1,0 320.6,0 320.6,0 406.5,0 406.5,0 435.6,0 435.6,0 477,0 477,0 527.6,0 527.6,0 553.7,0 553.7,0 592,0 592,0 742.3,0 742.3,0 762.2,0 762.2,0 776,0 776,0 791.3,0 791.3,0 852.7,0 852.7,0 871.1,0 871.1,0 878.7,0 878.7,0 891,0 891,0 923.2,0 923.2,0 940.1,0 940.1,0 976.9,0 976.9,0 1031,0 1031,0 1041,0 1041,0 1176,0 1176,0 1192,0 1192,0 1210,0 1210,0 1225,0 1225,0 1236,0 1236,0 1248,0 1248,0 1273,0 1273,0 1291,0 1291,0 1316,0 1316,0 1337,0 1337,0 1356,0 1356,0 1414,0 1414,0 1432,0 1432,0 1486,0 1486,-43.86 Z" pathdata:id="M -30.45,-57.86 -30.45,442.6 53.8,443.8 53.8,396.3 179.5,396.3 179.5,654.7 193.3,654.7 193.3,589.1 253.1,589.1 253.1,561.6 276.1,561.6 276.1,531.2 320.6,531.2 320.6,238.6 406.5,238.6 406.5,213.9 435.6,213.9 435.6,246.2 477,246.2 477,289.9 527.6,289.9 527.6,263.3 553.7,263.3 553.7,280.4 592,280.4 592,189.2 742.3,189.2 742.3,259.5 762.2,259.5 762.2,103.7 776,103.7 776,77.11 791.3,77.11 791.3,18.21 852.7,18.21 852.7,86.61 871.1,86.61 871.1,231 878.7,240.5 878.7,320.3 891,320.3 891,434.3 923.2,434.3 923.2,145.5 940.1,145.5 940.1,117 976.9,117 976.9,139.8 1031,139.8 1031,284.2 1041,284.2 1041,242.4 1176,242.4 1176,282.3 1192,282.3 1192,641.4 1210,641.4 1210,692.7 1225,692.7 1225,599.6 1236,599.6 1236,527.4 1248,527.4 1248,500.8 1273,500.8 1273,523.6 1291,523.6 1291,652.8 1316,652.8 1316,533.1 1337,533.1 1337,502.7 1356,502.7 1356,523.6 1414,523.6 1414,491.3 1432,491.3 1432,523.6 1486,523.6 1486,-57.86 Z"></path>
-                </svg>
             </div>
         </div>
     }
@@ -118,6 +109,9 @@
                 </li>
                 <li class="main-nav"><a class="hashScroll" href="#clients"><span>Clients</span></a> </li>
                 <li class="main-nav"><a class="hashScroll" href="#work"><span>Work</span></a> </li>
+                <ul class="sub-nav">
+                    <li><a class="hashScroll" href="#showreel"><span>Showreel</span></a></li>
+                </ul>
                 <li class="main-nav"><a class="hashScroll" href="#sparktlive"><span>Sparkt Live</span></a> </li>
                 <li class="main-nav"><a class="hashScroll" href="#contact"><span>Get In Touch</span></a> </li>
             </ul>
@@ -202,6 +196,20 @@
             </ul>
         </div>
 
+        <div id="divThankYouModal" class="modal thank-u-modal">
+            <div class="modal-content  ">
+                <figure>
+                    <span class="icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                    <figcaption>
+                        @*<span class="title">Thank You!</span>*@
+                        <p id="pThankYouMessage"></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnThankyouClose">X</a>
+        </div>
+
+
         <div id="divCommonMessage" class="modal thank-u-modal">
             <div class="modal-content  ">
                 <figure>
@@ -235,16 +243,18 @@
     @RenderSection("scripts", required: false)
     <!--  Scripts-->
 
-    <script type="text/javascript" src="~/Content/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/intro-page/js/imagesloaded.pkgd.min.js"></script>
+    @*<script type="text/javascript" src="~/Content/js/jquery-3.1.1.min.js"></script>*@
+    @*<script type="text/javascript" src="~/Content/plugins/intro-page/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/intro-page/js/charming.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/intro-page/js/anime.min.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/intro-page/js/demo1.js"></script>
+    <script type="text/javascript" src="~/Content/plugins/intro-page/js/demo1.js"></script>*@
     <script type="text/javascript" src="~/Content/plugins/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/malihu-pagescroll/js/jquery.malihu.PageScroll2id.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/malihu-custom-scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/tabs-accordion/js/easy-responsive-tabs.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/tooltipster/js/tooltipster.bundle.js"></script>
+    <script type="text/javascript" src="~/Content/plugins/mediaelementplayer/js/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="~/Content/plugins/mediaelementplayer/js/airplay.min.js"></script> 
+    @*<script type="text/javascript" src="~/Content/plugins/tooltipster/js/tooltipster.bundle.js"></script>*@
     <script type="text/javascript" src="~/Content/js/text-animation.js"></script>
     <script type="text/javascript" src="~/Content/plugins/backgroundVideo/js/backgroundVideo.js"></script>
     <script type="text/javascript" src="~/Content/plugins/scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
@@ -253,8 +263,8 @@
     <script type="text/javascript" src="~/Content/plugins/scrollmagic/js/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/swiper-4.2.6/js/swiper.min.js"></script>
     <script type="text/javascript" src="~/Content/js/functions.js"></script>
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/User/UserManager.js"></script>
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+    <script src="~/Scripts/User/SparktHelper.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {

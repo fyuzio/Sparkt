@@ -17,9 +17,12 @@ using System.Reflection;
 namespace Sparkt.Utility
 {
 	public class Utility
-	{
-
-	
+	{	
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="response"></param>
+        /// <returns></returns>
 		public static bool ValidateCaptcha(string response)
 		{
 			//secret that was generated in key value pair  
@@ -29,7 +32,6 @@ namespace Sparkt.Utility
 			JavaScriptSerializer ser = new JavaScriptSerializer();
 			CaptchaResponse captchaResponse = ser.Deserialize<CaptchaResponse>(reply);
 			return Convert.ToBoolean(captchaResponse.Success);
-
 		}
 		
 

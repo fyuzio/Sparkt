@@ -68,6 +68,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("mahindra-mmf")]
         public ActionResult MahindraMMF()
         {
             return View();

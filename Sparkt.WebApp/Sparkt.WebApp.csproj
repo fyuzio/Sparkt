@@ -46,14 +46,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Sparkt.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Sparkt.Entities.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -148,7 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\workController.cs" />
-    <Compile Include="Core\Extensions\ContactUsExtension.cs" />
+    <Compile Include="Core\IoC\BootStrap.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -174,11 +176,13 @@
     <Content Include="Content\images\achievements5.jpg" />
     <Content Include="Content\images\clients\brickex-logo.png" />
     <Content Include="Content\images\clients\editage.png" />
+    <Content Include="Content\images\clients\evolis.png" />
     <Content Include="Content\images\clients\indo-count-logo.png" />
     <Content Include="Content\images\clients\lkp-logo.png" />
     <Content Include="Content\images\clients\m-gage-logo.png" />
     <Content Include="Content\images\clients\mahindra-mf-logo.png" />
     <Content Include="Content\images\clients\one-plus-logo.png" />
+    <Content Include="Content\images\clients\pedder.png" />
     <Content Include="Content\images\clients\phfl-logo.png" />
     <Content Include="Content\images\clients\piramalCapital-logo.png" />
     <Content Include="Content\images\clients\piramalRealty-logo.png" />
@@ -190,8 +194,11 @@
     <Content Include="Content\images\clients\uCypher-logo.png" />
     <Content Include="Content\images\clients\uSports-logo.png" />
     <Content Include="Content\images\clients\your-brand-here.png" />
+    <Content Include="Content\images\communication.png" />
+    <Content Include="Content\images\consulting.png" />
     <Content Include="Content\images\contact-bg.jpg" />
     <Content Include="Content\images\contact.jpg" />
+    <Content Include="Content\images\content.png" />
     <Content Include="Content\images\cultureImg1.jpg" />
     <Content Include="Content\images\cultureImg2.jpg" />
     <Content Include="Content\images\cultureImg3.jpg" />
@@ -200,6 +207,8 @@
     <Content Include="Content\images\cultureImg6.jpg" />
     <Content Include="Content\images\cultureImg7.jpg" />
     <Content Include="Content\images\cultureImg8.jpg" />
+    <Content Include="Content\images\design.png" />
+    <Content Include="Content\images\experiences.png" />
     <Content Include="Content\images\favicon\._android-icon-144x144.png" />
     <Content Include="Content\images\favicon\._android-icon-192x192.png" />
     <Content Include="Content\images\favicon\._android-icon-36x36.png" />
@@ -254,11 +263,14 @@
     <Content Include="Content\images\favicon\ms-icon-70x70.png" />
     <Content Include="Content\images\future.jpg" />
     <Content Include="Content\images\home.jpg" />
+    <Content Include="Content\images\marketing-science.png" />
+    <Content Include="Content\images\media.png" />
     <Content Include="Content\images\spakt.png" />
     <Content Include="Content\images\spaktLogo-text.png" />
     <Content Include="Content\images\spaktLogo.png" />
     <Content Include="Content\images\sparhtLive.jpg" />
     <Content Include="Content\images\sparkt-border.png" />
+    <Content Include="Content\images\sparkt-content-showreel.jpg" />
     <Content Include="Content\images\sparkt-fav.png" />
     <Content Include="Content\images\sqoud-border.png" />
     <Content Include="Content\images\squad\alefiya.png" />
@@ -293,10 +305,14 @@
     <Content Include="Content\images\squad\vrushabh.png" />
     <Content Include="Content\images\squad\waqt-shaikh.png" />
     <Content Include="Content\images\squad\warren-pinto.png" />
+    <Content Include="Content\images\story-of-sparkt.jpg" />
     <Content Include="Content\images\table-shadow.png" />
     <Content Include="Content\images\table-sparkt-office.png" />
     <Content Include="Content\images\tableBg.png" />
+    <Content Include="Content\images\technology.png" />
     <Content Include="Content\images\title-icon.png" />
+    <Content Include="Content\images\u-dream.png" />
+    <Content Include="Content\images\video-size.png" />
     <Content Include="Content\images\we.jpg" />
     <Content Include="Content\images\work.jpg" />
     <Content Include="Content\js\functions.js" />
@@ -1115,6 +1131,7 @@
     <Content Include="Content\work\plugins\t-scroll-master\css\.DS_Store" />
     <Content Include="Content\work\plugins\tooltipster\css\.DS_Store" />
     <Content Include="Content\work\plugins\waterwheelCarousel\.DS_Store" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1185,6 +1202,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\work\plugins\waterwheelCarousel\css\" />
+    <Folder Include="Core\Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -1203,6 +1221,10 @@
     <ProjectReference Include="..\Sparkt.BusinessAccess\Sparkt.BusinessAccess.csproj">
       <Project>{97C26101-BE7E-49B2-BFA7-5DAF3064BDA0}</Project>
       <Name>Sparkt.BusinessAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sparkt.Entities\Sparkt.Entities.csproj">
+      <Project>{4006a23d-2ae9-4511-82c2-7f2bd4406f5f}</Project>
+      <Name>Sparkt.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\Sparkt.Utility\Sparkt.Utility.csproj">
       <Project>{b50ef359-dab5-4918-87cf-83c751aaa96e}</Project>

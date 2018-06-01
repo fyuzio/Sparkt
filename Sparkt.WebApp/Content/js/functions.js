@@ -1,469 +1,310 @@
 $(function () {
+    function a() {
+        setTimeout(function () {
+            $("#button").addClass("onclic"), $("#button").addClass("validate", 450, b)
+        }, 2250)
+    }
 
+    function b() {
+        setTimeout(function () {
+            $("#button").removeClass("validate")
+        }, 1250)
+    }
 
+    function c() {
+        500 < $(window).width() ? $(window).on("load", function () {
+            $(".hashScroll").mPageScroll2id({
+                scrollSpeed: 1800,
+                scrollEasing: "easeInOutQuint",
+                scrollingEasing: "easeOutQuint",
+                pageEndSmoothScroll: !0,
+                autoScrollSpeed: !0,
+                forceSingleHighlight: !0,
+                keepHighlightUntilNext: !0,
+                highlightByNextTarget: !0,
+                appendHash: !0,
+                targetClass: "active-section",
+                highlightClass: "active-menu"
+            })
+        }) : $(window).on("load", function () {
+            $(".hashScroll").mPageScroll2id({
+                scrollSpeed: 1800,
+                offset: 72,
+                scrollEasing: "easeInOutQuint",
+                scrollingEasing: "easeOutQuint",
+                pageEndSmoothScroll: !0,
+                autoScrollSpeed: !0,
+                forceSingleHighlight: !0,
+                keepHighlightUntilNext: !0,
+                highlightByNextTarget: !0,
+                appendHash: !0,
+                targetClass: "active-section",
+                highlightClass: "active-menu"
+            })
+        })
+    }
 
-	$(".hamburger").on('click', function () {
-		$(this).toggleClass("open");
-		$(".main-menu").toggleClass("open");
-		
-		//TweenMax.set(".video-overlay", {opacity: 0.8});
-		
-	});
+    function f() {
+        1200 < $(window).width() && $(".background-video .bg-video").backgroundVideo({
+            $videoWrap: $(".background-video"),
+            $outerWrap: $(window),
+            $window: $(window),
+            minimumVideoWidth: 400,
+            parallax: !0,
+            parallaxOptions: {
+                effect: 1.7
+            },
+            pauseVideoOnViewLoss: !0
+        })
+    }
+    $(".hamburger").on("click", function () {
+        $(this).toggleClass("open"), $(".main-menu").toggleClass("open")
+    }), $(".main-menu > ul > li ").hover(function () {
+        $(this).toggleClass("active-submenu"), $(this).children(".sub-nav").slideToggle()
+    }), $(window).scroll(function () {
+        $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open")
+    }),
 
-	$(".main-menu > ul > li ").hover(function () {
-
-
-		//  alert();
-		$(this).toggleClass("active-submenu");
-		$(this).children(".sub-nav").slideToggle();
-	});
-
-	$(window).scroll(function () {
-		$(".hamburger").removeClass("open");
-		$(".main-menu").removeClass("open");
-	});
-
-
-
-	$('.tooltip')
-		.tooltipster({
-			animation: 'grow',
-			maxWidth: 220,
-			delay: 0,
-			theme: 'tooltipster-punk',
-			//trigger: 'click'
-		});
-
-	$('#contact-tab').tabs({
-		// swipeable:true,
-		responsiveThreshold: true
-
-	});
-	
-	
-	
-	$(window).on("load",function(){
+        $("#contact-tab").tabs({
+            responsiveThreshold: !0
+        }), $(".ring-click").click(function (s) {
+            $(".right-middle").removeClass("go-bottom"), $(".right-middle").removeClass("go-top"), $(".ring-wrapp").removeClass("active").css("opacity", "0.3"), $(".offering-wrapp").addClass("using"), $(this).parents(".ring-wrapp").addClass("active").css("opacity", "1"), s.preventDefault()
+        }), $(".bottom-center-angle .ring-click").click(function (s) {
+            $(".right-middle").addClass("go-bottom"), s.preventDefault()
+        }), $(".top-center-angle .ring-click").click(function (s) {
+            $(".right-middle").addClass("go-top"), s.preventDefault()
+        }), $(document).on("click", function (s) {
+            $(s.target).closest(".ring-click").length || ($(".ring-wrapp").removeClass("active").css("opacity", "1"), $(".offering-wrapp").removeClass("using"), $(".right-middle").removeClass("go-bottom"), $(".right-middle").removeClass("go-top"))
+        }), $(window).on("load", function () {
             $(".scroll-content").mCustomScrollbar({
-				scrollInertia:0,
-				scrollbarPosition: "outside",
-				autoHideScrollbar:true,
-				autoExpandScrollbar:"Enable",
-				theme: "rounded"
-			});
+                scrollInertia: 0,
+                scrollbarPosition: "outside",
+                autoHideScrollbar: !0,
+                autoExpandScrollbar: "Enable",
+                theme: "rounded"
+            })
+        }), $("#button").click(function (s) {
+            $("#button").addClass("onclic", 250, a), s.preventDefault()
         });
 
 
-  $("#button").click(function(e) {
-	  
-    $("#button").addClass("onclic", 250, validate);
-	  
-	  e.preventDefault();
-	 
-	  
-  });
-
-  function validate() {
-    setTimeout(function() {
-      $("#button").addClass("onclic");
-      $("#button").addClass("validate", 450, callback);
-    }, 2250);
-  }
-	
-  function callback() {
-    setTimeout(function() {
-      $("#button").removeClass("validate");
-    }, 1250);
-  }	
-	
-	
-	
-	
-	
-	navHashScroll();
-	$(window).resize(function () {
-
-		navHashScroll();
-
-	});	
-	
-		function navHashScroll() {
-		if ($(window).width() > 500) {
-
-		$(window).on("load", function () {
-		$(".hashScroll").mPageScroll2id({
-			scrollSpeed: 1800,
-			scrollEasing: "easeInOutQuint",
-			scrollingEasing: "easeOutQuint",
-			pageEndSmoothScroll: true,
-			autoScrollSpeed: true,
-			forceSingleHighlight: true,
-			keepHighlightUntilNext: true,
-			highlightByNextTarget: true,
-			appendHash: true,
-			targetClass: "active-section",
-			highlightClass: "active-menu"
-
-		});
-	});
-
-		}else{
-			
-			
-					$(window).on("load", function () {
-		$(".hashScroll").mPageScroll2id({
-			scrollSpeed: 1800,
-			offset:72,
-			scrollEasing: "easeInOutQuint",
-			scrollingEasing: "easeOutQuint",
-			pageEndSmoothScroll: true,
-			autoScrollSpeed: true,
-			forceSingleHighlight: true,
-			keepHighlightUntilNext: true,
-			highlightByNextTarget: true,
-			appendHash: true,
-			targetClass: "active-section",
-			highlightClass: "active-menu"
-
-		});
-	});
-			
-		}
-
-	}
-
-
-	
-
-
-
-	$('select').material_select();
-
-	$('.parallax').parallax();
-
-
-	$('.tabsAccordion').easyResponsiveTabs({
-		type: 'default', //Types: default, vertical, accordion           
-		width: 'auto', //auto or any width like 600px
-		fit: true, // 100% fit in a container
-		closed: 'accordion', // Start closed if in accordion view
-		activate: function (event) { // Callback function if tab is switched
-			var $tab = $(this);
-			var $info = $('#tabInfo');
-			var $name = $('span', $info);
-			$name.text($tab.text());
-			$info.show();
-		}
-	});
-
-
-	function fallback(video) {
-		var img = video.querySelector('img');
-		if (img)
-			video.parentNode.replaceChild(img, video);
-	}
-
-
-	handlenav();
-	$(window).resize(function () {
-
-		handlenav();
-
-	});
-
-	function handlenav() {
-		if ($(window).width() > 1200) {
-
-			$('.background-video .bg-video').backgroundVideo({
-				$videoWrap: $('.background-video'),
-				$outerWrap: $(window),
-				$window: $(window),
-				minimumVideoWidth: 400,
-				// preventContext<a href='https://www.jqueryscript.net/menu/'>Menu</a>: false,
-				parallax: true,
-				parallaxOptions: {
-					effect: 1.7
-				},
-				pauseVideoOnViewLoss: true
-			});
-
-		}
-
-	}
-
-
-
-	$(".enter").click(function () {
-
-		$('.bg-video')[0].play();
-		//alert();
-	});
-
-	
-	
-
-	document.querySelectorAll('.ellipsify').forEach(function (elem) {
-		if (parseFloat(window.getComputedStyle(elem).width) === parseFloat(window.getComputedStyle(elem.parentElement).width)) {
-			elem.setAttribute('title', elem.textContent);
-		}
-	});
-
-	var controller = new ScrollMagic.Controller();
-
-	var parallaxTL = new TimelineMax();
-
-	parallaxTL
-		.from('.video-overlay', 1, {
-			autoAlpha: 0.3,
-			ease: Power0.easeNone
-		}, 1)
-		//.from('.parallax_bg', 2, { y:'-40%', ease:Power0.easeNone}, 0)
-	;
-
-	var parallaxScene = new ScrollMagic.Scene({
-			triggerElement: '.background-video',
-			duration: '100%',
-			triggerHook: 0.5
-		})
-		.setTween(parallaxTL)
-		.addTo(controller);
-
-	//  $(".section")
-	//        .each(function () {
-	//            var fadeScene2 = new ScrollMagic.Scene({
-	//                    triggerElement: this,
-	//                    triggerHook: '0.40',
-	//                    duration: '90%', // animation in-out in viewport area,
-	//                    //	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-	//                })
-	//                .setClassToggle(this, 'in-view')
-	//                //.addIndicators()// showing indicator	
-	//                .addTo(controller);
-	//        });
-
-	$(".white-bg").each(function () {
-		var lightbg = new ScrollMagic.Scene({
-				triggerElement: this,
-				triggerHook: '0.14',
-				duration: '83%', // animation in-out in viewport area,
-				//	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-			})
-			.setClassToggle(".sparkt-logo", 'reverse-logo')
-			.setClassToggle("body", 'light-area')
-			//.addIndicators()// showing indicator	
-			.addTo(controller);
-	});
-
-
-	
-   var mySwiper = new Swiper ('.culture-slider', {
-    // Optional parameters
-       direction: 'vertical',
-	   autoHeight: true, 
-	   hashNavigation: {
-        watchState: true,
-      },
-
-	  speed: 900,
-	  effect: 'cube',
-      grabCursor: false,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: false,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-    
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-  });
-	
-	
-	
-mySwiper.on('slideChange', function () {
-  	SynccarouselData();
-	
-});
-	
-   var SynccarouselData=function(){
-	  var SyncData= $('.culture-slider .swiper-wrapper .swiper-slide').attr('data-hash');
-	   
-	  $('.cultuer-title-nav a').removeClass('active');
-	   $('.cultuer-title-nav a').each(function(){
-		   var DataId=$(this).attr('data-id');
-		  
-		   if(DataId==SyncData)
-			   {
-				   $(this).addClass('active');
-			   }
-	   });
-   }	
-
-   
-  $('.cultuer-title-nav > a').on('click', function(){
-	 
-    $('.cultuer-title-nav > a').removeClass('active');
-	 $(this).addClass('active');
-
-
- });
-   	
-	
-
-   var mySwiper2 = new Swiper ('.culture-inner-slider', {
-
-	 //  slidesPerView: 1,
-	   speed: 1200,
-	    pagination: {
-        el: '.swiper-pagination-v',
-        clickable: true,
-      },
-	   autoHeight: true, 
-	   autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-	  // centeredSlides: true,
-  
-
-  //  loop: true,
-
-  });
-	
-	
-	
-   var accoladesSlider = new Swiper ('.accolades-slider', {
-
-	 //  slidesPerView: 1,
-	   speed: 1200,
-	    pagination: {
-        el: '.swiper-pagination-v',
-        clickable: true,
-      },
-	   autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
-	  // centeredSlides: true,
-       loop: true,
-
-  //  loop: true,
-
-  });
-
-
-
-
-	var parallaxTable = new TimelineMax();
-
-	parallaxTable.from('.sparkt-table > img', 1, {
-		y: '-50%',
-		ease: Power0.easeNone
-	}, 1);
-
-	var parallaxScene = new ScrollMagic.Scene({
-			triggerElement: '#we',
-			duration: '100%',
-			triggerHook: 0.8
-		})
-		.setTween(parallaxTable)
-		.addTo(controller);
-
-
-
-	var parallaxTableShadow = new TimelineMax();
-	parallaxTableShadow.from('.table-shaddow', 1, {
-		autoAlpha: 0,
-		scaleX: 1.5,
-		ease: Power0.easeNone
-	}, 1);
-
-	var parallaxScene = new ScrollMagic.Scene({
-			triggerElement: '#we',
-			duration: '100%',
-			triggerHook: 0.8
-		})
-		.setTween(parallaxTableShadow)
-		.addTo(controller);
-
-
-
-	$(".section-title").each(function () {
-		var pinTitle = new ScrollMagic.Scene({
-				triggerElement: this,
-				triggerHook: 0.03,
-				duration: '140%'
-					//	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-			})
-			.setPin(this, {
-				pushFollowers: true
-			})
-			//	.setClassToggle( this , 'active-section' )
-			.addTo(controller);
-	});
-
-	//$(".section-title").each(function(){
-	//var pinTitleFade = new ScrollMagic.Scene({
-	//		triggerElement: this,
-	//		triggerHook: 0.01,
-	//		duration:'80%'
-	//	//	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-	//	})	
-	//	//.setPin( this , { pushFollowers:true })
-	//	.setClassToggle( this , 'active-section' )
-	//	.addTo(controller);
-	//});	
-
-
-	$(".squad-wrapp figure").each(function () {
-		var ProfileUnderline = new ScrollMagic.Scene({
-				triggerElement: this,
-				triggerHook: 0.7,
-				duration: '100%'
-					//	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-			})
-			//.setPin( this , { pushFollowers:true })
-			.setClassToggle(this, 'underline')
-			.addTo(controller);
-	});
-
-
-
-	var pinIntroScene = new ScrollMagic.Scene({
-			triggerElement: '.work-tab > .resp-tabs-list',
-			triggerHook: .0,
-			//duration:'50%'
-		})
-		.setPin('.work-tab > .resp-tabs-list', {
-			pushFollowers: true
-		})
-		.addTo(controller);
-	
-	
-	
-
-	
-	
-	var headerBg = new TimelineMax();
-
-	headerBg.to('header', 1, { backgroundColor: 'rgba(0,24,45,1)',  boxShadow: "0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)", ease: Power0.easeNone }, 1);
-
-	var parallaxScene = new ScrollMagic.Scene({
-			triggerElement: 'body',
-			duration: '40%',
-			triggerHook: 0.1
-		})
-		.setTween(headerBg)
-		.addTo(controller);
-
-
-
-	
-	
-	
-	
-	
+
+    var i = $(".video-wrapp video").mediaelementplayer({
+        success: function (e) {
+            $(e).bind("play", function () {
+                $.each(i, function (i, o) {
+
+                    //$(".mejs__controls").fadeIn()
+
+                    o !== e && (o.pause()
+
+                    )
+
+                })
+            }), $(e).bind("pause", function () {
+                $.each(i, function (e, i) {
+                    //	alert("Pause");
+                    $(".mejs__overlay-button").removeClass("mejs__overlay-loading-bg-img");
+                })
+            })
+        }
+    });
+
+
+    $(".mejs__overlay-play").click(function () {
+        $(this).children(".mejs__overlay-button").addClass("mejs__overlay-loading-bg-img");
+    });
+
+
+    $(".content__inner a").on("click", function () {
+        //alert("2");
+        $(".content--intro").addClass("open-page");
+
+    });
+
+
+
+
+
+    var g = new Swiper(".showreel-videos", {
+        //effect: "fade",
+        //grabCursor: !0,
+        //loop: !0,
+        //autoHeight: !0,
+        speed: 1500,
+        shortSwipes: false,
+        slideToClickedSlide: true,
+        preventClicksPropagation: false,
+        preventClicks: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    g.on("slideChange", function () {
+
+        $(".video-wrapp video").each(function () {
+            this.player.pause();
+        });
+
+    }),
+
+        c(), $(window).resize(function () {
+            c()
+        }), $("select").material_select(), $(".parallax").parallax(), $(".tabsAccordion").easyResponsiveTabs({
+            type: "default",
+            width: "auto",
+            fit: !0,
+            closed: "accordion",
+            activate: function () {
+                var t = $(this),
+                    u = $("#tabInfo"),
+                    v = $("span", u);
+                v.text(t.text()), u.show()
+            }
+        }), f(), $(window).resize(function () {
+            f()
+        }), $(".enter").click(function () {
+            $(".bg-video")[0].play()
+        }), document.querySelectorAll(".ellipsify").forEach(function (s) {
+            parseFloat(window.getComputedStyle(s).width) === parseFloat(window.getComputedStyle(s.parentElement).width) && s.setAttribute("title", s.textContent)
+        });
+    var h = new ScrollMagic.Controller,
+        i = new TimelineMax;
+    i.from(".video-overlay", 1, {
+        autoAlpha: 0.3,
+        ease: Power0.easeNone
+    }, 1);
+    var j = new ScrollMagic.Scene({
+        triggerElement: ".background-video",
+        duration: "100%",
+        triggerHook: 0.5
+    }).setTween(i).addTo(h);
+    $(".white-bg").each(function () {
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: "0.14",
+            duration: "83%"
+        }).setClassToggle(".sparkt-logo", "reverse-logo").setClassToggle("body", "light-area").addTo(h)
+    });
+    var k = new Swiper(".culture-slider", {
+        direction: "vertical",
+        autoHeight: !0,
+        hashNavigation: {
+            watchState: !0
+        },
+        speed: 900,
+        effect: "cube",
+        grabCursor: !1,
+        cubeEffect: {
+            shadow: !0,
+            slideShadows: !1,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+    k.on("slideChange", function () {
+
+
+        l()
+    });
+
+
+
+
+
+
+
+
+    var l = function () {
+        var s = $(".culture-slider .swiper-wrapper .swiper-slide").attr("data-hash");
+        $(".cultuer-title-nav a").removeClass("active"), $(".cultuer-title-nav a").each(function () {
+            var t = $(this).attr("data-id");
+            t == s && $(this).addClass("active")
+        })
+    };
+    $(".cultuer-title-nav > a").on("click", function () {
+        $(".cultuer-title-nav > a").removeClass("active"), $(this).addClass("active")
+    });
+    var m = new Swiper(".culture-inner-slider", {
+        speed: 1200,
+        pagination: {
+            el: ".swiper-pagination-v",
+            clickable: !0
+        },
+        autoHeight: !0,
+        autoplay: {
+            delay: 3e3,
+            disableOnInteraction: !1
+        }
+    }),
+        n = new Swiper(".accolades-slider", {
+            speed: 1200,
+            pagination: {
+                el: ".swiper-pagination-v",
+                clickable: !0
+            },
+            autoplay: {
+                delay: 6e3,
+                disableOnInteraction: !1
+            },
+            loop: !0
+        }),
+        o = new TimelineMax;
+    o.from(".sparkt-table > img", 1, {
+        y: "-50%",
+        ease: Power0.easeNone
+    }, 1);
+    var j = new ScrollMagic.Scene({
+        triggerElement: "#we",
+        duration: "100%",
+        triggerHook: 0.8
+    }).setTween(o).addTo(h),
+        p = new TimelineMax;
+    p.from(".table-shaddow", 1, {
+        autoAlpha: 0,
+        scaleX: 1.5,
+        ease: Power0.easeNone
+    }, 1);
+    var j = new ScrollMagic.Scene({
+        triggerElement: "#we",
+        duration: "100%",
+        triggerHook: 0.8
+    }).setTween(p).addTo(h);
+    $(".section-title").each(function () {
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.03,
+            duration: "140%"
+        }).setPin(this, {
+            pushFollowers: !0
+        }).addTo(h)
+    }), $(".squad-wrapp figure").each(function () {
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.7,
+            duration: "100%"
+        }).setClassToggle(this, "underline").addTo(h)
+    });
+    var q = new ScrollMagic.Scene({
+        triggerElement: ".work-tab > .resp-tabs-list",
+        triggerHook: 0
+    }).setPin(".work-tab > .resp-tabs-list", {
+        pushFollowers: !0
+    }).addTo(h),
+        r = new TimelineMax;
+    r.to("header", 1, {
+        backgroundColor: "rgba(0,24,45,1)",
+        boxShadow: "0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)",
+        ease: Power0.easeNone
+    }, 1);
+    var j = new ScrollMagic.Scene({
+        triggerElement: "body",
+        duration: "40%",
+        triggerHook: 0.1
+    }).setTween(r).addTo(h)
 });

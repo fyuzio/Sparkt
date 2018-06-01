@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="CaptchaResponse.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="ContactUs\ContactUs.cs" />
+    <Compile Include="GuestEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

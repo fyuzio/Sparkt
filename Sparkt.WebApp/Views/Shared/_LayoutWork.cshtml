@@ -40,20 +40,20 @@
 </head>
 <body>
     <header>
-        <a href="../index.php" class="sparkt-logo"> <img src="~/Content/work/images/spaktLogo.png" alt="Sparkt" /> <img src="~/Content/work/images/spaktLogo-text.png" alt="Sparkt" class="sparkt-text" /> </a>
+        <a href="@Url.Action("Index","work")" class="sparkt-logo"> <img src="~/Content/work/images/spaktLogo.png" alt="Sparkt" /> <img src="~/Content/work/images/spaktLogo-text.png" alt="Sparkt" class="sparkt-text" /> </a>
         <div class="hamburger">
             <div class="line-menu half start"></div>
             <div class="line-menu"></div>
-            <div class="line-menu half end"></div>
+            <div class="line-menu half end"></div>  
         </div>
         <div class="main-menu">
             <ul>
-                <li><a href="../index.php"><span>Home</span></a> </li>
-                <li><a href="../index.php#We"><span>We</span></a> </li>
-                <li><a href="../index.php#clients"><span>Clients</span></a> </li>
-                <li><a href="../index.php#Work"><span>Work</span></a> </li>
-                <li><a href="../index.php#SparktLive"><span>Sparkt Live</span></a> </li>
-                <li><a href="../index.php#Contact"><span>Get In Touch</span></a> </li>
+                <li><a href="@Url.Action("Index","work")""><span>Home</span></a> </li>
+                <li><a href="/Home/Index#We"><span>We</span></a> </li>
+                <li><a href="/Home/Index#clients"><span>Clients</span></a> </li>
+                <li><a href="/Home/Index#Work"><span>Work</span></a> </li>
+                <li><a href="/Home/Index#SparktLive"><span>Sparkt Live</span></a> </li>
+                <li><a href="/Home/Index#Contact"><span>Get In Touch</span></a> </li>
             </ul>
         </div>
     </header>
@@ -95,42 +95,42 @@
         <div class="footer-nav">
             <ul>
                 <li>
-                    <a href="../index.php#Sparkt" class="hvr-trim">
+                    <a href="Home/Index#Sparkt" class="hvr-trim">
                         <img src="~/Content/work/images/home.jpg" alt="" />
                         <span class="caption">Home</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="../index.php#We" class="hvr-trim">
+                    <a href="Home/Index#We" class="hvr-trim">
                         <img src="~/Content/work/images/we.jpg" alt="" />
                         <span class="caption">We</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="../index.php#clients" class="hvr-trim">
+                    <a href="Home/Index#clients" class="hvr-trim">
                         <img src="~/Content/work/images/future.jpg" alt="" />
                         <span class="caption">Clients</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="../index.php#Work" class="hvr-trim">
+                    <a href="Home/Index#Work" class="hvr-trim">
                         <img src="~/Content/work/images/work.jpg" alt="" />
                         <span class="caption">Work</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="../index.php#SparktLive" class="hvr-trim">
+                    <a href="Home/Index#SparktLive" class="hvr-trim">
                         <img src="~/Content/work/images/sparhtLive.jpg" alt="" />
                         <span class="caption">Sparkt Live</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="../index.php#Contact" class="hvr-trim">
+                    <a href="Home/Index#Contact" class="hvr-trim">
                         <img src="~/Content/work/images/contact.jpg" alt="" />
                         <span class="caption">Get In Touch</span>
 
@@ -198,7 +198,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <!--  Scripts-->
-    <script type="text/javascript" src="~/Content/work/js/jquery-3.1.1.min.js"></script>
+    @*<script type="text/javascript" src="~/Content/work/js/jquery-3.1.1.min.js"></script>*@
     <script type="text/javascript" src="~/Content/work/plugins/mediaelementplayer/js/mediaelement-and-player.min.js"></script>
     <script type="text/javascript" src="~/Content/work/plugins/slick/js/slick.min.js"></script>
     <script type="text/javascript" src="~/Content/work/plugins/scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
@@ -206,6 +206,7 @@
     <script type="text/javascript" src="~/Content/work/plugins/scrollmagic/js/plugins/animation.gsap.min.js"></script>
     <script type="text/javascript" src="~/Content/work/plugins/hover3d/js/jquery.hover3d.min.js"></script>
     <script type="text/javascript" src="~/Content/work/plugins/lightgallery/js/lightgallery-all.min.js"></script>
+    <script type="text/javascript" src="~/Content/plugins/tabs-accordion/js/easy-responsive-tabs.js"></script>
     <script type="text/javascript" src="~/Content/work/plugins/tooltipster/js/tooltipster.bundle.js"></script>
     <script type="text/javascript" src="~/Content/work/js/text-animation.js"></script>
     <!--<script type="text/javascript" src="plugins/scrollmagic/js/plugins/debug.addIndicators.min.js" ></script>-->
