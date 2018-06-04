@@ -48,12 +48,12 @@
         </div>
         <div class="main-menu">
             <ul>
-                <li><a href="@Url.Action("Index","work")""><span>Home</span></a> </li>
-                <li><a href="/Home/Index#We"><span>We</span></a> </li>
-                <li><a href="/Home/Index#clients"><span>Clients</span></a> </li>
-                <li><a href="/Home/Index#Work"><span>Work</span></a> </li>
-                <li><a href="/Home/Index#SparktLive"><span>Sparkt Live</span></a> </li>
-                <li><a href="/Home/Index#Contact"><span>Get In Touch</span></a> </li>
+                <li><a href="@Url.Action("Index","Home")"><span>Home</span></a> </li>
+                <li><a href="@Url.Action("Index", "Home")?section=We"><span>We</span></a> </li>
+                <li><a href="@Url.Action("Index", "Home")?section=clients"><span>Clients</span></a> </li>
+                <li><a href="@Url.Action("Index", "Home")?section=Work"><span>Work</span></a> </li>
+                <li><a href="@Url.Action("Index", "Home")?section=SparktLive"><span>Sparkt Live</span></a> </li>
+                <li><a href="@Url.Action("Index", "Home")?section=Contact"><span>Get In Touch</span></a> </li>
             </ul>
         </div>
     </header>
@@ -95,42 +95,42 @@
         <div class="footer-nav">
             <ul>
                 <li>
-                    <a href="Home/Index#Sparkt" class="hvr-trim">
+                    <a href="@Url.Action("Index", "Home")" class="hvr-trim">
                         <img src="~/Content/work/images/home.jpg" alt="" />
                         <span class="caption">Home</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="Home/Index#We" class="hvr-trim">
+                    <a href="@Url.Action("Index", "Home")?section=We" class="hvr-trim">
                         <img src="~/Content/work/images/we.jpg" alt="" />
                         <span class="caption">We</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="Home/Index#clients" class="hvr-trim">
+                    <a href="@Url.Action("Index", "Home")?section=clients" class="hvr-trim">
                         <img src="~/Content/work/images/future.jpg" alt="" />
                         <span class="caption">Clients</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="Home/Index#Work" class="hvr-trim">
+                    <a href="@Url.Action("Index", "Home")?section=Work" class="hvr-trim">
                         <img src="~/Content/work/images/work.jpg" alt="" />
                         <span class="caption">Work</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="Home/Index#SparktLive" class="hvr-trim">
+                    <a href="@Url.Action("Index", "Home")?section=SparktLive" class="hvr-trim">
                         <img src="~/Content/work/images/sparhtLive.jpg" alt="" />
                         <span class="caption">Sparkt Live</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="Home/Index#Contact" class="hvr-trim">
+                    <a href="@Url.Action("Index", "Home")?section=Contact" class="hvr-trim">
                         <img src="~/Content/work/images/contact.jpg" alt="" />
                         <span class="caption">Get In Touch</span>
 

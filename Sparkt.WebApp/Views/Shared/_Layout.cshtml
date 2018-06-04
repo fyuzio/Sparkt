@@ -82,7 +82,7 @@
                         <li><a href="#offering"><span>Marketing Sciences</span></a></li>
                     </ul>
                 </div>
-                <a href="#" class="enter">Explore Sparkt</a>
+                <a href="javascript:void(0);" class="enter">Explore Sparkt</a>
             </div>
         </div>
     }
@@ -270,6 +270,23 @@
         document.addEventListener("DOMContentLoaded", function () {
             $('.se-pre-con').delay(1700).fadeOut('slow');
         });
+
+        $(document).ready(function () {
+            if (location.href.includes('?')) {
+                history.pushState({}, null, location.href.split('?')[0]);
+            }
+            if (pageSection == 'Work' || pageSection == 'clients' || pageSection == 'We' || pageSection == 'SparktLive' || pageSection == 'Contact') {                            
+                location.hash="#" + pageSection.toLowerCase();
+                callback();
+            }
+        });
+
+
+        function callback() {
+            setTimeout(function () {
+                $(".content--intro").addClass("open-page"); 
+            }, 1000);
+        }	
 
     </script>
 

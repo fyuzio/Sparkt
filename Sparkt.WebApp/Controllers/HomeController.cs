@@ -17,9 +17,11 @@ namespace Sparkt.WebApp.Controllers
             _guestManagementController = guestManagementController;
 
         }
-        public ActionResult Index()
+        
+        public ActionResult Index(string section)
         {
             ViewBag.Page= "Home";
+            ViewBag.PageSection = section;
             return View();
         }
 
@@ -83,7 +85,6 @@ namespace Sparkt.WebApp.Controllers
             bool result = Utility.Utility.ValidateCaptcha(gresponse);
             return Json(new { Status = result });
         }
-
-
+        
     }
 }
