@@ -62,7 +62,7 @@
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/malihu-custom-scrollbar/css/jquery.mCustomScrollbar.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/css/common.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/css/hompage.css" />
-  
+
     <script src='https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit' async defer></script>
     <script src="~/Scripts/User/GoogleCaptcha.js"></script>
 </head>
@@ -82,7 +82,11 @@
                         <li><a href="#offering"><span>Marketing Sciences</span></a></li>
                     </ul>
                 </div>
-                <a href="javascript:void(0);" class="enter">Explore Sparkt</a>
+                @*<a href="javascript:void(0);" class="enter">Explore Sparkt</a>*@
+                <div class="scrollPage scrollUp">
+                    <div class="mouse"></div>
+                    <p>Explore</p>
+                </div>
             </div>
         </div>
     }
@@ -196,18 +200,28 @@
             </ul>
         </div>
 
-        <div id="divThankYouModal" class="modal thank-u-modal">
+        @*<a class="waves-effect waves-light btn modal-trigger" href="#thanks" style="position: fixed; left: 0; top: 0; z-index: 999999; display: none; ">Modal</a>*@
+        <!-- Modal Structure -->
+        <div id="divThankYouModal" class="modal thanks-modal">
+            <a href="javascript:void(0);" class="modal-action modal-close waves-effect waves-green" id="btnThankyouClose">X</a>
+            <div class="modal-content">
+                <span class="thanks-icon"><i class="far fa-smile"></i></span>
+                <p id="pThankYouMessage"></p>
+            </div>
+        </div>
+        <div class="overlay-wrapp"></div>
+        @*<div id="divThankYouModal" class="modal thank-u-modal">
             <div class="modal-content  ">
                 <figure>
                     <span class="icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
                     <figcaption>
                         @*<span class="title">Thank You!</span>*@
-                        <p id="pThankYouMessage"></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnThankyouClose">X</a>
-        </div>
+        @*<p id="pThankYouMessage"></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnThankyouClose">X</a>
+            </div>*@
 
 
         <div id="divCommonMessage" class="modal thank-u-modal">
@@ -242,18 +256,17 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <!--  Scripts-->
-
     @*<script type="text/javascript" src="~/Content/js/jquery-3.1.1.min.js"></script>*@
     @*<script type="text/javascript" src="~/Content/plugins/intro-page/js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/intro-page/js/charming.min.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/intro-page/js/anime.min.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/intro-page/js/demo1.js"></script>*@
+        <script type="text/javascript" src="~/Content/plugins/intro-page/js/charming.min.js"></script>
+        <script type="text/javascript" src="~/Content/plugins/intro-page/js/anime.min.js"></script>
+        <script type="text/javascript" src="~/Content/plugins/intro-page/js/demo1.js"></script>*@
     <script type="text/javascript" src="~/Content/plugins/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/malihu-pagescroll/js/jquery.malihu.PageScroll2id.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/malihu-custom-scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="~/Content/plugins/tabs-accordion/js/easy-responsive-tabs.js"></script>
     <script type="text/javascript" src="~/Content/plugins/mediaelementplayer/js/mediaelement-and-player.min.js"></script>
-    <script type="text/javascript" src="~/Content/plugins/mediaelementplayer/js/airplay.min.js"></script> 
+    <script type="text/javascript" src="~/Content/plugins/mediaelementplayer/js/airplay.min.js"></script>
     @*<script type="text/javascript" src="~/Content/plugins/tooltipster/js/tooltipster.bundle.js"></script>*@
     <script type="text/javascript" src="~/Content/js/text-animation.js"></script>
     <script type="text/javascript" src="~/Content/plugins/backgroundVideo/js/backgroundVideo.js"></script>
@@ -275,8 +288,8 @@
             if (location.href.includes('?')) {
                 history.pushState({}, null, location.href.split('?')[0]);
             }
-            if (pageSection == 'Work' || pageSection == 'clients' || pageSection == 'We' || pageSection == 'SparktLive' || pageSection == 'Contact') {                            
-                location.hash="#" + pageSection.toLowerCase();
+            if (pageSection == 'Work' || pageSection == 'clients' || pageSection == 'We' || pageSection == 'SparktLive' || pageSection == 'Contact') {
+                location.hash = "#" + pageSection.toLowerCase();
                 callback();
             }
         });
@@ -284,9 +297,9 @@
 
         function callback() {
             setTimeout(function () {
-                $(".content--intro").addClass("open-page"); 
+                $(".content--intro").addClass("open-page");
             }, 1000);
-        }	
+        }
 
     </script>
 

@@ -58,13 +58,16 @@ $(function () {
         })
     }
     $(".hamburger").on("click", function () {
-        $(this).toggleClass("open"), $(".main-menu").toggleClass("open")
+        $(this).toggleClass("open"), $(".main-menu").toggleClass("open"), $(".overlay-wrapp").fadeToggle("slow")
     }), $(".main-menu > ul > li ").hover(function () {
         $(this).toggleClass("active-submenu"), $(this).children(".sub-nav").slideToggle()
-    }), $(window).scroll(function () {
-        $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open")
-    }),
-
+        }),
+        $(window).scroll(function () {
+        $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open"), $(".overlay-wrapp").fadeOut("slow")
+        }),
+        $(".overlay-wrapp").on("click", function () {
+        $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open"), $(".overlay-wrapp").fadeOut("slow")
+        }),
         $("#contact-tab").tabs({
             responsiveThreshold: !0
         }), $(".ring-click").click(function (s) {
@@ -75,7 +78,8 @@ $(function () {
             $(".right-middle").addClass("go-top"), s.preventDefault()
         }), $(document).on("click", function (s) {
             $(s.target).closest(".ring-click").length || ($(".ring-wrapp").removeClass("active").css("opacity", "1"), $(".offering-wrapp").removeClass("using"), $(".right-middle").removeClass("go-bottom"), $(".right-middle").removeClass("go-top"))
-        }), $(window).on("load", function () {
+        }),
+        $(window).on("load", function () {
             $(".scroll-content").mCustomScrollbar({
                 scrollInertia: 0,
                 scrollbarPosition: "outside",
@@ -87,6 +91,10 @@ $(function () {
             $("#button").addClass("onclic", 250, a), s.preventDefault()
         });
 
+
+    $('.collapsible').collapsible();
+
+    $('.modal').modal();
 
 
     var i = $(".video-wrapp video").mediaelementplayer({
@@ -116,13 +124,27 @@ $(function () {
     });
 
 
-    $(".content__inner a").on("click", function () {
+    $(".content__inner a, .scrollUp").on("click", function () {
         //alert("2");
         $(".content--intro").addClass("open-page");
+        $(".bg-video")[0].play();
 
     });
 
 
+
+    $(window).scroll(function () {
+        $(".content--intro").addClass("open-page");
+        $(".bg-video")[0].play();
+    });
+
+
+    /*setTimeout(function(){ 
+      $(".content--intro").addClass("open-page");
+        $(".bg-video")[0].play();
+    	
+    },10000);
+        */
 
 
 
@@ -132,6 +154,7 @@ $(function () {
         //loop: !0,
         //autoHeight: !0,
         speed: 1500,
+        resize: true,
         shortSwipes: false,
         slideToClickedSlide: true,
         preventClicksPropagation: false,
@@ -164,9 +187,10 @@ $(function () {
             }
         }), f(), $(window).resize(function () {
             f()
-        }), $(".enter").click(function () {
-            $(".bg-video")[0].play()
-        }), document.querySelectorAll(".ellipsify").forEach(function (s) {
+        }),
+
+
+        document.querySelectorAll(".ellipsify").forEach(function (s) {
             parseFloat(window.getComputedStyle(s).width) === parseFloat(window.getComputedStyle(s.parentElement).width) && s.setAttribute("title", s.textContent)
         });
     var h = new ScrollMagic.Controller,
@@ -194,6 +218,7 @@ $(function () {
             watchState: !0
         },
         speed: 900,
+        resize: true,
         effect: "cube",
         grabCursor: !1,
         cubeEffect: {

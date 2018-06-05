@@ -18,6 +18,21 @@ $(function () {
             $(".main-menu")
                 .removeClass("open");
         });
+    $(window).on("load", function () {
+        $(".scroll-content").mCustomScrollbar({
+            scrollInertia: 0,
+            scrollbarPosition: "outside",
+            autoHideScrollbar: !0,
+            autoExpandScrollbar: "Enable",
+            theme: "rounded"
+        });
+
+        $(".horizontalScroll").mCustomScrollbar({
+            axis: "x",
+            theme: "minimal-dark",
+            advanced: { autoExpandHorizontalScroll: true }
+        });
+    });
     var videos = $('.bannerplayer')
         .mediaelementplayer({
             success: function (media) {

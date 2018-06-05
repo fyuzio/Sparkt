@@ -94,9 +94,12 @@ function CloseSuccessPopup() {
     //var url = $("#RedirectTo").val();
     //location.href = url;
     $('#txtName').val('');
-    $('#txtEmail').val('');
-    $('#txtMobileno').val('');   
-    grecaptcha.reset();   
+    $('#txtCompanyName').val('');
+    $('#txtEmailID').val('');
+    $('#txtPhoneNumber').val(''); 
+    $('#txtMessage').val(''); 
+    grecaptcha.reset();  
+    callback();
     return false;
 }
 
@@ -116,12 +119,19 @@ function SaveGuestData(guestData) {
         dataType: "json",
         success: function (response) {
             $('#btnSubmit').removeClass("onclic");
-            $('#btnSubmit').addClass("validate");
-            callback();
+            $('#btnSubmit').addClass("validate");           
             if (response.Status == true) {
-                alert("Data saved Succesdfully.");
-                //$("#divThankYouModal").modal("open");
-                //$('#pThankYouMessage').html('Thank you for your Interest. We will get back to you.');
+                //alert("Data saved Succesdfully.");
+                //alert("Data saved Succesdfully.");
+                $('#txtName').val('');
+                $('#txtCompanyName').val('');
+                $('#txtEmailID').val('');
+                $('#txtPhoneNumber').val('');
+                $('#txtMessage').val('');
+                grecaptcha.reset();
+                callback();	
+                $("#divThankYouModal").modal("open");
+                $('#pThankYouMessage').html('Thank you for your Interest. We will get back to you.');
             }            
         },
         failure: function (response) {
@@ -138,37 +148,45 @@ function SaveGuestData(guestData) {
 function callback() {
     setTimeout(function () {
         $("#btnSubmit").removeClass("validate");
-    }, 1250);
+    }, 3000);
 }	
 function VerifyReCaptcha() {
     var captchaResponse = grecaptcha.getResponse(recaptcha1);
-    $.ajax({
-        type: "POST",
-        url: "/VerifyGResponse",
-        dataType: 'json',
-        contentType: 'application/json',
-        processData: false,
-        data: JSON.stringify({ gresponse: captchaResponse }),
-        success: function (response) {
-            callback()
-            grecaptcha.reset();
-            if (response.Status == true) {                
-                SaveGuestData();
+    if (captchaResponse.length > 0) {
+        $.ajax({
+            type: "POST",
+            url: "/VerifyGResponse",
+            dataType: 'json',
+            contentType: 'application/json',
+            processData: false,
+            data: JSON.stringify({ gresponse: captchaResponse }),
+            success: function (response) {
+                grecaptcha.reset();
+                if (response.Status == true) {
+                    SaveGuestData();
+                }
+                else if (response.Status == false) {
+                    alert("Captcha not Submitted.");
+                    //$("#pMessage").html("Captcha not Submitted.");
+                    //$("#divCommonMessage").modal("open");
+                    $('#btnSubmit').removeClass("onclic");
+                }
+                //var url = $("#RedirectTo").val();
+                //location.href = url;
+            },
+            error: function (error) {
+                $('#btnSubmit').removeClass("onclic");
+                alert(error);
             }
-            else if (response.Status == false) {              
-                alert("Captcha not Submitted.");
-                //$("#pMessage").html("Captcha not Submitted.");
-                //$("#divCommonMessage").modal("open");
-            }
-            //var url = $("#RedirectTo").val();
-            //location.href = url;
-        },
-        error: function (error) {
-            callback();
-            alert(error);
-        }
 
-    });
+        });
+    }
+    else {
+        //$("#pMessage").html("Captcha not Submitted.");
+        //$("#divCommonMessage").modal("open");
+        alert("Captcha not Submitted.");
+        $('#btnSubmit').removeClass("onclic");
+    }
 }
 
 })(jQuery);
