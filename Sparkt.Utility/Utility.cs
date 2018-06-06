@@ -49,11 +49,11 @@ namespace Sparkt.Utility
 					string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
 					string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
 					SmtpClient _smtp = new SmtpClient(smtpServer, Convert.ToInt32(smtpPort));
-					_smtp.UseDefaultCredentials = false;//dLZh1T7OTeqdUvQOfiDtjw 
+					_smtp.UseDefaultCredentials = true;//dLZh1T7OTeqdUvQOfiDtjw 
 					_smtp.Credentials = new NetworkCredential(smtpKey, smtpPassword);
 					MailMessage message = new MailMessage();
 					message.From = new MailAddress(mailFrom, displayName);
-					message.To.Add(EmailAddress);
+					message.To.Add(mailFrom);
 					message.Subject = EmailSubject;
 					message.IsBodyHtml = true;
 					message.Body = EmailTemplateString;
