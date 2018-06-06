@@ -233,19 +233,40 @@ $(function () {
             prevEl: ".swiper-button-prev"
         }
     });
-    k.on("slideChange", function () {
-        //var dataId = $('.cultureslideactive').attr("data-hash");        
-        //$(".cultuer-title-nav a").removeClass("active");
-        //$(".cultuer-title-nav a").each(function (index) {
-        //    if ("#" + dataId == $(this).attr("href")) {
-        //        $(this).addClass("active");
-        //    }
-        //});
-        return false;
+    //k.on("slideChange", function () {
+    //    var dataId = $('.cultureslideactive').attr("data-hash");        
+    //    $(".cultuer-title-nav a").removeClass("active");
+    //    $(".cultuer-title-nav a").each(function (index) {
+    //        if ("#" + dataId == $(this).attr("href")) {
+    //            alert($(this).attr("href"));
+    //            $(this).addClass("active");
+    //        }
+    //    });
+    //    return false;
+    //});
+
+    $(".swiper-button-next").on("click", function () {        
+        SlideChange()
     });
 
+    $(".swiper-button-prev").on("click", function () {
+        SlideChange()
+    });
 
-
+    function SlideChange() {
+        var dataId = $('.cultureslideactive').attr("data-hash");
+        var data = dataId.substring(0, dataId.length - 1);
+        var id = dataId.substring(dataId.length - 1, dataId.length);
+        id = parseInt(id) - 1;
+        dataId = data + id;
+        $(".cultuer-title-nav a").removeClass("active");
+        $(".cultuer-title-nav a").each(function (index) {
+            if ("#" + dataId == $(this).attr("href")) {
+                $(this).addClass("active");
+            }
+        });
+        return false;
+    }
 
 
 
