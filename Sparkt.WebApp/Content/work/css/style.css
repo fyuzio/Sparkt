@@ -124,8 +124,9 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92487', endC
 	transform: translateY(-50%) translateX(140%);
 	-webkit-transform: translateY(-50%) translateX(140%);
 	z-index: 998;
-	color: #b8b8b8;
+	color: #fff;
 	font-size: 14px;
+    font-weight:bold;
 	text-transform: uppercase;
 	-webkit-transition: all ease .3s
 }

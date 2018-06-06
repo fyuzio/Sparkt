@@ -220,7 +220,8 @@ $(function () {
         speed: 900,
         resize: true,
         effect: "cube",
-        grabCursor: !1,
+        slideActiveClass:"cultureslideactive swiper-slide-active",
+        grabCursor: !1,     
         cubeEffect: {
             shadow: !0,
             slideShadows: !1,
@@ -233,9 +234,14 @@ $(function () {
         }
     });
     k.on("slideChange", function () {
-
-
-        l()
+        //var dataId = $('.cultureslideactive').attr("data-hash");        
+        //$(".cultuer-title-nav a").removeClass("active");
+        //$(".cultuer-title-nav a").each(function (index) {
+        //    if ("#" + dataId == $(this).attr("href")) {
+        //        $(this).addClass("active");
+        //    }
+        //});
+        return false;
     });
 
 
@@ -245,13 +251,15 @@ $(function () {
 
 
 
-    var l = function () {
-        var s = $(".culture-slider .swiper-wrapper .swiper-slide").attr("data-hash");
-        $(".cultuer-title-nav a").removeClass("active"), $(".cultuer-title-nav a").each(function () {
-            var t = $(this).attr("data-id");
-            t == s && $(this).addClass("active")
-        })
-    };
+    //var l = function () {
+    //    var s = $(".culture-slider .swiper-wrapper .swiper-slide").attr("data-hash");
+    //    $(".cultuer-title-nav a").removeClass("active"), $(".cultuer-title-nav a").each(function () {
+    //        var t = $(this).attr("data-id");
+    //        t == s && $(this).addClass("active")
+    //    })
+    //};
+
+
     $(".cultuer-title-nav > a").on("click", function () {
         $(".cultuer-title-nav > a").removeClass("active"), $(this).addClass("active")
     });

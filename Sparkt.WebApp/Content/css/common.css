@@ -92,15 +92,17 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92487', endC
 	-webkit-transform: rotate(-90deg) translateX(-3px)
 }
 .main-menu {
-	right: 2%;
-	top: 48%;
-	transform: translateY(-50%) translateX(140%);
-	-webkit-transform: translateY(-50%) translateX(140%);
-	z-index: 998;
-	color: #b8b8b8;
-	font-size: 14px;
-	text-transform: uppercase;
-	-webkit-transition: all ease .3s
+    right: 2%;
+    top: 48%;
+    transform: translateY(-50%) translateX(140%);
+    -webkit-transform: translateY(-50%) translateX(140%);
+    z-index: 998;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s
 }
 .main-menu.open {
 	transform: translateY(-50%) translateX(0);
