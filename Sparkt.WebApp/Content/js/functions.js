@@ -255,10 +255,11 @@ $(function () {
 
     function SlideChange() {
         var dataId = $('.cultureslideactive').attr("data-hash");
-        var data = dataId.substring(0, dataId.length - 1);
-        var id = dataId.substring(dataId.length - 1, dataId.length);
-        id = parseInt(id) - 1;
-        dataId = data + id;
+        //var data = dataId.substring(0, dataId.length - 1);
+        //var id = dataId.substring(dataId.length - 1, dataId.length);
+        //id = parseInt(id) - 1;
+        //dataId = data + id;
+    
         $(".cultuer-title-nav a").removeClass("active");
         $(".cultuer-title-nav a").each(function (index) {
             if ("#" + dataId == $(this).attr("href")) {
