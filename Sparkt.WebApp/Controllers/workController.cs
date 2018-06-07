@@ -159,7 +159,18 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
-        
 
+        public ActionResult Total()
+        {
+            return View();
+        }
+        public ActionResult HSPUBHMedia()
+        {
+            return View();
+        }
+        public ActionResult TextMoji()
+        {
+            return View();
+        }
     }
 }
