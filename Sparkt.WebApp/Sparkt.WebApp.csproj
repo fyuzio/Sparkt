@@ -581,6 +581,9 @@
     <Content Include="Content\work\images\awards\campaign-india-bronz.png" />
     <Content Include="Content\work\images\awards\campaign-india-gold.png" />
     <Content Include="Content\work\images\awards\campaign-india-silver.png" />
+    <Content Include="Content\work\images\awards\cidca-2018-bronze.png" />
+    <Content Include="Content\work\images\awards\cidca-2018-gold.png" />
+    <Content Include="Content\work\images\awards\cidca-2018-silver.png" />
     <Content Include="Content\work\images\awards\digx-bronze.png" />
     <Content Include="Content\work\images\awards\digx-gold.png" />
     <Content Include="Content\work\images\awards\digx-silver.png" />
@@ -767,6 +770,14 @@
     <Content Include="Content\work\images\ted-dont-kill-ideas.png" />
     <Content Include="Content\work\images\ted-dr-velumani.jpg" />
     <Content Include="Content\work\images\ted-drone.jpg" />
+    <Content Include="Content\work\images\ted-google-mobile.png" />
+    <Content Include="Content\work\images\ted-google-v1.png" />
+    <Content Include="Content\work\images\ted-google-v2.png" />
+    <Content Include="Content\work\images\ted-google-v3.png" />
+    <Content Include="Content\work\images\ted-google-v4.png" />
+    <Content Include="Content\work\images\ted-google-v5.png" />
+    <Content Include="Content\work\images\ted-google-v6.png" />
+    <Content Include="Content\work\images\ted-google-v7.png" />
     <Content Include="Content\work\images\ted-iphone.png" />
     <Content Include="Content\work\images\ted-kashyap-vadpilli.jpg" />
     <Content Include="Content\work\images\ted-laptop.png" />

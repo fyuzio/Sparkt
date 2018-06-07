@@ -3048,6 +3048,29 @@ transform: translateX(0);
 	background-size: cover;
 	background-repeat: no-repeat; background-position: center center; }
 
+
+
+
+.google-card-blk{ width: 100%; overflow: hidden; }
+
+.google-card-blk .mobile{ width: 20%; float: right; position: relative; margin-right: 15% }
+.google-card-blk .mobile img{width: 100%;vertical-align: top; }
+.google-card-blk .mobile ul li{ position: absolute; right: 6%;
+    bottom: 23%;
+    width: 51%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); overflow: hidden; border-radius: 4px; }
+
+.google-card-blk .mobile ul li img{width: 100%; vertical-align: top; }
+
+.google-card-blk .mobile ul li:nth-child(1){ right: 6%;}
+.google-card-blk .mobile ul li:nth-child(2){ right: 61%;}
+.google-card-blk .mobile ul li:nth-child(3){ right: 116%;}
+.google-card-blk .mobile ul li:nth-child(4){ right: 169%;}
+.google-card-blk .mobile ul li:nth-child(5){ right: 223%;}
+.google-card-blk .mobile ul li:nth-child(6){ right: 277%;}
+.google-card-blk .mobile ul li:nth-child(7){ right: 332%;}
+
+
 @media screen and (max-width:1920px) {
 .work-navigation .client-works li {
 	width: 9vw
@@ -3344,6 +3367,9 @@ transform: translateX(0);
 
 }
 
+.result-info span.result-points strong {
+	font-size: 170%;}	
+	
 }
 
 @media screen and (max-width:1440px) {
