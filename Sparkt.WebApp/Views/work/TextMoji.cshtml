@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Text Moji";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/banners/mahindra-textmoji.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/qdlm51eGDxE" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/mahindra-mmf-cover.jpg);"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>MMF Textmoji</h1>
+                <div class="clear"></div>
+                <span>ELEVATING MAHINDRA MUTUAL FUND'S BRAND COMMUNICATION EXPERIENCE IN THE SMS INBOX!</span>
+            </div>
+        </div>
+
+
+        @Html.Partial("_WorkMenu");
+    </div>
+    <div class="section ">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel  mahindra-logo-bg">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>TextMoji - Embedding a simple emoji with <br>various color codes at the beginning of the message.</h3>
+                                </div>
+
+
+                                <div class="text-moji-blk">
+                                    <img src="~/Content/work/images/text-moji-assets.png" alt="text-moji-assets">
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Results</h2>
+        </div>
+        <div class="container bottom-padding-none">
+            <div class="result-wrapp">
+                <ul class="fadeUp t-infinity">
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">LIFT IN ON-TIME SIP PAYMENTS</span> <span class="result-points">11%</span> <span class="result"></span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">DROP IN CUSTOMER QUERIES REGARDING STATUS OF THEIR TRANSACTIONS</span> <span class="result-points">8%</span> <span class="result"></span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">INCREASE IN FAILURE NOTIFICATION QUERIES WITH RESOLUTION WITHIN 48 HRS</span> <span class="result-points">15%</span> <span class="result"></span> </div>
+                    </li>
+                    <li class="col-4 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">INCREASE IN CONVERSION OF FAILED TRANSACTIONS</span> <span class="result-points">48.3%</span> <span class="result"></span> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quotes-wrapp">
+                <div class="quotes">
+                    <h3>Coming Soon </h3>
+                    <span class="quotes-writer"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
