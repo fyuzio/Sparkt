@@ -47,13 +47,14 @@ namespace Sparkt.Utility
 					string smtpKey = ConfigurationManager.AppSettings["SMTPKey"].ToString();
 					string smtpPassword = ConfigurationManager.AppSettings["SMTPPassword"].ToString();
 					string mailFrom = ConfigurationManager.AppSettings["SMTPMailFrom"].ToString();
-					string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
+                    string mailTo = ConfigurationManager.AppSettings["SMTPMailTo"].ToString();
+                    string displayName = ConfigurationManager.AppSettings["SMTPDisplayName"].ToString();
 					SmtpClient _smtp = new SmtpClient(smtpServer, Convert.ToInt32(smtpPort));
 					_smtp.UseDefaultCredentials = true;//dLZh1T7OTeqdUvQOfiDtjw 
 					_smtp.Credentials = new NetworkCredential(smtpKey, smtpPassword);
 					MailMessage message = new MailMessage();
 					message.From = new MailAddress(mailFrom, displayName);
-					message.To.Add(mailFrom);
+					message.To.Add(mailTo);
 					message.Subject = EmailSubject;
 					message.IsBodyHtml = true;
 					message.Body = EmailTemplateString;
