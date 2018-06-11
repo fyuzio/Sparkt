@@ -3465,17 +3465,17 @@ transform: translateX(0);
 	
 	.cypher-water-flow{ background-position: center center;}
 	
-.sparkt-carousel .mobile-wrapp .video-item{ height: 300px; }	
+/*.sparkt-carousel .mobile-wrapp .video-item{ height: 300px; }	
 	
-}
+}11-thJune-2018*/
 
 @media screen and (max-width:1440px) and (min-width:1200px) {
 .quotes-wrapp .quotes {
 	min-height: 330px
 }
-.video-item .mejs__container {
+    /*.video-item .mejs__container {
 	height: 100%!important
-}
+}11-thJune-2018*/
 	.three-img-carousel .video-item{ min-height: 320px; }	
 	.three-img-carousel .video-item .mejs__container{ position: static;}
 
