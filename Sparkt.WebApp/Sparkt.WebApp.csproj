@@ -1218,6 +1218,7 @@
     <Content Include="Views\work\Total.cshtml" />
     <Content Include="Views\work\HSPUBHMedia.cshtml" />
     <Content Include="Views\work\TextMoji.cshtml" />
+    <Content Include="Views\work\UCypherUseOfData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

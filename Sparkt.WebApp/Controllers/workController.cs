@@ -142,6 +142,10 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        public ActionResult UCypherUseOfData()
+        {
+            return View();
+        }
         public ActionResult USports()
         {
             return View();
