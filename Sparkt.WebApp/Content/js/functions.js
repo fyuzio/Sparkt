@@ -100,6 +100,15 @@ $(function () {
     var i = $(".video-wrapp video").mediaelementplayer({
         success: function (e) {
             $(e).bind("play", function () {
+                mySwiper.autoplay.stop(); 
+
+                $('.showreel-videos').on('mouseleave', function (e) {
+                  
+                    mySwiper.autoplay.stop(); 
+                });
+
+
+              //  alert('Stopped');
                 $.each(i, function (i, o) {
 
                     //$(".mejs__controls").fadeIn()
@@ -144,15 +153,17 @@ $(function () {
         $(".bg-video")[0].play();
     	
     },10000);
-        */
+        */    
 
-
-
-    var g = new Swiper(".showreel-videos", {
+    var mySwiper = new Swiper(".showreel-videos", {
         //effect: "fade",
         //grabCursor: !0,
         //loop: !0,
         //autoHeight: !0,
+        autoplay: {
+            delay: 3e3         
+        },
+        disableOnInteraction: true,
         speed: 1500,
         resize: true,
         shortSwipes: false,
@@ -164,7 +175,17 @@ $(function () {
             clickable: true,
         },
     });
-    g.on("slideChange", function () {
+    
+
+    $('.showreel-videos').on('mouseenter', function (e) {
+        console.log('stop autoplay');       
+        mySwiper.autoplay.stop();
+    });
+    $('.showreel-videos').on('mouseleave', function (e) {
+        console.log('started');      
+        mySwiper.autoplay.start();
+    });
+    mySwiper.on("slideChange", function () {
 
         $(".video-wrapp video").each(function () {
             this.player.pause();

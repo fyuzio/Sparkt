@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <script type="text/javascript">
-    var pageSection = '@ViewBag.PageSection';   
+    var pageSection = '@ViewBag.PageSection';
 </script>
 <main>
     <div class="section home-banner dark-blue " id="home">
@@ -49,7 +49,7 @@
             <h2>Culture</h2>
             <div class="clear"></div>
             <div class="head-title-content">
-                <ul class="title-navigation">                    
+                <ul class="title-navigation">
                     <li class="cultuer-title-nav"><a href="#culture2" data-id="culture1"><span>Self-governance</span></a></li>
                     <li class="cultuer-title-nav"><a href="#culture3" data-id="culture2"><span>Truth</span></a></li>
                     <li class="cultuer-title-nav"><a href="#culture4" data-id="culture3"><span>Value</span></a></li>
@@ -64,7 +64,7 @@
                 <div class="swiper-container culture-slider">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide"  data-hash="culture1">
+                        <div class="swiper-slide" data-hash="culture1">
                             <div class="slider-inside">
                                 <div class="text-wrapp">
                                     <div class="swiper-container culture-inner-slider">
@@ -788,14 +788,14 @@
                         <a style="cursor:default"><img src="~/Content/images/clients/piramalRealty-logo.png" alt="Piramal Realty" /></a>
                     </li>
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a> 
+                        <a style="cursor:default"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
                     </li>
                     @*<li>
-                        <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
-                    </li>*@
+                            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
+                        </li>*@
                     <li>
                         <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
                     </li>
@@ -811,8 +811,8 @@
                     <li>
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
                     </li>
-                    <li> 
-                    <a tyle="cursor:default"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a> 
+                    <li>
+                        <a tyle="cursor:default"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
@@ -820,12 +820,12 @@
 
                     <li>
                         <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
-                    </li>                   
+                    </li>
 
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>
                     @*<li>
-                        <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
-                    </li>*@
+                            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
+                        </li>*@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a>
                     </li>
@@ -902,7 +902,16 @@
                                             <p>Kya Ullu Banaya!</p>
                                         </div>
                                     </a>
-                                </li>
+                                </li>                              
+                                <li>
+                                    <a href="@Url.Action("UCypherUseOfData","work")">
+                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Use of Data</h4>
+                                            <p>Naya Sport. Naye Superstars.</p>
+                                        </div>
+                                    </a>
+                                </li>                               
                                 <li>
                                     <a href="@Url.Action("Ikyawann","work")">
                                         <img src="~/Content/work/images/thums/ikyawann-thum.jpg" alt="">
@@ -920,7 +929,7 @@
                                             <p>Igniting a national debate on ‘Taxes Acche Hain’ ahead of Budget 2017  </p>
                                         </div>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="@Url.Action("NayiSoch","work")">
                                         <img src="~/Content/work/images/thums/nayosoch-thum.jpg" alt="">
@@ -947,7 +956,7 @@
                                             <p>Igniting a Nayi Soch on Mother’s Day</p>
                                         </div>
                                     </a>
-                                </li>                                                                                            
+                                </li>
                                 <li>
                                     <a href="@Url.Action("MahindraUnnati","work")">
                                         <img src="~/Content/work/images/thums/mahindra-unnati-thum.jpg" alt="">
@@ -956,7 +965,7 @@
                                             <p>Samay se Aagey</p>
                                         </div>
                                     </a>
-                                </li>                               
+                                </li>
                                 <li>
                                     <a href="@Url.Action("MahindraNfoLaunches","work")">
                                         <img src="~/Content/work/images/thums/mmf-info-thum.jpg" alt="">
@@ -965,35 +974,7 @@
                                             <p>Ek Nayi Soch. Ek Nayi Raah.</p>
                                         </div>
                                     </a>
-                                </li>                            
-                                <li>
-                                    <a href="@Url.Action("Khichdi","work")">
-                                        <img src="~/Content/work/images/thums/khichadi-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>Khichdi</h4>
-                                            <p>Digital exclusive content to introduce iconic characters</p>
-                                        </div>
-                                    </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("Tgilc","work")">
-                                        <img src="~/Content/work/images/thums/tgilc-thums.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>TGILC</h4>
-                                            <p></p>
-                                        </div>
-                                    </a>
-                                </li>
-                              
-                                <li>
-                                    <a href="@Url.Action("UCypherUseOfData","work")">
-                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>U Sports Use of Data</h4>
-                                            <p>Naya Sport. Naye Superstars.</p>
-                                        </div>
-                                    </a>
-                                </li>                              
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Innovations">
@@ -1024,7 +1005,7 @@
                                             <p>Kya Ullu Banaya!</p>
                                         </div>
                                     </a>
-                                </li>                               
+                                </li>
                                 <li>
                                     <a href="@Url.Action("UCypherInstafight","work")">
                                         <img src="~/Content/work/images/thums/u-cypher-insta-fight-thum.jpg" alt="">
@@ -1042,7 +1023,7 @@
                                             <p>Scratch to unlock the website</p>
                                         </div>
                                     </a>
-                                </li> 
+                                </li>
                                 <li>
                                     <a href="@Url.Action("USportsHamburger","work")">
                                         <img src="~/Content/work/images/thums/usports-hamburger-thum.jpg" alt="">
@@ -1069,7 +1050,7 @@
                                             <p>A first-of-a-kind banner that created true 'shock' value </p>
                                         </div>
                                     </a>
-                                </li>                               
+                                </li>
                                 <li>
                                     <a href="@Url.Action("DancePlus2","work")">
                                         <img src="~/Content/work/images/thums/danceplus-thum.jpg" alt="">
@@ -1078,7 +1059,7 @@
                                             <p>Getting the nation to dance to our tune with video innovations and thumbstopping content</p>
                                         </div>
                                     </a>
-                                </li>                              
+                                </li>
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Experiences">
@@ -1119,7 +1100,7 @@
                                             <p>Values create value</p>
                                         </div>
                                     </a>
-                                </li>                              
+                                </li>
                                 <li>
                                     <a href="@Url.Action("Swp","work")">
                                         <img src="~/Content/work/images/thums/swp-thum.jpg" alt="">
@@ -1196,7 +1177,7 @@
                                             <p>She sings about anything!</p>
                                         </div>
                                     </a>
-                                </li>                                
+                                </li>
                                 <li>
                                     <a href="@Url.Action("HSPubh","work")">
                                         <img src="~/Content/work/images/thums/hsubh-thum.jpg" alt="">
@@ -1206,7 +1187,16 @@
                                         </div>
                                     </a>
                                 </li>
-                               <li>
+                                <li>
+                                    <a href="@Url.Action("Khichdi","work")">
+                                        <img src="~/Content/work/images/thums/khichadi-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Khichdi</h4>
+                                            <p>Digital exclusive content to introduce iconic characters</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="@Url.Action("Ikyawann","work")">
                                         <img src="~/Content/work/images/thums/ikyawann-thum.jpg" alt="">
                                         <div class="caption">
@@ -1239,6 +1229,15 @@
                                         <div class="caption">
                                             <h4>Nach Baliye 8</h4>
                                             <p>Bringing alive the 'Romance-wala Dance'</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tgilc","work")">
+                                        <img src="~/Content/work/images/thums/tgilc-thums.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TGILC</h4>
+                                            <p>Getting the nation to join in on a laughter riot with thumbstopping content</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1286,23 +1285,22 @@
                                             <p>Bringing alive the characters of the three brothers and their special bond with exclusive digital content</p>
                                         </div>
                                     </a>
-                                </li>
-                              
+                                </li>                               
                             </ul>
                         </div>
-                         <div class="resp-tab-content" id="Marketing-Sciences">
-                             <ul>
-                                 <li>
-                                     <a href="@Url.Action("UCypherUseOfDataMS","work")">
-                                         <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
-                                         <div class="caption">
-                                             <h4>U Sports Use of Data</h4>
-                                             <p></p>
-                                         </div>
-                                     </a>
-                                 </li>
-                             </ul>
-                             </div>
+                        <div class="resp-tab-content" id="Marketing-Sciences">
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("UCypherUseOfDataMS","work")">
+                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Use of Data</h4>
+                                            <p>Naya Sport. Naye Superstars.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="resp-tab-content" id="Work-Media">
                             <ul>
                                 <li>
@@ -1347,7 +1345,7 @@
                                     <source src="https://youtu.be/Fq3yy7Dar24" type="video/youtube" />
                                 </video>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -1372,12 +1370,12 @@
                 <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a></div>
                 <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
                 <script type="text/javascript">
-/* curator-feed */
-(function(){
-var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-i.src = "https://cdn.curator.io/published/6c2b4df9-5910-4e82-8341-97aa2ad11f97.js";
-e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-})();
+                    /* curator-feed */
+                    (function () {
+                        var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1;
+                        i.src = "https://cdn.curator.io/published/6c2b4df9-5910-4e82-8341-97aa2ad11f97.js";
+                        e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+                    })();
                 </script>
             </div>
         </div>
@@ -1418,7 +1416,7 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
                                         <label for="name">Name</label>
                                     </div>
                                     <div class="input-field col s12 m6 l4">
-                                        <input id="txtCompanyName" type="text" class="validate" maxlength="200">                                       
+                                        <input id="txtCompanyName" type="text" class="validate" maxlength="200">
                                         <label for="txtCompanyName">Company Name</label>
                                     </div>
                                     <div class="input-field col s12 m6 l4">
@@ -1427,7 +1425,7 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
                                         <label for="txtEmailID">Your Email</label>
                                     </div>
                                     <div class="input-field col s12 m6 l4">
-                                        <input id="txtPhoneNumber" type="number" class="validate"  maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                                        <input id="txtPhoneNumber" type="number" class="validate" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                                         <span class="error" id="spnPhoneNumber" style="display:none">Phone No is required.</span>
                                         <label for="txtPhoneNumber">Call me on</label>
                                     </div>
@@ -1438,7 +1436,7 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
                                             <option value="2">Work with us</option>
                                             <option value="3">Press Inquiry</option>
                                         </select>
-                                        
+
                                     </div>
                                     <div class="input-field col s12">
                                         <textarea id="txtMessage" class="materialize-textarea" maxlength="500"></textarea>
@@ -1449,7 +1447,7 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
                                         <div class="g-recaptcha" id="recaptcha1" data-theme="light" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
                                     </div>
                                     <div class="input-field col s12 center ">
-                                        <button class="submit-btn" type="submit" name="action"  id="btnSubmit"> </button>
+                                        <button class="submit-btn" type="submit" name="action" id="btnSubmit"> </button>
                                     </div>
                                 </div>
                                 <div></div>
@@ -1465,5 +1463,5 @@ e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
             </div>
         </div>
     </div>
-    
+
 </main>
