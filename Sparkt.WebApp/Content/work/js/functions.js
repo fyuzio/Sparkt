@@ -18,7 +18,7 @@ $(function () {
             $(".main-menu")
                 .removeClass("open");
         });
-    $(window).on("load", function () {
+$(window).on("load", function () {
         $(".scroll-content").mCustomScrollbar({
             scrollInertia: 0,
             scrollbarPosition: "outside",
@@ -32,8 +32,7 @@ $(function () {
             theme: "minimal-dark",
             advanced: { autoExpandHorizontalScroll: true }
         });
-    });
-    var videos = $('.bannerplayer')
+    });    var videos = $('.bannerplayer')
         .mediaelementplayer({
             success: function (media) {
                 $(media)
@@ -325,7 +324,12 @@ $(function () {
             ]
         });
 	
-	
+	$('.result-slider').slick({
+		dots: true,
+  infinite: true,
+		arrows: false,
+  speed: 1200,
+	});
 	
  
     $('.tooltip')

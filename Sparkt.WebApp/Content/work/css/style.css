@@ -698,7 +698,11 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endC
 	justify-content: center;
 	display: -webkit-flex;
 	-webkit-align-items: center;
-	-webkit-justify-content: center
+	-webkit-justify-content: center;
+	text-align: center;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
 }
 .col-1 {
 	width: 100%;
@@ -728,6 +732,13 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endC
 .result-wrapp ul li:nth-child(4) {
 	background-color: #d9248a
 }
+.result-wrapp ul li:nth-child(5) {
+	background-color: #1c9bd1
+}
+.result-wrapp ul li:nth-child(6) {
+	background-color: #ff533d
+}
+
 .result-info {
 	color: #FFF;
 	height: 100%;
@@ -1874,6 +1885,14 @@ background-image: url(../images/u-cypher-bg.jpg);
 	-webkit-animation: shake .1s infinite;
 	-moz-animation: shake .1s infinite
 }
+
+.mobile-experience figure:hover .vibrate-img.sample-mobile img {
+	
+	animation: none;
+}
+
+
+
 @keyframes shake {
 0% {
 transform:translate(1px, 1px) rotate(0)
@@ -3071,6 +3090,68 @@ transform: translateX(0);
 .google-card-blk .mobile ul li:nth-child(7){ right: 332%;}
 
 
+.darkpurple-bg{ background-color: #180032; }
+.image-slider.sparkt-carousel .slick-slide img{ width: 100%;}
+.image-slider.sparkt-carousel .mobile-wrapp{ width: 70%; }
+.image-slider.sparkt-carousel .video-nav {
+    display: inline-block;
+    width: 100%;
+    width: 40%;
+    margin: 2rem auto 0;
+}
+
+.image-slider.sparkt-carousel .mobile-wrapp .slick-list{ padding: 6px; border-radius: 26px; 
+	border: none ;
+	background: rgb(254,39,8);
+background: -moz-linear-gradient(left, rgba(254,39,8,1) 0%, rgba(246,88,1,1) 37%, rgba(44,0,59,1) 100%);
+background: -webkit-linear-gradient(left, rgba(254,39,8,1) 0%,rgba(246,88,1,1) 37%,rgba(44,0,59,1) 100%);
+background: linear-gradient(to right, rgba(254,39,8,1) 0%,rgba(246,88,1,1) 37%,rgba(44,0,59,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe2708', endColorstr='#2c003b',GradientType=1 );
+} 
+
+.image-slider.sparkt-carousel .mobile-wrapp .slick-initialized .slick-slide{border-radius: 22px; overflow: hidden;    padding: .6%;
+    background-color: #000; }
+
+.result-slider-wrapp{box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);}
+
+.result-slider .slick-slide img {
+    display: block;
+    width: 100%;
+}
+
+.result-slider .slick-dots li button {
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+}
+.result-slider .slick-dots li.slick-active button{ background-color: #ff533d; border-color: #ff533d; }
+
+video#autoplay-video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    width: auto;
+	z-index: 2;
+}
+.autoplay-wrapp{background-color: #000; }
+.autoplay-wrapp .banner-image{    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    filter: blur(9px);
+    background-size:cover;
+	opacity: 0.6;
+	z-index: 1;
+	
+}
+
 @media screen and (max-width:1920px) {
 .work-navigation .client-works li {
 	width: 9vw
@@ -3143,7 +3224,8 @@ transform: translateX(0);
 	font-size: 19px
 }
 .result-wrapp ul li {
-	min-height: 175px
+	min-height: 184px;
+	font-size: 12px;
 }
 .quotes-wrapp .quotes h3 {
 	font-size: 30px;
@@ -3249,7 +3331,7 @@ transform: translateX(0);
 	top: inherit;
 	bottom: -6%
 }
-.mobile-experience .vibrate-img {
+.mobile-experience .vibrate-img, .sample-mobile {
 	width: 65%
 }
 .mobile-experience figure {
@@ -3428,7 +3510,7 @@ transform: translateX(0);
 	height: 60px;
 	width: 60px
 }
-.mobile-experience .vibrate-img {
+.mobile-experience .vibrate-img, .sample-mobile {
 	width: 60%
 }
 .mobile-experience figure {
@@ -3766,6 +3848,9 @@ body {
 .result-wrapp ul li.col-3:last-child {
 	width: 100%
 }
+.result-wrapp ul li.col-3.last-child:last-child {
+	width: 50%
+}	
 .three-img-carousel {
 	width: 70%
 }
@@ -3963,7 +4048,7 @@ body {
 	max-width: 100%;
 	text-align: center
 }
-.mobile-experience .vibrate-img {
+.mobile-experience .vibrate-img, .sample-mobile {
 	width: 50%
 }
 .slickSlider-3d .mobileOverlay .portrait {
@@ -4037,6 +4122,9 @@ body {
 }
 .sparkt-carousel .video-nav {
     width: 70%;
+}
+.result-slider .slick-dots {
+    bottom: -21%;
 }	
 }
 

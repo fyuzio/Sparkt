@@ -7,19 +7,28 @@
 <main>
     <div class="section">
         <div class="work-banner">
-            <div class="banner-source">
-                <div class="banner-video  middle-align" style="background-image: url(../Content/work/images/banners/usports-scratch.jpg);">
-                </div>
 
+            <div class="banner-source autoplay-wrapp">
+                <div class="banner-video ">
+                    <video id="autoplay-video" poster="~/Content/work/images/banners/usports-scratch.jpg" style="max-width: 100%; " preload="none" autoplay muted loop controls="false" playsinline webkit-playsinline>
+                        <source type="video/mp4" src="~/Content/work/media/usports-scratch.mp4" />
+                    </video>
+                    <script> document.getElementById( "autoplay-video" ).controls = false;
+                    </script>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/usports-scratch.jpg);"> </div>
             </div>
+
+
             <div class="head-title floated">
                 <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
                 <h1>USports</h1>
                 <div class="clear"></div>
-                <span>Scratch</span>
-            </div>           
+                <span>Scratch to unlock the website</span>
+            </div>
         </div>
         @Html.Partial("_WorkMenu");
+
 
     </div>
     <div class="section">
@@ -28,7 +37,7 @@
             <h2>Creative Assets</h2>
         </div>
         <div class="creative-assets-wrapp">
-            <div class="assets-carousel fixed " style="background-image: url(../Content/work/images/banners/usports-cover.jpg);">
+            <div class="assets-carousel black-orange-bg ">
                 <div class="slider">
 
                     <div>
@@ -40,15 +49,13 @@
                                                 </div>-->
                                 <div class="mobile-experience">
                                     <figure>
-                                        <div>
-                                            <img src="~/Content/work/images/usports-scratch-phone.png" alt="" />
+                                        <div class="sample-mobile vibrate-img">
+                                            <img src="~/Content/work/images/usports-hamburger-phone.png" alt="" />
                                         </div>
                                         <figcaption>
-                                            <a class="hvr-sweep-to-right" href="#" target="_blank"> experience creative</a>
+                                            <a class="hvr-sweep-to-right" href="http://www.usports.in/scratch" target="_blank">experience creative</a>
                                             <div class="clear"></div>
-                                            <span class="hvr-sweep-to-right">ONLY FOR <span>Mobile PHONES</span></span>
-
-
+                                            <span class="hvr-sweep-to-right">ONLY FOR Mobile PHONES </span>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -61,15 +68,14 @@
     </div>
     <div class="section white-bg">
         <div class="container">
-            <div class="quotes-wrapp">
+            @*<div class="quotes-wrapp">
                 <div class="quotes">
                     <h3>
                         Coming Soon
                     </h3>
                     <span class="quotes-writer"></span>
                 </div>
-            </div>
+            </div>*@
         </div>
     </div>
 </main>
-

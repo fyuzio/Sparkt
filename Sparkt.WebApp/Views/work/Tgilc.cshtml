@@ -1,29 +1,36 @@
 ﻿
 @{
-    ViewBag.Title = "Sparkt Work | Kullfi";
+    ViewBag.Title = "Sparkt Work | TGILC";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
 }
 
 <main>
     <div class="section">
         <div class="work-banner">
+            <!--<div class="banner-source">
+              <div class="banner-video">
+                <video class="bannerplayer" poster="images/banners/tgilc-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                  <source type="video/youtube" src="https://youtu.be/y4sgMwqZQRs"/>
+                </video>
+              </div>
+              <div class="banner-image" style="background-image: url(images/banners/tgilc-cover.jpg);"> </div>
+            </div>-->
+
+
             <div class="banner-source">
-                <div class="banner-video">
-                    <video class="bannerplayer" poster="~/Content/work/images/banners/kulfi-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
-                        <source type="video/youtube" src="https://youtu.be/y4sgMwqZQRs" />
-                    </video>
+                <div class="banner-video  middle-align" style="background-image: url(../Content/work/images/banners/tgilc-cover.jpg);">
                 </div>
-                <div class="banner-image" style="background-image: url(../Content/work/images/banners/kulfi-cover.jpg);"> </div>
+
             </div>
 
 
 
             <div class="head-title floated">
                 <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
-                <h1>Kullfi</h1>
+                <h1>The Great Indian Laughter Challenge</h1>
                 <div class="clear"></div>
-                <span>She sings about anything!</span>
-            </div>          
+                <span>Digital exclusive content to <br>introduce iconic characters</span>
+            </div>
         </div>
         @Html.Partial("_WorkMenu");
     </div>
@@ -39,36 +46,50 @@
                         <div class="creative-assets">
                             <div class="container">
                                 <div class="assets-title">
-                                    <h3>Skip ads with kullfi charming viewers <br>to watch her musical story</h3>
+                                    <h3>Producing jokes as digital content to popularise the show and its celebrity judges</h3>
                                 </div>
-                                <div class="mobile-style-carousel">
+                                <div class="sparkt-carousel">
                                     <div class="mobile-wrapp">
-                                        <img src="~/Content/work/images/mobile-slider.png" alt="" class="mobile-vector" />
+                                        <!-- <span class="chaitu-elem elem-7" ><img src="images/chaitulala-elem-7.png" alt=""/></span>-->
+
                                         <div class="video-slider">
                                             <div class="video-item">
-                                                <video poster="~/Content/work/images/video-thums/bharti-haarsh-nach8.png" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
-                                                    <source src="https://youtu.be/xWIp1PGaHcw" type="video/youtube" />
+                                                <video poster="http://img.youtube.com/vi/c8ZmBI9RkEA/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/c8ZmBI9RkEA" type="video/youtube" />
                                                 </video>
                                             </div>
                                             <div class="video-item">
-                                                <video poster="~/Content/work/images/video-thums/sanam-abigali-nach8.png" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
-                                                    <source src="https://youtu.be/Z55--9Ei0EA" type="video/youtube" />
+                                                <video poster="http://img.youtube.com/vi/oRWflcgUT9M/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/oRWflcgUT9M" type="video/youtube" />
                                                 </video>
                                             </div>
                                             <div class="video-item">
-                                                <video poster="~/Content/work/images/video-thums/divyank-vivek-nach8.png" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
-                                                    <source src="https://youtu.be/3Uv0dmH8Xzg" type="video/youtube" />
+                                                <video poster="http://img.youtube.com/vi/5K_rXI9VZTM/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/5K_rXI9VZTM" type="video/youtube" />
                                                 </video>
                                             </div>
 
+                                            <div class="video-item">
+                                                <video poster="http://img.youtube.com/vi/XTcI8m-v8_Y/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/XTcI8m-v8_Y" type="video/youtube" />
+                                                </video>
+                                            </div>
 
+                                            <div class="video-item">
+                                                <video poster="http://img.youtube.com/vi/M5aDZdTmh64/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/M5aDZdTmh64" type="video/youtube" />
+                                                </video>
+                                            </div>
 
                                         </div>
                                     </div>
                                     <div class="video-nav">
-                                        <div class="nav-item"><a href="#" class="hvr-grow"><img src="~/Content/work/images/video-thums/bharti-haarsh-nach8.png" alt="" /></a> </div>
-                                        <div class="nav-item"><a href="#" class="hvr-grow"><img src="~/Content/work/images/video-thums/sanam-abigali-nach8.png" alt="" /></a> </div>
-                                        <div class="nav-item"><a href="#" class="hvr-grow"><img src="~/Content/work/images/video-thums/divyank-vivek-nach8.png" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/c8ZmBI9RkEA/maxresdefault.jpg" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/oRWflcgUT9M/maxresdefault.jpg" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/5K_rXI9VZTM/maxresdefault.jpg" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/XTcI8m-v8_Y/maxresdefault.jpg" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/M5aDZdTmh64/maxresdefault.jpg" alt="" /></a> </div>
+
 
                                     </div>
                                 </div>
@@ -76,11 +97,12 @@
                         </div>
                     </div>
 
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="section white-bg">
+    @*<div class="section white-bg">
         <div class="head-title floated text-color-dark">
             <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
             <h2>Results</h2>
@@ -111,5 +133,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
 </main>

@@ -153,7 +153,7 @@
         </div>
         <div class="container">
             <div class="offering-wrapp fadIn-wrapp">
-                <span class="services-lable">Services</span> <span class="core-lable">Core Value</span>
+                @*<span class="services-lable">Services</span> <span class="core-lable">Core Value</span>*@
                 <div class="offering-container">
                     <div class="ring-wrapp ring-8 bottom-center-angle  right-angle">
                         <div class="ring-content">
@@ -203,7 +203,7 @@
                             <ul class="offfering-details">
                                 <li>Websites & Microsites</li>
                                 <li>Mobile Apps</li>
-                                <li>Intranet</li>
+                                @*<li>Intranet</li>*@
                                 <li>Conversational & Cognitive Interfaces</li>
                                 <li>Interaction Design</li>
                                 <li>Experiential Environments (AR/VR/MR)</li>
@@ -278,7 +278,7 @@
             </div>
             <div class="offering-wrapp-mobile">
                 <div class="offering-blk">
-                    <h5>Services</h5>
+                    @*<h5>Services</h5>*@
 
                     <ul class="collapsible" data-collapsible="accordion">
                         <li>
@@ -332,7 +332,7 @@
                                 <ul class="offfering-details experiences">
                                     <li>Websites & Microsites</li>
                                     <li>Mobile Apps</li>
-                                    <li>Intranet</li>
+                                    @*<li>Intranet</li>*@
                                     <li>Conversational & Cognitive Interfaces</li>
                                     <li>Interaction Design</li>
                                     <li>Experiential Environments (AR/VR/MR)</li>
@@ -355,7 +355,7 @@
                 </div>
 
                 <div class="offering-blk">
-                    <h5>Core Value</h5>
+                    @*<h5>Core Value</h5>*@
 
                     <ul class="collapsible" data-collapsible="accordion">
                         <li>
@@ -791,11 +791,11 @@
                         <a style="cursor:default"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a> 
                     </li>
                     <li>
-                        <a href="@Url.Action("PiramalCapital","work")"><img src="~/Content/images/clients/piramalCapital-logo.png" alt="Piramal Capital" /></a>
+                        <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
                     </li>
-                    <li>
+                    @*<li>
                         <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
-                    </li>
+                    </li>*@
                     <li>
                         <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
                     </li>
@@ -966,14 +966,41 @@
                                         </div>
                                     </a>
                                 </li>                            
-
+                                <li>
+                                    <a href="@Url.Action("Khichdi","work")">
+                                        <img src="~/Content/work/images/thums/khichadi-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Khichdi</h4>
+                                            <p>Digital exclusive content to introduce iconic characters</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tgilc","work")">
+                                        <img src="~/Content/work/images/thums/tgilc-thums.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TGILC</h4>
+                                            <p></p>
+                                        </div>
+                                    </a>
+                                </li>
+                              
+                                <li>
+                                    <a href="@Url.Action("UCypherUseOfData","work")">
+                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Use of Data</h4>
+                                            <p>Naya Sport. Naye Superstars.</p>
+                                        </div>
+                                    </a>
+                                </li>                              
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Innovations">
                             <ul>
                                 <li>
                                     <a href="@Url.Action("TedGoogleCards","work")">
-                                        <img src="~/Content/work/images/thums/ted-thum.jpg" alt="">
+                                        <img src="~/Content/work/images/thums/ted-google-cards-thum.jpg" alt="">
                                         <div class="caption">
                                             <h4>TED GOOGLE CARDS</h4>
                                             <p>Nayi Soch</p>
@@ -991,7 +1018,7 @@
                                 </li>
                                 <li>
                                     <a href="@Url.Action("HSPUBHMedia","work")">
-                                        <img src="~/Content/work/images/thums/hsubh-thum.jpg" alt="">
+                                        <img src="~/Content/work/images/thums/hspubh-thum.jpg" alt="">
                                         <div class="caption">
                                             <h4>Har Shaakh Pe Ullu Baithaa Hai</h4>
                                             <p>Kya Ullu Banaya!</p>
@@ -1004,6 +1031,24 @@
                                         <div class="caption">
                                             <h4>UCYPHER</h4>
                                             <p>Insta Fight</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("USportsScratch","work")">
+                                        <img src="~/Content/work/images/thums/usports-scratch-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Scratch</h4>
+                                            <p>Scratch to unlock the website</p>
+                                        </div>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="@Url.Action("USportsHamburger","work")">
+                                        <img src="~/Content/work/images/thums/usports-hamburger-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Hamburger</h4>
+                                            <p>Bring alive the Hamburger menu!</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1144,14 +1189,14 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("Ikyawann","work")">
-                                        <img src="~/Content/work/images/thums/ikyawann-thum.jpg" alt="">
+                                    <a href="@Url.Action("Kullfi","work")">
+                                        <img src="~/Content/work/images/thums/kullfi-thum.jpg" alt="">
                                         <div class="caption">
-                                            <h4>IKYAWANN</h4>
-                                            <p>Not a shaadi material</p>
+                                            <h4>Kulfi</h4>
+                                            <p>She sings about anything!</p>
                                         </div>
                                     </a>
-                                </li>
+                                </li>                                
                                 <li>
                                     <a href="@Url.Action("HSPubh","work")">
                                         <img src="~/Content/work/images/thums/hsubh-thum.jpg" alt="">
@@ -1161,12 +1206,12 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("Kullfi","work")">
-                                        <img src="~/Content/work/images/thums/kullfi-thum.jpg" alt="">
+                               <li>
+                                    <a href="@Url.Action("Ikyawann","work")">
+                                        <img src="~/Content/work/images/thums/ikyawann-thum.jpg" alt="">
                                         <div class="caption">
-                                            <h4>Kulfi</h4>
-                                            <p>She sings about anything!</p>
+                                            <h4>IKYAWANN</h4>
+                                            <p>Not a shaadi material</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1246,7 +1291,17 @@
                             </ul>
                         </div>
                          <div class="resp-tab-content" id="Marketing-Sciences">
-                             
+                             <ul>
+                                 <li>
+                                     <a href="@Url.Action("UCypherUseOfDataMS","work")">
+                                         <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                         <div class="caption">
+                                             <h4>U Sports Use of Data</h4>
+                                             <p></p>
+                                         </div>
+                                     </a>
+                                 </li>
+                             </ul>
                              </div>
                         <div class="resp-tab-content" id="Work-Media">
                             <ul>
