@@ -2,6 +2,10 @@
 @{
     ViewBag.Title = "Sparkt Work | mGage";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "mGage";
+    ViewBag.MetaDescription = "Powered by insights. Driven by mobile.";
+    ViewBag.MetaURL = "http://sparkt.in/work/MGage";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/mGage-thum.jpg";
 }
 
 <main>
@@ -19,7 +23,7 @@
                 <span>Powered by insights. Driven by mobile.</span>
             </div>           
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
 
     </div>
     <div class="section">

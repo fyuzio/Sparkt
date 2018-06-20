@@ -2,6 +2,10 @@
 @{
     ViewBag.Title = "Sparkt Work | TED TALKS";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "TED TALKS";
+    ViewBag.MetaDescription = "Ted Talks India Nayi Soch";
+    ViewBag.MetaURL = "http://sparkt.in/work/Ted";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/ted-thum.jpg";
 }
 
 <main>
@@ -35,7 +39,7 @@
                 <li class="tooltip" title="CIDCA: Media Innovation - Silver"><img src="~/Content/work/images/awards/cidca-2018-silver.png" class="responsive-img" alt="" /> </li>
             </ul>
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
      </div>
     <div class="section">
         <div class="head-title floated ">

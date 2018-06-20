@@ -2,6 +2,10 @@
 @{
     ViewBag.Title = "Sparkt Work | MMF WEBSITE";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = " MMF WEBSITE";
+    ViewBag.MetaDescription = "Conversational interface for enchanced experience";
+    ViewBag.MetaURL = "http://sparkt.in/work/MahindraMMF";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/mmf-thum.jpg";
 }
 
 <main>
@@ -32,7 +36,7 @@
                 <li class="tooltip" title="ACEF: Mobile - Innovation - Gold"><img src="~/Content/work/images/awards/acef-gold.png" class="responsive-img" alt="" /> </li>
             </ul>
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
     </div>
     <div class="section ">
         <div class="head-title floated ">

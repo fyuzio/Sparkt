@@ -1,7 +1,11 @@
 ﻿
 @{
-    ViewBag.Title = "'Sparkt Work | Brickex'";
+    ViewBag.Title = "Sparkt Work | Brickex";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Brickex";
+    ViewBag.MetaDescription = "India’s leading B2B platform providing real estate and financial services";
+    ViewBag.MetaURL = "http://sparkt.in/work/brickex";
+    ViewBag.MetaImage= "http://sparkt.in/Content/work/images/thums/brickex-thum.jpg";
 }
 
 <main>
@@ -20,7 +24,7 @@
             </div>
            
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
     </div>
     <div class="section">
         <div class="head-title floated ">

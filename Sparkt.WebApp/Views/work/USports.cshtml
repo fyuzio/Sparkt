@@ -2,6 +2,10 @@
 @{
     ViewBag.Title = "Sparkt Work | USports";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "USports";
+    ViewBag.MetaDescription = "A new-age multifaceted sports company";
+    ViewBag.MetaURL = "http://sparkt.in/work/USports";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/usports-thum.jpg";
 }
 
 <main>
@@ -19,7 +23,7 @@
                 <span>A new-age multifaceted sports company</span>
             </div>           
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
     </div>
     <div class="section">
         <div class="head-title floated ">

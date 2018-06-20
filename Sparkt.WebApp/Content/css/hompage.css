@@ -2264,6 +2264,20 @@ span.core-lable {
         color: #FFFFFF;
     }
 
+
+.mejs__overlay-button, .mejs__overlay-loading {
+    height: 45px;
+    width: 45px;
+    background-image: url(../plugins/mediaelementplayer/css/mejs-controls.png) !important;
+    background-size: 506% !important;
+    background-position: 0 -23px !important;
+    background-repeat: no-repeat !important;
+}
+
+    .mejs__overlay-button.mejs__overlay-loading-bg-img, .mejs__overlay-loading {
+        background-position: -91px -22px !important;
+    }
+
 @media screen and (max-width:1920px) {
     .head-title {
         max-width: 500px;
@@ -2588,18 +2602,7 @@ span.core-lable {
         font-size: 28px;
     }
 
-    .mejs__overlay-button, .mejs__overlay-loading {
-        height: 45px;
-        width: 45px;
-        background-image: url(../plugins/mediaelementplayer/css/mejs-controls.png) !important;
-        background-size: 506% !important;
-        background-position: 0 -23px !important;
-        background-repeat: no-repeat !important;
-    }
-
-        .mejs__overlay-button.mejs__overlay-loading-bg-img, .mejs__overlay-loading {
-            background-position: -91px -22px !important;
-        }
+ 
 }
 
 @media screen and (max-width:1200px) {

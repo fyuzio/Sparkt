@@ -2,6 +2,10 @@
 @{
     ViewBag.Title = "Sparkt Work | Star Writers Program";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Star Writers Program";
+    ViewBag.MetaDescription = "Creating Indias first university program for creative writers";
+    ViewBag.MetaURL = "http://sparkt.in/work/Swp";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/swp-thum.jpg";
 }
 
 <main>
@@ -19,7 +23,7 @@
                 <span>Creating India's first university program for creative writers</span>
             </div>           
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
 
     </div>
     <div class="section ">

@@ -2,6 +2,10 @@
 @{
     ViewBag.Title = "Sparkt Work | Women’s Day";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Women’s Day";
+    ViewBag.MetaDescription = "Igniting a Nayi Soch to break gender stereotypes";
+    ViewBag.MetaURL = "http://sparkt.in/work/WomensDay";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/womens-day-thum.jpg";
 }
 
 <main>
@@ -30,7 +34,7 @@
                 <li class="tooltip" title="CAMPAIGN INDIA: Social Cause - Supported by Brand - Bronze"><img src="~/Content/work/images/awards/campaign-india-bronz.png" class="responsive-img" alt="" /></li>
             </ul>
         </div>
-        @Html.Partial("_WorkMenu");
+        @Html.Partial("_WorkMenu")
     </div>
     <div class="section">
         <div class="head-title floated  ">
