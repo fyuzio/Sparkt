@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Sparkt.WebApp.Controllers
 {
+    [RoutePrefix("work")]
     public class workController : Controller
     {
         // GET: work
@@ -13,7 +14,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
-
+        [Route("BoutiqueLiving")]
         public ActionResult Bql()
         {
             return View();
@@ -31,6 +32,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("HarShaakhPeUlluBaithaaHai")]
         public ActionResult HSPubh()
         {
             return View();
@@ -76,7 +78,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
-
+        [Route("MahindraKarBachatYojana")]
         public ActionResult MahindraTah()
         {
             return View();
@@ -106,6 +108,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("PiramalHousingFinanceLtd")]
         public ActionResult Phfl()
         {
             return View();
@@ -118,6 +121,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("StarWritersProgram")]
         public ActionResult Swp()
         {
             return View();
@@ -130,6 +134,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("TheGreatIndianLaughterChallenge")]
         public ActionResult Tgilc()
         {
             return View();
@@ -171,10 +176,12 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("HarShaakhPeUlluBaithaaHaiMedia")]
         public ActionResult HSPUBHMedia()
         {
             return View();
         }
+        [Route("MahindraMutualFundTextEmoji")]
         public ActionResult TextMoji()
         {
             return View();

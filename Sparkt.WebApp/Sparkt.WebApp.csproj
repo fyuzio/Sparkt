@@ -979,6 +979,7 @@
     <Content Include="Content\work\media\sparkt-office.webm" />
     <Content Include="Content\work\media\textomoji.mp4" />
     <Content Include="Content\work\media\usports-desktop.mp4" />
+    <Content Include="Content\work\media\usports-hamburger.mp4" />
     <Content Include="Content\work\media\usports-mobile.mp4" />
     <Content Include="Content\work\media\usports-scratch.mp4" />
     <Content Include="Content\work\plugins\hover3d\js\jquery.hover3d.min.js" />

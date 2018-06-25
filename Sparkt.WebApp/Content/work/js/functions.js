@@ -580,16 +580,7 @@ $(".hover-mover").mousemove(function(e){
           $('.hover-mover').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
 	
-    $('.website-operation video#mobile')[0].play();
-    $('.website-operation video#desktop')[0].play();
-	$('#insta-video')[0].play();
-    $('#first-video')[0].play();
-	
-	
-
-
-
-	
+  
 	
 });
 $(function () {
@@ -633,8 +624,13 @@ $(function () {
             .addClass("highlighted");
     }
     if($('body')
-        .hasClass('usports')) {
+        .hasClass('usports')) {       
         $(".usports")
             .addClass("highlighted");
     }
 });
+
+$('.website-operation video#mobile')[0].play();
+$('.website-operation video#desktop')[0].play();
+$('#insta-video')[0].play();
+$('#first-video')[0].play();
