@@ -312,7 +312,7 @@ $(function () {
             el: ".swiper-pagination-v",
             clickable: !0
         },
-        autoHeight: !0,
+       // autoHeight: !0,
         autoplay: {
             delay: 3e3,
             disableOnInteraction: !1
