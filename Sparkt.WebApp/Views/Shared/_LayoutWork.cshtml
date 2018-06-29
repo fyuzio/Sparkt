@@ -3,11 +3,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>   
+    <title>@ViewBag.Title</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
     <link rel="icon" type="image/png" sizes="16x16" href="~/Content/work/images/fevicon.png">
     <meta name="author" content="Sparkt | A Creative & Digital Marketing Agency in Mumbai, India">
     <meta name="keywords" content="digital agency, creative agency, SMO, SEO, SEM, programmatic media buying, analytics, website design, website development">
@@ -21,7 +21,7 @@
     <meta name="twitter:image" content="@ViewBag.MetaImage" />
     <!-- Open Graph data -->
     <meta property="og:title" content="@ViewBag.MetaTitle" />
-    <meta property="og:url" content="@ViewBag.MetaURL"/>
+    <meta property="og:url" content="@ViewBag.MetaURL" />
     <meta property="og:description" content="@ViewBag.MetaDescription" />
     <meta property="og:site_name" content="Sparkt" />
     <meta property="og:type" content="website" />
@@ -38,6 +38,38 @@
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/work/plugins/lightgallery/css/lg-transitions.min.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/plugins/malihu-custom-scrollbar/css/jquery.mCustomScrollbar.css" />
     <link type="text/css" rel="stylesheet" media="screen,projection" href="~/Content/work/css/style.css" />
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "Organization",
+        "url": "http://www.sparkt.in/",
+        "logo": "https://www.sparkt.in//Content/images/spakt.png"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "Organization",
+        "url": "http://www.sparkt.in/",
+        "name": "Sparkt",
+        "sameAs": [
+        "https://www.facebook.com/sparktindia",
+        "https://twitter.com/sparktindia",
+        "https://in.linkedin.com/company/sparkt-india",
+        "https://www.youtube.com/c/SparktIndia"
+        ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "PostalAddress",
+        "streetAddress": "408, Satellite Gazebo, Andheri-Ghatkopar Link Road, Chakala, Andheri (East), Mumbai, Maharashtra 400093",
+        "addressLocality": "Andheri",
+        "postalCode": "400093",
+        "addressCountry": "INDIA"
+        }
+    </script>
 </head>
 <body class="@RenderSection("BodyClass", false)">
     <header>
