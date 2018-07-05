@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sparkt | A Creative & Digital Marketing Agency in Mumbai</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/css")
     @Scripts.Render("~/bundles/modernizr")
 
 
@@ -369,9 +369,7 @@
     <script src="~/Scripts/User/SparktHelper.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            $('.se-pre-con').delay(1700).fadeOut('slow');
-        });
+
 
         $(document).ready(function () {
             if (location.href.includes('?')) {
@@ -380,7 +378,11 @@
             if (pageSection == 'Work' || pageSection == 'clients' || pageSection == 'We' || pageSection == 'SparktLive' || pageSection == 'Contact') {
                 location.hash = "#" + pageSection.toLowerCase();
                 callback();
-            }
+            } 
+        });
+
+        jQuery(window).load(function () {
+            $('.se-pre-con').fadeOut('slow');
         });
 
 

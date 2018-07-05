@@ -628,6 +628,11 @@ $(function () {
         $(".usports")
             .addClass("highlighted");
     }
+	if($('body')
+        .hasClass('editage')) {       
+        $(".editage")
+            .addClass("highlighted");
+    }
 });
 
 $('.website-operation video#mobile')[0].play();
