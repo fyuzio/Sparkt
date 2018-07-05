@@ -186,5 +186,11 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [Route("EditageInsights")]
+        public ActionResult EditageInsights()
+        {
+            return View();
+        }
     }
 }
