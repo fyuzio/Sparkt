@@ -384,3 +384,229 @@ $(function () {
         triggerHook: 0.1
     }).setTween(r).addTo(h)
 });
+
+
+	    $( function() {
+    
+
+		$( '.custom-tabs' ).each(function( id ) {
+			var $this             = $( this ),
+			    $li               = $this.find( '.custom-tabs-ul-container > ul.xmsNav > li' ),
+				liNum             = $li.length,
+				$contentbox       = $this.find( '.content' ),
+				ulWidth           = $this.data( 'width' ),
+				fullwidth         = $this.data( 'fullwidth' ),
+				rotation          = $this.data( 'rotation' ),
+				rotationRadius    = $this.data( 'rotation-radius' ),
+				rotationWapperDeg = $this.data( 'rotation-wrapper-angle' ),
+				
+				tabBoxID          = id,
+				isNumeric         = /^[-+]?(\d+|\d+\.\d*|\d*\.\d+)$/;
+			
+			if( typeof fullwidth != typeof undefined && fullwidth == 1 ) {
+				$li.css( 'width', ( 100 / liNum ) + '%' );
+			}
+			
+					
+			
+			if( typeof rotation === typeof undefined ) {
+				rotation = false;
+			}	
+			
+			
+			if( typeof rotationWapperDeg === typeof undefined ) {
+				rotationWapperDeg = 0;
+			}		
+			
+			
+			$li.each( function( index ) {
+				index = index + 1;
+				$( this ).attr( 'href', 'javascript:' );
+				$( this ).attr( 'data-tab', tabBoxID + '-tabs-show' + index );
+			});
+			$( $contentbox ).each( function( index ) {
+				index = index + 1;
+				$( this ).attr( 'id', tabBoxID + '-tabs-show' + index );
+			});
+			
+			
+			// Tab Rotation Effect
+			if ( rotation ) {
+				
+				var increase   = Math.PI * 2 / liNum,
+					radius     = 230,
+					angle      = 0;
+				
+				//Initialize button position
+				$this.find( '.custom-tabs-ul-container > ul.xmsNav' ).css({ 
+							'-webkit-transform' : 'rotate('+ parseFloat( rotationWapperDeg ) +'deg)',
+							'-ms-transform'     : 'rotate('+ parseFloat( rotationWapperDeg ) +'deg)',
+							'transform'         : 'rotate('+ parseFloat( rotationWapperDeg ) +'deg)'
+						})
+						.find( '.custom-tabs-ul-container > ul.xmsNav > li' )
+						.css({ 
+								'-webkit-transform' : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
+								'-ms-transform'     : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
+								'transform'         : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)'
+							})
+				        .find( '.custom-tabs-ul-container > ul.xmsNav > li .title' )
+						.css({ 
+								'-webkit-transform' : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
+								'-ms-transform'     : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
+								'transform'         : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)'
+							})
+				;
+				
+				
+				$li.each( function( index ) {
+					$( this ).css( {
+						'left'              : Math.cos( - Math.PI / 450 + index * increase) * radius + 'px',
+						'top'               : Math.sin( - Math.PI / 450 + index * increase) * radius + 'px'
+					} );
+					
+
+					
+					$( this ).on( 'click', function( e ) {
+						
+						var n        = $( this ).index(),
+							endAngle = n % liNum * increase; 
+
+
+						( function turn() {
+							if (Math.abs(endAngle - angle) > 1 / 8) {
+								var sign = endAngle > angle ? 1 : -1;
+								angle = angle + sign / 8;
+								setTimeout(turn, 3);
+							} else {
+								angle = endAngle;
+							}
+
+
+							$li.each( function( index ) {
+								$( this ).css( {
+									'left'        : Math.cos( - Math.PI / 450 + index * increase - angle) * radius + 'px',
+									'top'         : Math.sin( - Math.PI / 450 + index * increase - angle) * radius + 'px'
+								} );
+
+							});	
+
+
+						})();	
+						
+					});
+					
+				});	
+				
+
+				
+			}
+			
+			
+			// Tab Fade Effect
+			$this.on( 'click', '.custom-tabs-ul-container > ul.xmsNav > li', function( e ) {
+				
+				
+				$('.center-border').addClass( 'scaleout' );
+				setTimeout(function(){ 
+				$('.center-border').removeClass( 'scaleout' );
+				}, 490);
+				
+				
+				
+				var tabID = $( this ).attr( 'data-tab' ),
+					index = parseFloat( $( this ).index() - 1 ),
+					id=$( this ).attr( 'id' );
+				
+				
+				$this.find( 'ul.xmsNav li' ).removeClass( 'active' ).addClass('deactivated');
+				$this.find( '.content' ).removeClass( 'active' );
+				
+				
+		
+				$( this ).addClass( 'active' ).removeClass('deactivated');
+				$( '#' + tabID ).addClass( 'active' );
+				
+				 addDynamicClass(parseInt(id[id.length-1]));
+				 
+				
+				return false;
+				
+				
+			});
+			
+			// Init
+			$this.find( 'ul > li.active' ).trigger( 'click' );
+				
+			
+		});	 
+		 
+		 function addDynamicClass(tab)
+		 {
+		 //debugger;
+		 var lengthOfLi=$('.xmsNav').children().length;
+		 var lenghtOfLoop=lengthOfLi-tab;
+		 var counter=0;
+		 if($('#li' +tab )[0])
+		 {
+		  $('#li' +tab )[0].className = $('#li' +tab )[0].className.replace(/xms\w*\s*/g, '');
+		 $('#li' +tab ).addClass('xmsRight');
+		 }
+		 for(var i=1;i<=lenghtOfLoop;i++)
+		 {
+		 counter++;
+		 var classToAdd=returnClass(counter);
+		 var id=parseInt(tab)+parseInt(i);
+		 if($('#li' +id )[0])
+		 {
+		  $('#li' +id )[0].className = $('#li' +id )[0].className.replace(/xms\w*\s*/g, '');
+		 $( '#li' +id  ).addClass(classToAdd);
+		 var classes=$('#li' +id )[0].className;
+		 classes.replace(/  +/g, ' ');
+		 $('#li' +id).removeClass();
+		 $( '#li' +id  ).addClass(classes);
+		 }
+		 }
+		 for(var i=tab;i>0;i--)
+		 {
+		 var classToAdd=returnClass(counter);
+		 var id=parseInt(tab)-parseInt(i);
+		 if($('#li' +id )[0])
+		 {
+		  $('#li' +id )[0].className = $('#li' +id )[0].className.replace(/xms\w*\s*/g, '');
+		 $( '#li' +  id).addClass(classToAdd);
+		  var classes=$('#li' +id )[0].className;
+		 classes.replace(/  +/g, ' ');
+		 $('#li' +id).removeClass();
+		 $( '#li' +id  ).addClass(classes);
+		 }
+		counter++
+		 }
+		 }
+		
+		 function returnClass(index)
+		 {
+		switch(index)
+		{
+		case 1: return 'xmsBottomRight'; break;
+		case 2: return 'xmsBottom'; break;
+		case 3: return 'xmsBottomLeft'; break;
+		case 4: return 'xmsLeft'; break;
+		case 5: return 'xmsTopLeft'; break;
+		case 6: return 'xmsTop'; break;
+		case 7: return 'xmsTopRight'; break;
+		default:'';break;
+		}
+		 }
+    } );
+	
+	
+jQuery(function() {
+  jQuery('#showall').click(function() {
+    jQuery('.targetDiv').fadeIn().addClass('active');
+  });
+  jQuery('.showSingle').click(function() {
+    jQuery('.targetDiv').hide().removeClass('active');
+    jQuery('#div' + $(this).attr('target')).fadeIn().addClass('active');
+  });
+});	
+	

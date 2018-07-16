@@ -30,7 +30,9 @@ $(window).on("load", function () {
         $(".horizontalScroll").mCustomScrollbar({
             axis: "x",
             theme: "minimal-dark",
-            advanced: { autoExpandHorizontalScroll: true }
+            advanced: { autoExpandHorizontalScroll: true },
+            mouseWheel: { enable: true, axis: "x", preventDefault: true, invert: true }
+
         });
     });    var videos = $('.bannerplayer')
         .mediaelementplayer({
