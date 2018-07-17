@@ -542,7 +542,7 @@
                 line-height: 34px;
                 margin: 0;
                 letter-spacing: 1px;
-                overflow: hidden;
+                overflow: visible;
                 font-weight: bold;
                 padding-bottom: 38px;
             }
@@ -551,12 +551,14 @@
                     display: inline-block;
                     position: relative;
                     vertical-align: top;
+                    padding-bottom:6px;
+                    overflow:hidden;
                 }
 
                     .squad-wrapp figure figcaption h4 span:after {
                         content: '';
                         position: absolute;
-                        bottom: -4px;
+                        bottom: 3px;
                         left: -100%;
                         height: 3px;
                         width: 100%;
@@ -3310,6 +3312,60 @@ font-size:0;}
     border-left: 8px solid transparent;
 
 }
+.squadTab ul.resp-tabs-list {
+    padding: 0 26px;
+}
+.squadTab ul.resp-tabs-list > li {
+    background-color: transparent;
+    border: none;
+    margin:0 ;
+    padding:0 16px !important;
+    width:auto;
+}
+    .squadTab ul.resp-tabs-list > li span {
+        display: inline-block;
+        height: 46px;
+        line-height: 46px;
+        text-transform: uppercase;
+        font-size: 22px;
+        padding: 0 0;
+        position:relative;
+        width:100%;
+        overflow:hidden;
+        letter-spacing:1.2px;
+    }
+
+        .squadTab ul.resp-tabs-list > li span:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background-image: url(../images/sparkt-border.png);
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: translateX(-101%);
+            -webkit-transform: translateX(-101%);
+            transition: all ease 0.4s;
+        }
+
+    .squadTab ul.resp-tabs-list > li.resp-tab-active span:after {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+            
+
+            .squadTab .resp-tabs-container {
+                background: none;
+            }
+    .squadTab .resp-tabs-container .resp-tab-content {
+        border:none;
+        padding: 24px 0 !important;
+    }
+
+
 @media screen and (max-width:1920px) {
     .head-title {
         max-width: 500px;
@@ -3330,6 +3386,7 @@ font-size:0;}
 }
 
 @media screen and (max-width:1680px) {
+
     .head-title-content P {
         font-size: 14px;
         margin-bottom: 0.5rem;
@@ -3686,6 +3743,11 @@ font-size:0;}
             right: -35%;
             top: 24%;
         }
+
+    .squadTab ul.resp-tabs-list > li span {
+        font-size: 18px;
+        letter-spacing:0.6px;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -4217,9 +4279,63 @@ font-size:0;}
                 max-width: 100px;
             }
 }
+@media screen and (max-width:768px) {
+    .squadTab ul.resp-tabs-list {
+        display:none;
+    }
 
-@media screen and (max-width:500px) {
-    .head-title.floated {
+    .squadTab h2.resp-accordion {
+        display: block;
+        background-color: rgba(0,0,0,0.1);
+        border: none !important;
+        color: #ffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        padding: 0 16px !important;
+        margin-bottom: 4px;
+    }
+
+        .squadTab h2.resp-accordion > span {
+            height: 46px;
+            line-height: 46px;
+            display: inline-block;
+            position:relative;
+            overflow:hidden;
+        }
+        .squadTab h2.resp-accordion span.resp-arrow {
+            height: 0;
+            line-height: normal;
+            margin-top: 20px;
+        }
+            
+            .squadTab h2.resp-accordion span:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 6px;
+                height: 3px;
+                width: 100%;
+                background-image: url(../images/sparkt-border.png);
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transition: all ease 0.4s;
+            }
+        .squadTab h2.resp-accordion span.resp-arrow:after {
+            display: none;
+        }
+    .squadTab h2.resp-tab-active > span:after {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+}
+
+    @media screen and (max-width:500px) {
+        .head-title.floated {
         text-align: center;
     }
 

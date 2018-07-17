@@ -3958,6 +3958,24 @@ video#autoplay-video {
 
 }
 
+a.showcase-tab {
+    padding: 4px 24px;
+    margin: 12px 0;
+    display: inline-block;
+    background: rgba(255,26,0,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0, rgba(255,26,0,1)), color-stop(100%, rgba(217,36,135,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: linear-gradient(135deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#d92487', GradientType=1 );
+    border-radius: 18px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
 @media screen and (max-width:1920px) {
     .work-navigation .client-works li {
         width: 9vw
