@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sparkt | A Creative & Digital Marketing Agency in Mumbai</title>
-    @Styles.Render("~/bundles/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @*@Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/modernizr")*@
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -290,15 +290,8 @@
             </ul>
         </div>
 
-        @*<a class="waves-effect waves-light btn modal-trigger" href="#thanks" style="position: fixed; left: 0; top: 0; z-index: 999999; display: none; ">Modal</a>*@
+        @*<a class="waves-effect waves-light btn modal-trigger" href="#divThankYouModal1" style="position: fixed; left: 0; top: 0; z-index: 999999; display: none; ">Modal</a>*@
         <!-- Modal Structure -->
-        <div id="divThankYouModal" class="modal thanks-modal">
-            <a href="javascript:void(0);" class="modal-action modal-close waves-effect waves-green" id="btnThankyouClose">X</a>
-            <div class="modal-content">
-                <span class="thanks-icon"><i class="far fa-smile"></i></span>
-                <p id="pThankYouMessage"></p>
-            </div>
-        </div>
         @*<div class="overlay-wrapp"></div>*@
         @*<div id="divThankYouModal" class="modal thank-u-modal">
             <div class="modal-content  ">
@@ -342,8 +335,15 @@
         </div>
 
     </footer>
+    <div id="divThankYouModal" class="modal thanks-modal">
+        <a href="javascript:void(0);" class="modal-action modal-close waves-effect waves-green" id="btnThankyouClose">X</a>
+        <div class="modal-content">
+            <span class="thanks-icon"><i class="far fa-smile"></i></span>
+            <p id="pThankYouMessage">Thank You!</p>
+        </div>
+    </div>
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @*@Scripts.Render("~/bundles/bootstrap")*@
     @RenderSection("scripts", required: false)
     <!--  Scripts-->
     @*<script type="text/javascript" src="~/Content/js/jquery-3.1.1.min.js"></script>*@
@@ -395,7 +395,7 @@
 
     </script>
 
-   
+
 
 </body>
 </html>
