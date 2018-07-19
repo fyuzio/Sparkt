@@ -10,3 +10,4 @@ Sparkt.WebApp/bin/
 Sparkt.WebApp/obj/
 packages/
 .vs/
+*.so
