@@ -74,6 +74,11 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        public ActionResult MahindraMMFExperience()
+        {
+            return View();
+        }
         public ActionResult MahindraNfoLaunches()
         {
             return View();
