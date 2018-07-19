@@ -1,0 +1,12 @@
+Sparkt.BusinessAccess/bin/
+Sparkt.BusinessAccess/obj/
+Sparkt.DataAccess/bin/
+Sparkt.DataAccess/obj/
+Sparkt.Entities/bin/
+Sparkt.Entities/obj/
+Sparkt.Utility/bin/
+Sparkt.Utility/obj/
+Sparkt.WebApp/bin/
+Sparkt.WebApp/obj/
+packages/
+.vs/
