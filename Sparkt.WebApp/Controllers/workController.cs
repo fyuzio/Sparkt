@@ -70,12 +70,12 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }      
-        public ActionResult MahindraMMF()
+        public ActionResult MahindraMF()
         {
             return View();
         }
 
-        public ActionResult MahindraMMFExperience()
+        public ActionResult MahindraMFExperience()
         {
             return View();
         }
@@ -194,6 +194,12 @@ namespace Sparkt.WebApp.Controllers
 
         [Route("EditageInsights")]
         public ActionResult EditageInsights()
+        {
+            return View();
+        }
+
+        [Route("VYNG")]
+        public ActionResult StarVYNG()
         {
             return View();
         }

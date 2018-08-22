@@ -1256,6 +1256,7 @@ ul.title-navigation {
     position: relative;
     color: #FFFFFF;
     text-decoration:none;
+    cursor:pointer;
 }
 
     .title-navigation li a span {
@@ -2627,7 +2628,7 @@ span.core-lable {
     }
 
     .xms-wheel .custom-tabs.rotation ul.xmsNav > li.active > a .title label {
-        font-size: 20px;
+        /*font-size: 20px;*/
     }
 
     .xms-wheel .custom-tabs.rotation ul.xmsNav > li.active > a:hover .icons img {

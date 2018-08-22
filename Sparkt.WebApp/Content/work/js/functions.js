@@ -583,6 +583,50 @@ $(".hover-mover").mousemove(function(e){
 });
 	
   
+var mySwiper = new Swiper('.vyng-slider .swiper-container', {
+	 spaceBetween: 0,
+	speed:1000,
+	effect: 'coverflow',
+      grabCursor: true,
+	coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : false,
+      },
+      pagination: {
+        el: '.vyng-slider .swiper-pagination',
+		   clickable: true,
+      },
+    });
+	
+mySwiper.on('slideChange', function () {
+	
+$('.swiper-slide video').trigger('pause');		
+		
+});		
+	
+mySwiper.on('slideChangeTransitionEnd', function () {
+
+SynccarouselData();	
+	
+$($(".swiper-slide.swiper-slide-active")[0]).find('video').get(0).play();
+	
+});	
+	
+var SynccarouselData=function(){
+  // alert();
+  var SyncData= $('.swiper-slide.swiper-slide-active').attr('data-hash');
+  $('.slide-relative').removeClass('active');
+   $('.slide-relative').each(function(){
+	   var DataId=$(this).attr('data-id');
+	   if(DataId==SyncData)
+		   {
+			   $(this).addClass('active');
+		   }
+   });
+}
 	
 });
 $(function () {
