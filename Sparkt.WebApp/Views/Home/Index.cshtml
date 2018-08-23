@@ -915,17 +915,15 @@
                     <li>
                         <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
                     </li>
-                    <li>
+                    @*<li>
                         <a style="cursor:default"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
-                    </li>
+                    </li>*@
                     <li>
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
                     </li>
-
                     <li>
-                        <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
+                        <a href=""><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
                     </li>
-
                     <li>
                         <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
                     </li>
@@ -933,6 +931,9 @@
                         <a style="cursor:default"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
                     </li>
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>
+                    <li>
+                        <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
+                    </li>
                     @*<li>
             <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
         </li>*@
@@ -1457,23 +1458,24 @@
             </div>
         </div>
         <div class="container">
-            <div class="showreel-wrapp fadIn-wrapp">
+            <div class="showreel-wrapp fadIn-wrapp" id="testDiv">
                 <div class="swiper-container showreel-videos">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" >
                         <div class="swiper-slide">
 
                             <div class="video-wrapp ">
                                 <div class="videoWrapper">
 
-                                    <iframe data-src="https://www.youtube.com/embed/BiWDL1zPwg4" src="" frameborder="0" allowfullscreen></iframe>
+                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/BiWDL1zPwg4" src="" frameborder="0" allowfullscreen></iframe>*@
+                                    <div id="video1"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="video-wrapp ">
                                 <div class="videoWrapper">
-
-                                    <iframe data-src="https://www.youtube.com/embed/Fq3yy7Dar24" src="" frameborder="0" allowfullscreen></iframe>
+                                    <div id="video2"></div>
+                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/Fq3yy7Dar24" src="" frameborder="0" allowfullscreen></iframe>*@
                                 </div>
                             </div>
                         </div>

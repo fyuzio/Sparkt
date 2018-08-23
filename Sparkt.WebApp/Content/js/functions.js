@@ -175,7 +175,30 @@ $(function () {
             clickable: true,
         },
     });
-    
+    var player, playing = false;
+    onYouTubeIframeAPIReady();
+    function onYouTubeIframeAPIReady() {
+
+        player = new YT.Player('video1', {
+
+            videoId: 'BiWDL1zPwg4',
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        player = new YT.Player('video2', {
+
+            videoId: 'Fq3yy7Dar24',
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerStateChange(event) {
+        debugger;
+        mySwiper.autoplay.stop();
+    }
 
     $('.showreel-videos').on('mouseenter', function (e) {
         console.log('stop autoplay');       
