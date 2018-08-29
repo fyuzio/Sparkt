@@ -74,6 +74,10 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Common\DataBaseHelper.cs" />
     <Compile Include="GuestDataAccess.cs" />
+    <Compile Include="Implementation\LeadRepository.cs" />
+    <Compile Include="Implementation\UserRepository.cs" />
+    <Compile Include="Interface\ILeadRepository.cs" />
+    <Compile Include="Interface\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -86,5 +90,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

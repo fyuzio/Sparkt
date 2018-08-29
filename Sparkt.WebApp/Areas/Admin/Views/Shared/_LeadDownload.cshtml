@@ -1,0 +1,41 @@
+﻿<div id="leadDownload" class="modal uplayer-register player-popup signup-popup">
+    <div class="row">
+        <div class="col m6">
+            <h5 class="">Download Leads </h5>
+        </div>
+        <div class="m6">
+            <a href="javascript:void(0)" data-container-id="leadDownload" class="modal-action modal-close">X</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="signup-popup-content">
+            <div class="signup-form-wrapp">
+                <div class="row">
+                    <div class="contact-form col s12 m12 l10 offset-l1">
+                        @using (Html.BeginForm("DownloadLeadsDate", "Console", FormMethod.Post, new { id = "dateleaddownload" }))
+                        {
+
+                        <div class="row">
+                            <input type="hidden" name="TypeId" value="3" />
+                            <div class="input-field col s12 m6">
+                                <input name="FromDate" id="fromDate" value="@DateTime.Now" class="datepicker" placeholder="Select from  date" />
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input name="ToDate" id="toDate" value="@DateTime.Now.ToShortDateString()" class="datepicker" placeholder="Select to  date" />
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <button class="btn waves-effect waves-light" type="submit">Submit</button>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

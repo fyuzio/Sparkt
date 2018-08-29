@@ -1,0 +1,69 @@
+﻿@using System.Web.Optimization;
+@model Sparkt.WebApp.Areas.Admin.Models.LoginViewModel
+@{
+    ViewBag.Title = "Sparkt Admin-Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="canonical" href="http://loremipsum.com/" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="manifest" href="~/Content/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/Content/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>@ViewBag.Title</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    @Styles.Render("~/Content/Admin/css")
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Login"))
+    {
+        @Html.AntiForgeryToken()
+
+        <a href="http://sparkt.in/" class="poweredby" target="_blank"><img src="~/~/Areas/Admin/Content/images/XMS.png" alt="XMS" /></a>
+        <div class="videotint"></div>
+        <video id="bgvid" poster="~/Areas/Admin/Content/images/preview.jpg" autoplay loop muted playsinline>
+            <source src="~/Areas/Admin/Content/media/bg.mp4" type="video/mp4" onerror="fallback(parentNode)">
+            <img src="~/Areas/Admin/Content/images/preview.jpg" alt="" />
+        </video>
+
+        <main class="login-page valign-wrapper  ">
+            <div class="login-wrapp">
+                <div class="card">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="logo"><a href="#"><img src="~/Areas/Admin/Content/images/logos/sparkt.png" class="responsive-img" alt="" /></a></div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                                    @Html.LabelFor(m => m.Username, "User Name*")
+                                </div>
+                                <div class="input-field col s12">
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                    @Html.LabelFor(m => m.Password, "Password*")
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <button class="btn red waves-effect waves-light" type="submit" name="action">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    }
+
+    @Scripts.Render("~/bundles/Admin/jquery")
+</body>
+</html>
