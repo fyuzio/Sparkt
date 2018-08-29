@@ -166,6 +166,7 @@
     <Content Include="Content\css\common.css" />
     <Content Include="Content\css\hompage.css" />
     <Content Include="Content\css\hover-min.css" />
+    <Content Include="Content\css\lity.min.css" />
     <Content Include="Content\css\mejs-controls.png" />
     <Content Include="Content\css\mejs-controls.svg" />
     <Content Include="Content\css\reset.css" />
@@ -1188,6 +1189,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lity.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -1251,6 +1253,10 @@
     <Content Include="Views\work\TextMoji.cshtml" />
     <Content Include="Views\work\UCypherUseOfData.cshtml" />
     <Content Include="Views\work\UCypherUseOfDataMS.cshtml" />
+    <Content Include="Views\work\EditageInsights.cshtml" />
+    <Content Include="Views\work\MahindraMF.cshtml" />
+    <Content Include="Views\work\MahindraMFExperience.cshtml" />
+    <Content Include="Views\work\StarVYNG.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

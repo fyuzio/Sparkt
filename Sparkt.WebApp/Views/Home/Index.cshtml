@@ -37,8 +37,10 @@
             </div>
         </div>
         <div class="container top-padding-none">
-            <div class="sparkt-table"> <img src="~/Content/images/table-sparkt-office.png" alt=""> <span class="table-shaddow"></span> </div>
+            <div class="sparkt-table"> <a data-lity href="https://www.youtube.com/embed/BiWDL1zPwg4?rel=0&amp;showinfo=0 " ><img src="~/Content/images/table-sparkt-office.png" alt=""></a> <span class="table-shaddow"></span> </div>
         </div>
+        
+
     </div>
     <div class="section blue" id="culture">
         <!--<div class="section-title" >
@@ -901,8 +903,8 @@
                         <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
                     </li>
                     @*<li>
-            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
-        </li>*@
+                            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
+                        </li>*@
                     <li>
                         <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
                     </li>
@@ -916,8 +918,8 @@
                         <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
                     </li>
                     @*<li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
-                    </li>*@
+                            <a style="cursor:default"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
+                        </li>*@
                     <li>
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
                     </li>
@@ -935,8 +937,8 @@
                         <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
                     </li>
                     @*<li>
-            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
-        </li>*@
+                            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
+                        </li>*@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a>
                     </li>
@@ -1460,7 +1462,7 @@
         <div class="container">
             <div class="showreel-wrapp fadIn-wrapp" id="testDiv">
                 <div class="swiper-container showreel-videos">
-                    <div class="swiper-wrapper" >
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
 
                             <div class="video-wrapp ">
@@ -1729,7 +1731,8 @@
                             <div class="tabsAccordion xms-featuers-tab work-tab">
                                 <ul class="resp-tabs-list ">
                                     <li class="resp-tab-active"><span>Core Features</span> </li>
-                                    <li><span>Business CUSTOMISATION</span> </li>
+                                    <li><span>BFSI</span> </li>
+                                    <li><span>Sports Entertainment</span> </li>
                                 </ul>
                                 <div class="resp-tabs-container ">
                                     <div class="resp-tab-content resp-tab-content-active" id="coreFeatures">
@@ -1742,7 +1745,11 @@
                                             <span class="img xms-circle-img"><img src="~/Content/images/business-features.png" alt=""></span>
                                         </div>
                                     </div>
-
+                                    <div class="resp-tab-content" id="soprtsEntertainment">
+                                        <div class="features-content">
+                                            <span class="img xms-circle-img"><img src="~/Content/images/sports-entertainment.png" alt=""></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -1891,9 +1898,11 @@
                                     <div class="input-field col s12 m12 l8">
                                         <select id="drpConsultationType">
                                             <option value="" disabled selected>Seek a consultation</option>
-                                            <option value="1">Partner with us</option>
+                                            <option value="1">Join Sparkt</option>
                                             <option value="2">Work with us</option>
-                                            <option value="3">Press Inquiry</option>
+                                            <option value="3">Partner with us</option>
+                                            <option value="4">Media Inquiries</option>
+                                            <option value="5">Everything Else</option>
                                         </select>
 
                                     </div>
