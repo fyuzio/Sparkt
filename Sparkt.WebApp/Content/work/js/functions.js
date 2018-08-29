@@ -581,39 +581,42 @@ $(".hover-mover").mousemove(function(e){
           var newvalueY = height * pageY * -1 - 50;
           $('.hover-mover').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
-	
-  
-var mySwiper = new Swiper('.vyng-slider .swiper-container', {
-	 spaceBetween: 0,
-	speed:1000,
-	effect: 'coverflow',
-      grabCursor: true,
-	coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : false,
-      },
-      pagination: {
-        el: '.vyng-slider .swiper-pagination',
-		   clickable: true,
-      },
-    });
-	
-mySwiper.on('slideChange', function () {
-	
-$('.swiper-slide video').trigger('pause');		
-		
-});		
-	
-mySwiper.on('slideChangeTransitionEnd', function () {
 
-SynccarouselData();	
-	
-$($(".swiper-slide.swiper-slide-active")[0]).find('video').get(0).play();
-	
-});	
+    try {
+        var mySwiper = new Swiper('.vyng-slider .swiper-container', {
+            spaceBetween: 0,
+            speed:1000,
+            effect: 'coverflow',
+            grabCursor: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : false,
+            },
+            pagination: {
+                el: '.vyng-slider .swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        mySwiper.on('slideChange', function () {
+
+            $('.swiper-slide video').trigger('pause');
+
+        });
+
+        mySwiper.on('slideChangeTransitionEnd', function () {
+
+            SynccarouselData();
+
+            $($(".swiper-slide.swiper-slide-active")[0]).find('video').get(0).play();
+
+        });	
+    }
+    catch (e) {
+    }
 	
 var SynccarouselData=function(){
   // alert();
@@ -680,8 +683,11 @@ $(function () {
             .addClass("highlighted");
     }
 });
-
+if($('.website-operation video#mobile')[0])
 $('.website-operation video#mobile')[0].play();
-$('.website-operation video#desktop')[0].play();
-$('#insta-video')[0].play();
+if ($('.website-operation video#desktop')[0])
+    $('.website-operation video#desktop')[0].play();
+if ($('#insta-video')[0])
+    $('#insta-video')[0].play();
+if ($('#first-video')[0])
 $('#first-video')[0].play();

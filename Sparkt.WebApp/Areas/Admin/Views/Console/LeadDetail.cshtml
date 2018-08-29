@@ -1,0 +1,92 @@
+﻿@model Sparkt.Entities.LeadModel
+@{
+    ViewBag.Title = "Lead Detail";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<main class="leadpage">
+    <div class="main-wrapper z-depth-1">
+        <div class="page-title">
+            <span class="title">Lead Details</span>
+            <div class="divider"></div>
+        </div>
+        <div class="wrapper">
+            <div class="pages-wrapp">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="details-wrapp">
+                            <div class="head-section actions-blk">
+                                <div class="row valign-wrapper remove-margin">
+                                    <div class="col s6"> <span class="ref_number"><strong>Type:</strong> <span>@Model.Type</span></span> </div>
+                                    <div class="col s6 right-align "></div>
+                                </div>
+                            </div>
+                            <div class="body-section">
+                                <div class="details-section">
+                                    <h5 class="title">Basic Details</h5>
+                                    <table class="table bordered striped hover centered responsive-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Mobile Number</th>
+                                                <th>Email</th>
+                                                <th>Company Name</th>
+                                                <th>Message</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                @if (string.IsNullOrEmpty(Model.LeadName))
+                                                {
+                                                    <td>NA</td>
+                                                }
+                                                else
+                                                {
+                                                    <td>@Model.LeadName</td>
+                                                }
+                                                @if (string.IsNullOrEmpty(Model.PhoneNumber))
+                                                {
+                                                    <td>NA</td>
+                                                }
+                                                else
+                                                {
+                                                    <td>@Model.PhoneNumber</td>
+                                                }
+                                                @if (string.IsNullOrEmpty(Model.Email))
+                                                {
+                                                    <td>NA</td>
+                                                }
+                                                else
+                                                {
+                                                    <td>@Model.Email</td>
+                                                }
+                                                @if (string.IsNullOrEmpty(Model.CompanyName))
+                                                {
+                                                    <td>NA</td>
+                                                }
+                                                else
+                                                {
+                                                    <td>@Model.CompanyName</td>
+                                                }
+
+                                                @if (string.IsNullOrEmpty(Model.Message))
+                                                {
+                                                    <td>NA</td>
+                                                }
+                                                else
+                                                {
+                                                    <td>@Model.Message</td>
+                                                }
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="footer-section"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,31 @@
+/*Reset CSS*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; list-style:none; }
+*{box-sizing:border-box; font-smoothing: antialiased;-moz-font-smoothing: antialiased;-ms-font-smoothing: antialiased;-webkit-font-smoothing: antialiased;}
+input, select, option { -webkit-appearance:none; -moz-appearance:none;appearance:none; outline:none; outline:none;background:none;}
+select::-ms-expand {display: none; }
+input[type=number] { -moz-appearance:textfield; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none;  margin: 0;}
+::-webkit-input-placeholder {opacity:1 !important; color: #333333; }
+::-moz-placeholder {opacity:1 !important; color: #333333;  }
+:-ms-input-placeholder {opacity:1 !important; color: #333333;  }
+:-moz-placeholder {opacity:1 !important;color: #333333;  }
+input:focus, textarea:focus, select:focus { background-color:transparent;}
+select::-ms-expand {display: none; }
+input[type=number] { -moz-appearance:textfield; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none;  margin: 0;}
+body { -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; }
+a, img { outline: none; border: none;  }
+/*Reset CSS*/
+.pagesize {
+	width: 70px;
+	float: left;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.pagesizeandno {
+	line-height: 44px;
+}

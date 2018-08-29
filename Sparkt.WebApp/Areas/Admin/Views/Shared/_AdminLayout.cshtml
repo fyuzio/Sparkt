@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/fav/android-icon-36x36.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/Areas/Admin/Content/images/logos/sparkt.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>SparkT Admin-@ViewBag.Title</title>
+
+    @RenderSection("Contents", false)
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Areas/Admin/Content/css/reset.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/materialize.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Content/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="~/Areas/Admin/Scripts/Plugins/jquery-3.1.1.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/materialize.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/jquery.mCustomScrollbar.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/gridtab.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/jquery.mousewheel.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/jquery.ros.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/owl.carousel.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/swiper.min.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/functions.js"></script>
+    <script src="~/Areas/Admin/Scripts/Custom/commonHelper.js"></script>
+    <script src="~/Areas/Admin/Scripts/Custom/ajaxHelper.js"></script>
+
+    <script src="~/Areas/Admin/Scripts/Plugins/jquery.dataTables.min.js"></script>
+
+    <script src="~/Areas/Admin/Scripts/Plugins/ckeditor/ckeditor.js"></script>
+    <script src="~/Areas/Admin/Scripts/Plugins/ckeditor/build-config.js"></script>
+
+    @*@Styles.Render("~/Content/ckeditor")
+        @Scripts.Render("~/bundles/Admin/jquery")
+        @Scripts.Render("~/bundles/Admin/plugins")
+        @Scripts.Render("~/bundles/Admin/ckeditor")*@
+    <style>
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-fixed">
+        <nav class="red ">
+            <div class="nav-wrapper">
+                <ul class="right hide-on-med-and-down">
+                    <li class="refereshColor"><a href="javascript:window.location.reload();" class="waves-effect waves-light"><i class="material-icons ">refresh</i></a></li>
+                    <li class="refereshColor">
+                        <a href="#!user" class="dropdown-button waves-effect waves-light " data-activates="account">
+                            <i class="large  material-icons">account_circle</i>
+                        </a>
+                        <ul id="account" class="dropdown-content">
+                            <li class="refereshColor1"><a href="#!"> <i class="fa fa-user" aria-hidden="true"></i>My Profile</a></li>
+                            <li class="refereshColor1"><a href="@Url.Action("LogOut","Login")"> <i class="fa fa-sign-out"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="slide-out" class="side-nav fixed red">
+            <li>
+                <div class="user-view logo-wrapp">
+                    <div class="background indigo"> </div>
+                    <a href="#!user"><img class="responsive-img" src="~/Areas/Admin/Content/images/logos/sparktDark.png"></a> <a href="#" class="hamberger"><i class="material-icons">menu</i></a>
+                </div>
+            </li>
+            <li class="links"><a href="@Url.Action("Dashboard","Console")" class="waves-effect waves-light tooltipped dashboard" data-position="right" data-delay="50" data-tooltip="Dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a></li>
+            @*<li id="liArticleManagementTab" class="links"><a href="@Url.Action("Article", "Content")" class="waves-effect waves-light tooltipped content" data-position="right" data-delay="50" data-tooltip="Contents"><i class="fa fa-users"></i><span>Content</span></a></li>*@
+            <li id="liLeadManagementTab" class="links"><a href="@Url.Action("Leads", "Console")" class="waves-effect waves-light tooltipped lead" data-position="right" data-delay="50" data-tooltip="Lead"><i class="fa fa-user"></i><span>Leads</span></a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

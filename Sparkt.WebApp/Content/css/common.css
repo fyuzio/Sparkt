@@ -543,7 +543,7 @@ footer {
 @media screen and (max-width:1680px) {
 /*Header Footer start*/		
 .main-menu  ul.menu-ul li.main-nav {
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 	min-width: 125px
 }
 .main-menu {

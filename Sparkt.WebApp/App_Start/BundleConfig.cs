@@ -26,6 +26,24 @@ namespace Sparkt.WebApp
             //bundles.Add(new StyleBundle("~/bundles/css").Include(
             //          //"~/Content/bootstrap.css",
             //          "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/Admin/css").Include(
+                    "~/Areas/Admin/Content/css/reset.css",
+                    "~/Areas/Admin/Content/css/materialize.min.css"
+                    , "~/Areas/Admin/Content/css/style.css"
+                    , "~/Areas/Admin/Content/css/jquery.dataTables.min.css"));
+            bundles.Add(new ScriptBundle("~/bundles/Admin/jquery").Include(
+                       "~/Areas/Admin/Scripts/Plugins/jquery-3.1.1.min.js"
+                       , "~/Areas/Admin/Scripts/Plugins/materialize.js"
+                       , "~/Areas/Admin/Scripts/Plugins/jquery.mCustomScrollbar.min.js"
+                       , "~/Areas/Admin/Scripts/Plugins/gridtab.min.js"
+                       , "~/Areas/Admin/Scripts/Plugins/jquery.mousewheel.min.js"
+                       , "~/Areas/Admin/Scripts/Plugins/jquery.ros.js"
+                       , "~/Areas/Admin/Scripts/Plugins/owl.carousel.min.js"
+                       , "~/Areas/Admin/Scripts/swiper.min.js"
+                       , "~/Areas/Admin/Scripts/jquery.validate.min.js"
+                       , "~/Areas/Admin/Scripts/Plugins/functions.js"
+                       , "~/Areas/Admin/Scripts/Custom/commonHelper.js"
+                       , "~/Areas/Admin/Scripts/Custom/ajaxHelper.js"));
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Sparkt.BusinessAccess;
+using Sparkt.BusinessAccess.Interface;
+using Sparkt.WebApp.Areas.Admin.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +38,7 @@ namespace Sparkt.WebApp.Core.IoC
 
             //builder.RegisterAssemblyTypes(typeof(MenuManagementController).Assembly).Where(t => t.Name.EndsWith("Service")).InstancePerDependency();
             builder.RegisterAssemblyTypes(typeof(GuestManagementController).Assembly).Where(t => t.Name.EndsWith("Controller")).InstancePerRequest();
+            builder.RegisterAssemblyTypes(typeof(IUserService).Assembly).Where(t => t.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerRequest();
             //builder.RegisterType<CheckUserPermission>().PropertiesAutowired();
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

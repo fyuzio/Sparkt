@@ -1,0 +1,396 @@
+﻿
+@model IEnumerable<Sparkt.Entities.LeadModel>
+@using Sparkt.Entities
+@using Newtonsoft.Json
+@{
+    ViewBag.Title = "Leads";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    var leadId = "";
+}
+@section Scripts{
+    <script src="~/Areas/Admin/Scripts/moment.min.js"></script>
+}
+<style>
+    .modal-close-btn {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        font-size: 2rem;
+        color: #fd4415;
+        width: 40px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        z-index: 9;
+    }
+
+    .modal .modal-content {
+        padding: 24px;
+    }
+
+    .connector-signup-form {
+        position: relative;
+    }
+
+    .otp-wrapper {
+        display: inline-block;
+        margin: 20px auto 0;
+    }
+
+    .otptitle {
+        font-size: 1.4rem;
+        line-height: 140%;
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+        color: #9e9e9e;
+    }
+
+    .otp-wrapp {
+        width: 250px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-right: -24px;
+    }
+</style>
+<main class="leadpage">
+    <div class="main-wrapper z-depth-1">
+        <div class="page-title">
+            <span class="title">Leads</span>
+            <div class="divider"></div>
+        </div>
+        <div class="wrapper">
+            <div class="pages-wrapp">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="lead-wrapp">
+                            <div class="head-section actions-blk">
+                                <div class="row remove-margin">
+                                    <div class=" col s2">
+                                    </div>
+                                    <div class="col s10 right-align">
+                                        <a class=" btn red" @*href="@Url.Action("DownloadLeads", "Console", new { leadTypeId = 3 })"*@ id="ancDownloadLeads"><i class="fa fa-download" aria-hidden="true"></i>Download Leads</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-section">
+                                <div style="overflow:auto">
+                                    <table class="table bordered striped hover centered responsive-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.No</th>
+                                                <th><input id="txtFltName" placeholder="Name" type="text" class="validate filter"></th>
+                                                <th><input id="txtFltPhone" placeholder="Phone" type="text" class="validate filter"></th>
+                                                <th><input id="txtFltEmail" placeholder="Email" type="text" class="validate filter"></th>
+                                                <th><input id="txtFltCompanyName" placeholder="Company Name" type="text" class="validate filter"></th>
+                                                @*<th>Message</th>*@
+                                                <th>Create Date</th>
+                                                @*<th>
+                                                        <select id="drpFltTypeAssistYou" class="filter">
+                                                            <option value="" selected>Query Type</option>
+                                                            <option value="General Query">General Query</option>
+                                                            <option value="Suggestion">Suggestion</option>
+                                                            <option value="Media Enquiry">Media Enquiry</option>
+                                                            <option value="Partnership">Partnership</option>
+                                                            <option value="Sponsorship">Sponsorship</option>
+                                                        </select>
+                                                    </th>*@
+                                                <th>
+                                                    <select id="drpFltLeadType" class="filter">
+                                                        <option value="" selected>Type</option>
+                                                        <option value="3">Press Inquiry</option>
+                                                        <option value="1">Partner With Us</option>
+                                                        <option value="2">Work With Us</option>
+                                                    </select>
+                                                </th>
+                                                <th>View Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="footer-section">
+
+                                <div class="row ">
+
+                                    <div class="col s12  m6 left ">
+                                        <div class="pagesize">
+                                            <select id="drpPageSize" class="filter">
+                                                <option value="10" selected>10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                        </div>
+                                        <div class="pagesizeandno">
+                                            <label id="spnTotalReords" for="spnTotalReords"></label>
+                                            <label id="spnTotalPages" for="spnTotalPages"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6 right" style="text-align:right;">
+                                        <ul class="pagination" id="ulPagination"></ul>
+                                        <a onclick=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@{ Html.RenderPartial("_LeadDownload"); }
+<Script type="text/javascript">
+	var leadsData = @Html.Raw(JsonConvert.SerializeObject(this.Model));
+	var currentPage = 1;
+	var pageSize = 10;
+	var noOfPageToDisplay = 5;
+	var noOfPageToAddAndHide = 3;
+	var startPageNo = 1;
+	var lastPageNo = 5;
+
+	$('#drpPageSize').change(function (event) {
+		pageSize = $('#drpPageSize').val();
+		currentPage = 1;
+		startPageNo = 1;
+		lastPageNo = noOfPageToDisplay;
+		FilterData();
+		event.preventDefault();
+	});
+
+	$(document).ready(function () {
+        FetchLeads('');
+        debugger;
+        //Download Lead Date Picker
+        //$('#fromDate').pickadate({
+        //    container: 'body',
+        //});
+        //$('#toDate').pickadate({
+        //    container: 'body',
+        //});
+        var date = new Date();
+        var formattedDate = (date.getDate()) + '/' + (date.getMonth() + 1) + '/' + (date.getFullYear());
+        $('#fromDate').pickadate('picker').set('max', formattedDate, { format: 'dd/mm/yyyy' },).trigger("change")    ;
+        $('#toDate').pickadate('picker').set('min', date, { format: 'dd/mm/yyyy' }).trigger("change");
+        $('#fromDate').val(formattedDate);
+        var date1 = new Date($('#toDate').val());
+        $('#fromDate').on('change', function () {
+            $('#fromDate').val($(this).val());
+            date1 = $(this).val();
+            $('#toDate').pickadate('picker').set('min', date1, { format: 'dd/mm/yyyy' }).trigger("change");
+            //$('#toDate').val(date1);
+        })
+
+        date1 = new Date($('#toDate').val());
+        var formattedDate1 = (date1.getDate()) + '/' + (date1.getMonth() + 1) + '/' + (date1.getFullYear());
+        $('#toDate').pickadate('picker').set('select', formattedDate1, 'min', date, { format: 'dd/mm/yyyy' }).trigger("change");
+        $('#toDate').val(formattedDate1);
+
+        $('#toDate').on('change', function () {
+            $('#toDate').val($(this).val());
+        })
+        //End
+        // $('#fromDate').pickadate({
+        //    container: 'body',
+        //});
+        //$('#toDate').pickadate({
+        //    container: 'body',
+        //});
+        function viewDetail(leadId) {
+            window.location.href = "/Admin/Console/LeadDetail/" + LeadId;
+        }
+	});
+
+	$('.filter').on('change', function () {
+		pageSize = $('#drpPageSize').val();
+		currentPage = 1;
+		startPageNo = 1;
+		lastPageNo = noOfPageToDisplay;
+		 FilterData();
+	});
+	 function GetPageData(event, pageNo) {
+		 currentPage = pageNo;
+		 FilterData();
+		 event.preventDefault();
+	 }
+
+	 function GetNextPageData(event) {
+		 currentPage = currentPage + 1;
+		 FilterData();
+		 event.preventDefault();
+	 }
+	 function GetPrevPageData(event) {
+		 currentPage = currentPage - 1;
+		 FilterData();
+		 event.preventDefault();
+	 }
+	 function FilterData() {
+		 var vFltData = '';
+
+		 if ($('#txtFltName').val() != '')
+			 vFltData += $('#txtFltName').val() + ",";
+		 else
+			 vFltData += '' + ",";
+
+		 if ($('#txtFltPhone').val() != '')
+			 vFltData += $('#txtFltPhone').val() + ",";
+		 else
+			 vFltData += '' + ",";
+
+		 if ($('#txtFltEmail').val() != '')
+			 vFltData += $('#txtFltEmail').val() + ",";
+		 else
+             vFltData += '' + ",";
+
+         if ($('#txtFltCompanyName').val() != '')
+             vFltData += $('#txtFltCompanyName').val() + ",";
+         else
+             vFltData += '' + ",";
+
+		 if ($('#drpFltLeadType').val() != '' && $('#drpFltLeadType').val() != undefined)
+			 vFltData += $('#drpFltLeadType').val() + ",";
+		 else
+			 vFltData += '' + ",";
+
+         //if ($('#drpFltTypeAssistYou').val() != '' && $('#drpFltTypeAssistYou').val() != undefined)
+         //    vFltData += $('#drpFltTypeAssistYou').val() + ",";
+         //else
+         //    vFltData += '' + ",";
+         
+		 if (vFltData != '') {
+			 FetchLeads(vFltData);
+        }
+	 }
+	 function FetchLeads(vFltData) {
+		  $.ajax({
+                url:'@Url.Action("LeadFilter", "Console")',
+                type: "POST",
+				data: JSON.stringify({ 'FilterData': vFltData, 'currentPage': currentPage, 'pageSize': pageSize}),
+                dataType: "json",
+                traditional: true,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+					PopulateLeadGrid(data);
+					return false;
+                }
+            });
+	 }
+	 function PopulateLeadGrid(vData) {
+         leadsData = vData;
+		 var vTableContent = '';
+         for (var vCounter = 0; vCounter < vData.length; vCounter++) {
+             var link = urlreplace(vData[vCounter].LeadId);
+            // console.log(link);
+			 vTableContent += "<tr>";
+			// vTableContent += "<td class='tdCheckBox' style='display: none;'><p class='check'><input type='checkbox' id='" + vData[vCounter].LeadID + "' class='leadcheckbox'/><label for='" + vData[vCounter].LeadID + "'></label></p></td>";
+             vTableContent += "<td>" + vData[vCounter].RowNum + "</td>";
+			 vTableContent += "<td>" + (vData[vCounter].LeadName != null ? vData[vCounter].LeadName : "NA") + "</td>";
+             vTableContent += "<td>" + (vData[vCounter].PhoneNumber != null ? vData[vCounter].PhoneNumber : "NA") + "</td>";
+             vTableContent += "<td>" + ((vData[vCounter].Email != '') ? vData[vCounter].Email : "NA") + "</td>";
+             vTableContent += "<td>" + ((vData[vCounter].CompanyName != '') ? vData[vCounter].CompanyName : "NA") + "</td>";
+             //vTableContent += "<td>" + ((vData[vCounter].Message != '') ? vData[vCounter].Message : "NA") + "</td>";
+             vTableContent += "<td>" + ((vData[vCounter].DisplayDate != '') ? vData[vCounter].DisplayDate : "NA") + "</td>";
+             //vTableContent += "<td>" + (vData[vCounter].QuerryType != null ? vData[vCounter].QuerryType : "NA") + "</td>";
+             vTableContent += "<td>" + (vData[vCounter].LeadType != null ? vData[vCounter].LeadType : "NA") + "</td>";
+            // vTableContent += "<td><span class='status open'>" + vData[vCounter].LeadStatus + "</span></td>";
+             vTableContent += "<td><a  href='" + link + "' class='edit-icon'><i class='fa fa-eye' aria-hidden='true'></i></a></td>";
+			 vTableContent += "</tr>";
+         }
+
+		 $('table.table tbody').html(vTableContent);
+		 //if (editPermission.length > 0 && !editPermission[0].HasPermission) {
+			// $(".tdCheckBox").hide();
+		 //}
+		 //else {
+			// $(".tdCheckBox").show();
+		 //}
+		 //if ((editPermission.length > 0 && editPermission[0].HasPermission) && (editRejected.length > 0 && !editRejected[0].HasPermission)) {
+			// for (index = 0; index < leadsData.length; index++) {
+			//	 if (leadsData[index].LeadStatus == "Rejected") {
+			//		 $('#' + leadsData[index].LeadID).attr("disabled", "disabled");
+			//	 }
+			// }
+   //      }
+
+         var noOfPages = 1;
+         var noOfRecords = 0;
+         if (vData != null && vData.length > 0)
+         {
+             noOfPages = Math.ceil(vData[0].TotalRecords / pageSize);
+             noOfRecords = vData[0].TotalRecords;
+         }
+         $('#spnTotalReords').html("Total Records: - " + noOfRecords);
+		 $('#spnTotalPages').html("Total Pages: - " + noOfPages);
+
+		 if (currentPage == lastPageNo && lastPageNo < noOfPages) {
+			 startPageNo = startPageNo + noOfPageToAddAndHide;
+			 lastPageNo = lastPageNo + noOfPageToAddAndHide;
+			 if (lastPageNo > noOfPages) {
+				 lastPageNo = noOfPages;
+			 }
+			 if ((lastPageNo - startPageNo) + 1 < noOfPageToDisplay && noOfPages > noOfPageToDisplay) {
+				 if (startPageNo - (noOfPageToDisplay - (lastPageNo - startPageNo)) >= 1) {
+					 startPageNo = startPageNo - (noOfPageToDisplay - (lastPageNo - startPageNo));
+					 if (lastPageNo - startPageNo >= noOfPageToDisplay) {
+						 startPageNo = startPageNo + 1;
+					 }
+				 }
+			 }
+		 }
+		 else if (currentPage == startPageNo && currentPage > 1) {
+			 startPageNo = startPageNo - noOfPageToAddAndHide;
+			 if (startPageNo <= 0) {
+				 startPageNo = 1;
+			 }
+			 lastPageNo = lastPageNo - noOfPageToAddAndHide;
+			 if ((lastPageNo - startPageNo) + 1 < noOfPageToDisplay && noOfPages > noOfPageToDisplay) {
+				 lastPageNo = lastPageNo + (noOfPageToDisplay - (lastPageNo - startPageNo));
+			 }
+
+		 }
+		 else if (noOfPages < noOfPageToDisplay) {
+			 startPageNo = 1;
+			 lastPageNo = noOfPages;
+		 }
+
+		 if (currentPage > 1) {
+			 $('#ulPagination').html('<li><a href="#!" onclick="GetPrevPageData(event)"><i class="material-icons">chevron_left</i></a></li>');
+		 }
+		 else {
+			 $('#ulPagination').html('<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>');
+		 }
+		 for (var pageCounter = startPageNo; pageCounter <= lastPageNo; pageCounter++) {
+			 if (pageCounter == currentPage) {
+				 $('#ulPagination').append('<li class="active"><a href="#!">' + pageCounter + '</a></li>');
+			 }
+			 else {
+				 $('#ulPagination').append(' <li class="waves-effect"><a href="#" onclick="GetPageData(event,' + pageCounter+')">' + pageCounter + '</a></li>');
+			 }
+		 }
+		 if (noOfPages > currentPage) {
+			 $('#ulPagination').append(' <li class="waves-effect"><a href="#" onclick="GetNextPageData(event)"><i class="material-icons">chevron_right</i></a></li>');
+		 }
+		 else {
+			 $('#ulPagination').append(' <li class="waves-effect disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>');
+         }
+     }
+
+     $('.closeLeadMsg').click(function () {
+         $('#genOTP').modal('close');
+     })
+
+     $('#ancDownloadLeads').click(function () {
+         $('#leadDownload').modal('open');
+     });
+    //View Lead Detail
+     function urlreplace(id) {
+         var link = '@Url.Action("LeadDetail", "Console", new { id = "-1" })';
+         link = link.replace("-1", id);
+         return link;
+     }
+
+</Script>
