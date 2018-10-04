@@ -1432,14 +1432,26 @@ ul.title-navigation {
         position: absolute;
         left: 50%;
         bottom: -49%;
-        width: 300px;
+        width: 630px;
         height: 20px;
         background-color: #000000;
         content: '';
         transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         filter: blur(20px);
-        opacity: 0.4;
+        -webkit-filter: blur(20px);
+        opacity: 0.3;
         border-radius: 130px;
+        background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.65) 25%, rgba(0,0,0,0.83) 50%, rgba(0,0,0,0.58) 75%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 25%,rgba(0,0,0,0.83) 50%,rgba(0,0,0,0.58) 75%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 25%,rgba(0,0,0,0.83) 50%,rgba(0,0,0,0.58) 75%,rgba(0,0,0,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+        -webkit-transition: all ease 0.4s;
+        transition: all ease 0.4s;
+    }
+
+    .offering-wrapp.using:after {
+        opacity: 0.15;
     }
 
 .ring-wrapp.ring-8:after {
@@ -3659,6 +3671,11 @@ font-size:0;}
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 0;
+    }
+    .offering-wrapp:after {
+        bottom: -28% !important;
+        width: 400px;
+        height: 12px;
     }
 }
 

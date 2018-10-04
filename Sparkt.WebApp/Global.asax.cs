@@ -18,6 +18,7 @@ namespace Sparkt.WebApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             BootStrap.Build();
+            MvcHandler.DisableMvcResponseHeader = true;
         }
     }
 }
