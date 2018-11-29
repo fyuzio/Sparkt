@@ -1676,9 +1676,9 @@ footer {
             display: inline-block
         }
 
-            /*.awards-wrap ul li.small-awards {
+            .awards-wrap ul li.small-awards {
                 width: 135px
-            }*/
+            }
 
             .awards-wrap ul li img {
                 width: 100%
@@ -4274,9 +4274,9 @@ span.musik-note.right-note {
             width: 60px
         }
 
-            /*.awards-wrap ul li.small-awards {
+            .awards-wrap ul li.small-awards {
                 width: 100px
-            }*/
+            }
 
         .awards-wrap:before {
             height: 85px
@@ -4838,9 +4838,9 @@ span.musik-note {
             padding: 0 4px
         }
 
-            /*.awards-wrap ul li.small-awards {
+            .awards-wrap ul li.small-awards {
                 width: 70px
-            }*/
+            }
 
     .awards-wrap:before {
         height: 65px;

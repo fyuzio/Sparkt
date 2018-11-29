@@ -160,9 +160,9 @@ $(function () {
         //grabCursor: !0,
         //loop: !0,
         //autoHeight: !0,
-        autoplay: {
-            delay: 3e3         
-        },
+       // autoplay: {
+        //    delay: 3e3         
+      //  },
         disableOnInteraction: true,
         speed: 1500,
         resize: true,
@@ -202,11 +202,11 @@ $(function () {
 
     $('.showreel-videos').on('mouseenter', function (e) {
         console.log('stop autoplay');       
-        mySwiper.autoplay.stop();
+     //   mySwiper.autoplay.stop();
     });
     $('.showreel-videos').on('mouseleave', function (e) {
         console.log('started');      
-        mySwiper.autoplay.start();
+      //  mySwiper.autoplay.start();
     });
     mySwiper.on("slideChange", function () {
 
