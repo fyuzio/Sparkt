@@ -682,6 +682,16 @@ $(function () {
         $(".editage")
             .addClass("highlighted");
     }
+	if($('body')
+        .hasClass('yaarii')) {       
+        $(".yaarii")
+            .addClass("highlighted");
+    }
+	if($('body')
+        .hasClass('dubsmash')) {       
+        $(".dubsmash")
+            .addClass("highlighted");
+    }
 });
 if($('.website-operation video#mobile')[0])
 $('.website-operation video#mobile')[0].play();

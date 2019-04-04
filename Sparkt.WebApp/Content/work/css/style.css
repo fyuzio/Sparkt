@@ -1588,7 +1588,8 @@ footer {
 
 .desktop-video, .mobile-video {
     position: absolute;
-    background-color: #000
+    background-color: #000;
+	overflow: hidden;
 }
 
 .figure-img img {
@@ -1958,6 +1959,18 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd0029', endColorstr='#ffffff', GradientType=1 )
 }
 
+.dubsmash-bg{
+	
+	background: rgba(225,57,88,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(225,57,88,1) 0%, rgba(214,52,82,1) 30%, rgba(201,46,74,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(225,57,88,1)), color-stop(30%, rgba(214,52,82,1)), color-stop(100%, rgba(201,46,74,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(225,57,88,1) 0%, rgba(214,52,82,1) 30%, rgba(201,46,74,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(225,57,88,1) 0%, rgba(214,52,82,1) 30%, rgba(201,46,74,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(225,57,88,1) 0%, rgba(214,52,82,1) 30%, rgba(201,46,74,1) 100%);
+background: radial-gradient(ellipse at center, rgba(225,57,88,1) 0%, rgba(214,52,82,1) 30%, rgba(201,46,74,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e13958', endColorstr='#c92e4a', GradientType=1 );
+}
+
 .blue-gradient-background {
     background: #03091b;
     background: -moz-linear-gradient(top, rgba(3,9,27,1) 0, rgba(15,40,92,1) 50%, rgba(3,9,27,1) 100%);
@@ -2020,6 +2033,8 @@ footer {
     background: linear-gradient(45deg, rgba(24,36,47,1) 0, rgba(33,91,125,1) 50%, rgba(212,67,47,1) 50%, rgba(212,67,47,1) 77%, rgba(164,45,24,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18242f', endColorstr='#a42d18', GradientType=1 )
 }
+
+
 
 .pink-grey-bg {
     background: rgba(48,62,72,1);
@@ -2149,6 +2164,16 @@ footer {
     transition: all ease .2s;
     cursor: pointer;
     color: #FFFFFF;
+	text-align: center;
+	    min-width: 250px;
+	    background: rgba(255,26,0,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0, rgba(255,26,0,1)), color-stop(100%, rgba(217,36,135,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: linear-gradient(135deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#d92487', GradientType=1 );
 }
 
     .mobile-experience figure figcaption a > span {
@@ -2174,7 +2199,7 @@ footer {
         max-width: auto
     }
 
-.mobile-experience figure figcaption > span {
+.mobile-experience figure figcaption > span, .mobile-experience figure figcaption > a {
     height: 40px;
     line-height: 40px;
     padding: 0 1.5rem;
@@ -2188,7 +2213,7 @@ footer {
     transition: all ease .2s
 }
 
-    .mobile-experience figure figcaption > span.hvr-sweep-to-right:hover {
+    .mobile-experience figure figcaption > span.hvr-sweep-to-right:hover, .mobile-experience figure figcaption > a.hvr-sweep-to-right:hover {
         border-color: #ff533d
     }
 
@@ -4096,6 +4121,78 @@ span.musik-note.right-note {
     right: 50px;
 }
 
+.mobile-experience.center-mobile figure{ float: none; padding: 0; }
+.mobile-experience figure figcaption > span.reverse, .mobile-experience figure figcaption > a.reverse {
+    color: #000;
+    border-color: #000;
+}
+
+.single-video-carousel.square {
+    max-width: 550px;
+    width: 100%;
+}
+
+.single-laptop-wrapp{ width: 100%; text-align:center;}
+.single-laptop{ width: 60%; margin: 0 auto;}
+.single-laptop img { width: 100%;  }
+
+.sparkt-carousel.square .video-slider {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin:1rem auto;
+}
+.sparkt-carousel.square .mobile-wrapp .slick-list {
+    height: 100%;
+	position: re; z-index: 2;
+}
+.sparkt-carousel.square .slick-track{ height: 100%; }
+.sparkt-carousel.square .slick-initialized .slick-slide{height: 100%;}
+.sparkt-carousel.square .mejs__container{ height: 100% !important }
+.sparkt-carousel.square .video-nav{margin: 2rem auto 0;  width: 606px; }
+.sparkt-carousel.square .video-nav .slick-slide a{ height: 170px;}
+.sparkt-carousel.square .video-nav .slick-slide a img { height: 100%; width: 100%; object-fit: cover; }
+
+.sparkt-carousel.dubsmash-carousel .video-slider{ overflow: visible; position: relative; box-shadow: none; z-index: 2; }
+.sparkt-carousel.dubsmash-carousel .video-slider:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fcc82b;
+    left: -14px;
+    z-index: 0;
+    top: 14px;
+    position: absolute;
+    border-radius: 6px;
+}
+
+.sparkt-carousel.dubsmash-carousel .video-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #6655d3;
+    left: 14px;
+    z-index: 0;
+    top: -14px;
+    position: absolute;
+    border-radius: 6px; z-index: 0
+}
+
+.sparkt-carousel.square .mobile-wrapp:after{ content:''; position: absolute; top: 100%; z-index: 0; height: 60px; background-image: url("../images/bottom-shadow.png"); background-repeat: no-repeat; background-size: 60% auto; width: 100%; left: 0;background-position: center center; opacity: 0.5; }
+
+.mobile-experience .vibrate-img > video {
+    position: absolute;
+    width: 76%;
+    height: 75.2%;
+    left: 12.6%;
+    top: 10%;
+    z-index: 2;
+}
+
+.star-new-bg{
+background-color: #98020d; background-repeat: no-repeat; background-size: 80% auto; background-position: right bottom; background-attachment: scroll
+}
+
 @media screen and (max-width:1920px) {
     .work-navigation .client-works li {
         width: 9vw
@@ -4117,12 +4214,34 @@ span.musik-note.right-note {
 		min-width:274px;
 		
 	}
+	
+	.sparkt-carousel.square .video-slider {
+    width: 500px;
+		height: 500px;}
+.sparkt-carousel.square .video-nav {
+    margin: 1.5rem auto 0;
+    width: 506px;
+}	
+.sparkt-carousel.square .video-nav .slick-slide a {
+    height: 150px;
+}	
+	
 }
 
 @media screen and (max-width:1680px) {
     .container {
         padding: 4rem 0
     }
+	
+	.single-video-carousel.square {
+    max-width: 320px;
+    width: 100%;
+}
+	
+	.slick-dots {
+    bottom: inherit;
+    top: 103%;
+}
 
     .head-title h1, .head-title h2 {
         font-size: 31px;
@@ -4310,7 +4429,7 @@ span.musik-note.right-note {
     }
 
     .sparkt-carousel .video-nav {
-        margin: 3rem auto 0;
+        margin: 2rem auto 0;
     }
 
     .twitter-tweets ul li figure figcaption {
@@ -4349,7 +4468,7 @@ span.musik-note.right-note {
                 font-size: 18px
             }
 
-            .mobile-experience figure figcaption > span {
+            .mobile-experience figure figcaption > span, .mobile-experience figure figcaption > a {
                 height: 35px;
                 line-height: 33px;
                 padding: 0 1.2rem;
@@ -4519,6 +4638,39 @@ span.musik-note {
         padding: 19% 0 39% 0;
     
     }
+	
+	.figure-img, .website-operation {
+    width: 90%;
+		margin: 0 auto
+}
+.desktop-video {
+    top: 8.1%;
+    left: 28.1%;
+    width: 53%;
+    height: 64.8%;
+    z-index: 1;
+}
+.mobile-video {
+    top: 36.3%;
+    left: 18.9%;
+    width: 13.7%;
+    height: 49.8%;
+    z-index: 4;
+    overflow: hidden;
+}	
+	
+.sparkt-carousel.square .video-slider {
+    width: 340px;
+    height: 340px;
+}
+.sparkt-carousel.square .video-nav {
+    margin: 1.5rem auto 0;
+	    width: 346px;
+}	
+.sparkt-carousel.square .video-nav .slick-slide a {
+    height: 103px;
+}	
+	
 }
 
 @media screen and (max-width:1440px) {
@@ -4598,11 +4750,12 @@ span.musik-note {
         padding-left: 17%
     }
 
-        .mobile-experience figure figcaption a {
-            height: 45px;
-            line-height: 45px;
-            padding: 0 1.2rem
-        }
+       .mobile-experience figure figcaption a {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1.2rem;
+    min-width: 190px;
+}
 
     .slickSlider-3d .mobileOverlay {
         width: 14vw
@@ -4685,7 +4838,11 @@ span.musik-note {
         width: 33.33% !important;
         float: none;
         display: inline-block;
-    }	
+    }
+	
+
+	
+	
 }
 
 
@@ -4877,7 +5034,7 @@ span.musik-note {
                 font-size: 14px
             }
 
-            .mobile-experience figure figcaption > span {
+            .mobile-experience figure figcaption > span, .mobile-experience figure figcaption > a {
                 height: 32px;
                 line-height: 33px;
                 padding: 0 1rem;
@@ -5177,6 +5334,16 @@ span.musik-note {
         width: 30px;
         height: 55px;
     }
+
+	.sparkt-carousel.square .video-slider {
+    width: 1090%;
+		max-width: 320px;
+    min-height: 300px;
+}
+.sparkt-carousel.square .video-nav .slick-slide a {
+    height: 74px;
+}	
+	
 }
 
 @media screen and (max-width:824px) {

@@ -69,7 +69,7 @@ namespace Sparkt.WebApp.Controllers
         public ActionResult MahindraBadhatYojana()
         {
             return View();
-        }      
+        }
         public ActionResult MahindraMF()
         {
             return View();
@@ -200,6 +200,81 @@ namespace Sparkt.WebApp.Controllers
 
         [Route("VYNG")]
         public ActionResult StarVYNG()
+        {
+            return View();
+        }
+
+        [Route("Baaghi-2")]
+        public ActionResult Baaghi2()
+        {
+            return View();
+        }
+        [Route("Divya-Drishti-Content")]
+        public ActionResult DivyaDrishtiContent()
+        {
+            return View();
+        }
+
+        [Route("Divya-Drishti-Innovation")]
+        public ActionResult DivyaDrishtiInnovation()
+        {
+            return View();
+        }
+        [Route("Dubsmash")]
+        public ActionResult Dubsmash()
+        {
+            return View();
+        }
+        [Route("Karn-Sangini")]
+        public ActionResult KarnSangini()
+        {
+            return View();
+        }
+
+        [Route("Mahindra-Pragati-Yojana")]
+        public ActionResult MahindraPragatiYojana()
+        {
+            return View();
+        }
+
+
+        [Route("Mahindra-Rural-Bharat")]
+        public ActionResult MahindraRuralBharat()
+        {
+            return View();
+        }
+        [Route("Nazar")]
+        public ActionResult Nazar()
+        {
+            return View();
+        }
+        [Route("Pchf")]
+        public ActionResult Pchf()
+        {
+            return View();
+        }
+        [Route("Pedderjohnson")]
+        public ActionResult Pedderjohnson()
+        {
+            return View();
+        }
+        [Route("Sanju")]
+        public ActionResult Sanju()
+        {
+            return View();
+        }
+        [Route("Stree")]
+        public ActionResult Stree()
+        {
+            return View();
+        }
+        [Route("TheVoice")]
+        public ActionResult TheVoice()
+        {
+            return View();
+        }
+        [Route("Yaarii")]
+        public ActionResult Yaarii()
         {
             return View();
         }
