@@ -1796,7 +1796,7 @@ ul.title-navigation {
 
             .ring-wrapp.ring-5 .ring-content .ring-click {
                 background-color: #ff533d;
-                background-image: url(../images/experiences.png);
+                background-image: url(../images/influence.png);
             }
 
             .ring-wrapp.ring-5 .ring-content .ring-space {
@@ -1831,7 +1831,7 @@ ul.title-navigation {
 
             .ring-wrapp.ring-6 .ring-content .ring-click {
                 background-color: #d9248a;
-                background-image: url(../images/design.png);
+                background-image: url(../images/experiences.png);
             }
 
             .ring-wrapp.ring-6 .ring-content .ring-space {
@@ -2160,6 +2160,11 @@ span.core-lable {
             background-image: url(../images/design.png);
             background-color: #d9248a
         }
+		
+		.offering-wrapp-mobile .offering-blk span.icons.influence {
+            background-image: url(../images/influence.png);
+            background-color: #d9248a
+        }
 
         .offering-wrapp-mobile .offering-blk span.icons.technology {
             background-image: url(../images/technology.png);
@@ -2239,6 +2244,9 @@ span.core-lable {
 }
 
 .offering-wrapp-mobile .offfering-details.design li:before {
+    background-color: #d9248a;
+}
+.offering-wrapp-mobile .offfering-details.influence li:before {
     background-color: #d9248a;
 }
 

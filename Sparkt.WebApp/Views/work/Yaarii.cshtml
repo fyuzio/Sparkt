@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt | Yaarii";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Yaarii";
+    ViewBag.MetaDescription = "A first of its kind instant personal loan app.";
+    ViewBag.MetaURL = "https://sparkt.in/work/Yaarii";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/yaarii-thum.jpg";
+}
+@section BodyClass {yaarii}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url('/Content/work/images/banners/yaarii-cover.jpg');">
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Yaarii</h1>
+                <div class="clear"></div>
+                <span>A first of its kind instant personal loan app</span>
+            </div>
+        </div>
+
+
+        @Html.Partial("_WorkMenu")
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel fixed " style="background-image: url('/Content/work/images/yaarii-bg.jpg');">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Redefined the consumer & brand experience.</h3>
+                                </div>
+                                <div class="mobile-experience center-mobile">
+                                    <figure>
+                                        <div class="vibrate-img sample-mobile">
+                                            <img src="/Content/work/images/yaarii-mobile-creative.png" alt="" />
+                                        </div>
+
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section white-bg">
+     <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+        <h2>Results</h2>
+      </div>
+
+      <div class="container">
+        <div class="quotes-wrapp">
+          <div class="quotes">
+            <h3>Coming Soon</h3>
+            <span class="quotes-writer"></span> </div>
+        </div>
+      </div>
+    </div>-->
+</main>

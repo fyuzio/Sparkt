@@ -61,12 +61,12 @@ $(function () {
         $(this).toggleClass("open"), $(".main-menu").toggleClass("open"), $(".overlay-wrapp").fadeToggle("slow")
     }), $(".main-menu > ul > li ").hover(function () {
         $(this).toggleClass("active-submenu"), $(this).children(".sub-nav").slideToggle()
-        }),
+    }),
         $(window).scroll(function () {
-        $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open"), $(".overlay-wrapp").fadeOut("slow")
+            $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open"), $(".overlay-wrapp").fadeOut("slow")
         }),
         $(".overlay-wrapp").on("click", function () {
-        $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open"), $(".overlay-wrapp").fadeOut("slow")
+            $(".hamburger").removeClass("open"), $(".main-menu").removeClass("open"), $(".overlay-wrapp").fadeOut("slow")
         }),
         $("#contact-tab").tabs({
             responsiveThreshold: !0
@@ -100,15 +100,15 @@ $(function () {
     var i = $(".video-wrapp video").mediaelementplayer({
         success: function (e) {
             $(e).bind("play", function () {
-                mySwiper.autoplay.stop(); 
+                mySwiper.autoplay.stop();
 
                 $('.showreel-videos').on('mouseleave', function (e) {
-                  
-                    mySwiper.autoplay.stop(); 
+
+                    mySwiper.autoplay.stop();
                 });
 
 
-              //  alert('Stopped');
+                //  alert('Stopped');
                 $.each(i, function (i, o) {
 
                     //$(".mejs__controls").fadeIn()
@@ -153,16 +153,16 @@ $(function () {
         $(".bg-video")[0].play();
     	
     },10000);
-        */    
+        */
 
     var mySwiper = new Swiper(".showreel-videos", {
         //effect: "fade",
         //grabCursor: !0,
         //loop: !0,
         //autoHeight: !0,
-       // autoplay: {
+        // autoplay: {
         //    delay: 3e3         
-      //  },
+        //  },
         disableOnInteraction: true,
         speed: 1500,
         resize: true,
@@ -188,6 +188,13 @@ $(function () {
         });
         player = new YT.Player('video2', {
 
+            videoId: '63RY01oQHyc',
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        player = new YT.Player('video3', {
+
             videoId: 'Fq3yy7Dar24',
             events: {
                 'onStateChange': onPlayerStateChange
@@ -201,12 +208,12 @@ $(function () {
     }
 
     $('.showreel-videos').on('mouseenter', function (e) {
-        console.log('stop autoplay');       
-     //   mySwiper.autoplay.stop();
+        console.log('stop autoplay');
+        //   mySwiper.autoplay.stop();
     });
     $('.showreel-videos').on('mouseleave', function (e) {
-        console.log('started');      
-      //  mySwiper.autoplay.start();
+        console.log('started');
+        //  mySwiper.autoplay.start();
     });
     mySwiper.on("slideChange", function () {
 
@@ -264,8 +271,8 @@ $(function () {
         speed: 900,
         resize: true,
         effect: "cube",
-        slideActiveClass:"cultureslideactive swiper-slide-active",
-        grabCursor: !1,     
+        slideActiveClass: "cultureslideactive swiper-slide-active",
+        grabCursor: !1,
         cubeEffect: {
             shadow: !0,
             slideShadows: !1,
@@ -289,7 +296,7 @@ $(function () {
     //    return false;
     //});
 
-    $(".swiper-button-next").on("click", function () {        
+    $(".swiper-button-next").on("click", function () {
         SlideChange()
     });
 
@@ -303,7 +310,7 @@ $(function () {
         //var id = dataId.substring(dataId.length - 1, dataId.length);
         //id = parseInt(id) - 1;
         //dataId = data + id;
-    
+
         $(".cultuer-title-nav a").removeClass("active");
         $(".cultuer-title-nav a").each(function (index) {
             if ("#" + dataId == $(this).attr("href")) {
@@ -335,7 +342,7 @@ $(function () {
             el: ".swiper-pagination-v",
             clickable: !0
         },
-       // autoHeight: !0,
+        // autoHeight: !0,
         autoplay: {
             delay: 3e3,
             disableOnInteraction: !1
@@ -409,227 +416,219 @@ $(function () {
 });
 
 
-	    $( function() {
-    
-
-		$( '.custom-tabs' ).each(function( id ) {
-			var $this             = $( this ),
-			    $li               = $this.find( '.custom-tabs-ul-container > ul.xmsNav > li' ),
-				liNum             = $li.length,
-				$contentbox       = $this.find( '.content' ),
-				ulWidth           = $this.data( 'width' ),
-				fullwidth         = $this.data( 'fullwidth' ),
-				rotation          = $this.data( 'rotation' ),
-				rotationRadius    = $this.data( 'rotation-radius' ),
-				rotationWapperDeg = $this.data( 'rotation-wrapper-angle' ),
-				
-				tabBoxID          = id,
-				isNumeric         = /^[-+]?(\d+|\d+\.\d*|\d*\.\d+)$/;
-			
-			if( typeof fullwidth != typeof undefined && fullwidth == 1 ) {
-				$li.css( 'width', ( 100 / liNum ) + '%' );
-			}
-			
-					
-			
-			if( typeof rotation === typeof undefined ) {
-				rotation = false;
-			}	
-			
-			
-			if( typeof rotationWapperDeg === typeof undefined ) {
-				rotationWapperDeg = 0;
-			}		
-			
-			
-			$li.each( function( index ) {
-				index = index + 1;
-				$( this ).attr( 'href', 'javascript:' );
-				$( this ).attr( 'data-tab', tabBoxID + '-tabs-show' + index );
-			});
-			$( $contentbox ).each( function( index ) {
-				index = index + 1;
-				$( this ).attr( 'id', tabBoxID + '-tabs-show' + index );
-			});
-			
-			
-			// Tab Rotation Effect
-			if ( rotation ) {
-				
-				var increase   = Math.PI * 2 / liNum,
-					radius     = 230,
-					angle      = 0;
-				
-				//Initialize button position
-				$this.find( '.custom-tabs-ul-container > ul.xmsNav' ).css({ 
-							'-webkit-transform' : 'rotate('+ parseFloat( rotationWapperDeg ) +'deg)',
-							'-ms-transform'     : 'rotate('+ parseFloat( rotationWapperDeg ) +'deg)',
-							'transform'         : 'rotate('+ parseFloat( rotationWapperDeg ) +'deg)'
-						})
-						.find( '.custom-tabs-ul-container > ul.xmsNav > li' )
-						.css({ 
-								'-webkit-transform' : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
-								'-ms-transform'     : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
-								'transform'         : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)'
-							})
-				        .find( '.custom-tabs-ul-container > ul.xmsNav > li .title' )
-						.css({ 
-								'-webkit-transform' : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
-								'-ms-transform'     : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)',
-								'transform'         : 'rotate('+ -parseFloat( rotationWapperDeg )+'deg)'
-							})
-				;
-				
-				
-				$li.each( function( index ) {
-					$( this ).css( {
-						'left'              : Math.cos( - Math.PI / 450 + index * increase) * radius + 'px',
-						'top'               : Math.sin( - Math.PI / 450 + index * increase) * radius + 'px'
-					} );
-					
-
-					
-					$( this ).on( 'click', function( e ) {
-						
-						var n        = $( this ).index(),
-							endAngle = n % liNum * increase; 
+$(function () {
 
 
-						( function turn() {
-							if (Math.abs(endAngle - angle) > 1 / 8) {
-								var sign = endAngle > angle ? 1 : -1;
-								angle = angle + sign / 8;
-								setTimeout(turn, 3);
-							} else {
-								angle = endAngle;
-							}
+    $('.custom-tabs').each(function (id) {
+        var $this = $(this),
+            $li = $this.find('.custom-tabs-ul-container > ul.xmsNav > li'),
+            liNum = $li.length,
+            $contentbox = $this.find('.content'),
+            ulWidth = $this.data('width'),
+            fullwidth = $this.data('fullwidth'),
+            rotation = $this.data('rotation'),
+            rotationRadius = $this.data('rotation-radius'),
+            rotationWapperDeg = $this.data('rotation-wrapper-angle'),
+
+            tabBoxID = id,
+            isNumeric = /^[-+]?(\d+|\d+\.\d*|\d*\.\d+)$/;
+
+        if (typeof fullwidth != typeof undefined && fullwidth == 1) {
+            $li.css('width', (100 / liNum) + '%');
+        }
 
 
-							$li.each( function( index ) {
-								$( this ).css( {
-									'left'        : Math.cos( - Math.PI / 450 + index * increase - angle) * radius + 'px',
-									'top'         : Math.sin( - Math.PI / 450 + index * increase - angle) * radius + 'px'
-								} );
 
-							});	
+        if (typeof rotation === typeof undefined) {
+            rotation = false;
+        }
 
 
-						})();	
-						
-					});
-					
-				});	
-				
+        if (typeof rotationWapperDeg === typeof undefined) {
+            rotationWapperDeg = 0;
+        }
 
-				
-			}
-			
-			
-			// Tab Fade Effect
-			$this.on( 'click', '.custom-tabs-ul-container > ul.xmsNav > li', function( e ) {
-				
-				
-				$('.center-border').addClass( 'scaleout' );
-				setTimeout(function(){ 
-				$('.center-border').removeClass( 'scaleout' );
-				}, 490);
-				
-				
-				
-				var tabID = $( this ).attr( 'data-tab' ),
-					index = parseFloat( $( this ).index() - 1 ),
-					id=$( this ).attr( 'id' );
-				
-				
-				$this.find( 'ul.xmsNav li' ).removeClass( 'active' ).addClass('deactivated');
-				$this.find( '.content' ).removeClass( 'active' );
-				
-				
-		
-				$( this ).addClass( 'active' ).removeClass('deactivated');
-				$( '#' + tabID ).addClass( 'active' );
-				
-				 addDynamicClass(parseInt(id[id.length-1]));
-				 
-				
-				return false;
-				
-				
-			});
-			
-			// Init
-			$this.find( 'ul > li.active' ).trigger( 'click' );
-				
-			
-		});	 
-		 
-		 function addDynamicClass(tab)
-		 {
-		 //debugger;
-		 var lengthOfLi=$('.xmsNav').children().length;
-		 var lenghtOfLoop=lengthOfLi-tab;
-		 var counter=0;
-		 if($('#li' +tab )[0])
-		 {
-		  $('#li' +tab )[0].className = $('#li' +tab )[0].className.replace(/xms\w*\s*/g, '');
-		 $('#li' +tab ).addClass('xmsRight');
-		 }
-		 for(var i=1;i<=lenghtOfLoop;i++)
-		 {
-		 counter++;
-		 var classToAdd=returnClass(counter);
-		 var id=parseInt(tab)+parseInt(i);
-		 if($('#li' +id )[0])
-		 {
-		  $('#li' +id )[0].className = $('#li' +id )[0].className.replace(/xms\w*\s*/g, '');
-		 $( '#li' +id  ).addClass(classToAdd);
-		 var classes=$('#li' +id )[0].className;
-		 classes.replace(/  +/g, ' ');
-		 $('#li' +id).removeClass();
-		 $( '#li' +id  ).addClass(classes);
-		 }
-		 }
-		 for(var i=tab;i>0;i--)
-		 {
-		 var classToAdd=returnClass(counter);
-		 var id=parseInt(tab)-parseInt(i);
-		 if($('#li' +id )[0])
-		 {
-		  $('#li' +id )[0].className = $('#li' +id )[0].className.replace(/xms\w*\s*/g, '');
-		 $( '#li' +  id).addClass(classToAdd);
-		  var classes=$('#li' +id )[0].className;
-		 classes.replace(/  +/g, ' ');
-		 $('#li' +id).removeClass();
-		 $( '#li' +id  ).addClass(classes);
-		 }
-		counter++
-		 }
-		 }
-		
-		 function returnClass(index)
-		 {
-		switch(index)
-		{
-		case 1: return 'xmsBottomRight'; break;
-		case 2: return 'xmsBottom'; break;
-		case 3: return 'xmsBottomLeft'; break;
-		case 4: return 'xmsLeft'; break;
-		case 5: return 'xmsTopLeft'; break;
-		case 6: return 'xmsTop'; break;
-		case 7: return 'xmsTopRight'; break;
-		default:'';break;
-		}
-		 }
-    } );
-	
-	
-jQuery(function() {
-  jQuery('#showall').click(function() {
-    jQuery('.targetDiv').fadeIn().addClass('active');
-  });
-  jQuery('.showSingle').click(function() {
-    jQuery('.targetDiv').hide().removeClass('active');
-    jQuery('#div' + $(this).attr('target')).fadeIn().addClass('active');
-  });
-});	
-	
+
+        $li.each(function (index) {
+            index = index + 1;
+            $(this).attr('href', 'javascript:');
+            $(this).attr('data-tab', tabBoxID + '-tabs-show' + index);
+        });
+        $($contentbox).each(function (index) {
+            index = index + 1;
+            $(this).attr('id', tabBoxID + '-tabs-show' + index);
+        });
+
+
+        // Tab Rotation Effect
+        if (rotation) {
+
+            var increase = Math.PI * 2 / liNum,
+                radius = 230,
+                angle = 0;
+
+            //Initialize button position
+            $this.find('.custom-tabs-ul-container > ul.xmsNav').css({
+                '-webkit-transform': 'rotate(' + parseFloat(rotationWapperDeg) + 'deg)',
+                '-ms-transform': 'rotate(' + parseFloat(rotationWapperDeg) + 'deg)',
+                'transform': 'rotate(' + parseFloat(rotationWapperDeg) + 'deg)'
+            })
+                .find('.custom-tabs-ul-container > ul.xmsNav > li')
+                .css({
+                    '-webkit-transform': 'rotate(' + -parseFloat(rotationWapperDeg) + 'deg)',
+                    '-ms-transform': 'rotate(' + -parseFloat(rotationWapperDeg) + 'deg)',
+                    'transform': 'rotate(' + -parseFloat(rotationWapperDeg) + 'deg)'
+                })
+                .find('.custom-tabs-ul-container > ul.xmsNav > li .title')
+                .css({
+                    '-webkit-transform': 'rotate(' + -parseFloat(rotationWapperDeg) + 'deg)',
+                    '-ms-transform': 'rotate(' + -parseFloat(rotationWapperDeg) + 'deg)',
+                    'transform': 'rotate(' + -parseFloat(rotationWapperDeg) + 'deg)'
+                })
+                ;
+
+
+            $li.each(function (index) {
+                $(this).css({
+                    'left': Math.cos(- Math.PI / 450 + index * increase) * radius + 'px',
+                    'top': Math.sin(- Math.PI / 450 + index * increase) * radius + 'px'
+                });
+
+
+
+                $(this).on('click', function (e) {
+
+                    var n = $(this).index(),
+                        endAngle = n % liNum * increase;
+
+
+                    (function turn() {
+                        if (Math.abs(endAngle - angle) > 1 / 8) {
+                            var sign = endAngle > angle ? 1 : -1;
+                            angle = angle + sign / 8;
+                            setTimeout(turn, 3);
+                        } else {
+                            angle = endAngle;
+                        }
+
+
+                        $li.each(function (index) {
+                            $(this).css({
+                                'left': Math.cos(- Math.PI / 450 + index * increase - angle) * radius + 'px',
+                                'top': Math.sin(- Math.PI / 450 + index * increase - angle) * radius + 'px'
+                            });
+
+                        });
+
+
+                    })();
+
+                });
+
+            });
+
+
+
+        }
+
+
+        // Tab Fade Effect
+        $this.on('click', '.custom-tabs-ul-container > ul.xmsNav > li', function (e) {
+
+
+            $('.center-border').addClass('scaleout');
+            setTimeout(function () {
+                $('.center-border').removeClass('scaleout');
+            }, 490);
+
+
+
+            var tabID = $(this).attr('data-tab'),
+                index = parseFloat($(this).index() - 1),
+                id = $(this).attr('id');
+
+
+            $this.find('ul.xmsNav li').removeClass('active').addClass('deactivated');
+            $this.find('.content').removeClass('active');
+
+
+
+            $(this).addClass('active').removeClass('deactivated');
+            $('#' + tabID).addClass('active');
+
+            addDynamicClass(parseInt(id[id.length - 1]));
+
+
+            return false;
+
+
+        });
+
+        // Init
+        $this.find('ul > li.active').trigger('click');
+
+
+    });
+
+    function addDynamicClass(tab) {
+        //debugger;
+        var lengthOfLi = $('.xmsNav').children().length;
+        var lenghtOfLoop = lengthOfLi - tab;
+        var counter = 0;
+        if ($('#li' + tab)[0]) {
+            $('#li' + tab)[0].className = $('#li' + tab)[0].className.replace(/xms\w*\s*/g, '');
+            $('#li' + tab).addClass('xmsRight');
+        }
+        for (var i = 1; i <= lenghtOfLoop; i++) {
+            counter++;
+            var classToAdd = returnClass(counter);
+            var id = parseInt(tab) + parseInt(i);
+            if ($('#li' + id)[0]) {
+                $('#li' + id)[0].className = $('#li' + id)[0].className.replace(/xms\w*\s*/g, '');
+                $('#li' + id).addClass(classToAdd);
+                var classes = $('#li' + id)[0].className;
+                classes.replace(/  +/g, ' ');
+                $('#li' + id).removeClass();
+                $('#li' + id).addClass(classes);
+            }
+        }
+        for (var i = tab; i > 0; i--) {
+            var classToAdd = returnClass(counter);
+            var id = parseInt(tab) - parseInt(i);
+            if ($('#li' + id)[0]) {
+                $('#li' + id)[0].className = $('#li' + id)[0].className.replace(/xms\w*\s*/g, '');
+                $('#li' + id).addClass(classToAdd);
+                var classes = $('#li' + id)[0].className;
+                classes.replace(/  +/g, ' ');
+                $('#li' + id).removeClass();
+                $('#li' + id).addClass(classes);
+            }
+            counter++
+        }
+    }
+
+    function returnClass(index) {
+        switch (index) {
+            case 1: return 'xmsBottomRight'; break;
+            case 2: return 'xmsBottom'; break;
+            case 3: return 'xmsBottomLeft'; break;
+            case 4: return 'xmsLeft'; break;
+            case 5: return 'xmsTopLeft'; break;
+            case 6: return 'xmsTop'; break;
+            case 7: return 'xmsTopRight'; break;
+            default: ''; break;
+        }
+    }
+});
+
+
+jQuery(function () {
+    jQuery('#showall').click(function () {
+        jQuery('.targetDiv').fadeIn().addClass('active');
+    });
+    jQuery('.showSingle').click(function () {
+        jQuery('.targetDiv').hide().removeClass('active');
+        jQuery('#div' + $(this).attr('target')).fadeIn().addClass('active');
+    });
+});
+
