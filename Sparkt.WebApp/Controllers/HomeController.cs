@@ -120,6 +120,11 @@ namespace Sparkt.WebApp.Controllers
             bool result = Utility.Utility.ValidateCaptcha(gresponse);
             return Json(new { Status = result });
         }
-        
+
+        public ActionResult Uturn()
+        {
+            return View();
+        }
+
     }
 }

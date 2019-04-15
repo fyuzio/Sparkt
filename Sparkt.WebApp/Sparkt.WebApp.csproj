@@ -4433,6 +4433,7 @@
     <Content Include="Views\work\Stree.cshtml" />
     <Content Include="Views\work\TheVoice.cshtml" />
     <Content Include="Views\work\Yaarii.cshtml" />
+    <Content Include="Views\Home\Uturn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

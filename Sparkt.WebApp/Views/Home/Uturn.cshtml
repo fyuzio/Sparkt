@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "UTurn";
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="~/Content/UTurncss.css" rel="stylesheet" />
+    <script src="~/Scripts/uturn.js"></script>
+</head>
+<body id="bannerBody">
+    <img id="bannerImg" onclick="javascript:openBanner()" src="~/Content/images/banner_320x50_Background.gif" alt="banner" />
+
+    <div id="bgAniUTurn" style="display:none" onclick="javascript:divClick()">
+        <img src="~/Content/images/320x480_background_uturn.gif" alt="No Gif">
+    </div>
+    <div id="bgAni" style="display:none" onclick="javascript:divClick()">
+        <img src="~/Content/images/320x480_background.gif" alt="No Gif">
+    </div>
+</body>
+</html>
+
+
