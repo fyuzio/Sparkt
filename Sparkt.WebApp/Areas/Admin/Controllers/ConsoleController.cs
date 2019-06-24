@@ -90,7 +90,7 @@ namespace Sparkt.WebApp.Areas.Admin.Controllers
             var fDate =  FromDate;
             var tdate = ToDate;
 
-            List<LeadModel> listLeads = _leadService.GetLeadsDownload(Convert.ToDateTime(fDate), Convert.ToDateTime(tdate));
+                List<LeadModel> listLeads = _leadService.GetLeadsDownload(Convert.ToDateTime(fDate), Convert.ToDateTime(tdate));
             if (listLeads != null && listLeads.Any())
             {
                 listLeads.ForEach(s => s.DisplayDate = s.CreatedDate.ToString("dd MMM yyyy hh.mm tt"));

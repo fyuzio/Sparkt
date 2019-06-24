@@ -61,6 +61,57 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        [Route("kullfimissedcall")]
+        public ActionResult kullfimissedcall()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("KZK")]
+        public ActionResult KZK() {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("KZK-AR")]
+        public ActionResult KZKAR()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("piramal-capital")]
+        public ActionResult PiramalFoundation()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("sky")]
+        public ActionResult Sky()
+        {
+            return View();
+        }
+
+
+
+        [HttpGet]
+        [Route("star-plus-brand-refresh")]
+        public ActionResult StarPlusBrandRefresh()
+        {
+            return View();
+        }
+        [HttpGet]
+        [Route("yaarii-website")]
+        public ActionResult yaariiwebsite()
+        {
+            return View();
+        }
+        
+
         public ActionResult MadeByMom()
         {
             return View();

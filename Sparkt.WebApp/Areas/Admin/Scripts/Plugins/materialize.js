@@ -6865,19 +6865,35 @@ if (jQuery) {
       val($ELEMENT.data('value') ? P.get('select', SETTINGS.format) : ELEMENT.value);
 
       // Only bind keydown events if the element isn’t editable.
-      if (!SETTINGS.editable) {
+      //if (!SETTINGS.editable) {
 
-        $ELEMENT.
+      //  $ELEMENT.
 
-        // On focus/click, focus onto the root to open it up.
-        on('focus.' + STATE.id + ' click.' + STATE.id, function (event) {
-          event.preventDefault();
-          P.$root.eq(0).focus();
-        }).
+      //  // On focus/click, focus onto the root to open it up.
+      //  on('focus.' + STATE.id + ' click.' + STATE.id, function (event) {
+      //    event.preventDefault();
+      //    P.$root.eq(0).focus();
+      //  }).
 
-        // Handle keyboard event based on the picker being opened or not.
-        on('keydown.' + STATE.id, handleKeydownEvent);
-      }
+      //  // Handle keyboard event based on the picker being opened or not.
+      //  on('keydown.' + STATE.id, handleKeydownEvent);
+      //}
+
+        if (!SETTINGS.editable) {
+
+            $ELEMENT.
+
+                // On focus/click, focus onto the root to open it up.
+                on('focus.' + STATE.id + ' click.' + STATE.id, function (event) {
+                    setTimeout(function () {
+                        event.preventDefault();
+                        P.$root.eq(0).focus();
+                    }, 100);
+                }).
+
+                // Handle keyboard event based on the picker being opened or not.
+                on('keydown.' + STATE.id, handleKeydownEvent);
+        }
 
       // Update the aria attributes.
       aria(ELEMENT, {

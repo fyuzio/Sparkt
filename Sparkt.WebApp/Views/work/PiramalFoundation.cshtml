@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "PiramalFoundation";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+@{
+    ViewBag.Title = "Sparkt | Star Plus | PiramalFoundation";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Star Plus | Piramal Foundation";
+    ViewBag.MetaDescription = "Values create value";
+    ViewBag.MetaURL = "https://sparkt.in/work/piramal-capital";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/piramalcapital-thum.jpg";
+}
+@section BodyClass {star-plus}
+    <script type="application/ld+json">
+        {
+        "@@context": "https://schema.org",
+        "@@type": "VideoObject",
+        "name": "Kullfi Video",
+        "VideoList": [{
+        "@@type":
+        "@@id": "",
+        "url":"",
+        "description": "Showcasing the essence of the foundation.",
+        "duration": "2M30S",
+        "thumbnailUrl":"https://www.sparkt.in/Content/work/images/banners/piramal-foundation.jpg",
+        "uploadDate":"06/21/2019",
+        }]
+        }
+    </script>
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url(/Content/work/images/banners/piramal-foundation-cover.jpg);">
+
+                </div>
+              
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Piramal Foundation</h1>
+                <div class="clear"></div>
+                <span>Showcasing the essence of the foundation.</span>
+            </div>
+        </div>
+
+        @Html.Partial("_WorkMenu")
+    </div>
+
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Experience</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel piramal-bg ">
+                <div class="slider">
+
+
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>A refreshing digital experience that enthuses the audience. </h3>
+                                </div>
+                                <div class="website-operation">
+                                    <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                    <div class="desktop-video">
+
+
+                                        <video id="desktop" poster="~/Content/work/images/piramal-foundation-desktop.jpg" style="max-width: 100%;" preload="none" controls="False">
+                                            <!--  <source  src="media/piramal-desktop.mp4" type="video/mp4" >-->
+
+                                        </video>
+                                        <script>document.getElementById("desktop").controls = false;</script>
+                                    </div>
+                                    <div class="mobile-video">
+                                        <video id="mobile" poster="~/Content/work/images/piramal-foundation-mobile.jpg" style="max-width: 100%;" preload="none" controls="false">
+                                            <!--<source  src="media/piramal-mobile.mp4" type="video/mp4" >-->
+
+                                        </video>
+                                        <script>document.getElementById("mobile").controls = false;</script>
+                                    </div>
+
+                                    <a href="https://piramalfoundation.org/" target="_blank" class="view-website">VIEW WEBSITE</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

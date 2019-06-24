@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Sky";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+@{
+    ViewBag.Title = "Sparkt | Star Plus | India Bulls Sky";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Star Plus | India Bulls Sky";
+    ViewBag.MetaDescription = "Way way above the rest";
+    ViewBag.MetaURL = "https://sparkt.in/work/Sky";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/sky.jpg";
+}
+@section BodyClass {star-plus}
+    <script type="application/ld+json">
+        {
+        "@@context": "https://schema.org",
+        "@@type": "VideoObject",
+        "name": "Kullfi Video",
+        "VideoList": [{
+        "@@type":
+        "@@id": "",
+        "url":"",
+        "description": "Way way above the rest",
+        "duration": "2M30S",
+        "thumbnailUrl":"https://www.sparkt.in/Content/work/images/banners/Sky.jpg",
+        "uploadDate":"06/21/2019",
+        }]
+        }
+    </script>
+
+    <main>
+        <div class="section">
+            <div class="work-banner">
+                <div class="banner-source">
+                    <div class="banner-video  middle-align" style="background-image: url('../Content/work/images/banners/sky.jpg');">
+
+                    </div>
+
+                </div>
+                <div class="head-title floated">
+                    <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                    <h1>India Bulls Sky</h1>
+                    <div class="clear"></div>
+                    <span>Way way above the rest</span>
+                </div>
+            </div>
+
+
+            @Html.Partial("_WorkMenu")
+        </div>
+
+        <div class="section">
+            <div class="head-title floated ">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h2>Creative Experience</h2>
+            </div>
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel indiabulls-sky-bg ">
+                    <div class="slider">
+
+                        <div>
+                            <div class="creative-assets ">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>The grandeur of India Bulls Sky with a seamless  discovery experience.</h3>
+                                    </div>
+                                    <div class="website-operation">
+                                        <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                        <div class="desktop-video">
+
+
+                                            <video id="desktop" poster="~/Content/work/images/indiabulls-sky-desktop.jpg" style="max-width: 100%;" preload="none" controls="False">
+                                                <!--<source  src="media/piramal-desktop.mp4" type="video/mp4" >-->
+
+                                            </video>
+                                            <script>
+    document.getElementById("desktop").controls = false;
+                                            </script>
+                                        </div>
+                                        <div class="mobile-video">
+                                            <video id="mobile" poster="~/Content/work/images/indiabulls-sky-mobile.jpg" style="max-width: 100%;" preload="none" controls="false">
+                                                <!-- <source  src="media/piramal-mobile.mp4" type="video/mp4" >-->
+
+                                            </video>
+                                            <script>
+    document.getElementById("mobile").controls = false;
+                                            </script>
+                                        </div>
+
+                                        <a href="http://madebysparkt.com/indiabulls/sky/" target="_blank" class="view-website">VIEW WEBSITE</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>

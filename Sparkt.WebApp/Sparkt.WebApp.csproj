@@ -17,7 +17,7 @@
     <AssemblyName>Sparkt.WebApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -3588,6 +3588,19 @@
     <Content Include="Content\work\images\awards\mobexx-gold.png" />
     <Content Include="Content\work\images\awards\mobexx-silver.png" />
     <Content Include="Content\work\images\awards\sp.png" />
+    <Content Include="Content\work\images\baat-1.png" />
+    <Content Include="Content\work\images\baat-2.png" />
+    <Content Include="Content\work\images\baat-3.png" />
+    <Content Include="Content\work\images\baat-4.png" />
+    <Content Include="Content\work\images\baat-5.png" />
+    <Content Include="Content\work\images\baat-6.png" />
+    <Content Include="Content\work\images\baat-nayi-danceplus.jpg" />
+    <Content Include="Content\work\images\baat-nayi-hspubh.jpg" />
+    <Content Include="Content\work\images\baat-nayi-kcl.jpg" />
+    <Content Include="Content\work\images\baat-nayi-kulfi.jpg" />
+    <Content Include="Content\work\images\baat-nayi-mariam-khan.jpg" />
+    <Content Include="Content\work\images\baat-nayi-sabse-smart-kaun.jpg" />
+    <Content Include="Content\work\images\baat-nayi-yrkkh.jpg" />
     <Content Include="Content\work\images\banner-video-trans.png" />
     <Content Include="Content\work\images\banners\bhaghi-2-cover.jpg" />
     <Content Include="Content\work\images\banners\bql-cover.jpg" />
@@ -3608,6 +3621,9 @@
     <Content Include="Content\work\images\banners\karn-sangini-cover.jpg" />
     <Content Include="Content\work\images\banners\khichadi-cover.jpg" />
     <Content Include="Content\work\images\banners\kulfi-cover.jpg" />
+    <Content Include="Content\work\images\banners\kulfi-missed-call-cover.jpg" />
+    <Content Include="Content\work\images\banners\kzk-ar-cover.jpg" />
+    <Content Include="Content\work\images\banners\kzk.jpg" />
     <Content Include="Content\work\images\banners\m-gage-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-badhat-yojana-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-mmf-cover.jpg" />
@@ -3626,8 +3642,11 @@
     <Content Include="Content\work\images\banners\pedder-johnson-cover.jpg" />
     <Content Include="Content\work\images\banners\phfl-cover.jpg" />
     <Content Include="Content\work\images\banners\piramal-capital-cover.jpg" />
+    <Content Include="Content\work\images\banners\piramal-foundation-cover.jpg" />
     <Content Include="Content\work\images\banners\pow-cover.jpg" />
     <Content Include="Content\work\images\banners\sanju-cover.jpg" />
+    <Content Include="Content\work\images\banners\sky.jpg" />
+    <Content Include="Content\work\images\banners\star-plus-brand-cover.png" />
     <Content Include="Content\work\images\banners\stree-cover.jpg" />
     <Content Include="Content\work\images\banners\swp-cover.jpg" />
     <Content Include="Content\work\images\banners\ted-cover.jpg" />
@@ -3641,7 +3660,9 @@
     <Content Include="Content\work\images\banners\usports-scratch.jpg" />
     <Content Include="Content\work\images\banners\vyng-cover.jpg" />
     <Content Include="Content\work\images\banners\womens-day-cover.jpg" />
+    <Content Include="Content\work\images\banners\yaarii-app-bg.png" />
     <Content Include="Content\work\images\banners\yaarii-cover.jpg" />
+    <Content Include="Content\work\images\banners\yaarii-website.jpg" />
     <Content Include="Content\work\images\black-iphone.png" />
     <Content Include="Content\work\images\bombay-times.png" />
     <Content Include="Content\work\images\bottom-shadow.png" />
@@ -3660,11 +3681,15 @@
     <Content Include="Content\work\images\chaitulala-elem-5.png" />
     <Content Include="Content\work\images\chaitulala-elem-6.png" />
     <Content Include="Content\work\images\chaitulala-elem-7.png" />
+    <Content Include="Content\work\images\cinema-hspubh.jpg" />
+    <Content Include="Content\work\images\cinema-khichdi.jpg" />
+    <Content Include="Content\work\images\cinema-kulfi.jpg" />
     <Content Include="Content\work\images\clients\boutique.png" />
     <Content Include="Content\work\images\clients\brickex.png" />
     <Content Include="Content\work\images\clients\dubsmash.png" />
     <Content Include="Content\work\images\clients\editage.png" />
     <Content Include="Content\work\images\clients\india-rf.png" />
+    <Content Include="Content\work\images\clients\indiabulls.png" />
     <Content Include="Content\work\images\clients\mahindra.png" />
     <Content Include="Content\work\images\clients\mgage.png" />
     <Content Include="Content\work\images\clients\oneplus.png" />
@@ -3714,6 +3739,7 @@
     <Content Include="Content\work\images\ikyawann-creative-approch.png" />
     <Content Include="Content\work\images\india-rf-desktop.jpg" />
     <Content Include="Content\work\images\india-rf-mobile.jpg" />
+    <Content Include="Content\work\images\indiabulls-sky-desktop.jpg" />
     <Content Include="Content\work\images\insta-data-1.png" />
     <Content Include="Content\work\images\insta-data-2.png" />
     <Content Include="Content\work\images\insta-data-3.png" />
@@ -3721,9 +3747,12 @@
     <Content Include="Content\work\images\insta-data.png" />
     <Content Include="Content\work\images\insta-fight-data-analytics.png" />
     <Content Include="Content\work\images\insta-fight-video-cover.jpg" />
+    <Content Include="Content\work\images\kulfi-add-banners.gif" />
+    <Content Include="Content\work\images\kzk-add-banner.png" />
     <Content Include="Content\work\images\laptop-fb-img.jpg" />
     <Content Include="Content\work\images\laptop-img.png" />
     <Content Include="Content\work\images\laptop-side-angle.png" />
+    <Content Include="Content\work\images\lead-up-to-the-launch.jpg" />
     <Content Include="Content\work\images\live-srk.jpg" />
     <Content Include="Content\work\images\m-gage-desktop.jpg" />
     <Content Include="Content\work\images\m-gage-mobile.jpg" />
@@ -3746,6 +3775,8 @@
     <Content Include="Content\work\images\mahindra-veo-3.jpg" />
     <Content Include="Content\work\images\mahindra-veo-4.jpg" />
     <Content Include="Content\work\images\mahindra-veo-5.jpg" />
+    <Content Include="Content\work\images\making-characters-video-2.jpg" />
+    <Content Include="Content\work\images\making-characters-video.jpg" />
     <Content Include="Content\work\images\mmf-desktop.jpg" />
     <Content Include="Content\work\images\mmf-mobile.jpg" />
     <Content Include="Content\work\images\mmf-pragati-emailers.png" />
@@ -3788,6 +3819,11 @@
     <Content Include="Content\work\images\nayisoch-twitter-tweets-5.jpg" />
     <Content Include="Content\work\images\nayosoch-cover-star.jpg" />
     <Content Include="Content\work\images\nayosoch-cover.jpg" />
+    <Content Include="Content\work\images\outdoor-1.jpg" />
+    <Content Include="Content\work\images\outdoor-2.jpg" />
+    <Content Include="Content\work\images\outdoor-3.jpg" />
+    <Content Include="Content\work\images\outdoor-4.jpg" />
+    <Content Include="Content\work\images\outdoor-5.jpg" />
     <Content Include="Content\work\images\pchf-desktop.jpg" />
     <Content Include="Content\work\images\pchf-mobile.jpg" />
     <Content Include="Content\work\images\pedderjohnson-bg.jpg" />
@@ -3797,11 +3833,13 @@
     <Content Include="Content\work\images\phfl-mobile.jpg" />
     <Content Include="Content\work\images\piramal-capital-desktop.jpg" />
     <Content Include="Content\work\images\piramal-capital-mobile.jpg" />
+    <Content Include="Content\work\images\piramal-foundation-mobile.jpg" />
     <Content Include="Content\work\images\pow-creative-assets-bg.jpg" />
     <Content Include="Content\work\images\pow-mobile-creative.png" />
     <Content Include="Content\work\images\push-charactor.png" />
     <Content Include="Content\work\images\revent-logo.png" />
     <Content Include="Content\work\images\single-laptop-video.png" />
+    <Content Include="Content\work\images\sky.jpg" />
     <Content Include="Content\work\images\social-work.png" />
     <Content Include="Content\work\images\spaktLogo-text.png" />
     <Content Include="Content\work\images\spaktLogo.png" />
@@ -3809,6 +3847,10 @@
     <Content Include="Content\work\images\sparkt-border.png" />
     <Content Include="Content\work\images\square-shadow.png" />
     <Content Include="Content\work\images\star-bg.jpg" />
+    <Content Include="Content\work\images\star-brand-refresh-add-banner.png" />
+    <Content Include="Content\work\images\star-plus-brand-cover.png" />
+    <Content Include="Content\work\images\star-plus-iPhone.png" />
+    <Content Include="Content\work\images\star-plus-laptop.png" />
     <Content Include="Content\work\images\star-vyng-phone.png" />
     <Content Include="Content\work\images\start-new-bg-bk.jpg" />
     <Content Include="Content\work\images\start-new-bg.png" />
@@ -3885,7 +3927,10 @@
     <Content Include="Content\work\images\thums\junglebook-thum.jpg" />
     <Content Include="Content\work\images\thums\karn-sangini-thum.jpg" />
     <Content Include="Content\work\images\thums\khichadi-thum.jpg" />
+    <Content Include="Content\work\images\thums\kulfi-missed-call-thum.jpg" />
     <Content Include="Content\work\images\thums\kullfi-thum.jpg" />
+    <Content Include="Content\work\images\thums\kzk-ar-thum.jpg" />
+    <Content Include="Content\work\images\thums\kzk-thum.jpg" />
     <Content Include="Content\work\images\thums\mahindra-rural-bharat-thum.jpg" />
     <Content Include="Content\work\images\thums\mahindra-unnati-thum.jpg" />
     <Content Include="Content\work\images\thums\mGage-thum.jpg" />
@@ -3901,9 +3946,12 @@
     <Content Include="Content\work\images\thums\pchf-thum.jpg" />
     <Content Include="Content\work\images\thums\pedderjohnson-thum.jpg" />
     <Content Include="Content\work\images\thums\phfl-thum.jpg" />
+    <Content Include="Content\work\images\thums\piramal-foundation-thum.jpg" />
     <Content Include="Content\work\images\thums\piramalcapital-thum.jpg" />
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
     <Content Include="Content\work\images\thums\sanju-thum.jpg" />
+    <Content Include="Content\work\images\thums\sky-thum.jpg" />
+    <Content Include="Content\work\images\thums\start-brand-refresh-thum.jpg" />
     <Content Include="Content\work\images\thums\stree-thum.jpg" />
     <Content Include="Content\work\images\thums\swp-thum.jpg" />
     <Content Include="Content\work\images\thums\tah-thum.jpg" />
@@ -3921,6 +3969,7 @@
     <Content Include="Content\work\images\thums\vyng-thum.jpg" />
     <Content Include="Content\work\images\thums\womens-day-thum.jpg" />
     <Content Include="Content\work\images\thums\yaarii-thum.jpg" />
+    <Content Include="Content\work\images\thums\yaarii-website-thum.jpg" />
     <Content Include="Content\work\images\title-icon.png" />
     <Content Include="Content\work\images\total-insight.jpg" />
     <Content Include="Content\work\images\u-cypher-akshay-akramaks.jpg" />
@@ -4042,7 +4091,11 @@
     <Content Include="Content\work\images\womens-twitter-tweets-2.jpg" />
     <Content Include="Content\work\images\womens-twitter-tweets-3.jpg" />
     <Content Include="Content\work\images\work.jpg" />
+    <Content Include="Content\work\images\yaari-app-bg.png" />
+    <Content Include="Content\work\images\yaari-app.gif" />
+    <Content Include="Content\work\images\yaari-app.png" />
     <Content Include="Content\work\images\yaarii-bg.jpg" />
+    <Content Include="Content\work\images\yaarii-desktop.jpg" />
     <Content Include="Content\work\images\yaarii-mobile-creative.png" />
     <Content Include="Content\work\images\youtube-c-panel.png" />
     <Content Include="Content\work\images\youtube.png" />
@@ -4388,7 +4441,6 @@
     <Content Include="Views\work\Kullfi.cshtml" />
     <Content Include="Views\work\MadeByMom.cshtml" />
     <Content Include="Views\work\MahindraBadhatYojana.cshtml" />
-    <Content Include="Views\work\MahindraMMF.cshtml" />
     <Content Include="Views\work\MahindraNfoLaunches.cshtml" />
     <Content Include="Views\work\MahindraTah.cshtml" />
     <Content Include="Views\work\MahindraTextMoji.cshtml" />
@@ -4434,6 +4486,13 @@
     <Content Include="Views\work\TheVoice.cshtml" />
     <Content Include="Views\work\Yaarii.cshtml" />
     <Content Include="Views\Home\Uturn.cshtml" />
+    <Content Include="Views\work\kullfimissedcall.cshtml" />
+    <Content Include="Views\work\KZK.cshtml" />
+    <Content Include="Views\work\PiramalFoundation.cshtml" />
+    <Content Include="Views\work\Sky.cshtml" />
+    <Content Include="Views\work\StarPlusBrandRefresh.cshtml" />
+    <Content Include="Views\work\yaariiwebsite.cshtml" />
+    <Content Include="Views\work\KZKAR.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4475,7 +4534,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54518</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

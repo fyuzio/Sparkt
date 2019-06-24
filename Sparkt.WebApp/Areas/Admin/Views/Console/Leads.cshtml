@@ -99,9 +99,18 @@
                                                 <th>
                                                     <select id="drpFltLeadType" class="filter">
                                                         <option value="" selected>Type</option>
-                                                        <option value="3">Press Inquiry</option>
-                                                        <option value="1">Partner With Us</option>
+                                                        @*<option value="3">Press Inquiry</option>
+                                                            <option value="1">Partner With Us</option>*@
+                                                        @*<option value="2">Work With Us</option>*@
+
+
+                                                        <option value="1">Join Sparkt</option>
                                                         <option value="2">Work With Us</option>
+                                                        <option value="3">Partner with us</option>
+                                                        <option value="4">Media Inquiries</option>
+                                                        <option value="5">Everything Else</option>
+                                                        <option value="6">New Business</option>
+
                                                     </select>
                                                 </th>
                                                 <th>View Detail</th>
@@ -176,7 +185,7 @@
         var formattedDate = (date.getDate()) + '/' + (date.getMonth() + 1) + '/' + (date.getFullYear());
         $('#fromDate').pickadate('picker').set('max', formattedDate, { format: 'dd/mm/yyyy' },).trigger("change")    ;
         $('#toDate').pickadate('picker').set('min', date, { format: 'dd/mm/yyyy' }).trigger("change");
-        $('#fromDate').val(formattedDate);
+        //$('#fromDate').val(formattedDate);
         var date1 = new Date($('#toDate').val());
         $('#fromDate').on('change', function () {
             $('#fromDate').val($(this).val());
@@ -260,7 +269,7 @@
          //    vFltData += $('#drpFltTypeAssistYou').val() + ",";
          //else
          //    vFltData += '' + ",";
-         
+
 		 if (vFltData != '') {
 			 FetchLeads(vFltData);
         }
@@ -391,6 +400,22 @@
          var link = '@Url.Action("LeadDetail", "Console", new { id = "-1" })';
          link = link.replace("-1", id);
          return link;
-     }
+        }
+
+    //if (!SETTINGS.editable) {
+
+	$ELEMENT.
+
+		// On focus/click, focus onto the root to open it up.
+		on('focus.' + STATE.id + ' click.' + STATE.id, function (event) {
+			setTimeout(function(){
+				event.preventDefault();
+				P.$root.eq(0).focus();
+			}, 100);
+		}).
+
+		// Handle keyboard event based on the picker being opened or not.
+		on('keydown.' + STATE.id, handleKeydownEvent);
+//}
 
 </Script>

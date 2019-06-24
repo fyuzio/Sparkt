@@ -1,0 +1,126 @@
+﻿
+@{
+    ViewBag.Title = "Yaarii Website";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+@{
+    ViewBag.Title = "Sparkt | Star Plus | Yaarii Website";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Star Plus | Yaarii Website";
+    ViewBag.MetaDescription = "Reingrovating Yaari’s Brand Experience.";
+    ViewBag.MetaURL = "https://sparkt.in/work/yaarii-website";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/yaarii-website-thum.jpg";
+}
+@section BodyClass {star-plus}
+    <script type="application/ld+json">
+        {
+        "@@context": "https://schema.org",
+        "@@type": "VideoObject",
+        "name": "Kullfi Video",
+        "VideoList": [{
+        "@@type":
+        "@@id": "https://youtu.be/j8dD0w5jV1c",
+        "url":"https://youtu.be/j8dD0w5jV1c",
+        "description": "Reingrovating Yaari’s Brand Experience.",
+        "duration": "2M30S",
+        "thumbnailUrl":"https://www.sparkt.in/Content/work/images/banners/yarri-website.jpg",
+        "uploadDate":"06/21/2019",
+        }]
+        }
+    </script>
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url('/Content/work/images/banners/yaarii-website.jpg');">
+
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Yaarii Website</h1>
+                <div class="clear"></div>
+                <span>Reingrovating Yaari’s Brand Experience.</span>
+            </div>
+        </div>
+
+
+        @Html.Partial("_WorkMenu")
+    </div>
+
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel fixed " style="background-image: url('/Content/work/images/yaarii-bg.jpg');">
+                    <div class="slider">
+
+                        <!-- <div>
+                           <div class="creative-assets">
+                             <div class="container">
+                               <div class="assets-title">
+                                  <h3>Revised Visual Vocabulary with an enhanced interaction and transaction experience.</h3>
+                               </div>
+
+                           <div class="yaarii-app-bg-wrapp" >
+                               <img src="~/Content/work/images/yaari-app.gif" alt="" class="yaarii-app-animation" >
+                               <img src="~/Content/work/images/yaari-app-bg.png" alt="" class="yaarii-app-bg" >
+
+                           <a href="http://madebysparkt.com/yaarii" target="_blank" class="view-website" >VIEW WEBSITE</a>
+                           </div>
+
+
+
+                             </div>
+
+                           </div>
+
+                         </div>-->
+
+                        <div>
+                            <div class="creative-assets ">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>Revised Visual Vocabulary with an enhanced interaction and transaction experience.</h3>
+                                    </div>
+                                    <div class="website-operation">
+                                        <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                        <div class="desktop-video">
+
+
+                                            <video id="desktop" poster="~/Content/work/images/yaarii-desktop.jpg" style="max-width: 100%;" preload="none" controls="False">
+                                                <!--  <source  src="media/piramal-desktop.mp4" type="video/mp4" >-->
+
+                                            </video>
+                                            <script>
+                                                document.getElementById("desktop").controls = false;
+                                            </script>
+                                        </div>
+                                        <div class="mobile-video">
+                                            <video id="mobile" poster="~/Content/work/images/yaari-app.gif" style="max-width: 100%;" preload="none" controls="false">
+                                                <!--<source  src="media/piramal-mobile.mp4" type="video/mp4" >-->
+
+                                            </video>
+                                            <script>
+                                                document.getElementById("mobile").controls = false;
+                                            </script>
+                                        </div>
+
+                                        <a href="http://madebysparkt.com/yaarii" target="_blank" class="view-website">VIEW WEBSITE</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

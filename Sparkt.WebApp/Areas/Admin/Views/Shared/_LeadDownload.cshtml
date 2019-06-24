@@ -18,7 +18,7 @@
                         <div class="row">
                             <input type="hidden" name="TypeId" value="3" />
                             <div class="input-field col s12 m6">
-                                <input name="FromDate" id="fromDate" value="@DateTime.Now" class="datepicker" placeholder="Select from  date" />
+                                <input name="FromDate" id="fromDate" value="@DateTime.Now.ToShortDateString()" class="datepicker" placeholder="Select from  date" />
                             </div>
                             <div class="input-field col s12 m6">
                                 <input name="ToDate" id="toDate" value="@DateTime.Now.ToShortDateString()" class="datepicker" placeholder="Select to  date" />

@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "KZKAR";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+@{
+    ViewBag.Title = "Sparkt | Star Plus | KZKAR";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Star Plus | Kasautii Zindagii Kay";
+    ViewBag.MetaDescription = "Recreating the magic of love through Augmented Reality.";
+    ViewBag.MetaURL = "https://sparkt.in/work/KZK";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/kzk-thum.jpg";
+}
+@section BodyClass {star-plus}
+    <script type="application/ld+json">
+        {
+        "@@context": "https://schema.org",
+        "@@type": "VideoObject",
+        "name": "KZK Video",
+        "VideoList": [{
+        "@@type":
+        "@@id": "https://youtu.be/j8dD0w5jV1c",
+        "url":"https://youtu.be/j8dD0w5jV1c",
+        "description": "Recreating the magic of love through Augmented Reality.",
+        "duration": "2M30S",
+        "thumbnailUrl":"https://www.sparkt.in/Content/work/images/banners/kzk.jpg",
+        "uploadDate":"06/21/2019",
+        }]
+        }
+    </script>
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/banners/kzk-ar-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/j8dD0w5jV1c" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/kzk-ar-cover.jpg);"> </div>
+            </div>
+
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Kasautii Zindagii Kay</h1>
+                <div class="clear"></div>
+                <span>Recreating the magic of love through Augmented Reality.</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu")
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Experience</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel fixed " style="background-image: url(../Content/work/images/star-bg.jpg);">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>video memoir of togetherness made for couples in love using Augmented Reality</h3>
+                                </div>
+                                <div class="sparkt-carousel">
+                                    <div class="mobile-wrapp">
+                                        <!-- <span class="chaitu-elem elem-7" ><img src="~/Content/work/images/chaitulala-elem-7.png" alt=""/></span>-->
+
+                                        <div class="video-slider">
+                                            <div class="video-item">
+                                                <video poster="http://img.youtube.com/vi/1jf5zUYmmNY/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/1jf5zUYmmNY" type="video/youtube" />
+                                                </video>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="video-nav">
+                                       <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/FmmX4GmRp4s/maxresdefault.jpg" alt=""/></a> </div>
+                                       <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/n5n-bLAmclk/maxresdefault.jpg" alt=""/></a> </div>
+                                       <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/33_NVZDfMIs/maxresdefault.jpg" alt=""/></a> </div>
+
+                                         <div class="nav-item"><a href="#" class="hvr-trim"><img src="http://img.youtube.com/vi/ZunNvPz2_bo/maxresdefault.jpg" alt=""/></a> </div>
+
+                                     </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="~/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Results</h2>
+        </div>
+        <div class="container bottom-padding-none">
+            <div class="result-wrapp">
+                <ul class="fadeUp t-infinity">
+                    <li class="col-3 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">CONVERSATION TRENDS</span> <span class="result-points">NO.1</span> <span class="result">NATIONALLY</span> </div>
+                    </li>
+                    <li class="col-3 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">SOCIAL SENTIMENT</span> <span class="result-points">32K</span> <span class="result">MENTIONS EXPRESSED</span> </div>
+                    </li>
+                    <li class="col-3 hvr-float-shadow">
+                        <div class="result-info "> <span class="result-from">CHARACTER AFFINITY</span> <span class="result-points">#1</span> <span class="result">BUZZIEST CHARACTER ON SOCIAL MEDIA</span> </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="container">
+           <div class="quotes-wrapp">
+             <div class="quotes">
+               <h3>Coming Soon</h3>
+               <span class="quotes-writer"></span> </div>
+           </div>
+         </div>-->
+    </div>
+</main>
+
