@@ -692,6 +692,11 @@ $(function () {
         $(".dubsmash")
             .addClass("highlighted");
     }
+    if ($('body')
+        .hasClass('indiabulls')) {
+        $(".indiabulls")
+            .addClass("highlighted");
+    }
 });
 if($('.website-operation video#mobile')[0])
 $('.website-operation video#mobile')[0].play();

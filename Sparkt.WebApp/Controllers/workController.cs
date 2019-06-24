@@ -83,7 +83,7 @@ namespace Sparkt.WebApp.Controllers
         }
 
         [HttpGet]
-        [Route("piramal-capital")]
+        [Route("piramalfoundation")]
         public ActionResult PiramalFoundation()
         {
             return View();
