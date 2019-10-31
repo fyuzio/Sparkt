@@ -3113,6 +3113,9 @@
     <Content Include="Content\images\backup\squad\vrushabh.png" />
     <Content Include="Content\images\backup\squad\waqt-shaikh.png" />
     <Content Include="Content\images\backup\squad\warren-pinto.png" />
+    <Content Include="Content\images\clients\divayoga.png" />
+    <Content Include="Content\images\yaarii-bg.jpg" />
+    <Content Include="Content\work\images\banners\birla-wall-putty.jpg" />
     <Content Include="Content\images\business-features.png" />
     <Content Include="Content\images\clients\boutique.png" />
     <Content Include="Content\images\clients\brickex-logo.png" />
@@ -3644,6 +3647,7 @@
     <Content Include="Content\work\images\banners\piramal-capital-cover.jpg" />
     <Content Include="Content\work\images\banners\piramal-foundation-cover.jpg" />
     <Content Include="Content\work\images\banners\pow-cover.jpg" />
+    <Content Include="Content\work\images\banners\ruchi-soya.jpg" />
     <Content Include="Content\work\images\banners\sanju-cover.jpg" />
     <Content Include="Content\work\images\banners\sky.jpg" />
     <Content Include="Content\work\images\banners\star-plus-brand-cover.png" />
@@ -3662,6 +3666,7 @@
     <Content Include="Content\work\images\banners\womens-day-cover.jpg" />
     <Content Include="Content\work\images\banners\yaarii-app-bg.png" />
     <Content Include="Content\work\images\banners\yaarii-cover.jpg" />
+    <Content Include="Content\work\images\banners\yaarii-film.jpg" />
     <Content Include="Content\work\images\banners\yaarii-website.jpg" />
     <Content Include="Content\work\images\black-iphone.png" />
     <Content Include="Content\work\images\bombay-times.png" />
@@ -3684,6 +3689,7 @@
     <Content Include="Content\work\images\cinema-hspubh.jpg" />
     <Content Include="Content\work\images\cinema-khichdi.jpg" />
     <Content Include="Content\work\images\cinema-kulfi.jpg" />
+    <Content Include="Content\work\images\clients\birla-white.png" />
     <Content Include="Content\work\images\clients\boutique.png" />
     <Content Include="Content\work\images\clients\brickex.png" />
     <Content Include="Content\work\images\clients\dubsmash.png" />
@@ -3692,6 +3698,7 @@
     <Content Include="Content\work\images\clients\indiabulls.png" />
     <Content Include="Content\work\images\clients\mahindra.png" />
     <Content Include="Content\work\images\clients\mgage.png" />
+    <Content Include="Content\work\images\clients\nutrela.png" />
     <Content Include="Content\work\images\clients\oneplus.png" />
     <Content Include="Content\work\images\clients\pedderjohnson.png" />
     <Content Include="Content\work\images\clients\piramal-capital-phfl.png" />
@@ -3911,6 +3918,7 @@
     <Content Include="Content\work\images\thevoice-mobile-creative.png" />
     <Content Include="Content\work\images\thums\badhat-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\bhaghi-2-thum.jpg" />
+    <Content Include="Content\work\images\thums\birla-wall-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\boutique-thum.jpg" />
     <Content Include="Content\work\images\thums\brickex-thum.jpg" />
     <Content Include="Content\work\images\thums\danceplus-thum.jpg" />
@@ -3949,6 +3957,7 @@
     <Content Include="Content\work\images\thums\piramal-foundation-thum.jpg" />
     <Content Include="Content\work\images\thums\piramalcapital-thum.jpg" />
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
+    <Content Include="Content\work\images\thums\ruchi-soya-thum.jpg" />
     <Content Include="Content\work\images\thums\sanju-thum.jpg" />
     <Content Include="Content\work\images\thums\sky-thum.jpg" />
     <Content Include="Content\work\images\thums\start-brand-refresh-thum.jpg" />
@@ -3968,6 +3977,7 @@
     <Content Include="Content\work\images\thums\usports-thum.jpg" />
     <Content Include="Content\work\images\thums\vyng-thum.jpg" />
     <Content Include="Content\work\images\thums\womens-day-thum.jpg" />
+    <Content Include="Content\work\images\thums\yaarii-film-thum.jpg" />
     <Content Include="Content\work\images\thums\yaarii-thum.jpg" />
     <Content Include="Content\work\images\thums\yaarii-website-thum.jpg" />
     <Content Include="Content\work\images\title-icon.png" />
@@ -4493,6 +4503,9 @@
     <Content Include="Views\work\StarPlusBrandRefresh.cshtml" />
     <Content Include="Views\work\yaariiwebsite.cshtml" />
     <Content Include="Views\work\KZKAR.cshtml" />
+    <Content Include="Views\work\BirlaWhiteRepaintPutty.cshtml" />
+    <Content Include="Views\work\Nutrela.cshtml" />
+    <Content Include="Views\work\Yaariifilms.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

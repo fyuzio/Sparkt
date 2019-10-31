@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Deplyment\Sparkt.in\24June\Deploy</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Deplyment\Sparkt.in\31stOct2019</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -9004,43 +9004,43 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:20</publishTime>
     </File>
     <File Include="bin/Sparkt.BusinessAccess.dll">
-      <publishTime>06/21/2019 11:52:43</publishTime>
+      <publishTime>10/31/2019 16:10:19</publishTime>
     </File>
     <File Include="bin/Sparkt.BusinessAccess.dll.config">
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="bin/Sparkt.BusinessAccess.pdb">
-      <publishTime>06/21/2019 11:52:43</publishTime>
+      <publishTime>10/31/2019 16:10:19</publishTime>
     </File>
     <File Include="bin/Sparkt.DataAccess.dll">
-      <publishTime>06/21/2019 11:52:42</publishTime>
+      <publishTime>10/31/2019 16:07:17</publishTime>
     </File>
     <File Include="bin/Sparkt.DataAccess.dll.config">
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="bin/Sparkt.DataAccess.pdb">
-      <publishTime>06/21/2019 11:52:42</publishTime>
+      <publishTime>10/31/2019 16:07:17</publishTime>
     </File>
     <File Include="bin/Sparkt.Entities.dll">
-      <publishTime>06/21/2019 11:52:41</publishTime>
+      <publishTime>10/31/2019 16:07:16</publishTime>
     </File>
     <File Include="bin/Sparkt.Entities.pdb">
-      <publishTime>06/21/2019 11:52:41</publishTime>
+      <publishTime>10/31/2019 16:07:16</publishTime>
     </File>
     <File Include="bin/Sparkt.Utility.dll">
-      <publishTime>06/21/2019 11:52:42</publishTime>
+      <publishTime>10/31/2019 16:10:04</publishTime>
     </File>
     <File Include="bin/Sparkt.Utility.dll.config">
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="bin/Sparkt.Utility.pdb">
-      <publishTime>06/21/2019 11:52:42</publishTime>
+      <publishTime>10/31/2019 16:10:04</publishTime>
     </File>
     <File Include="bin/Sparkt.WebApp.dll">
-      <publishTime>06/24/2019 13:08:19</publishTime>
+      <publishTime>10/31/2019 19:05:41</publishTime>
     </File>
     <File Include="bin/Sparkt.WebApp.pdb">
-      <publishTime>06/24/2019 13:08:19</publishTime>
+      <publishTime>10/31/2019 19:05:41</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>06/21/2019 11:45:20</publishTime>
@@ -9082,7 +9082,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:02</publishTime>
     </File>
     <File Include="Content/css/common.css">
-      <publishTime>06/21/2019 11:45:02</publishTime>
+      <publishTime>10/31/2019 17:49:40</publishTime>
     </File>
     <File Include="Content/css/fonts/.DS_Store">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -9118,10 +9118,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:02</publishTime>
     </File>
     <File Include="Content/css/hompage.css">
-      <publishTime>06/21/2019 11:45:02</publishTime>
+      <publishTime>10/31/2019 17:50:23</publishTime>
     </File>
     <File Include="Content/css/hover-min.css">
-      <publishTime>06/21/2019 11:45:02</publishTime>
+      <publishTime>10/31/2019 17:51:05</publishTime>
     </File>
     <File Include="Content/css/lity.min.css">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -9133,7 +9133,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:02</publishTime>
     </File>
     <File Include="Content/css/reset.css">
-      <publishTime>06/21/2019 11:45:02</publishTime>
+      <publishTime>10/31/2019 17:51:42</publishTime>
     </File>
     <File Include="Content/images/achievements1.jpg">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -9335,6 +9335,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/images/clients/brickex-logo.png">
       <publishTime>06/21/2019 11:45:02</publishTime>
+    </File>
+    <File Include="Content/images/clients/divayoga.png">
+      <publishTime>10/31/2019 18:30:56</publishTime>
     </File>
     <File Include="Content/images/clients/dubsmash.png">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -10011,17 +10014,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/images/yaari-app.png">
       <publishTime>06/21/2019 17:50:42</publishTime>
     </File>
+    <File Include="Content/images/yaarii-bg.jpg">
+      <publishTime>10/31/2019 16:01:25</publishTime>
+    </File>
     <File Include="Content/images/yaarii-desktop.jpg">
       <publishTime>06/21/2019 17:50:42</publishTime>
     </File>
     <File Include="Content/js/functions.js">
-      <publishTime>06/21/2019 11:45:02</publishTime>
+      <publishTime>10/31/2019 17:54:08</publishTime>
     </File>
     <File Include="Content/js/jquery-3.1.1.min.js">
       <publishTime>06/21/2019 11:45:02</publishTime>
     </File>
     <File Include="Content/js/text-animation.js">
-      <publishTime>06/21/2019 11:45:02</publishTime>
+      <publishTime>10/31/2019 12:59:15</publishTime>
     </File>
     <File Include="Content/media/sparkt-office.jpg">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -10963,13 +10969,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
     <File Include="Content/work/css/reset.css">
-      <publishTime>06/21/2019 11:45:04</publishTime>
+      <publishTime>10/31/2019 17:55:32</publishTime>
     </File>
     <File Include="Content/work/css/style--bk.css">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
     <File Include="Content/work/css/style.css">
-      <publishTime>06/21/2019 16:02:48</publishTime>
+      <publishTime>10/31/2019 18:07:31</publishTime>
     </File>
     <File Include="Content/work/images/.DS_Store">
       <publishTime>06/21/2019 11:45:04</publishTime>
@@ -11112,6 +11118,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/banners/bhaghi-2-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
+    <File Include="Content/work/images/banners/birla-wall-putty.jpg">
+      <publishTime>10/31/2019 14:07:10</publishTime>
+    </File>
     <File Include="Content/work/images/banners/bql-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
@@ -11235,6 +11244,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/banners/pow-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
+    <File Include="Content/work/images/banners/ruchi-soya.jpg">
+      <publishTime>10/31/2019 14:53:15</publishTime>
+    </File>
     <File Include="Content/work/images/banners/sanju-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
@@ -11242,7 +11254,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 20:41:48</publishTime>
     </File>
     <File Include="Content/work/images/banners/star-plus-brand-cover.png">
-      <publishTime>06/21/2019 20:41:48</publishTime>
+      <publishTime>06/24/2019 14:41:01</publishTime>
     </File>
     <File Include="Content/work/images/banners/stree-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
@@ -11288,6 +11300,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/banners/yaarii-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
+    </File>
+    <File Include="Content/work/images/banners/yaarii-film.jpg">
+      <publishTime>10/31/2019 15:45:48</publishTime>
     </File>
     <File Include="Content/work/images/banners/yaarii-website.jpg">
       <publishTime>06/21/2019 20:41:49</publishTime>
@@ -11355,6 +11370,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/cinema-kulfi.jpg">
       <publishTime>06/21/2019 20:40:39</publishTime>
     </File>
+    <File Include="Content/work/images/clients/birla-white.png">
+      <publishTime>10/31/2019 17:16:23</publishTime>
+    </File>
     <File Include="Content/work/images/clients/boutique.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
@@ -11371,13 +11389,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
     <File Include="Content/work/images/clients/indiabulls.png">
-      <publishTime>06/21/2019 20:42:01</publishTime>
+      <publishTime>06/24/2019 14:27:06</publishTime>
     </File>
     <File Include="Content/work/images/clients/mahindra.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
     <File Include="Content/work/images/clients/mgage.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
+    </File>
+    <File Include="Content/work/images/clients/nutrela.png">
+      <publishTime>10/31/2019 17:16:23</publishTime>
     </File>
     <File Include="Content/work/images/clients/oneplus.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
@@ -12042,6 +12063,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/thums/bhaghi-2-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
+    <File Include="Content/work/images/thums/birla-wall-putty-thum.jpg">
+      <publishTime>10/31/2019 14:57:43</publishTime>
+    </File>
     <File Include="Content/work/images/thums/boutique-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
@@ -12156,6 +12180,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/thums/pow-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
+    <File Include="Content/work/images/thums/ruchi-soya-thum.jpg">
+      <publishTime>10/31/2019 14:58:00</publishTime>
+    </File>
     <File Include="Content/work/images/thums/sanju-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
@@ -12212,6 +12239,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/thums/womens-day-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
+    </File>
+    <File Include="Content/work/images/thums/yaarii-film-thum.jpg">
+      <publishTime>10/31/2019 15:46:17</publishTime>
     </File>
     <File Include="Content/work/images/thums/yaarii-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
@@ -12598,7 +12628,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:06</publishTime>
     </File>
     <File Include="Content/work/images/yaarii-desktop.jpg">
-      <publishTime>06/21/2019 20:40:40</publishTime>
+      <publishTime>06/24/2019 14:43:24</publishTime>
     </File>
     <File Include="Content/work/images/yaarii-mobile-creative.png">
       <publishTime>06/21/2019 11:45:06</publishTime>
@@ -12619,7 +12649,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:06</publishTime>
     </File>
     <File Include="Content/work/js/functions.js">
-      <publishTime>06/21/2019 11:45:06</publishTime>
+      <publishTime>10/31/2019 17:57:16</publishTime>
     </File>
     <File Include="Content/work/js/jquery-2.2.4.min.js">
       <publishTime>06/21/2019 11:45:06</publishTime>
@@ -13078,7 +13108,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:11</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>06/24/2019 13:02:25</publishTime>
+      <publishTime>10/31/2019 18:51:45</publishTime>
     </File>
     <File Include="Views/Home/Uturn.cshtml">
       <publishTime>06/21/2019 11:45:11</publishTime>
@@ -13093,13 +13123,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:11</publishTime>
     </File>
     <File Include="Views/Shared/_WorkMenu.cshtml">
-      <publishTime>06/24/2019 13:02:25</publishTime>
+      <publishTime>10/31/2019 17:22:50</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/Baaghi2.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
+    </File>
+    <File Include="Views/work/BirlaWhiteRepaintPutty.cshtml">
+      <publishTime>10/31/2019 17:27:05</publishTime>
     </File>
     <File Include="Views/work/bql.cshtml">
       <publishTime>06/21/2019 11:45:13</publishTime>
@@ -13206,8 +13239,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/work/Nazar.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
+    <File Include="Views/work/Nutrela.cshtml">
+      <publishTime>10/31/2019 17:26:44</publishTime>
+    </File>
     <File Include="Views/work/OnePlus.cshtml">
-      <publishTime>06/21/2019 11:45:12</publishTime>
+      <publishTime>10/31/2019 17:39:25</publishTime>
     </File>
     <File Include="Views/work/Pchf.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13222,7 +13258,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/PiramalFoundation.cshtml">
-      <publishTime>06/24/2019 13:02:25</publishTime>
+      <publishTime>06/24/2019 15:33:00</publishTime>
     </File>
     <File Include="Views/work/Pow.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13231,7 +13267,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/Sky.cshtml">
-      <publishTime>06/21/2019 20:56:05</publishTime>
+      <publishTime>06/24/2019 15:33:47</publishTime>
     </File>
     <File Include="Views/work/StarPlusBrandRefresh.cshtml">
       <publishTime>06/21/2019 20:52:55</publishTime>
@@ -13290,14 +13326,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/work/Yaarii.cshtml">
       <publishTime>06/21/2019 11:45:13</publishTime>
     </File>
+    <File Include="Views/work/Yaariifilms.cshtml">
+      <publishTime>10/31/2019 17:26:08</publishTime>
+    </File>
     <File Include="Views/work/yaariiwebsite.cshtml">
-      <publishTime>06/21/2019 20:55:53</publishTime>
+      <publishTime>06/24/2019 15:31:47</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/21/2019 21:17:41</publishTime>
+      <publishTime>10/31/2019 19:05:49</publishTime>
     </File>
   </ItemGroup>
 </Project>

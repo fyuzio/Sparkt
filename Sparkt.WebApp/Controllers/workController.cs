@@ -14,6 +14,24 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [Route("birla-white-repaint-putty")]
+        public ActionResult BirlaWhiteRepaintPutty()
+        {
+            return View();
+        }
+        //[Route("nutrela")]
+        public ActionResult Nutrela()
+        {
+            return View();
+        }
+
+        [Route("yaarii-films")]
+        public ActionResult Yaariifilms()
+        {
+            return View();
+        }
+
         [Route("BoutiqueLiving")]
         public ActionResult Bql()
         {
@@ -71,7 +89,8 @@ namespace Sparkt.WebApp.Controllers
 
         [HttpGet]
         [Route("KZK")]
-        public ActionResult KZK() {
+        public ActionResult KZK()
+        {
             return View();
         }
 
@@ -110,7 +129,7 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
-        
+
 
         public ActionResult MadeByMom()
         {
@@ -155,11 +174,14 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
         public ActionResult NayiSoch()
         {
-            ViewBag.At="@";
+            ViewBag.At = "@";
             return View();
         }
+        
+
         public ActionResult OnePlus()
         {
             return View();

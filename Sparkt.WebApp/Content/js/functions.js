@@ -229,7 +229,7 @@ $(function () {
             type: "default",
             width: "auto",
             fit: !0,
-            closed: "accordion",
+            // closed: "accordion",
             activate: function () {
                 var t = $(this),
                     u = $("#tabInfo"),
@@ -361,7 +361,7 @@ $(function () {
             loop: !0
         }),
         o = new TimelineMax;
-    o.from(".sparkt-table > img", 1, {
+    o.from(".sparkt-table a > img", 1, {
         y: "-50%",
         ease: Power0.easeNone
     }, 1);

@@ -1,7 +1,9 @@
 ﻿@model Sparkt.WebApp.Models.ContactUsViewModel
 @{
-    ViewBag.Title = "Sparkt";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+                /**/
+
+                ViewBag.Title = "Sparkt";
+                Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <script type="text/javascript">
     var pageSection = '@ViewBag.PageSection';
@@ -202,7 +204,7 @@
                                 <li>Conversational & Cognitive Interfaces</li>
                                 <li>Consumer Interaction Design</li>
                                 <li>Experiential Environments (AR/VR/MR)</li>
-                                <li>Shopper Marketing & Activations</li>
+                                @*<li>Shopper Marketing & Activations</li>*@
                                 <li>Business Process Design</li>
                                 <li>Blueprinting & Story Boarding</li>
                             </ul>
@@ -262,7 +264,7 @@
                                 <li>Communication Development</li>
                                 <li>Corporate Communication</li>
                                 <li>Employee Engagement</li>
-                                <li>Packaging</li>
+                                @*<li>Packaging</li>*@
                             </ul>
                         </div>
                     </div>
@@ -299,7 +301,7 @@
                                     <li>Communication Development</li>
                                     <li>Corporate Communication</li>
                                     <li>Employee Engagement</li>
-                                    <li>Packaging</li>
+                                    @*<li>Packaging</li>*@
                                 </ul>
 
                             </div>
@@ -354,7 +356,7 @@
                                     <li>Conversational & Cognitive Interfaces</li>
                                     <li>Consumer Interaction Design</li>
                                     <li>Experiential Environments (AR/VR/MR)</li>
-                                    <li>Shopper Marketing & Activations</li>
+                                    @*<li>Shopper Marketing & Activations</li>*@
                                     <li>Business Process Design</li>
                                     <li>Blueprinting & Story Boarding</li>
                                 </ul>
@@ -440,7 +442,7 @@
 
                     </ul>
                     <div class="resp-tabs-container">
-                        <div class="resp-tab-content" id="team">
+                        <div class="resp-tab-content " id="team">
                             <ul>
 
                                 <li>
@@ -935,7 +937,7 @@
                         <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
                     </li>
                     <li>
-                        <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
+                        <a href="@Url.Action("Pchf","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("piramalfoundation","work")"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a>
@@ -943,17 +945,27 @@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/piramalRealty-logo.png" alt="Piramal Realty" /></a>
                     </li>
+
                     <li>
-                        <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls.png" alt="Indiabulls Real Estate" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
                     </li>
+
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
+                        <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
                     </li>
+
+
                     <li>
                         <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
@@ -965,19 +977,34 @@
                     <li>
                         <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
                     </li>
+
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
+                    </li>
+
+                    <!--<li>
+        <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
+    </li>-->
+
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a>
                     </li>
 
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
+                    </li>
+
+
+
                     @*<li>
-                            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
-                        </li>*@
+            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
+        </li>*@
 
                     @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-mumba.png" alt="u-mumba" /></a> </li>*@
                     @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-dream.png" alt="u-dream" /></a> </li>*@
                     @*<li>
-                            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
-                        </li>*@
+            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
+        </li>*@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/your-brand-here.png" alt="Your Brand is here" /></a>
                     </li>
@@ -1068,6 +1095,18 @@
                                         <div class="caption">
                                             <h4>UCYPHER</h4>
                                             <p>Naya Sport. Naye Superstars.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("yaarii-films","work")">
+                                        <img src="~/Content/work/images/thums/yaarii-film-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>YAARII</h4>
+                                            <p>
+                                                Ab Aasaan Hua Paisa.
+                                            </p>
                                         </div>
                                     </a>
                                 </li>
@@ -1170,11 +1209,13 @@
                                         </div>
                                     </a>
                                 </li>
+
+
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Innovations">
                             <ul>
-                               
+
                                 <li>
                                     <a href="@Url.Action("KZK-AR","work")">
                                         <img src="~/Content/work/images/thums/kzk-ar-thum.jpg" alt="">
@@ -1186,13 +1227,13 @@
                                 </li>
 
                                 <li>
-                                <a href="@Url.Action("TedGoogleCards","work")">
-                                    <img src="~/Content/work/images/thums/ted-google-cards-thum.jpg" alt="">
-                                    <div class="caption">
-                                        <h4>TED GOOGLE CARDS</h4>
-                                        <p>Nayi Soch</p>
-                                    </div>
-                                </a>
+                                    <a href="@Url.Action("TedGoogleCards","work")">
+                                        <img src="~/Content/work/images/thums/ted-google-cards-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TED GOOGLE CARDS</h4>
+                                            <p>Nayi Soch</p>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="@Url.Action("TextMoji","work")">
@@ -1491,6 +1532,31 @@
                                         <div class="caption">
                                             <h4>Har Shaakh Pe Ullu Baithaa Hai</h4>
                                             <p>Kya Ullu Banaya!</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("nutrela","work")">
+                                        <img src="~/Content/work/images/thums/ruchi-soya-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>NUTRELA</h4>
+                                            <p>Live Healthy. Live Happy.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("birla-white-repaint-putty","work")">
+                                        <img src="~/Content/work/images/thums/birla-wall-putty-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>
+                                                BIRLA WALL PUTTY
+                                            </h4>
+                                            <p>
+                                                Transforming Homes
+                                                .
+                                            </p>
                                         </div>
                                     </a>
                                 </li>

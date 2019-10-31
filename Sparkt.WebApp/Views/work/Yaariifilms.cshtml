@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Yaarii";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+}
+
+@section BodyClass {yaarii}
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url('../Content/work/images/banners/yaarii-film.jpg');">
+
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="~/Content/images/title-icon.png" alt="" /></i>
+                <h1>Yaarii</h1>
+                <div class="clear"></div>
+                <span>Ab Aasaan Hua Paisa</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu");
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel fixed " style="background-image: url('../../Content/images/yaarii-bg.jpg');">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Ab Aasaan Hua Paisa, Yaarii ke Saath.</h3>
+                                </div>
+                                <div class="sparkt-carousel">
+                                    <div class="mobile-wrapp">
+
+                                        <!-- <span class="chaitu-elem elem-7" ><img src="images/chaitulala-elem-7.png" alt=""/></span>-->
+
+                                        <div class="video-slider">
+                                            <div class="video-item">
+                                                <video poster="http://img.youtube.com/vi/EF64f3jGxEY/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/EF64f3jGxEY" type="video/youtube" />
+                                                </video>
+                                            </div>
+                                            <div class="video-item">
+                                                <video poster="http://img.youtube.com/vi/v3NuYe-zyIQ/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/v3NuYe-zyIQ" type="video/youtube" />
+                                                </video>
+                                            </div>
+                                            <div class="video-item">
+                                                <video poster="http://img.youtube.com/vi/h4bVHzqloZs/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                    <source src="https://youtu.be/h4bVHzqloZs" type="video/youtube" />
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-nav">
+                                        <div class="nav-item"><a href="#" class="hvr-grow"><img src="http://img.youtube.com/vi/EF64f3jGxEY/maxresdefault.jpg" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-grow"><img src="http://img.youtube.com/vi/v3NuYe-zyIQ/maxresdefault.jpg" alt="" /></a> </div>
+                                        <div class="nav-item"><a href="#" class="hvr-grow"><img src="http://img.youtube.com/vi/h4bVHzqloZs/maxresdefault.jpg" alt="" /></a> </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section white-bg">
+     <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+        <h2>Results</h2>
+      </div>
+
+      <div class="container">
+        <div class="quotes-wrapp">
+          <div class="quotes">
+            <h3>Coming Soon</h3>
+            <span class="quotes-writer"></span> </div>
+        </div>
+      </div>
+    </div>-->
+</main>
+

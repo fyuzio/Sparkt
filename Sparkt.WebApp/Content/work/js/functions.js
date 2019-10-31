@@ -18,7 +18,7 @@ $(function () {
             $(".main-menu")
                 .removeClass("open");
         });
-$(window).on("load", function () {
+    $(window).on("load", function () {
         $(".scroll-content").mCustomScrollbar({
             scrollInertia: 0,
             scrollbarPosition: "outside",
@@ -34,13 +34,13 @@ $(window).on("load", function () {
             mouseWheel: { enable: true, axis: "x", preventDefault: true, invert: true }
 
         });
-    });    var videos = $('.bannerplayer')
+    }); var videos = $('.bannerplayer')
         .mediaelementplayer({
             success: function (media) {
                 $(media)
                     .bind('play', function () {
                         $.each(videos, function (k, v) {
-                            if(v !== media) {
+                            if (v !== media) {
                                 v.pause();
                                 //	alert("Play")
                                 $('body')
@@ -68,8 +68,8 @@ $(window).on("load", function () {
     });
     // build scenes
     new ScrollMagic.Scene({
-            triggerElement: "#parallax1"
-        })
+        triggerElement: "#parallax1"
+    })
         .setTween("#parallax1 > .parallax", {
             y: "50%",
             ease: Linear.easeNone
@@ -81,7 +81,7 @@ $(window).on("load", function () {
         .scroll(function () {
             var height = $(window)
                 .scrollTop();
-            if(height > 100) {
+            if (height > 100) {
                 $("body")
                     .addClass("hide-clients-nav");
                 $('.banner-video video')
@@ -121,7 +121,7 @@ $(window).on("load", function () {
                 .each(function () {
                     $(this)
                         .hide();
-                    if($(this)
+                    if ($(this)
                         .attr('id') == id) {
                         $(this)
                             .show();
@@ -130,9 +130,9 @@ $(window).on("load", function () {
         });
     $('body')
         .click(function (evt) {
-            if(evt.target.id == "work-navigation") return;
+            if (evt.target.id == "work-navigation") return;
             //For descendants of menu_content being clicked, remove this check if you do not want to put constraint on descendants.
-            if($(evt.target)
+            if ($(evt.target)
                 .closest('#work-navigation')
                 .length) return;
             $(".client-works")
@@ -155,9 +155,9 @@ $(window).on("load", function () {
             slidesToScroll: 1,
             adaptiveHeight: true,
             speed: 1400,
-		// fade: true,
- // cssEase: 'linear'
-		
+            // fade: true,
+            // cssEase: 'linear'
+
         });
     $('.video-carousel .video-slider')
         .slick({
@@ -177,44 +177,44 @@ $(window).on("load", function () {
             focusOnSelect: true,
             arrows: true,
             dots: false,
-		 
+
             responsive: [{
-                    breakpoint: 1920,
-                    settings: {
-                        slidesToShow: 5,
-                        slidesToScroll: 2,
-                    }
-                }, {
-                    breakpoint: 1440,
-                    settings: {
-                        slidesToShow: 5,
-                        slidesToScroll: 2,
-                    }
-                },{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                },
-				   {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-						centerMode: true,
-                        slidesToScroll: 1,
-						
-                    }
-                }, {
-                    breakpoint: 500,
-					
-                    settings: {
-                        slidesToShow: 1,
-						 centerMode: true,
-                        slidesToScroll: 1,
-						
-                    }
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 2,
                 }
+            }, {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 2,
+                }
+            }, {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    slidesToScroll: 1,
+
+                }
+            }, {
+                breakpoint: 500,
+
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    slidesToScroll: 1,
+
+                }
+            }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
@@ -229,7 +229,7 @@ $(window).on("load", function () {
             fade: true,
             asNavFor: '.mobile-style-carousel .video-nav'
         });
-	
+
     $('.mobile-style-carousel .video-nav')
         .slick({
             slidesToShow: 5,
@@ -241,39 +241,39 @@ $(window).on("load", function () {
             arrows: true,
             dots: false,
             responsive: [{
-                    breakpoint: 1440,
-                    settings: {
-                        slidesToShow: 5,
-                        slidesToScroll: 3,
-                    }
-                }, {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                    }
-                }, {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                }, {
-                    breakpoint: 500,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3,
                 }
+            }, {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
             ]
         });
-	
-	
-	
-	    $('.sparkt-carousel .video-slider')
+
+
+
+    $('.sparkt-carousel .video-slider')
         .slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -282,58 +282,58 @@ $(window).on("load", function () {
             fade: true,
             asNavFor: '.sparkt-carousel .video-nav'
         });
-	
+
     $('.sparkt-carousel .video-nav')
         .slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.sparkt-carousel .video-slider',
             centerMode: false,
-		    infinite: true,
+            infinite: true,
             focusOnSelect: true,
             adaptiveHeight: true,
             arrows: true,
             dots: false,
             responsive: [{
-                    breakpoint: 1440,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                }, {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                    }
-                }, {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                }, {
-                    breakpoint: 500,
-                    settings: {
-						centerMode: true,
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                 }
+            }, {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 500,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
             ]
         });
-	
-	$('.result-slider').slick({
-		dots: true,
-  infinite: true,
-		arrows: false,
-  speed: 1200,
-	});
-	
- 
+
+    $('.result-slider').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        speed: 1200,
+    });
+
+
     $('.tooltip')
         .tooltipster({
             animation: 'grow',
@@ -349,7 +349,7 @@ $(window).on("load", function () {
                 $(media1)
                     .bind('play', function () {
                         $.each(videos1, function (k, v) {
-                            if(v !== media1) {
+                            if (v !== media1) {
                                 v.pause();
                                 //	alert("Play")
                                 $(".mejs__overlay-button")
@@ -422,7 +422,7 @@ $(window).on("load", function () {
         .mediaelementplayer({
             plugins: ['flash', 'silverlight'],
             success: function (mediaElement, domObject) {
-                if(mediaElement.pluginType == 'flash') {
+                if (mediaElement.pluginType == 'flash') {
                     mediaElement.addEventListener('canplay', function () {
                         // Player is ready
                         mediaElement.play();
@@ -463,11 +463,11 @@ $(window).on("load", function () {
     $(".section")
         .each(function () {
             var fadeScene2 = new ScrollMagic.Scene({
-                    triggerElement: this,
-                    triggerHook: '0.40',
-                    duration: '90%', // animation in-out in viewport area,
-                    //	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-                })
+                triggerElement: this,
+                triggerHook: '0.40',
+                duration: '90%', // animation in-out in viewport area,
+                //	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
+            })
                 .setClassToggle(this, 'in-view')
                 //.addIndicators()// showing indicator	
                 .addTo(controller);
@@ -475,11 +475,11 @@ $(window).on("load", function () {
     $(".white-bg")
         .each(function () {
             var lightbg = new ScrollMagic.Scene({
-                    triggerElement: this,
-                    triggerHook: '0.14',
-                    duration: '83%', // animation in-out in viewport area,
-                    //	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
-                })
+                triggerElement: this,
+                triggerHook: '0.14',
+                duration: '83%', // animation in-out in viewport area,
+                //	reverse:false, // animat only once.  (when reverse false you cant use "duration" )
+            })
                 .setClassToggle(".sparkt-logo", 'reverse-logo')
                 .setClassToggle("body", 'light-area')
                 //.addIndicators()// showing indicator	
@@ -521,71 +521,71 @@ $(window).on("load", function () {
                 .get(0)
                 .play();
         });
-	
-	
-	 $('.lightgallery-single').lightGallery({
-		 download:false,
-		// speed:800,
-		 thumbnail:false,
-		 zoom:false,
-		 backdropDuration:600,
-		 controls:false,
-		 slideEndAnimatoin:true,
-		 autoplayControls:false,
-		 actualSize:false,
-		 mode: 'lg-lollipop',
-		// videoMaxWidth:900,
-		 autoplayFirstVideo:true,
-		 youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, frameborder:0, rel:0 }
-		// enableDrag:false,
-		 
-	 });
-	
-	
-	 $('.lightgallery').lightGallery({
-		 download:false,
-		// speed:800,
-		 zoom:false,
-		 backdropDuration:600,
-		 actualSize:false,
-		  mode: 'lg-lollipop',
-		// videoMaxWidth:900,
-		 autoplayFirstVideo:true,
-		 youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, frameborder:0, rel:0 }
-		// enableDrag:false,
-		 
-	 });
-	
-	 $('.video-nav-gallery .slick-track').lightGallery({
-		 download:false,
-		// speed:800,
-		 zoom:false,
-		 backdropDuration:600,
-		 actualSize:false,
-		 mode: 'lg-lollipop',
-		// videoMaxWidth:900,
-		 autoplayFirstVideo:true,
-		 youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, frameborder:0, rel:0 }
-		// enableDrag:false,
-		 
-	 });
-	
-	
-	var movementStrength = 45;
-var height = movementStrength / $(window).height();
-var width = movementStrength / $(window).width();
-$(".hover-mover").mousemove(function(e){
-          var pageX = e.pageX - ($(window).width() / 2);
-          var pageY = e.pageY - ($(window).height() / 2);
-          var newvalueX = width * pageX * -1 - 25;
-          var newvalueY = height * pageY * -1 - 50;
-          $('.hover-mover').css("background-position", newvalueX+"px     "+newvalueY+"px");
-});
+
+
+    $('.lightgallery-single').lightGallery({
+        download: false,
+        // speed:800,
+        thumbnail: false,
+        zoom: false,
+        backdropDuration: 600,
+        controls: false,
+        slideEndAnimatoin: true,
+        autoplayControls: false,
+        actualSize: false,
+        mode: 'lg-lollipop',
+        // videoMaxWidth:900,
+        autoplayFirstVideo: true,
+        youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, frameborder: 0, rel: 0 }
+        // enableDrag:false,
+
+    });
+
+
+    $('.lightgallery').lightGallery({
+        download: false,
+        // speed:800,
+        zoom: false,
+        backdropDuration: 600,
+        actualSize: false,
+        mode: 'lg-lollipop',
+        // videoMaxWidth:900,
+        autoplayFirstVideo: true,
+        youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, frameborder: 0, rel: 0 }
+        // enableDrag:false,
+
+    });
+
+    $('.video-nav-gallery .slick-track').lightGallery({
+        download: false,
+        // speed:800,
+        zoom: false,
+        backdropDuration: 600,
+        actualSize: false,
+        mode: 'lg-lollipop',
+        // videoMaxWidth:900,
+        autoplayFirstVideo: true,
+        youtubePlayerParams: { modestbranding: 0, showinfo: 0, controls: 1, frameborder: 0, rel: 0 }
+        // enableDrag:false,
+
+    });
+
+
+    var movementStrength = 45;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+    $(".hover-mover").mousemove(function (e) {
+        var pageX = e.pageX - ($(window).width() / 2);
+        var pageY = e.pageY - ($(window).height() / 2);
+        var newvalueX = width * pageX * -1 - 25;
+        var newvalueY = height * pageY * -1 - 50;
+        $('.hover-mover').css("background-position", newvalueX + "px     " + newvalueY + "px");
+    });
 
     try {
         var mySwiper = new Swiper('.vyng-slider .swiper-container', {
             spaceBetween: 0,
-            speed:1000,
+            speed: 1000,
             effect: 'coverflow',
             grabCursor: true,
             coverflowEffect: {
@@ -593,14 +593,13 @@ $(".hover-mover").mousemove(function(e){
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
-                slideShadows : false,
+                slideShadows: false,
             },
             pagination: {
                 el: '.vyng-slider .swiper-pagination',
                 clickable: true,
             },
         });
-
         mySwiper.on('slideChange', function () {
 
             $('.swiper-slide video').trigger('pause');
@@ -613,96 +612,119 @@ $(".hover-mover").mousemove(function(e){
 
             $($(".swiper-slide.swiper-slide-active")[0]).find('video').get(0).play();
 
-        });	
+        });
     }
     catch (e) {
     }
-	
-var SynccarouselData=function(){
-  // alert();
-  var SyncData= $('.swiper-slide.swiper-slide-active').attr('data-hash');
-  $('.slide-relative').removeClass('active');
-   $('.slide-relative').each(function(){
-	   var DataId=$(this).attr('data-id');
-	   if(DataId==SyncData)
-		   {
-			   $(this).addClass('active');
-		   }
-   });
-}
-	
+
+    var SynccarouselData = function () {
+        // alert();
+        var SyncData = $('.swiper-slide.swiper-slide-active').attr('data-hash');
+        $('.slide-relative').removeClass('active');
+        $('.slide-relative').each(function () {
+            var DataId = $(this).attr('data-id');
+            if (DataId == SyncData) {
+                $(this).addClass('active');
+            }
+        });
+    }
+
 });
 $(function () {
     //if ($('body').hasClass('<?php echo $bodyclass; ?>')) {
     //	   $("<?php echo str_replace(' ', ' .', $bodyclass ); ?>").addClass("active");
     //      alert('yo');
     // }
-    if($('body')
+    if ($('body')
         .hasClass('mahindra')) {
         $(".mahindra")
             .addClass("highlighted");
     }
-    if($('body')
+    if ($('body')
         .hasClass('star-plus')) {
         $(".star-plus")
             .addClass("highlighted");
     }
-    if($('body')
+    if ($('body')
         .hasClass('star')) {
         $(".star")
             .addClass("highlighted");
     }
-    if($('body')
+    if ($('body')
         .hasClass('one-plus')) {
         $(".one-plus")
             .addClass("highlighted");
     }
-    if($('body')
+    if ($('body')
         .hasClass('piramal')) {
         $(".piramal")
             .addClass("highlighted");
     }
-    if($('body')
+    if ($('body')
         .hasClass('mgage')) {
         $(".mgage")
             .addClass("highlighted");
     }
-    if($('body')
+    if ($('body')
         .hasClass('bql')) {
         $(".bql")
             .addClass("highlighted");
     }
-    if($('body')
-        .hasClass('usports')) {       
+    if ($('body')
+        .hasClass('usports')) {
         $(".usports")
             .addClass("highlighted");
     }
-	if($('body')
-        .hasClass('editage')) {       
+    if ($('body')
+        .hasClass('editage')) {
         $(".editage")
             .addClass("highlighted");
     }
-	if($('body')
-        .hasClass('yaarii')) {       
+
+
+
+
+    if ($('body')
+        .hasClass('nutrela')) {
+        $(".nutrela")
+            .addClass("highlighted");
+    }
+
+    if ($('body')
+        .hasClass('yaarii')) {
         $(".yaarii")
             .addClass("highlighted");
     }
-	if($('body')
-        .hasClass('dubsmash')) {       
+
+    if ($('body')
+        .hasClass('birlawhiteputty')) {
+        $(".birlawhiteputty")
+            .addClass("highlighted");
+    }
+
+    if ($('body')
+        .hasClass('dubsmash')) {
         $(".dubsmash")
             .addClass("highlighted");
     }
+
     if ($('body')
         .hasClass('indiabulls')) {
         $(".indiabulls")
             .addClass("highlighted");
     }
+
+    if ($('body')
+        .hasClass('one-plus')) {
+        $(".one-plus")
+            .addClass("highlighted");
+    }
 });
-if($('.website-operation video#mobile')[0])
-$('.website-operation video#mobile')[0].play();
+if ($('.website-operation video#mobile')[0])
+    $('.website-operation video#mobile')[0].play();
 if ($('.website-operation video#desktop')[0])
     $('.website-operation video#desktop')[0].play();
 if ($('#insta-video')[0])
     $('#insta-video')[0].play();
 if ($('#first-video')[0])
-$('#first-video')[0].play();
+    $('#first-video')[0].play();
