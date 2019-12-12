@@ -339,6 +339,15 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [Route("mahindra-top-nfo")]
+        public ActionResult MahindraTopNfo()
+        {
+            return View();
+        }
+
+        
+
         [Route("Nazar")]
         public ActionResult Nazar()
         {

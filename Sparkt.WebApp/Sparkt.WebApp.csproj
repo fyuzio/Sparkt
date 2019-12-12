@@ -3636,6 +3636,7 @@
     <Content Include="Content\work\images\banners\mahindra-textmoji.jpg" />
     <Content Include="Content\work\images\banners\mahindra-unnati-cover.jpg" />
     <Content Include="Content\work\images\banners\mmf-pragati-yojana-cover.jpg" />
+    <Content Include="Content\work\images\banners\mmf-top250-cover.jpg" />
     <Content Include="Content\work\images\banners\mothers-day-cover.jpg" />
     <Content Include="Content\work\images\banners\nazar-cover.jpg" />
     <Content Include="Content\work\images\banners\nfo-digram-bk.png" />
@@ -3803,6 +3804,7 @@
     <Content Include="Content\work\images\mmf-rural-bharat-mailer.png" />
     <Content Include="Content\work\images\mmf-rural-bharat-single-laptop-video.png" />
     <Content Include="Content\work\images\mmf-rural-bharat-standy-banners.png" />
+    <Content Include="Content\work\images\mmf-top250-money-control.png" />
     <Content Include="Content\work\images\mobile-slider.png" />
     <Content Include="Content\work\images\mobile-vector.png" />
     <Content Include="Content\work\images\mobile.jpg" />
@@ -3971,6 +3973,7 @@
     <Content Include="Content\work\images\thums\mmf-info-thum.jpg" />
     <Content Include="Content\work\images\thums\mmf-pragati-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\mmf-thum.jpg" />
+    <Content Include="Content\work\images\thums\mmf-top250.jpg" />
     <Content Include="Content\work\images\thums\mouthers-day-thum.jpg" />
     <Content Include="Content\work\images\thums\ms-dhoni-thum.jpg" />
     <Content Include="Content\work\images\thums\nach-baliye-8-thum.jpg" />
@@ -4011,6 +4014,10 @@
     <Content Include="Content\work\images\thums\yaarii-thum.jpg" />
     <Content Include="Content\work\images\thums\yaarii-website-thum.jpg" />
     <Content Include="Content\work\images\title-icon.png" />
+    <Content Include="Content\work\images\top250_nfo-open-1.gif" />
+    <Content Include="Content\work\images\top250_nfo-open-1.jpg" />
+    <Content Include="Content\work\images\top250_nfo-open.gif" />
+    <Content Include="Content\work\images\top250_nfo-open.jpg" />
     <Content Include="Content\work\images\total-insight.jpg" />
     <Content Include="Content\work\images\u-cypher-akshay-akramaks.jpg" />
     <Content Include="Content\work\images\u-cypher-bg.jpg" />
@@ -4540,6 +4547,7 @@
     <Content Include="Views\work\SevenSeasAr.cshtml" />
     <Content Include="Views\work\Ted2019.cshtml" />
     <Content Include="Views\work\TedArInnovation.cshtml" />
+    <Content Include="Views\work\MahindraTopNfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

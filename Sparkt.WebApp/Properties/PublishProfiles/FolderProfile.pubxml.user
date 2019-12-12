@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Deplyment\Sparkt.in\9Dec2019</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Deplyment\Sparkt.in\12Dec2019</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -9037,10 +9037,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/09/2019 13:13:43</publishTime>
     </File>
     <File Include="bin/Sparkt.WebApp.dll">
-      <publishTime>12/09/2019 21:07:53</publishTime>
+      <publishTime>12/12/2019 13:41:34</publishTime>
     </File>
     <File Include="bin/Sparkt.WebApp.pdb">
-      <publishTime>12/09/2019 21:07:53</publishTime>
+      <publishTime>12/12/2019 13:41:34</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>06/21/2019 11:45:20</publishTime>
@@ -11211,6 +11211,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/banners/mmf-pragati-yojana-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
+    <File Include="Content/work/images/banners/mmf-top250-cover.jpg">
+      <publishTime>12/12/2019 12:53:29</publishTime>
+    </File>
     <File Include="Content/work/images/banners/mothers-day-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
@@ -11714,6 +11717,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/mmf-rural-bharat-standy-banners.png">
       <publishTime>06/21/2019 11:45:05</publishTime>
+    </File>
+    <File Include="Content/work/images/mmf-top250-money-control.png">
+      <publishTime>12/12/2019 12:52:53</publishTime>
     </File>
     <File Include="Content/work/images/mobile-slider.png">
       <publishTime>06/21/2019 11:45:05</publishTime>
@@ -12222,6 +12228,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/thums/mmf-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
+    <File Include="Content/work/images/thums/mmf-top250.jpg">
+      <publishTime>12/12/2019 12:53:12</publishTime>
+    </File>
     <File Include="Content/work/images/thums/mouthers-day-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
@@ -12341,6 +12350,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/title-icon.png">
       <publishTime>06/21/2019 11:45:05</publishTime>
+    </File>
+    <File Include="Content/work/images/top250_nfo-open-1.gif">
+      <publishTime>12/12/2019 12:52:54</publishTime>
+    </File>
+    <File Include="Content/work/images/top250_nfo-open-1.jpg">
+      <publishTime>12/12/2019 12:52:53</publishTime>
+    </File>
+    <File Include="Content/work/images/top250_nfo-open.gif">
+      <publishTime>12/12/2019 12:52:54</publishTime>
+    </File>
+    <File Include="Content/work/images/top250_nfo-open.jpg">
+      <publishTime>12/12/2019 12:52:54</publishTime>
     </File>
     <File Include="Content/work/images/total-insight.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
@@ -13198,7 +13219,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:11</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>12/09/2019 20:18:37</publishTime>
+      <publishTime>12/12/2019 13:41:00</publishTime>
     </File>
     <File Include="Views/Home/Uturn.cshtml">
       <publishTime>06/21/2019 11:45:11</publishTime>
@@ -13213,7 +13234,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:11</publishTime>
     </File>
     <File Include="Views/Shared/_WorkMenu.cshtml">
-      <publishTime>12/09/2019 21:02:23</publishTime>
+      <publishTime>12/12/2019 13:41:00</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13313,6 +13334,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/work/MahindraTextMoji.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
+    </File>
+    <File Include="Views/work/MahindraTopNfo.cshtml">
+      <publishTime>12/12/2019 13:41:00</publishTime>
     </File>
     <File Include="Views/work/MahindraUnnati.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
