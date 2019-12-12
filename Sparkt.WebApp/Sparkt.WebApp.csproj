@@ -3114,6 +3114,8 @@
     <Content Include="Content\images\backup\squad\waqt-shaikh.png" />
     <Content Include="Content\images\backup\squad\warren-pinto.png" />
     <Content Include="Content\images\clients\divayoga.png" />
+    <Content Include="Content\images\pchf.jpg" />
+    <Content Include="Content\images\piramal-foundation.jpg" />
     <Content Include="Content\images\yaarii-bg.jpg" />
     <Content Include="Content\work\images\banners\birla-wall-putty.jpg" />
     <Content Include="Content\images\business-features.png" />
@@ -3706,8 +3708,12 @@
     <Content Include="Content\work\images\clients\nutrela.png" />
     <Content Include="Content\work\images\clients\oneplus.png" />
     <Content Include="Content\work\images\clients\p-and-g.png" />
+    <Content Include="Content\work\images\clients\pchf.jpg" />
     <Content Include="Content\work\images\clients\pedderjohnson.png" />
+    <Content Include="Content\work\images\clients\piramal-capital-foundation.png" />
     <Content Include="Content\work\images\clients\piramal-capital-phfl.png" />
+    <Content Include="Content\work\images\clients\piramal-foundation.jpg" />
+    <Content Include="Content\work\images\clients\piramal-housing.png" />
     <Content Include="Content\work\images\clients\piramal.png" />
     <Content Include="Content\work\images\clients\star.png" />
     <Content Include="Content\work\images\clients\starplus.png" />
@@ -3842,6 +3848,7 @@
     <Content Include="Content\work\images\outdoor-5.jpg" />
     <Content Include="Content\work\images\pchf-desktop.jpg" />
     <Content Include="Content\work\images\pchf-mobile.jpg" />
+    <Content Include="Content\work\images\pchf.jpg" />
     <Content Include="Content\work\images\pedderjohnson-bg.jpg" />
     <Content Include="Content\work\images\pedderjohnson-desktop.jpg" />
     <Content Include="Content\work\images\pedderjohnson-mobile.jpg" />
@@ -3850,6 +3857,7 @@
     <Content Include="Content\work\images\piramal-capital-desktop.jpg" />
     <Content Include="Content\work\images\piramal-capital-mobile.jpg" />
     <Content Include="Content\work\images\piramal-foundation-mobile.jpg" />
+    <Content Include="Content\work\images\piramal-foundation.jpg" />
     <Content Include="Content\work\images\pow-creative-assets-bg.jpg" />
     <Content Include="Content\work\images\pow-mobile-creative.png" />
     <Content Include="Content\work\images\push-charactor.png" />
