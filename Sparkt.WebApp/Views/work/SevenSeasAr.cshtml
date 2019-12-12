@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Seven-Seas-Ar";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "SEVEN SEAS AR";
+    ViewBag.MetaDescription = "Using Augmented Reality to felicitate the genius in every child.";
+    ViewBag.MetaURL = "https://sparkt.in/work/Seven-Seas-Ar";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/seven-seas-ar.jpg";
+}
+
+@section BodyClass {png-health}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image:url('../../Content/work/images/banners/seven-seas-ar-cover.jpg')">
+
+
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="../../Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Seven Seas Genius Filter</h1>
+                <div class="clear"></div>
+                <span>Using Augmented Reality to felicitate the genius in every child.</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu")
+    </div>
+
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark">
+            <i class="title-icon"><img src="../../Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel fixed " style="background-image: url('../../Content/work/images/seven-seas-ar-bg.jpg');">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title" style="color: #f03442;">
+                                    <h3>A unique AR filter that maps facial movements and lauds the user's child with a crown of genius</h3>
+                                </div>
+                                <div class="mobile-experience center-mobile">
+                                    <figure>
+                                        <div class="vibrate-img sample-mobile">
+                                            <img src="../../Content/work/images/seven-seas-ar-mobile-creative.png" alt="" />
+                                            <video id="mobile" poster="" style="max-width: 100%;" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
+                                                <source src="media/seven-seas-ar.mp4" type="video/mp4">
+
+                                            </video>
+                                            <script>
+    document.getElementById("mobile").controls = false;
+                                            </script>
+                                        </div>
+                                        <figcaption>
+
+
+
+                                            <a class="hvr-sweep-to-right " href="https://www.facebook.com/fbcameraeffects/tryit/530080604220822/" target="_blank">  experience application</a>
+                                            <div class="clear"></div>
+
+                                            <span style="color: #000; text-align: left; padding: 0; height: auto; line-height: normal;">(Only for mobile phones)</span>
+
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

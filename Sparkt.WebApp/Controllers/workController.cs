@@ -32,6 +32,29 @@ namespace Sparkt.WebApp.Controllers
             return View();
         }
 
+        [Route("seven-seas")]
+        public ActionResult SevenSeas()
+        {
+            return View();
+        }
+        [Route("seven-seas-ar")]
+        public ActionResult SevenSeasAr()
+        {
+            return View();
+        }
+
+        [Route("ted2019")]
+        public ActionResult Ted2019()
+        {
+            return View();
+        }
+
+        [Route("ted-ar-innovation")]
+        public ActionResult TedArInnovation()
+        {
+            return View();
+        }
+
         [Route("BoutiqueLiving")]
         public ActionResult Bql()
         {

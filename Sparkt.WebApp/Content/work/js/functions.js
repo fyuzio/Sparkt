@@ -719,6 +719,12 @@ $(function () {
         $(".one-plus")
             .addClass("highlighted");
     }
+
+    if ($('body')
+        .hasClass('png-health')) {
+        $(".png-health")
+            .addClass("highlighted");
+    }
 });
 if ($('.website-operation video#mobile')[0])
     $('.website-operation video#mobile')[0].play();

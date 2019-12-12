@@ -1,9 +1,9 @@
 ﻿@model Sparkt.WebApp.Models.ContactUsViewModel
 @{
-                /**/
+    /**/
 
-                ViewBag.Title = "Sparkt";
-                Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Sparkt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <script type="text/javascript">
     var pageSection = '@ViewBag.PageSection';
@@ -923,19 +923,27 @@
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/seven-seas.png" alt="Seven Seas" /></a> </li>
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/nasivion.png" alt="nasivion" /></a> </li>
                     <li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>
+
                     <li>
-                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
                     </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
+                    </li>
+
                     <li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
-                    <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
-                    </li>
                     <li>
                         <a href="@Url.Action("Dubsmash","work")"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
                     </li>
+
                     <li>
-                        <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
                     </li>
+
+
+
+
+
                     <li>
                         <a href="@Url.Action("Pchf","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
                     </li>
@@ -947,7 +955,7 @@
                     </li>
 
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
+                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
                     </li>
 
                     <li>
@@ -961,12 +969,16 @@
                     <li>
                         <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
                     </li>
+
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
+                        <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
                     </li>
+
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
                     </li>
+
+
                     <li>
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
                     </li>
@@ -985,10 +997,9 @@
                     <!--<li>
         <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
     </li>-->
-
-                    <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a>
-                    </li>
+                    <!-- <li> -->
+                    <!-- <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a> -->
+                    <!-- </li> -->
 
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
@@ -1055,6 +1066,39 @@
                     <div class="resp-tabs-container">
                         <div class="resp-tab-content" id="campaigns">
                             <ul>
+
+
+                                <li>
+                                    <a href="@Url.Action("MahindraPragatiYojana","work")">
+                                        <img src="~/Content/work/images/thums/mmf-pragati-yojana-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Mahindra Pragati Bluechip Yojana</h4>
+                                            <p>Launching a new fund through unconventional content formats.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("seven-seas","work")">
+                                        <img src="~/Content/work/images/thums/seven-seas.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Seven Seas</h4>
+                                            <p>Celebrating the genius potential in every child with #MyLittleGenius</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("ted2019","work")">
+                                        <img src="~/Content/work/images/thums/ted-talks-nai-baat.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ted Talks India</h4>
+                                            <p>Nayi Baat</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+
 
                                 <li>
                                     <a href="@Url.Action("kzk","work")">
@@ -1200,22 +1244,49 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("MahindraPragatiYojana","work")">
-                                        <img src="~/Content/work/images/thums/mmf-pragati-yojana-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>Mahindra Pragati Bluechip Yojana</h4>
-                                            <p>Launching a new fund through unconventional content formats.</p>
-                                        </div>
-                                    </a>
-                                </li>
 
 
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Innovations">
                             <ul>
+                                <li>
+                                    <a href="@Url.Action("ted-ar-innovation","work")">
+                                        <img src="~/Content/work/images/thums/ted-ar.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ted AR Innovation</h4>
+                                            <p>A first-of-its-kind online platform for remote auditions</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("seven-seas-ar","work")">
+                                        <img src="~/Content/work/images/thums/seven-seas-ar.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Seven Seas Ar</h4>
+                                            <p>Using Augmented Reality to felicitate the genius in every child.</p>
+                                        </div>
+                                    </a>
+                                </li>
 
+                                <li>
+                                    <a href="@Url.Action("DivyaDrishtiInnovation","work")">
+                                        <img src="~/Content/work/images/thums/divya-drishti-innovation-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Divya Drishti</h4>
+                                            <p>Interactive AR Extension</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("TheVoice","work")">
+                                        <img src="~/Content/work/images/thums/thevoice-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>The Voice</h4>
+                                            <p>A first-of-its-kind online platform for remote auditions</p>
+                                        </div>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="@Url.Action("KZK-AR","work")">
                                         <img src="~/Content/work/images/thums/kzk-ar-thum.jpg" alt="">
@@ -1325,12 +1396,23 @@
                                         </div>
                                     </a>
                                 </li>
+
+
+
+
+
+
+                            </ul>
+                        </div>
+                        <div class="resp-tab-content" id="Experiences">
+                            <ul>
+
                                 <li>
-                                    <a href="@Url.Action("DivyaDrishtiInnovation","work")">
-                                        <img src="~/Content/work/images/thums/divya-drishti-innovation-thum.jpg" alt="">
+                                    <a href="@Url.Action("Yaarii","work")">
+                                        <img src="~/Content/work/images/thums/yaarii-thum.jpg" alt="">
                                         <div class="caption">
-                                            <h4>Divya Drishti</h4>
-                                            <p>Interactive AR Extension</p>
+                                            <h4>Yaarii</h4>
+                                            <p>A first of its kind instant personal loan app</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1343,10 +1425,7 @@
                                         </div>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="resp-tab-content" id="Experiences">
-                            <ul>
+
                                 <li>
                                     <a href="@Url.Action("Sky","work")">
                                         <img src="~/Content/work/images/thums/sky-thum.jpg" alt="">
@@ -1365,15 +1444,15 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("yaarii-website","work")">
-                                        <img src="~/Content/work/images/thums/yaarii-website-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>Yaarii Website</h4>
-                                            <p>Reingrovating Yaari’s Brand Experience.</p>
-                                        </div>
-                                    </a>
-                                </li>
+                                @*<li>
+                                        <a href="@Url.Action("yaarii-website","work")">
+                                            <img src="~/Content/work/images/thums/yaarii-website-thum.jpg" alt="">
+                                            <div class="caption">
+                                                <h4>Yaarii Website</h4>
+                                                <p>Reingrovating Yaari’s Brand Experience.</p>
+                                            </div>
+                                        </a>
+                                    </li>*@
 
 
 
@@ -1477,24 +1556,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("Yaarii","work")">
-                                        <img src="~/Content/work/images/thums/yaarii-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>Yaarii</h4>
-                                            <p>A first of its kind instant personal loan app</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="@Url.Action("TheVoice","work")">
-                                        <img src="~/Content/work/images/thums/thevoice-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>The Voice</h4>
-                                            <p>A first-of-its-kind online platform for remote auditions</p>
-                                        </div>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Content">
@@ -1535,7 +1597,15 @@
                                         </div>
                                     </a>
                                 </li>
-
+                                <li>
+                                    <a href="@Url.Action("DivyaDrishtiContent","work")">
+                                        <img src="~/Content/work/images/thums/divya-drishti-content-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Divya Drishti</h4>
+                                            <p>Strengthening character affinity</p>
+                                        </div>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="@Url.Action("nutrela","work")">
                                         <img src="~/Content/work/images/thums/ruchi-soya-thum.jpg" alt="">
@@ -1704,15 +1774,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("DivyaDrishtiContent","work")">
-                                        <img src="~/Content/work/images/thums/divya-drishti-content-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>Divya Drishti</h4>
-                                            <p>Strengthening character affinity</p>
-                                        </div>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="resp-tab-content" id="Marketing-Sciences">

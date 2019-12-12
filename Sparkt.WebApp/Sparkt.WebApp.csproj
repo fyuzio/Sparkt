@@ -3649,10 +3649,14 @@
     <Content Include="Content\work\images\banners\pow-cover.jpg" />
     <Content Include="Content\work\images\banners\ruchi-soya.jpg" />
     <Content Include="Content\work\images\banners\sanju-cover.jpg" />
+    <Content Include="Content\work\images\banners\seven-seas-ar-cover.jpg" />
+    <Content Include="Content\work\images\banners\seven-seas-cover.jpg" />
     <Content Include="Content\work\images\banners\sky.jpg" />
     <Content Include="Content\work\images\banners\star-plus-brand-cover.png" />
     <Content Include="Content\work\images\banners\stree-cover.jpg" />
     <Content Include="Content\work\images\banners\swp-cover.jpg" />
+    <Content Include="Content\work\images\banners\ted-19-cover.jpg" />
+    <Content Include="Content\work\images\banners\ted-ar-cover.jpg" />
     <Content Include="Content\work\images\banners\ted-cover.jpg" />
     <Content Include="Content\work\images\banners\tgilc-cover.jpg" />
     <Content Include="Content\work\images\banners\thevoice-cover.jpg" />
@@ -3700,6 +3704,7 @@
     <Content Include="Content\work\images\clients\mgage.png" />
     <Content Include="Content\work\images\clients\nutrela.png" />
     <Content Include="Content\work\images\clients\oneplus.png" />
+    <Content Include="Content\work\images\clients\p-and-g.png" />
     <Content Include="Content\work\images\clients\pedderjohnson.png" />
     <Content Include="Content\work\images\clients\piramal-capital-phfl.png" />
     <Content Include="Content\work\images\clients\piramal.png" />
@@ -3734,6 +3739,8 @@
     <Content Include="Content\work\images\fb-live-icon.png" />
     <Content Include="Content\work\images\fevicon.png" />
     <Content Include="Content\work\images\future.jpg" />
+    <Content Include="Content\work\images\heart-warming-film-1.jpg" />
+    <Content Include="Content\work\images\heart-warming-film-2.jpg" />
     <Content Include="Content\work\images\home.jpg" />
     <Content Include="Content\work\images\hotstar-elem-1.png" />
     <Content Include="Content\work\images\hotstar-logo.png" />
@@ -3845,6 +3852,12 @@
     <Content Include="Content\work\images\pow-mobile-creative.png" />
     <Content Include="Content\work\images\push-charactor.png" />
     <Content Include="Content\work\images\revent-logo.png" />
+    <Content Include="Content\work\images\seven-seas-ar-bg.jpg" />
+    <Content Include="Content\work\images\seven-seas-ar-mobile-creative.png" />
+    <Content Include="Content\work\images\seven-seas-bg.jpg" />
+    <Content Include="Content\work\images\seven-seas-landing-page.png" />
+    <Content Include="Content\work\images\seven-seas.jpg" />
+    <Content Include="Content\work\images\seven-seas.png" />
     <Content Include="Content\work\images\single-laptop-video.png" />
     <Content Include="Content\work\images\sky.jpg" />
     <Content Include="Content\work\images\social-work.png" />
@@ -3853,6 +3866,7 @@
     <Content Include="Content\work\images\sparhtLive.jpg" />
     <Content Include="Content\work\images\sparkt-border.png" />
     <Content Include="Content\work\images\square-shadow.png" />
+    <Content Include="Content\work\images\srk-in-home.jpg" />
     <Content Include="Content\work\images\star-bg.jpg" />
     <Content Include="Content\work\images\star-brand-refresh-add-banner.png" />
     <Content Include="Content\work\images\star-plus-brand-cover.png" />
@@ -3864,8 +3878,13 @@
     <Content Include="Content\work\images\success-vs-happiness.jpg" />
     <Content Include="Content\work\images\swp-desktop.jpg" />
     <Content Include="Content\work\images\swp-mobile.jpg" />
+    <Content Include="Content\work\images\ted-19-bg.png" />
     <Content Include="Content\work\images\ted-ajay-kakkar.jpg" />
     <Content Include="Content\work\images\ted-andar-ka-sona.jpg" />
+    <Content Include="Content\work\images\ted-ankit-kawatra.png" />
+    <Content Include="Content\work\images\ted-ar-bg.jpg" />
+    <Content Include="Content\work\images\ted-ar-mobile-creative-white.png" />
+    <Content Include="Content\work\images\ted-ar-mobile-creative.png" />
     <Content Include="Content\work\images\ted-ashish-basin.jpg" />
     <Content Include="Content\work\images\ted-bg.jpg" />
     <Content Include="Content\work\images\ted-bobby-pawar.jpg" />
@@ -3874,6 +3893,7 @@
     <Content Include="Content\work\images\ted-dont-kill-ideas.png" />
     <Content Include="Content\work\images\ted-dr-velumani.jpg" />
     <Content Include="Content\work\images\ted-drone.jpg" />
+    <Content Include="Content\work\images\ted-gitanjali-rao.png" />
     <Content Include="Content\work\images\ted-google-mobile.png" />
     <Content Include="Content\work\images\ted-google-v1.png" />
     <Content Include="Content\work\images\ted-google-v2.png" />
@@ -3884,6 +3904,7 @@
     <Content Include="Content\work\images\ted-google-v7.png" />
     <Content Include="Content\work\images\ted-iphone.png" />
     <Content Include="Content\work\images\ted-kashyap-vadpilli.jpg" />
+    <Content Include="Content\work\images\ted-kavita-devi.png" />
     <Content Include="Content\work\images\ted-laptop.png" />
     <Content Include="Content\work\images\ted-live-with-virdass.jpg" />
     <Content Include="Content\work\images\ted-mentions-phone.png" />
@@ -3896,6 +3917,7 @@
     <Content Include="Content\work\images\ted-siddharth-bannerjee.jpg" />
     <Content Include="Content\work\images\ted-social-work.png" />
     <Content Include="Content\work\images\ted-sonali-dhawan.jpg" />
+    <Content Include="Content\work\images\ted-speakers-2019.png" />
     <Content Include="Content\work\images\ted-speakers-anirudh-sharma.jpg" />
     <Content Include="Content\work\images\ted-speakers-gautam-bhan.jpg" />
     <Content Include="Content\work\images\ted-speakers-karan-johar.jpg" />
@@ -3911,8 +3933,12 @@
     <Content Include="Content\work\images\ted-tag5.png" />
     <Content Include="Content\work\images\ted-tag6.png" />
     <Content Include="Content\work\images\ted-tag7.png" />
+    <Content Include="Content\work\images\ted-tahira-kashyap.png" />
     <Content Include="Content\work\images\ted-terence-lewis.jpg" />
+    <Content Include="Content\work\images\ted-trisha-shetty.png" />
     <Content Include="Content\work\images\ted-unapologetic-walking.jpg" />
+    <Content Include="Content\work\images\ted-vibha-krishnamurthy.png" />
+    <Content Include="Content\work\images\ted-youtube-video-live.jpg" />
     <Content Include="Content\work\images\text-moji-assets.png" />
     <Content Include="Content\work\images\thevoice-bg.jpg" />
     <Content Include="Content\work\images\thevoice-mobile-creative.png" />
@@ -3959,12 +3985,16 @@
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
     <Content Include="Content\work\images\thums\ruchi-soya-thum.jpg" />
     <Content Include="Content\work\images\thums\sanju-thum.jpg" />
+    <Content Include="Content\work\images\thums\seven-seas-ar.jpg" />
+    <Content Include="Content\work\images\thums\seven-seas.jpg" />
     <Content Include="Content\work\images\thums\sky-thum.jpg" />
     <Content Include="Content\work\images\thums\start-brand-refresh-thum.jpg" />
     <Content Include="Content\work\images\thums\stree-thum.jpg" />
     <Content Include="Content\work\images\thums\swp-thum.jpg" />
     <Content Include="Content\work\images\thums\tah-thum.jpg" />
+    <Content Include="Content\work\images\thums\ted-ar.jpg" />
     <Content Include="Content\work\images\thums\ted-google-cards-thum.jpg" />
+    <Content Include="Content\work\images\thums\ted-talks-nai-baat.jpg" />
     <Content Include="Content\work\images\thums\ted-thum.jpg" />
     <Content Include="Content\work\images\thums\textmoji-thum.jpg" />
     <Content Include="Content\work\images\thums\tgilc-thums.jpg" />
@@ -4506,6 +4536,10 @@
     <Content Include="Views\work\BirlaWhiteRepaintPutty.cshtml" />
     <Content Include="Views\work\Nutrela.cshtml" />
     <Content Include="Views\work\Yaariifilms.cshtml" />
+    <Content Include="Views\work\SevenSeas.cshtml" />
+    <Content Include="Views\work\SevenSeasAr.cshtml" />
+    <Content Include="Views\work\Ted2019.cshtml" />
+    <Content Include="Views\work\TedArInnovation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

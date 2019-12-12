@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Ted-Ar-Innovation";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Ted AR Innovation";
+    ViewBag.MetaDescription = "A first-of-its-kind online platform for remote auditions";
+    ViewBag.MetaURL = "https://sparkt.in/work/ted-ar-innovation";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/ted-ar.jpg";
+}
+@section BodyClass {star-plus}
+<main>
+
+    <div class="section">
+        <div class="work-banner">
+
+            <div class="banner-source">
+                <div class="banner-source">
+                    <div class="banner-video  middle-align ted-ar-cover" style="background-image: url('../../Content/work/images/banners/ted-ar-cover.jpg');"> </div>
+                </div>
+                <div class="banner-image" style="background-image: url(../../Content/work/images/banners/ted-ar-cover.jpg);"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="../../Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Ted AR Innovation</h1>
+                <div class="clear"></div>
+                <!-- <span>A immersive experience that uses AR filter to create a memorable moment and a digital memento of the same for the potential audience.</span>-->
+
+
+                <span>An AR filter that could bring SRK to your home, right next to you.</span>
+
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu")
+    </div>
+
+    <div class="section">
+    <div class="head-title floated "> <i class="title-icon"><img src="../../Content/work/images/title-icon.png" alt=""/></i>
+      <h2>Creative Assets</h2>
+    </div>
+    <div class="creative-assets-wrapp">
+      <div class="assets-carousel fixed  " style="background-image: url('../../Content/work/images/ted-ar-bg.jpg'); background-repeat: no-repeat; background-size: cover;" >
+        <div class="slider">
+          <div>
+            <div class="creative-assets">
+              <div class="container">
+                <div class="assets-title">
+                    <h3>SHAH RUKH IN A MILLION HOMES</h3>
+                </div>
+                <div class="mobile-experience center-mobile" >
+                  <figure>
+                    <div class="vibrate-img sample-mobile" > <img src="../../Content/work/images/ted-ar-mobile-creative-white.png" alt=""/>
+                      <video id="mobile" poster="" style="max-width: 100%;" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
+                        <source  src="media/ted-ar.mp4" type="video/mp4" >
+                      </video>
+                      <script>document.getElementById("mobile").controls = false;
+										</script> 
+                    </div>
+                    <figcaption> <a class="hvr-sweep-to-right " href="https://ted.madebysparkt.com/" target="_blank" > experience application</a>
+                      <div class="clear" ></div>
+                    
+                      (Only for mobile phones) </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+			
+		
+			
+			
+			
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
