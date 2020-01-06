@@ -198,15 +198,17 @@
                             <a href="#" class="ring-click  experiences"><span class="caption">Experiences</span></a>
                             <div class="ring-space"></div>
                             <ul class="offfering-details">
+                                <li>Enterprise Developement</li>
                                 <li>Websites & Microsites</li>
                                 <li>Mobile Apps</li>
+                                <li>Experiential Environments (AR/VR/MR)</li>
                                 @*<li>Intranet</li>*@
                                 <li>Conversational & Cognitive Interfaces</li>
                                 <li>Consumer Interaction Design</li>
-                                <li>Experiential Environments (AR/VR/MR)</li>
+
                                 @*<li>Shopper Marketing & Activations</li>*@
-                                <li>Business Process Design</li>
-                                <li>Blueprinting & Story Boarding</li>
+                                @*<li>Business Process Design</li>
+                                    <li>Blueprinting & Story Boarding</li>*@
                             </ul>
                         </div>
                     </div>
@@ -243,9 +245,9 @@
                             <div class="ring-space"></div>
                             <ul class="offfering-details">
                                 <li>Content Strategy</li>
-                                <li>Concept Development</li>
+                                <li>Creative Development</li>
                                 <li>Live Action & Production</li>
-                                <li>Photo & Art Production</li>
+                                @*<li>Photo & Art Production</li>*@
                                 <li>Syndication & Publishing</li>
                                 <li>Branded Content</li>
                                 <li>Long-form Editorial</li>
@@ -260,10 +262,10 @@
                             <ul class="offfering-details">
                                 <li>Campaigns</li>
                                 <li>Creative Strategy</li>
-                                <li>Social & Community Management</li>
                                 <li>Communication Development</li>
+                                <li>Social & Community Management</li>
                                 <li>Corporate Communication</li>
-                                <li>Employee Engagement</li>
+                                @*<li>Employee Engagement</li>*@
                                 @*<li>Packaging</li>*@
                             </ul>
                         </div>
@@ -898,6 +900,7 @@
         <div class="head-title floated ">
             <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
             <h2>Clients</h2>
+
             <div class="clear"></div>
             <div class="head-title-content">
                 <p>We not only work with the finest brands and products, but we ensure they remain that way. Take a peek!</p>
@@ -919,31 +922,31 @@
                     <li>
                         <a href="@Url.Action("Swp","work")"><img src="~/Content/images/clients/star-logo.png" alt="Star" /></a>
                     </li>
-                    <li> <a style="cursor:default"><img src="~/Content/images/clients/p-and-g.png" alt="P & G" /></a> </li>
-                    <li> <a style="cursor:default"><img src="~/Content/images/clients/seven-seas.png" alt="Seven Seas" /></a> </li>
+                    <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/p-and-g.png" alt="P & G" /></a> </li>
+                    <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/seven-seas.png" alt="Seven Seas" /></a> </li>
+
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/nasivion.png" alt="nasivion" /></a> </li>
-                    <li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
+                    </li>
+
+                    @*<li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>*@
 
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
                     </li>
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
+                        <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
                     </li>
-
-                    <li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
+                    <li><a style="cursor:default"><img src="~/Content/images/clients/eurokids.png" alt="Euro Kids" /></a></li>
+                    @**@
                     <li>
-                        <a href="@Url.Action("Dubsmash","work")"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/star-bharat-logo.png" alt="Star Bharat" /></a>
                     </li>
 
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
                     </li>
-
-
-
-
-
                     <li>
                         <a href="@Url.Action("Pchf","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
                     </li>
@@ -958,21 +961,17 @@
                         <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
                     </li>
 
+                    @*<li>
+                            <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
+                        </li>*@
+                    <li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
                     <li>
-                        <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
+                        <a href="@Url.Action("Dubsmash","work")"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
                     </li>
 
-
-                    <li>
-                        <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
-                    </li>
-
-                    <li>
-                        <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
-                    </li>
+                    @*<li>
+                            <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
+                        </li>*@
 
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
@@ -983,20 +982,22 @@
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
                     </li>
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>
-                    @*<li>
-                        <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
-                    </li>*@
-                    <li>
-                        <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
-                    </li>
 
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
+                        <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
                     </li>
+                    @*<li>
+                            <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
+                        </li>*@
+
+
+                    @*<li>
+                            <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
+                        </li>*@
 
                     <!--<li>
-        <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
-    </li>-->
+                        <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
+                    </li>-->
                     <!-- <li> -->
                     <!-- <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a> -->
                     <!-- </li> -->
@@ -1005,17 +1006,19 @@
                         <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
                     </li>
 
-
+                    @*<li>
+                            <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
+                        </li>*@
 
                     @*<li>
-            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
-        </li>*@
+                            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
+                        </li>*@
 
                     @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-mumba.png" alt="u-mumba" /></a> </li>*@
                     @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-dream.png" alt="u-dream" /></a> </li>*@
                     @*<li>
-            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
-        </li>*@
+                            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
+                        </li>*@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/your-brand-here.png" alt="Your Brand is here" /></a>
                     </li>
@@ -1043,7 +1046,7 @@
         <div class="container">
             <div class="work-wrapp">
                 <div class="tabsAccordion work-tab">
-                    <ul class="resp-tabs-list">
+                    <ul class="resp-tabs-list sticky-tab-1">
                         <li>
                             <span>campaigns</span>
                         </li>
@@ -1060,8 +1063,8 @@
                             <span>Media & Marketing Sciences</span>
                         </li>
                         @*<li>
-                            <span>Media</span>
-                        </li>*@
+                                <span>Media</span>
+                            </li>*@
                     </ul>
                     <div class="resp-tabs-container">
                         <div class="resp-tab-content" id="campaigns">
@@ -1237,15 +1240,15 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("MahindraNfoLaunches","work")">
-                                        <img src="~/Content/work/images/thums/mmf-info-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>MMF NFO Launches</h4>
-                                            <p>Ek Nayi Soch. Ek Nayi Raah.</p>
-                                        </div>
-                                    </a>
-                                </li>
+                                @*<li>
+                                        <a href="@Url.Action("MahindraNfoLaunches","work")">
+                                            <img src="~/Content/work/images/thums/mmf-info-thum.jpg" alt="">
+                                            <div class="caption">
+                                                <h4>MMF NFO Launches</h4>
+                                                <p>Ek Nayi Soch. Ek Nayi Raah.</p>
+                                            </div>
+                                        </a>
+                                    </li>*@
                                 <li>
                                     <a href="@Url.Action("MahindraRuralBharat","work")">
                                         <img src="~/Content/work/images/thums/mahindra-rural-bharat-thum.jpg" alt="">
@@ -1446,6 +1449,18 @@
                                         </div>
                                     </a>
                                 </li>
+
+                                <li>
+                                    <a href="@Url.Action("star-second-screen","work")">
+                                        <img src="~/Content/work/images/thums/second-screen-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Star Second Screen</h4>
+                                            <p>Extending the content experience beyond traditional broadcast media to the consumer's mobile eco-system</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
                                 <li>
                                     <a href="@Url.Action("piramalfoundation","work")">
                                         <img src="~/Content/work/images/thums/piramal-foundation-thum.jpg" alt="">
@@ -1801,19 +1816,20 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="resp-tab-content" id="Work-Media">
-                            <ul>
-                                <li>
-                                    <a href="@Url.Action("UCypher","work")">
-                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>UCYPHER</h4>
-                                            <p>Naya Sport. Naye Superstars.</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
+                        <!-- <div class="resp-tab-content" id="Work-Media"> -->
+                            <!-- <ul> -->
+                                <!-- <li> -->
+                                    <!-- <a href="@Url.Action("UCypher","work")"> -->
+                                        <!-- <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt=""> -->
+                                        <!-- <div class="caption"> -->
+                                            <!-- <h4>UCYPHER</h4> -->
+                                            <!-- <p>Naya Sport. Naye Superstars.</p> -->
+                                        <!-- </div> -->
+                                    <!-- </a> -->
+                                <!-- </li> -->
+                            <!-- </ul> -->
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -1866,6 +1882,287 @@
             </div>
         </div>
     </div>
+
+    <div class="section fixed-bg " id="AugmentedReality" style="background-image: url('/Content/images/ar-bg.jpg');">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Augmented Reality</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <ul class="title-navigation">
+                    <li class="cultuer-title-nav"><a data-my-element="FacebookAR" class="data-link active"><span>Facebook AR</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="WebAR" class="data-link"><span>Web AR</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="xms-wrapper">
+                <div class="xms-container">
+                    <div class="data-content active" data-my-element="FacebookAR">
+                        <div class="work-wrapp ">
+                            <div class="tabsAccordion work-tab">
+                                <ul class="resp-tabs-list sticky-tab-2 tab-ar-bg">
+                                    <li><span>Facemash</span> </li>
+                                    <li><span>Frame Overlap</span> </li>
+                                    <li><span>Eye Blink</span> </li>
+                                    <li><span>Mouth Open</span> </li>
+                                    <li><span>Hand Tracking</span> </li>
+                                    <!--<li><span>Tap</span> </li>-->
+                                </ul>
+                                <div class="resp-tabs-container fadIn-wrapp">
+                                    <div class="resp-tab-content" id="Facemash">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/seven-seas-ar.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/530080604220822/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/dd-drishti.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/dd-drishti.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/1083907948456294/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/dd-pishyachini.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/dd-pishyachini.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/355008378682367/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/ucypher.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/ucypher.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/525406454982891/OWQwZWYyNzEyNjlhMmZjMmQ1ZGFlZjBhMGFlZDliOTM=/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="FrameOverlap">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/seven-seas-ar.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/530080604220822/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="EyeBlink">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/star-bharat.jpg" playsinline webkit-playsinline loop autoplay muted>
+                                                                <source src="~/Content/media/star-bharat.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/852006108551087/OWJjYzc3OTMxMGE3ODBhZjllOGVjOWJjZmVjM2M5OTE=/" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="MouthOpen">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/jhjk.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/jhjk.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/1460023970828233/ZGNiN2I5NmNiYjc4ZmVhYjQwMGM3NmQxYzQ3YThiNmQ=/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="HandTracking">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/dd-divya.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/dd-divya.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/292231151454606/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="resp-tab-content" id="Tap">
+                                      <ul class="mobile-video-gallery" >
+                                        <li>
+                                          <div class="mobile-video-block" >
+                                            <div class="mobile-video" >
+                                              <figure class="video-figure" >
+                                                <video preload="metadata" poster="media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted >
+                                                  <source src="media/seven-seas-ar.mp4" type="video/mp4">
+                                                </video>
+                                              </figure>
+                                              <span class="tap-area" ></span> <img src="~/Content/images/iphone.png" alt=""> </div>
+                                            <a href="#" class="btn" >Try This Filter</a> </div>
+                                        </li>
+                                      </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-content" data-my-element="WebAR">
+                        <div class="work-wrapp ">
+                            <div class="tabsAccordion work-tab">
+                                <ul class="resp-tabs-list sticky-tab-3 tab-ar-bg">
+                                    <li><span>Tap</span> </li>
+                                </ul>
+                                <div class="resp-tabs-container fadIn-wrapp">
+                                    <div class="resp-tab-content" id="WebTap">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/ted-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/ted-ar.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://ted.madebysparkt.com/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section blue fixed-bg" id="Voice" style="background-image: url('/Content/images/voice-bg.jpg')">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Voice</h2>
+            <div class="clear"></div>
+            <!--<div class="head-title-content">
+              <ul class="title-navigation" >
+                <li class="cultuer-title-nav active" ><a data-my-element="Voice" class="data-link" ><span>Voice</span></a></li>
+              </ul>
+            </div>-->
+        </div>
+        <div class="container">
+            <div class="xms-wrapper full-width">
+                <div class="xms-container">
+                    <div class="data-content active" data-my-element="Voice" style="display: block">
+                        <div class="work-wrapp ">
+                            <div class="tabsAccordion work-tab">
+                                <ul class="resp-tabs-list sticky-tab-4 tab-voice-bg">
+                                    <li><span>Voice Auditions</span> </li>
+                                    <li><span>MMF VEO</span> </li>
+                                </ul>
+                                <div class="resp-tabs-container fadIn-wrapp">
+                                    <div class="resp-tab-content" id="VoiceAuditions">
+                                        <ul class="mobile-video-gallery gallery-with-kv">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/the-voice.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/the-voice.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
+                                                    </div>
+                                                    <div class="btn-wrapp"> <a href="https://www.sparkt.in/voice" target="_blank" class="btn">Try This Filter</a> </div>
+                                                </div>
+                                                <div class="gallery-bg"> <img src="~/Content/images/star-the-voice-kv.png" alt="" class="float-img"> <img src="~/Content/images/star-the-voice.jpg" alt=""> </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="mmfVEO">
+                                        <ul class="mobile-video-gallery gallery-with-kv">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/mmf-veo.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/mmf-veo.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
+                                                    </div>
+                                                    <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This Filter</a> </div>
+                                                </div>
+                                                <div class="gallery-bg">
+                                                    <div class="veo-steps">
+                                                        <ul>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-1.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-2.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-3.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-4.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-5.jpg" alt=""></li>
+                                                        </ul>
+                                                    </div>
+                                                    <img src="~/Content/images/mmf-veo-voice.jpg" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="section" id="xms">
         <div class="head-title floated ">
             <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
@@ -1873,12 +2170,13 @@
             <div class="clear"></div>
             <div class="head-title-content">
                 <ul class="title-navigation">
-                    <li class="cultuer-title-nav"><a target="1" class="showSingle active"><span>Overview</span></a></li>
-                    <li class="cultuer-title-nav"><a target="2" class="showSingle"><span>Features</span></a></li>
-                    <li class="cultuer-title-nav"><a target="3" class="showSingle"><span>Future Ready</span></a></li>
-                    <li class="cultuer-title-nav"><a target="4" class="showSingle"><span>Architecture</span></a></li>
-                    <li class="cultuer-title-nav"><a target="5" class="showSingle"><span>Data Fusion</span></a></li>
-                    <li class="cultuer-title-nav"><a target="6" class="showSingle"><span>Clients</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Overview" class="data-link active"><span>Overview</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Features" class="data-link"><span>Features</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="FutureReady" class="data-link"><span>Future Ready</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Architecture" class="data-link"><span>Architecture</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="MarketingDataSciences" class="data-link"><span>Data Fusion</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Deployments" class="data-link"><span>Deployments</span></a></li>
+
                 </ul>
             </div>
         </div>
@@ -1888,8 +2186,8 @@
 
                 <div class="xms-container">
 
-                    <div class=" targetDiv active" id="div1">
-                        <div class="targetDivinsight">
+                    <div class="data-content active" data-my-element="Overview">
+                        <div class="data-content-insight">
                             <div class="xms-line">
                                 <h4>Multidimensional platform built around Microsoft Azure, enabling seamless co-existence between your brand and business, imperative in today's consumer-driven digital economy. </h4>
                             </div>
@@ -2098,13 +2396,13 @@
 
                     </div>
 
-                    <div class=" targetDiv" id="div2">
+                    <div class="data-content" data-my-element="Features">
 
                         <div class="xms-line">
                             <h4>Multidimensional platform built around Microsoft Azure, enabling seamless co-existence between your brand and business, imperative in today's consumer-driven digital economy. </h4>
                         </div>
 
-                        <div class="targetDivinsight">
+                        <div class="data-content-insight">
                             <div class="tabsAccordion xms-featuers-tab work-tab">
                                 <ul class="resp-tabs-list ">
                                     <li class="resp-tab-active"><span>Core Features</span> </li>
@@ -2137,8 +2435,8 @@
 
                     </div>
 
-                    <div id="div3" class="targetDiv">
-                        <div class="targetDivinsight">
+                    <div class="data-content" data-my-element="FutureReady">
+                        <div class="data-content-insight">
 
                             <div class="features-content">
                                 <div class="future-ready xms-circle-img">
@@ -2160,24 +2458,24 @@
                         </div>
                     </div>
 
-                    <div id="div4" class="targetDiv">
-                        <div class="targetDivinsight">
+                    <div class="data-content" data-my-element="Architecture">
+                        <div class="data-content-insight">
                             <div class="features-content">
                                 <span class="img"><img src="~/Content/images/architecture.png" alt=""></span>
                             </div>
                         </div>
                     </div>
 
-                    <div id="div5" class="targetDiv">
-                        <div class="targetDivinsight">
+                    <div class="data-content" data-my-element="MarketingDataSciences">
+                        <div class="data-content-insight">
                             <div class="features-content">
                                 <span class="img"><img src="~/Content/images/marketing-data-sciences.png" alt=""></span>
                             </div>
                         </div>
                     </div>
 
-                    <div id="div6" class="targetDiv">
-                        <div class="targetDivinsight">
+                    <div class="data-content" data-my-element="Deployments">
+                        <div class="data-content-insight">
                             <div class="xms-clients">
                                 <ul>
                                     <li><a href="@Url.Action("MahindraMFExperience","work")"><img src="~/Content/images/xms-client-mahindra.png" alt=""><span><img src="~/Content/work/images/clients/mahindra.png" alt=""></span></a></li>

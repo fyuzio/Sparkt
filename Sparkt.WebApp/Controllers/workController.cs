@@ -147,6 +147,14 @@ namespace Sparkt.WebApp.Controllers
             return View();
         }
         [HttpGet]
+        [Route("star-second-screen")]
+        public ActionResult StarSecondScreen()
+        {
+            return View();
+        }
+
+
+        [HttpGet]
         [Route("yaarii-website")]
         public ActionResult yaariiwebsite()
         {

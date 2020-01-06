@@ -3079,6 +3079,7 @@
     <Content Include="Content\images\achievements4.jpg" />
     <Content Include="Content\images\achievements5.jpg" />
     <Content Include="Content\images\achievements7.jpg" />
+    <Content Include="Content\images\ar-bg.jpg" />
     <Content Include="Content\images\architecture.png" />
     <Content Include="Content\images\backup\squad\alefiya.png" />
     <Content Include="Content\images\backup\squad\ankit-verma.png" />
@@ -3114,9 +3115,39 @@
     <Content Include="Content\images\backup\squad\waqt-shaikh.png" />
     <Content Include="Content\images\backup\squad\warren-pinto.png" />
     <Content Include="Content\images\clients\divayoga.png" />
+    <Content Include="Content\images\clients\indiabulls-logo.png" />
+    <Content Include="Content\images\clients\star-bharat-logo.png" />
+    <Content Include="Content\images\influence.png" />
+    <Content Include="Content\images\iphone-bk.png" />
+    <Content Include="Content\images\iphone-light.png" />
+    <Content Include="Content\images\iphone.png" />
+    <Content Include="Content\images\mmf-veo-voice.jpg" />
     <Content Include="Content\images\pchf.jpg" />
     <Content Include="Content\images\piramal-foundation.jpg" />
+    <Content Include="Content\images\star-the-voice-kv.png" />
+    <Content Include="Content\images\star-the-voice.jpg" />
+    <Content Include="Content\images\voice-bg.jpg" />
     <Content Include="Content\images\yaarii-bg.jpg" />
+    <Content Include="Content\media\dd-divya.jpg" />
+    <Content Include="Content\media\dd-divya.mp4" />
+    <Content Include="Content\media\dd-drishti.jpg" />
+    <Content Include="Content\media\dd-drishti.mp4" />
+    <Content Include="Content\media\dd-pishyachini.jpg" />
+    <Content Include="Content\media\dd-pishyachini.mp4" />
+    <Content Include="Content\media\jhjk.jpg" />
+    <Content Include="Content\media\jhjk.mp4" />
+    <Content Include="Content\media\mmf-veo.jpg" />
+    <Content Include="Content\media\mmf-veo.mp4" />
+    <Content Include="Content\media\seven-seas-ar.jpg" />
+    <Content Include="Content\media\seven-seas-ar.mp4" />
+    <Content Include="Content\media\star-bharat.jpg" />
+    <Content Include="Content\media\star-bharat.mp4" />
+    <Content Include="Content\media\ted-ar.jpg" />
+    <Content Include="Content\media\ted-ar.mp4" />
+    <Content Include="Content\media\the-voice.jpg" />
+    <Content Include="Content\media\the-voice.mp4" />
+    <Content Include="Content\media\ucypher.jpg" />
+    <Content Include="Content\media\ucypher.mp4" />
     <Content Include="Content\work\images\banners\birla-wall-putty.jpg" />
     <Content Include="Content\images\business-features.png" />
     <Content Include="Content\images\clients\boutique.png" />
@@ -3652,6 +3683,7 @@
     <Content Include="Content\work\images\banners\pow-cover.jpg" />
     <Content Include="Content\work\images\banners\ruchi-soya.jpg" />
     <Content Include="Content\work\images\banners\sanju-cover.jpg" />
+    <Content Include="Content\work\images\banners\second-screen-cover.jpg" />
     <Content Include="Content\work\images\banners\seven-seas-ar-cover.jpg" />
     <Content Include="Content\work\images\banners\seven-seas-cover.jpg" />
     <Content Include="Content\work\images\banners\sky.jpg" />
@@ -3862,6 +3894,11 @@
     <Content Include="Content\work\images\pow-mobile-creative.png" />
     <Content Include="Content\work\images\push-charactor.png" />
     <Content Include="Content\work\images\revent-logo.png" />
+    <Content Include="Content\work\images\second-screen-1.jpg" />
+    <Content Include="Content\work\images\second-screen-2.jpg" />
+    <Content Include="Content\work\images\second-screen-3.jpg" />
+    <Content Include="Content\work\images\second-screen-4.jpg" />
+    <Content Include="Content\work\images\second-screen-5.jpg" />
     <Content Include="Content\work\images\seven-seas-ar-bg.jpg" />
     <Content Include="Content\work\images\seven-seas-ar-mobile-creative.png" />
     <Content Include="Content\work\images\seven-seas-bg.jpg" />
@@ -3996,6 +4033,7 @@
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
     <Content Include="Content\work\images\thums\ruchi-soya-thum.jpg" />
     <Content Include="Content\work\images\thums\sanju-thum.jpg" />
+    <Content Include="Content\work\images\thums\second-screen-thum.jpg" />
     <Content Include="Content\work\images\thums\seven-seas-ar.jpg" />
     <Content Include="Content\work\images\thums\seven-seas.jpg" />
     <Content Include="Content\work\images\thums\sky-thum.jpg" />
@@ -4556,6 +4594,7 @@
     <Content Include="Views\work\Ted2019.cshtml" />
     <Content Include="Views\work\TedArInnovation.cshtml" />
     <Content Include="Views\work\MahindraTopNfo.cshtml" />
+    <Content Include="Views\work\StarSecondScreen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
