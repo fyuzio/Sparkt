@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt | Sarva App";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sarva";
+    ViewBag.Metadescription = "Take yoga with you on the go";
+     ViewBag.MetaURL = "http://sparkt.in/work/sarva-app";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/sarva-app-thum.jpg";
+}
+@section BodyClass {sarva}
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url('../Content/work/images/banners/sarva-app-cover.jpg');"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Sarva</h1>
+                <div class="clear"></div>
+                <span>Take yoga with you on the go.</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu");
+    </div>
+
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel sarva-bg fixed " style="background-image: url('../Content/work/images/sarva-app-bg.png'); background-position: right center">
+                <div class="slider">
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <!-- <h3>Taking Sarva Yoga out of the studio and into the palms of the client.</h3>-->
+                                    @*<h3>A fresh look at yoga with  - Yoga on the Go</h3>*@
+                                    <h3>A refreshed experience with anything yoga.</h3>
+                                </div>
+                                <div class="project fadeIn" data-t-show="1">
+                                    <div class="project__card">
+                                        <a class="project__image"><img src="../Content/work/images/sarva-assets.png" alt=""></a>
+                                        <!--<div class="project__detail">
+                                          <h2 class="project__title"><a href="#">CREATIVE APPROACH</a></h2>
+                                            <small class="project__category"><a href="#">MAKE YOUR OWN VIRTUAL JERSEY ON A GOOGLE LIGHTBOX BANNER</a></small>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

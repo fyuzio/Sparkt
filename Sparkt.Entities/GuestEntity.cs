@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Sparkt.Entities
 {
@@ -15,7 +16,8 @@ namespace Sparkt.Entities
         public string PhoneNumber { get; set; }
         public string SeekAConsultation { get; set; }
         public string Message { get; set; }
-
+        public string filePath { get; set; }
+        public HttpPostedFileBase file { get; set; }
 
     }
 }

@@ -20,6 +20,39 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+
+        [Route("birla-excel-putty")]
+        public ActionResult BirlaExcelPutty()
+        {
+            return View();
+        }
+
+
+        [Route("mmf-app")]
+        public ActionResult MMFApp()
+        {
+            return View();
+        }
+
+        [Route("sarva-app")]
+        public ActionResult SarvaApp()
+        {
+            return View();
+        }
+        [Route("sarva-brandbook")]
+        public ActionResult SarvaBrandbook()
+        {
+            return View();
+        }
+
+        //sarva-
+        [Route("sarva-campaign")]
+        public ActionResult SarvaCampaign()
+        {
+            return View();
+        }
+
         //[Route("nutrela")]
         public ActionResult Nutrela()
         {

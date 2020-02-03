@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt | SarvaCampaign";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+
+    ViewBag.MetaTitle = "Sarva";
+    ViewBag.Metadescription = "A fresh look at yoga";
+      ViewBag.MetaURL = "http://sparkt.in/work/sarva-campaign";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/sarva-campaign-thum.jpg";
+}
+@section BodyClass {sarva}
+  
+<main>
+    <div class="section">
+        <div class="work-banner">
+           
+            <div class="banner-source">
+                <div class="banner-video">
+                    <video class="bannerplayer" poster="~/Content/work/images/banners/sarva-campaign-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                        <source type="video/youtube" src="https://youtu.be/udF-9gU9Keg" />
+                    </video>
+                </div>
+                <div class="banner-image" style="background-image: url(../Content/work/images/banners/sarva-campaign-cover.jpg);"> </div>
+            </div>
+
+            <div class="head-title floated">
+                <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Sarva</h1>
+                <div class="clear"></div>
+                <span>A fresh look at yoga</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu");
+    </div>
+
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel sarva-bg fixed " style="background-image: url('../Content/work/images/sarva-campaign-bg.png'); background-position: left center">
+                <div class="slider">
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+
+                                    <h3>Breaking the stereotypes. Presenting the intensity of yoga.</h3>
+                                </div>
+
+                                <div class="three-img-carousel-wrapp">
+                                    <div class="three-img-carousel sarva-carousel">
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-1.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-2.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-3.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-4.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-5.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-6.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-7.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-8.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-9.jpg" alt=""></div>
+                                        <div class="grid"><img src="../Content/work/images/sarva-post-10.jpg" alt=""></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Sarva: And a new voice. A new look.  And a new beginning.</h3>
+                                </div>
+
+                                <div class="flipbook-wrapp">
+
+                                    <iframe src="https://flowpaper.com/flipbook/http://www.sparkt.in/Content/work/file/sarva-brand.pdf" width="100%" style="border: none;" allowFullScreen></iframe>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

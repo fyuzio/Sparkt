@@ -725,6 +725,19 @@ $(function () {
         $(".png-health")
             .addClass("highlighted");
     }
+
+    if ($('body')
+        .hasClass('others')) {
+        $(".others")
+            .addClass("highlighted");
+    }
+
+    if ($('body')
+        .hasClass('sarva')) {
+        $(".sarva")
+            .addClass("highlighted");
+    }
+    
 });
 if ($('.website-operation video#mobile')[0])
     $('.website-operation video#mobile')[0].play();

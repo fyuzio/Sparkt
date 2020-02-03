@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "MMFApp";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+
+    ViewBag.MetaTitle = "MMF App";
+    ViewBag.Metadescription = "Lorem Ipsum";
+    ViewBag.MetaImage = "http://sparkt.in/work/images/thums/mmf-info-thum.jpg";
+    ViewBag.MetaUrl = "http://sparkt.in/work/mahindra-nfo-launches.php";
+}
+
+@section BodyClass {mahindra}
+
+
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image:url('../Content/work/images/banners/mmf-app-cover.jpg')">
+                    <!--<figure><img src="images/banners/mmf-app-cover.jpg" alt=""/></figure>-->
+                </div>
+
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Mahindra Mutual Fund</h1>
+                <div class="clear"></div>
+                <span>On the move</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu");
+    </div>
+
+    <div class="section white-bg">
+        <div class="head-title floated text-color-dark ">
+            <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel " style="background-image: url('../Content/work/images/mmf-app-bg.jpg'); background-attachment: scroll; background-position: center top">
+                <div class="slider">
+
+
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title text-color-dark">
+                                    <h3 style="color: #f20d36">On the move investment management experience for a mobile-first bharat.</h3>
+                                </div>
+
+                                <div style="width: 1px ; height: 36vw;"></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

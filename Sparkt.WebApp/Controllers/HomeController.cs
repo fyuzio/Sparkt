@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Sparkt.Entities;
 using Sparkt.BusinessAccess;
+using System.IO;
 
 namespace Sparkt.WebApp.Controllers
 {
@@ -75,7 +76,7 @@ namespace Sparkt.WebApp.Controllers
         public ActionResult Create(GuestEntity guestEntity)
         {            
             bool result = _guestManagementController.InsertGuestDetails(guestEntity);
-            if (result)
+                if (result)
             {
                 string emailString = "Name: " + guestEntity.Name + "<br>";
                 emailString = emailString + "Company: " + guestEntity.CompanyName + "<br>";
@@ -124,6 +125,45 @@ namespace Sparkt.WebApp.Controllers
         public ActionResult Uturn()
         {
             return View();
+        }
+
+        [Route("importfile")]
+        [HttpPost]
+        public ActionResult ImportFile(HttpPostedFileBase file)
+        {
+            string newFileName = string.Empty;
+            try
+            {
+                if (file != null && file.ContentLength > 0)
+                {
+                    FileInfo fileInfo = new FileInfo(file.FileName);
+                    string ext = fileInfo.Extension;
+
+                    if (ext == ".pdf")
+                    {
+                        newFileName = DateTime.Now.ToFileTime().ToString()+ ext;
+                        //string fileName = DateTime.Now.ToFileTime().ToString();
+                        var location = Path.Combine(
+                        Server.MapPath("~/Content/document"), newFileName);
+                        file.SaveAs(location);
+                       
+                        return Json(new { Status = true, Message = "File uploaded successfully.",fileName= "/Content/document/" + newFileName });
+                    }
+                    else
+                    {
+                        return Json(new { Status = false, Message = "File doesn't support.", fileName ="" });
+                    }
+                }
+                else
+                {
+                    return Json(new { Status = false, Message = "Please select a File for import.", fileName = "" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { Status = false, Message = ex.Message.ToString(), fileName = "" });
+            }
+            return Json(new { Status = true });
         }
 
     }

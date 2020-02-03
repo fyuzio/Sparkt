@@ -323,6 +323,19 @@ m .bottom-padding-none {
     background-attachment: fixed
 }
 
+
+.three-img-carousel.sarva-carousel {
+    width: 70%;
+    border: none;
+    filter: drop-shadow(10px 10px 25px rgba(0,0,0,0.4));
+    box-shadow: none;
+}
+
+    .three-img-carousel.sarva-carousel .slick-list {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
 @media screen and (min-width:1200px) {
     .banner-source {
         width: 100%;
@@ -672,7 +685,7 @@ m .bottom-padding-none {
 
 .work-with-clients::-webkit-scrollbar {
     width: 3px;
-    height:3px;
+    height: 3px;
 }
 
 /* Track */
@@ -2146,6 +2159,10 @@ footer {
     background: -ms-linear-gradient(45deg, rgba(75, 73, 73, 1) 0%, rgba(75, 73, 73, 1) 29%, rgba(118, 198, 219, 1) 29%, rgba(118, 198, 219, 1) 100%);
     background: linear-gradient(45deg, rgba(75, 73, 73, 1) 0%, rgba(75, 73, 73, 1) 29%, rgba(118, 198, 219, 1) 29%, rgba(118, 198, 219, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4b4949', endColorstr='#76c6db', GradientType=1);
+}
+
+.sarva-bg {
+    background-color: #20272e;
 }
 
 .pink-grey-bg {
@@ -4465,6 +4482,26 @@ img.yaarii-mobile-creative {
         display: none
     }
 
+.flipbook-wrapp #flowpaper-logo-bottom {
+    display: none !important;
+}
+
+.flipbook-wrapp {
+    padding: 24px 0;
+    width: 90%;
+    margin: 0 auto
+}
+
+    .flipbook-wrapp iframe {
+        background: none !important;
+        height: 34vw;
+        min-height: 400px;
+    }
+
+.flowpaper_viewer {
+    background: #20272e !important;
+}
+
 @media screen and (max-width:1920px) {
     .work-navigation .client-works li {
         width: 9vw
@@ -6192,5 +6229,13 @@ img.yaarii-mobile-creative {
 
     .ted-ar-cover {
         background-position: 90% center;
+    }
+
+    .three-img-carousel.sarva-carousel {
+        width: 100%;
+    }
+
+    .flipbook-wrapp {
+        width: 100%;
     }
 }

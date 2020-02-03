@@ -3148,6 +3148,7 @@
     <Content Include="Content\media\the-voice.mp4" />
     <Content Include="Content\media\ucypher.jpg" />
     <Content Include="Content\media\ucypher.mp4" />
+    <Content Include="Content\work\images\banners\birla-excel-putty-cover.jpg" />
     <Content Include="Content\work\images\banners\birla-wall-putty.jpg" />
     <Content Include="Content\images\business-features.png" />
     <Content Include="Content\images\clients\boutique.png" />
@@ -3668,6 +3669,7 @@
     <Content Include="Content\work\images\banners\mahindra-tah-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-textmoji.jpg" />
     <Content Include="Content\work\images\banners\mahindra-unnati-cover.jpg" />
+    <Content Include="Content\work\images\banners\mmf-app-cover.jpg" />
     <Content Include="Content\work\images\banners\mmf-pragati-yojana-cover.jpg" />
     <Content Include="Content\work\images\banners\mmf-top250-cover.jpg" />
     <Content Include="Content\work\images\banners\mothers-day-cover.jpg" />
@@ -3683,6 +3685,9 @@
     <Content Include="Content\work\images\banners\pow-cover.jpg" />
     <Content Include="Content\work\images\banners\ruchi-soya.jpg" />
     <Content Include="Content\work\images\banners\sanju-cover.jpg" />
+    <Content Include="Content\work\images\banners\sarva-app-cover.jpg" />
+    <Content Include="Content\work\images\banners\sarva-brandbook-cover.jpg" />
+    <Content Include="Content\work\images\banners\sarva-campaign-cover.jpg" />
     <Content Include="Content\work\images\banners\second-screen-cover.jpg" />
     <Content Include="Content\work\images\banners\seven-seas-ar-cover.jpg" />
     <Content Include="Content\work\images\banners\seven-seas-cover.jpg" />
@@ -3739,6 +3744,7 @@
     <Content Include="Content\work\images\clients\mgage.png" />
     <Content Include="Content\work\images\clients\nutrela.png" />
     <Content Include="Content\work\images\clients\oneplus.png" />
+    <Content Include="Content\work\images\clients\others.png" />
     <Content Include="Content\work\images\clients\p-and-g.png" />
     <Content Include="Content\work\images\clients\pchf.jpg" />
     <Content Include="Content\work\images\clients\pedderjohnson.png" />
@@ -3747,6 +3753,7 @@
     <Content Include="Content\work\images\clients\piramal-foundation.jpg" />
     <Content Include="Content\work\images\clients\piramal-housing.png" />
     <Content Include="Content\work\images\clients\piramal.png" />
+    <Content Include="Content\work\images\clients\sarva.png" />
     <Content Include="Content\work\images\clients\star.png" />
     <Content Include="Content\work\images\clients\starplus.png" />
     <Content Include="Content\work\images\clients\times-network.png" />
@@ -3830,6 +3837,7 @@
     <Content Include="Content\work\images\mahindra-veo-5.jpg" />
     <Content Include="Content\work\images\making-characters-video-2.jpg" />
     <Content Include="Content\work\images\making-characters-video.jpg" />
+    <Content Include="Content\work\images\mmf-app-bg.jpg" />
     <Content Include="Content\work\images\mmf-desktop.jpg" />
     <Content Include="Content\work\images\mmf-mobile.jpg" />
     <Content Include="Content\work\images\mmf-pragati-emailers.png" />
@@ -3894,6 +3902,19 @@
     <Content Include="Content\work\images\pow-mobile-creative.png" />
     <Content Include="Content\work\images\push-charactor.png" />
     <Content Include="Content\work\images\revent-logo.png" />
+    <Content Include="Content\work\images\sarva-app-bg.png" />
+    <Content Include="Content\work\images\sarva-assets.png" />
+    <Content Include="Content\work\images\sarva-campaign-bg.png" />
+    <Content Include="Content\work\images\sarva-post-1.jpg" />
+    <Content Include="Content\work\images\sarva-post-10.jpg" />
+    <Content Include="Content\work\images\sarva-post-2.jpg" />
+    <Content Include="Content\work\images\sarva-post-3.jpg" />
+    <Content Include="Content\work\images\sarva-post-4.jpg" />
+    <Content Include="Content\work\images\sarva-post-5.jpg" />
+    <Content Include="Content\work\images\sarva-post-6.jpg" />
+    <Content Include="Content\work\images\sarva-post-7.jpg" />
+    <Content Include="Content\work\images\sarva-post-8.jpg" />
+    <Content Include="Content\work\images\sarva-post-9.jpg" />
     <Content Include="Content\work\images\second-screen-1.jpg" />
     <Content Include="Content\work\images\second-screen-2.jpg" />
     <Content Include="Content\work\images\second-screen-3.jpg" />
@@ -3991,6 +4012,7 @@
     <Content Include="Content\work\images\thevoice-mobile-creative.png" />
     <Content Include="Content\work\images\thums\badhat-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\bhaghi-2-thum.jpg" />
+    <Content Include="Content\work\images\thums\birla-excel-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-wall-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\boutique-thum.jpg" />
     <Content Include="Content\work\images\thums\brickex-thum.jpg" />
@@ -4015,6 +4037,7 @@
     <Content Include="Content\work\images\thums\mahindra-rural-bharat-thum.jpg" />
     <Content Include="Content\work\images\thums\mahindra-unnati-thum.jpg" />
     <Content Include="Content\work\images\thums\mGage-thum.jpg" />
+    <Content Include="Content\work\images\thums\mmf-app-thum.jpg" />
     <Content Include="Content\work\images\thums\mmf-info-thum.jpg" />
     <Content Include="Content\work\images\thums\mmf-pragati-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\mmf-thum.jpg" />
@@ -4033,6 +4056,9 @@
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
     <Content Include="Content\work\images\thums\ruchi-soya-thum.jpg" />
     <Content Include="Content\work\images\thums\sanju-thum.jpg" />
+    <Content Include="Content\work\images\thums\sarva-app-thum.jpg" />
+    <Content Include="Content\work\images\thums\sarva-brandbook-thum.jpg" />
+    <Content Include="Content\work\images\thums\sarva-campaign-thum.jpg" />
     <Content Include="Content\work\images\thums\second-screen-thum.jpg" />
     <Content Include="Content\work\images\thums\seven-seas-ar.jpg" />
     <Content Include="Content\work\images\thums\seven-seas.jpg" />
@@ -4595,6 +4621,11 @@
     <Content Include="Views\work\TedArInnovation.cshtml" />
     <Content Include="Views\work\MahindraTopNfo.cshtml" />
     <Content Include="Views\work\StarSecondScreen.cshtml" />
+    <Content Include="Views\work\BirlaExcelPutty.cshtml" />
+    <Content Include="Views\work\MMFApp.cshtml" />
+    <Content Include="Views\work\SarvaApp.cshtml" />
+    <Content Include="Views\work\SarvaBrandbook.cshtml" />
+    <Content Include="Views\work\SarvaCampaign.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

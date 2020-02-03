@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Deplyment\Sparkt.in\27Dec2019</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Deplyment\Sparkt.in\28Jan2020</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -40,7 +40,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="Areas/Admin/Content/css/style.css">
-      <publishTime>06/21/2019 11:44:58</publishTime>
+      <publishTime>01/09/2020 15:35:14</publishTime>
     </File>
     <File Include="Areas/Admin/Content/css/swiper.min.css">
       <publishTime>06/21/2019 11:44:58</publishTime>
@@ -340,7 +340,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="Areas/Admin/Scripts/Custom/LeadManager.js">
-      <publishTime>06/21/2019 11:44:58</publishTime>
+      <publishTime>01/09/2020 15:29:35</publishTime>
     </File>
     <File Include="Areas/Admin/Scripts/jquery-3.2.1.js">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -8854,7 +8854,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:02</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Console/Leads.cshtml">
-      <publishTime>06/21/2019 15:16:41</publishTime>
+      <publishTime>01/09/2020 15:27:33</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Login/Dashboard.cshtml">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -9004,43 +9004,43 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:20</publishTime>
     </File>
     <File Include="bin/Sparkt.BusinessAccess.dll">
-      <publishTime>12/17/2019 17:47:54</publishTime>
+      <publishTime>01/27/2020 12:45:55</publishTime>
     </File>
     <File Include="bin/Sparkt.BusinessAccess.dll.config">
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="bin/Sparkt.BusinessAccess.pdb">
-      <publishTime>12/17/2019 17:47:54</publishTime>
+      <publishTime>01/27/2020 12:45:55</publishTime>
     </File>
     <File Include="bin/Sparkt.DataAccess.dll">
-      <publishTime>12/17/2019 17:47:53</publishTime>
+      <publishTime>01/27/2020 12:45:53</publishTime>
     </File>
     <File Include="bin/Sparkt.DataAccess.dll.config">
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="bin/Sparkt.DataAccess.pdb">
-      <publishTime>12/17/2019 17:47:53</publishTime>
+      <publishTime>01/27/2020 12:45:53</publishTime>
     </File>
     <File Include="bin/Sparkt.Entities.dll">
-      <publishTime>12/17/2019 17:47:51</publishTime>
+      <publishTime>01/27/2020 12:45:49</publishTime>
     </File>
     <File Include="bin/Sparkt.Entities.pdb">
-      <publishTime>12/17/2019 17:47:51</publishTime>
+      <publishTime>01/27/2020 12:45:49</publishTime>
     </File>
     <File Include="bin/Sparkt.Utility.dll">
-      <publishTime>12/17/2019 17:47:54</publishTime>
+      <publishTime>01/27/2020 12:45:54</publishTime>
     </File>
     <File Include="bin/Sparkt.Utility.dll.config">
       <publishTime>06/21/2019 11:44:58</publishTime>
     </File>
     <File Include="bin/Sparkt.Utility.pdb">
-      <publishTime>12/17/2019 17:47:54</publishTime>
+      <publishTime>01/27/2020 12:45:54</publishTime>
     </File>
     <File Include="bin/Sparkt.WebApp.dll">
-      <publishTime>12/27/2019 13:15:51</publishTime>
+      <publishTime>01/28/2020 16:15:10</publishTime>
     </File>
     <File Include="bin/Sparkt.WebApp.pdb">
-      <publishTime>12/27/2019 13:15:51</publishTime>
+      <publishTime>01/28/2020 16:15:10</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>06/21/2019 11:45:20</publishTime>
@@ -9118,7 +9118,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:02</publishTime>
     </File>
     <File Include="Content/css/hompage.css">
-      <publishTime>12/23/2019 20:24:23</publishTime>
+      <publishTime>01/09/2020 12:59:01</publishTime>
     </File>
     <File Include="Content/css/hover-min.css">
       <publishTime>10/31/2019 17:51:05</publishTime>
@@ -10060,7 +10060,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 17:50:42</publishTime>
     </File>
     <File Include="Content/js/functions.js">
-      <publishTime>12/17/2019 19:43:06</publishTime>
+      <publishTime>01/06/2020 16:16:55</publishTime>
     </File>
     <File Include="Content/js/jquery-3.1.1.min.js">
       <publishTime>06/21/2019 11:45:02</publishTime>
@@ -11074,7 +11074,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
     <File Include="Content/work/css/style.css">
-      <publishTime>12/09/2019 21:05:23</publishTime>
+      <publishTime>01/28/2020 13:13:32</publishTime>
     </File>
     <File Include="Content/work/images/.DS_Store">
       <publishTime>06/21/2019 11:45:04</publishTime>
@@ -11217,6 +11217,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/banners/bhaghi-2-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
+    <File Include="Content/work/images/banners/birla-excel-putty-cover.jpg">
+      <publishTime>01/27/2020 13:21:46</publishTime>
+    </File>
     <File Include="Content/work/images/banners/birla-wall-putty.jpg">
       <publishTime>10/31/2019 14:07:10</publishTime>
     </File>
@@ -11307,6 +11310,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/banners/mahindra-unnati-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
+    <File Include="Content/work/images/banners/mmf-app-cover.jpg">
+      <publishTime>01/27/2020 13:21:46</publishTime>
+    </File>
     <File Include="Content/work/images/banners/mmf-pragati-yojana-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
@@ -11351,6 +11357,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/banners/sanju-cover.jpg">
       <publishTime>06/21/2019 11:45:04</publishTime>
+    </File>
+    <File Include="Content/work/images/banners/sarva-app-cover.jpg">
+      <publishTime>01/27/2020 13:21:46</publishTime>
+    </File>
+    <File Include="Content/work/images/banners/sarva-brandbook-cover.jpg">
+      <publishTime>01/27/2020 20:17:35</publishTime>
+    </File>
+    <File Include="Content/work/images/banners/sarva-campaign-cover.jpg">
+      <publishTime>01/27/2020 13:21:46</publishTime>
     </File>
     <File Include="Content/work/images/banners/second-screen-cover.jpg">
       <publishTime>12/27/2019 12:48:13</publishTime>
@@ -11520,6 +11535,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/clients/oneplus.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
     </File>
+    <File Include="Content/work/images/clients/others.png">
+      <publishTime>01/28/2020 14:11:01</publishTime>
+    </File>
     <File Include="Content/work/images/clients/p-and-g.png">
       <publishTime>12/09/2019 20:43:13</publishTime>
     </File>
@@ -11543,6 +11561,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/clients/piramal.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
+    </File>
+    <File Include="Content/work/images/clients/sarva.png">
+      <publishTime>01/28/2020 14:11:53</publishTime>
     </File>
     <File Include="Content/work/images/clients/star.png">
       <publishTime>06/21/2019 11:45:04</publishTime>
@@ -11796,6 +11817,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/making-characters-video.jpg">
       <publishTime>06/21/2019 20:40:39</publishTime>
     </File>
+    <File Include="Content/work/images/mmf-app-bg.jpg">
+      <publishTime>01/27/2020 13:21:04</publishTime>
+    </File>
     <File Include="Content/work/images/mmf-desktop.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
@@ -11987,6 +12011,45 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/revent-logo.png">
       <publishTime>06/21/2019 11:45:05</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-app-bg.png">
+      <publishTime>01/27/2020 13:21:04</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-assets.png">
+      <publishTime>01/27/2020 13:21:04</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-campaign-bg.png">
+      <publishTime>01/27/2020 13:21:04</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-1.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-10.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-2.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-3.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-4.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-5.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-6.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-7.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-8.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
+    </File>
+    <File Include="Content/work/images/sarva-post-9.jpg">
+      <publishTime>01/28/2020 12:48:09</publishTime>
     </File>
     <File Include="Content/work/images/second-screen-1.jpg">
       <publishTime>12/27/2019 12:47:10</publishTime>
@@ -12282,6 +12345,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/thums/bhaghi-2-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
+    <File Include="Content/work/images/thums/birla-excel-putty-thum.jpg">
+      <publishTime>01/27/2020 13:21:29</publishTime>
+    </File>
     <File Include="Content/work/images/thums/birla-wall-putty-thum.jpg">
       <publishTime>10/31/2019 14:57:43</publishTime>
     </File>
@@ -12354,6 +12420,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/work/images/thums/mGage-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
+    <File Include="Content/work/images/thums/mmf-app-thum.jpg">
+      <publishTime>01/27/2020 13:21:29</publishTime>
+    </File>
     <File Include="Content/work/images/thums/mmf-info-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
     </File>
@@ -12407,6 +12476,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/work/images/thums/sanju-thum.jpg">
       <publishTime>06/21/2019 11:45:05</publishTime>
+    </File>
+    <File Include="Content/work/images/thums/sarva-app-thum.jpg">
+      <publishTime>01/27/2020 13:21:29</publishTime>
+    </File>
+    <File Include="Content/work/images/thums/sarva-brandbook-thum.jpg">
+      <publishTime>01/27/2020 20:17:51</publishTime>
+    </File>
+    <File Include="Content/work/images/thums/sarva-campaign-thum.jpg">
+      <publishTime>01/27/2020 13:21:29</publishTime>
     </File>
     <File Include="Content/work/images/thums/second-screen-thum.jpg">
       <publishTime>12/27/2019 12:48:37</publishTime>
@@ -12898,7 +12976,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:06</publishTime>
     </File>
     <File Include="Content/work/js/functions.js">
-      <publishTime>12/09/2019 21:04:01</publishTime>
+      <publishTime>01/28/2020 14:45:58</publishTime>
     </File>
     <File Include="Content/work/js/jquery-2.2.4.min.js">
       <publishTime>06/21/2019 11:45:06</publishTime>
@@ -13345,7 +13423,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:10</publishTime>
     </File>
     <File Include="Scripts/User/SparktHelper.js">
-      <publishTime>06/21/2019 11:45:10</publishTime>
+      <publishTime>01/13/2020 14:47:19</publishTime>
     </File>
     <File Include="Scripts/User/UserManager.js">
       <publishTime>06/21/2019 11:45:10</publishTime>
@@ -13357,7 +13435,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:11</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>12/27/2019 13:12:13</publishTime>
+      <publishTime>01/13/2020 14:47:11</publishTime>
     </File>
     <File Include="Views/Home/Uturn.cshtml">
       <publishTime>06/21/2019 11:45:11</publishTime>
@@ -13366,13 +13444,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:11</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>12/17/2019 18:41:14</publishTime>
+      <publishTime>01/06/2020 16:07:05</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutWork.cshtml">
-      <publishTime>06/21/2019 11:45:11</publishTime>
+      <publishTime>12/27/2019 14:16:03</publishTime>
     </File>
     <File Include="Views/Shared/_WorkMenu.cshtml">
-      <publishTime>12/27/2019 13:11:15</publishTime>
+      <publishTime>01/28/2020 15:34:05</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13380,11 +13458,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/work/Baaghi2.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
+    <File Include="Views/work/BirlaExcelPutty.cshtml">
+      <publishTime>01/28/2020 15:38:45</publishTime>
+    </File>
     <File Include="Views/work/BirlaWhiteRepaintPutty.cshtml">
-      <publishTime>11/04/2019 15:47:40</publishTime>
+      <publishTime>01/28/2020 14:34:01</publishTime>
     </File>
     <File Include="Views/work/bql.cshtml">
-      <publishTime>06/21/2019 11:45:13</publishTime>
+      <publishTime>01/28/2020 15:30:35</publishTime>
     </File>
     <File Include="Views/work/brickex.cshtml">
       <publishTime>06/21/2019 11:45:13</publishTime>
@@ -13402,10 +13483,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/Dubsmash.cshtml">
-      <publishTime>06/21/2019 11:45:12</publishTime>
+      <publishTime>01/28/2020 15:31:33</publishTime>
     </File>
     <File Include="Views/work/EditageInsights.cshtml">
-      <publishTime>06/21/2019 11:45:12</publishTime>
+      <publishTime>01/28/2020 15:32:16</publishTime>
     </File>
     <File Include="Views/work/HSPubh.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13435,7 +13516,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/Kullfi.cshtml">
-      <publishTime>06/21/2019 11:45:12</publishTime>
+      <publishTime>01/27/2020 12:43:17</publishTime>
     </File>
     <File Include="Views/work/kullfimissedcall.cshtml">
       <publishTime>06/21/2019 21:49:28</publishTime>
@@ -13444,7 +13525,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 20:56:23</publishTime>
     </File>
     <File Include="Views/work/KZKAR.cshtml">
-      <publishTime>06/21/2019 20:55:41</publishTime>
+      <publishTime>01/27/2020 12:42:16</publishTime>
     </File>
     <File Include="Views/work/MadeByMom.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13480,7 +13561,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/MGage.cshtml">
-      <publishTime>06/21/2019 11:45:12</publishTime>
+      <publishTime>01/28/2020 15:12:54</publishTime>
+    </File>
+    <File Include="Views/work/MMFApp.cshtml">
+      <publishTime>01/27/2020 15:49:15</publishTime>
     </File>
     <File Include="Views/work/NachBaliye8.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13492,16 +13576,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/Nutrela.cshtml">
-      <publishTime>10/31/2019 17:26:44</publishTime>
+      <publishTime>01/28/2020 15:14:31</publishTime>
     </File>
     <File Include="Views/work/OnePlus.cshtml">
-      <publishTime>10/31/2019 17:39:25</publishTime>
+      <publishTime>01/28/2020 14:34:32</publishTime>
     </File>
     <File Include="Views/work/Pchf.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/Pedderjohnson.cshtml">
-      <publishTime>06/21/2019 11:45:12</publishTime>
+      <publishTime>01/28/2020 15:16:26</publishTime>
     </File>
     <File Include="Views/work/Phfl.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
@@ -13518,6 +13602,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/work/Sanju.cshtml">
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
+    <File Include="Views/work/SarvaApp.cshtml">
+      <publishTime>01/28/2020 15:41:49</publishTime>
+    </File>
+    <File Include="Views/work/SarvaBrandbook.cshtml">
+      <publishTime>01/28/2020 15:43:56</publishTime>
+    </File>
+    <File Include="Views/work/SarvaCampaign.cshtml">
+      <publishTime>01/28/2020 15:45:28</publishTime>
+    </File>
     <File Include="Views/work/SevenSeas.cshtml">
       <publishTime>12/09/2019 18:02:53</publishTime>
     </File>
@@ -13528,7 +13621,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/24/2019 15:33:47</publishTime>
     </File>
     <File Include="Views/work/StarPlusBrandRefresh.cshtml">
-      <publishTime>12/27/2019 12:37:05</publishTime>
+      <publishTime>01/27/2020 12:40:35</publishTime>
     </File>
     <File Include="Views/work/StarSecondScreen.cshtml">
       <publishTime>12/27/2019 13:11:54</publishTime>
@@ -13561,7 +13654,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/21/2019 11:45:12</publishTime>
     </File>
     <File Include="Views/work/TheVoice.cshtml">
-      <publishTime>06/21/2019 11:45:13</publishTime>
+      <publishTime>01/27/2020 12:37:08</publishTime>
     </File>
     <File Include="Views/work/Total.cshtml">
       <publishTime>06/21/2019 11:45:13</publishTime>

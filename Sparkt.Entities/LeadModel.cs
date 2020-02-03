@@ -24,6 +24,8 @@ namespace Sparkt.Entities
         public bool IsActive { get; set; }
         public long TotalRecords { get; set; }
         public long RowNum { get; set; }
+
+        public string filePath { get; set; }
         //public string UTMSource { get; set; }
         //public string UTMMedium { get; set; }
         //public string UTMCampaign { get; set; }

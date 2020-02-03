@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt | SarvaBrandbook";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+
+    ViewBag.MetaTitle = "Sarva";
+    ViewBag.Metadescription = "A fresh look at yoga";
+     ViewBag.MetaURL = "http://sparkt.in/work/sarva-brandbook";
+    ViewBag.MetaImage = "http://sparkt.in/Content/work/images/thums/sarva-brandbook-thum.jpg";
+}
+
+@section BodyClass {sarva}
+<main>
+    <div class="section">
+        <div class="work-banner">
+            <div class="banner-source">
+                <div class="banner-video  middle-align" style="background-image: url('../Content/work/images/banners/sarva-brandbook-cover.jpg');"> </div>
+            </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+                <h1>Sarva</h1>
+                <div class="clear"></div>
+                <span>A fresh look at yoga</span>
+            </div>
+        </div>
+        @Html.Partial("_WorkMenu");
+    </div>
+
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="../Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel sarva-bg fixed " style="background-image: url('../Content/work/images/sarva-campaign-bg.png'); background-position: left center">
+                <div class="slider">
+                    <div>
+                        <div class="creative-assets ">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>Sarva: And a new voice. A new look.  And a new beginning.</h3>
+                                </div>
+
+                                <div class="flipbook-wrapp">
+
+                                    <iframe src="https://flowpaper.com/flipbook/http://www.sparkt.in/Content/work/file/sarva-brand.pdf" width="100%" style="border: none;" allowFullScreen></iframe>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

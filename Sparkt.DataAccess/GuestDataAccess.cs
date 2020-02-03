@@ -34,7 +34,9 @@ namespace Sparkt.DataAccess
                 inputparam.Add("CompanyName", guestEntity.CompanyName);
                 inputparam.Add("Message", guestEntity.Message);
                 inputparam.Add("ConsultationTypeId", guestEntity.SeekAConsultation);
-                var success = DatabaseHelper.ExecuteStoreProcedure<int>(connectionString, "InsertGuestDetails", inputparam).FirstOrDefault();
+                inputparam.Add("FilePath", guestEntity.filePath);
+                
+                var success = DatabaseHelper.ExecuteStoreProcedure<int>(connectionString, "InsertGuestDetails_test", inputparam).FirstOrDefault();
                 result = Convert.ToBoolean(success);
             }
             catch (Exception ex)

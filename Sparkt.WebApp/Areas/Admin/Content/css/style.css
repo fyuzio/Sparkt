@@ -360,11 +360,12 @@ video#bgvid {
 }
 
 .edit-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     transition: all ease 0.3s;
     display: inline-block;
     margin: 0 auto;
+    padding-right:4px;
 }
 
     .edit-icon:hover {

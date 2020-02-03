@@ -306,8 +306,12 @@
              //vTableContent += "<td>" + (vData[vCounter].QuerryType != null ? vData[vCounter].QuerryType : "NA") + "</td>";
              vTableContent += "<td>" + (vData[vCounter].LeadType != null ? vData[vCounter].LeadType : "NA") + "</td>";
             // vTableContent += "<td><span class='status open'>" + vData[vCounter].LeadStatus + "</span></td>";
-             vTableContent += "<td><a  href='" + link + "' class='edit-icon'><i class='fa fa-eye' aria-hidden='true'></i></a></td>";
-			 vTableContent += "</tr>";
+             vTableContent += "<td><a  href='" + link + "' class='edit-icon'><i class='fa fa-eye' aria-hidden='true'></i></a>";
+             if ((vData[vCounter].filePath)) {
+                  vTableContent += "<a  href='" + (vData[vCounter].filePath) + "' class='edit-icon' download><i class='fa fa-download fa-2x' aria-hidden='true'></i></a></td>";
+             }
+            
+             vTableContent += "</tr>";
          }
 
 		 $('table.table tbody').html(vTableContent);
