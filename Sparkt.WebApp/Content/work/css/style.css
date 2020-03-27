@@ -323,11 +323,10 @@ m .bottom-padding-none {
     background-attachment: fixed
 }
 
-
 .three-img-carousel.sarva-carousel {
     width: 70%;
     border: none;
-    filter: drop-shadow(10px 10px 25px rgba(0,0,0,0.4));
+    filter: drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.4));
     box-shadow: none;
 }
 
@@ -659,7 +658,7 @@ m .bottom-padding-none {
     bottom: 0;
     left: 0;
     height: 100px;
-    background-color: rgba(255,255,255,0.03);
+    background-color: rgba(255, 255, 255, 0.03);
     color: #FFFFFF;
     text-align: center;
     width: 30px;
@@ -679,7 +678,7 @@ m .bottom-padding-none {
 }
 
     .work-with-clients .next:hover, .work-with-clients .prev:hover {
-        background-color: rgba(255,255,255,0.70);
+        background-color: rgba(255, 255, 255, 0.70);
         color: #000;
     }
 
@@ -687,17 +686,14 @@ m .bottom-padding-none {
     width: 3px;
     height: 3px;
 }
-
 /* Track */
 .work-with-clients::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
-
 /* Handle */
 .work-with-clients::-webkit-scrollbar-thumb {
     background: #000;
 }
-
     /* Handle on hover */
     .work-with-clients::-webkit-scrollbar-thumb:hover {
         background: #555;
@@ -818,7 +814,6 @@ m .bottom-padding-none {
         .slick-dots li.slick-active {
             background-color: rgba(255, 255, 255, 1)
         }
-
 
 .dark .slick-dots li {
     margin: 0 1px;
@@ -1977,6 +1972,15 @@ footer {
     background: -ms-linear-gradient(45deg, rgba(146, 199, 80, 1) 0%, rgba(146, 199, 80, 1) 30%, rgba(223, 12, 128, 1) 30%, rgba(223, 12, 128, 1) 100%);
     background: linear-gradient(45deg, rgba(146, 199, 80, 1) 0%, rgba(146, 199, 80, 1) 30%, rgba(223, 12, 128, 1) 30%, rgba(223, 12, 128, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#92c750', endColorstr='#df0c80', GradientType=1);
+}
+
+.bharati-axa-bg {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d73755+0,d73755+25,d73755+25,153877+25,285d9f+25,153877+100 */
+    background: #d73755; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #d73755 0%, #d73755 25%, #d73755 25%, #153877 25%, #285d9f 25%, #153877 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #d73755 0%,#d73755 25%,#d73755 25%,#153877 25%,#285d9f 25%,#153877 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #d73755 0%,#d73755 25%,#d73755 25%,#153877 25%,#285d9f 25%,#153877 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d73755', endColorstr='#153877',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .birla-putty-bg {
@@ -4502,6 +4506,219 @@ img.yaarii-mobile-creative {
     background: #20272e !important;
 }
 
+.img-comp-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%; /*should be the same height as the images*/
+    width: 100%;
+}
+
+.img-comp-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+    .img-comp-img img {
+        display: block;
+        vertical-align: middle;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    background-image: url('../images/drag-icon.png');
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: center center;
+    opacity: 1;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    visibility: hidden;
+    margin-top: 12%
+}
+
+    .img-comp-slider.show-btn {
+        visibility: visible;
+    }
+
+.color-overlay {
+    background-color: red;
+}
+
+.img-comp-slider:after {
+    content: 'Move left to see her real face.';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-size: 19px;
+    font-weight: bold;
+    top: 100%;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    text-align: center;
+    padding: 3px;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.15);
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.hideinfo.img-comp-slider:after {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 40px
+}
+
+.img-comp-overlay.move-anim {
+    -webkit-animation: moveAnim 2.5s ease infinite alternate both;
+    animation: moveAnim 2.5s ease infinite alternate both;
+}
+
+@-webkit-keyframes moveAnim {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes moveAnim {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.creative-assets.ek-bhram-print-bg {
+    background-image: url('../images/ek-bhram-print.png');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 450px;
+    height: 50vw;
+}
+
+.ek-bhram-banner {
+    background-image: url('../images/banners/ek-bhram-banner-for-mobile.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+    .ek-bhram-banner .cta {
+        position: absolute;
+        z-index: 99;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        bottom: 12px;
+        color: #FFFFFF;
+        text-align: center
+    }
+
+        .ek-bhram-banner .cta .btn {
+            height: 42px;
+            line-height: 42px;
+            font-size: 14px;
+            color: #fff;
+            padding: 0 20px;
+            background-color: #ff533d;
+            border: 1px solid #ff533d;
+            display: inline-block;
+            border: 1px solid #fff;
+        }
+
+        .ek-bhram-banner .cta span {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 8px 0 0;
+            font-size: 12px;
+        }
+
+#draggable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 49%;
+    top: 10%;
+    width: 22vw;
+    min-width: 250px;
+    height: 43vw;
+    min-height: 496px;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+    #draggable:before {
+        content: '';
+        position: absolute;
+        left: 3%;
+        top: 2.5%;
+        width: 96%;
+        height: 96%;
+        background: #fa0327;
+        border-radius: 10%;
+    }
+
+    #draggable:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/draggiphone.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 1;
+    }
+
+    #draggable img {
+        width: 100%;
+    }
+
+.no-select {
+    user-select: none;
+}
+
+.desktop-video.desktop_vid_only {
+    left: 23%;
+}
+
 @media screen and (max-width:1920px) {
     .work-navigation .client-works li {
         width: 9vw
@@ -5014,6 +5231,12 @@ img.yaarii-mobile-creative {
         width: 22px;
         font-size: 20px;
     }
+	.desktop-video.desktop_vid_only{
+		left:25%;
+		width:50%;
+	}
+	
+	
 }
 
 @media screen and (max-width:1440px) {
@@ -5679,6 +5902,10 @@ img.yaarii-mobile-creative {
     .sparkt-carousel.square .video-nav .slick-slide a {
         height: 74px;
     }
+
+    .creative-assets.ek-bhram-print-bg {
+        background-position: 80% top;
+    }
 }
 
 @media screen and (max-width:824px) {
@@ -5900,11 +6127,13 @@ img.yaarii-mobile-creative {
     .vyng-slider .swiper-container .swiper-pagination-bullet {
         width: 11px;
     }
+
+    .ek-bhram-banner {
+        height: 80vh;
+    }
 }
 
 @media screen and (max-width:512px) {
-
-
     .sparkt-carousel .mobile-wrapp.square {
         max-width: 340px;
         width: 100%;

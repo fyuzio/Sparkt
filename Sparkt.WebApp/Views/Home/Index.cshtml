@@ -9,7 +9,7 @@
     var pageSection = '@ViewBag.PageSection';
 </script>
 <main>
-    <div class="section home-banner dark-blue " id="home">
+    <div class="section home-banner dark-blue " id="home" style="background-image:url('/Content/media/sparkt-office.jpg')" >
         <div class="background-video">
             <div class="video-overlay"> </div>
             <video preload="metadata" poster="~/Content/media/sparkt-office.jpg" playsinline webkit-playsinline muted loop class="bg-video">
@@ -890,7 +890,7 @@
                         </div>
 
                     </div>
-                    <div class="swiper-pagination swiper-pagination-v"></div>=
+                    <div class="swiper-pagination swiper-pagination-v"></div>
                 </div>
             </div>
 
@@ -913,6 +913,7 @@
                     <h3>THOSE WHO BELIEVE IN US</h3>
                 </div>
                 <ul>
+				
                     <li class="demo-3">
                         <a href="@Url.Action("MahindraMF","work")"><img src="~/Content/images/clients/mahindra-mf-logo.png" alt="mahindra Mutual fund" /></a>
                     </li>
@@ -933,8 +934,8 @@
                     @*<li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>*@
 
                     <li>
-
-                        <a  href="@Url.Action("sarva-campaign","work")"><img src="~/Content/images/clients/sarve.png" alt="Sarva" /></a>
+					
+                        <a href="@Url.Action("sarva-campaign","work")"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
@@ -947,7 +948,7 @@
                     </li>
 
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
+                        <a href="@Url.Action("bharti-axa","work")"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
                     </li>
 
 
@@ -963,38 +964,32 @@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/piramalRealty-logo.png" alt="Piramal Realty" /></a>
                     </li>
-
-                    <li>
-                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
+					<li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/evion-logo.png" alt="Evion" /></a>
                     </li>
-
-                    <li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
-
-
-                    @* <li>
-                            <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
-                        </li>*@
-                    <li>
+					<li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
+					<li>
                         <a href="@Url.Action("Dubsmash","work")"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
                     </li>
-
-                    @*<li>
-                            <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
-                        </li>*@
-
+					<li>
+                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
+                    </li>
+					<li>
+                        <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
+                    </li>
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
                     </li>
-
-
-                    <li>
-                        <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
-                    </li>
                     <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>
-
-                    <li>
-                        <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
+					<li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
                     </li>
+					
+					
+
+                    @*<li>
+                        <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
+                    </li>*@
                     @*<li>
                             <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
                         </li>*@
@@ -1002,6 +997,14 @@
 
                     @*<li>
                             <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
+                        </li>*@
+					@* <li>
+                            <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
+                        </li>*@
+                    
+
+                    @*<li>
+                            <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
                         </li>*@
 
                     <!--<li>
@@ -1011,9 +1014,7 @@
                     <!-- <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a> -->
                     <!-- </li> -->
 
-                    <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
-                    </li>
+                    
 
                     @*<li>
                             <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
@@ -1293,6 +1294,15 @@
                                         </div>
                                     </a>
                                 </li>
+								<li>
+                                    <a href="@Url.Action("Ek-Bhram","work")">
+                                        <img src="~/Content/work/images/thums/ek-bhram-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ek Bhram Sarvagun Sampanna</h4>
+                                            <p>Asli Chehra</p>
+                                        </div>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="@Url.Action("seven-seas-ar","work")">
                                         <img src="~/Content/work/images/thums/seven-seas-ar.jpg" alt="">
@@ -1468,6 +1478,24 @@
                                         <div class="caption">
                                             <h4>The Voice</h4>
                                             <p>A first-of-its-kind online platform for remote auditions</p>
+                                        </div>
+                                    </a>
+                                </li>
+								<li>
+                                    <a href="@Url.Action("sarva-app","work")">
+                                        <img src="~/Content/work/images/thums/sarva-app-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Sarva - Mobile App</h4>
+                                            <p>Take yoga with you on the go.</p>
+                                        </div>
+                                    </a>
+                                </li>
+								<li>
+                                    <a href="@Url.Action("Sarva-Experience","work")">
+                                        <img src="~/Content/work/images/thums/sara-website-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Sarva</h4>
+                                            <p>A fresh look at yoga</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1664,7 +1692,15 @@
                                         </div>
                                     </a>
                                 </li>
-
+								<li>
+                                    <a href="@Url.Action("Bharti-AXA","work")">
+                                        <img src="~/Content/work/images/thums/bharti-axa-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Bharti AXA</h4>
+                                            <p>Corporate Overview</p>
+                                        </div>
+                                    </a>
+                                </li>
 
 
                                 <li>
@@ -2164,7 +2200,7 @@
                                                         </figure>
                                                         <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
                                                     </div>
-                                                    <div class="btn-wrapp"> <a href="https://www.sparkt.in/voice" target="_blank" class="btn">Try This Filter</a> </div>
+                                                    <div class="btn-wrapp"> <a href="https://www.sparkt.in/voice" target="_blank" class="btn">Experience App</a> </div>
                                                 </div>
                                                 <div class="gallery-bg"> <img src="~/Content/images/star-the-voice-kv.png" alt="" class="float-img"> <img src="~/Content/images/star-the-voice.jpg" alt=""> </div>
                                             </li>
@@ -2182,7 +2218,7 @@
                                                         </figure>
                                                         <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
                                                     </div>
-                                                    <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This Filter</a> </div>
+                                                   <!-- <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This</a> </div> -->
                                                 </div>
                                                 <div class="gallery-bg">
                                                     <div class="veo-steps">

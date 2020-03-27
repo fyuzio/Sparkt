@@ -3073,10 +3073,16 @@
     <Content Include="Content\css\mejs-controls.png" />
     <Content Include="Content\css\mejs-controls.svg" />
     <Content Include="Content\css\reset.css" />
+    <Content Include="Content\images\320x480_background.gif" />
+    <Content Include="Content\images\320x480_background2.gif" />
+    <Content Include="Content\images\320x480_background_uturn.gif" />
+    <Content Include="Content\images\480x320_background.jpg" />
+    <Content Include="Content\images\achievements1-bk.jpg" />
     <Content Include="Content\images\achievements1.jpg" />
     <Content Include="Content\images\achievements2.jpg" />
     <Content Include="Content\images\achievements3.jpg" />
     <Content Include="Content\images\achievements4.jpg" />
+    <Content Include="Content\images\achievements5-bk.jpg" />
     <Content Include="Content\images\achievements5.jpg" />
     <Content Include="Content\images\achievements7.jpg" />
     <Content Include="Content\images\ar-bg.jpg" />
@@ -3114,9 +3120,17 @@
     <Content Include="Content\images\backup\squad\vrushabh.png" />
     <Content Include="Content\images\backup\squad\waqt-shaikh.png" />
     <Content Include="Content\images\backup\squad\warren-pinto.png" />
+    <Content Include="Content\images\banner_320x50_Background.gif" />
     <Content Include="Content\images\clients\divayoga.png" />
+    <Content Include="Content\images\clients\eurokids-blue.png" />
+    <Content Include="Content\images\clients\evion-logo.png" />
+    <Content Include="Content\images\clients\imprezz.png" />
     <Content Include="Content\images\clients\indiabulls-logo.png" />
+    <Content Include="Content\images\clients\indiabulls.png" />
     <Content Include="Content\images\clients\star-bharat-logo.png" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\cultureImg1-bk.jpg" />
+    <Content Include="Content\images\future-bk.jpg" />
     <Content Include="Content\images\influence.png" />
     <Content Include="Content\images\iphone-bk.png" />
     <Content Include="Content\images\iphone-light.png" />
@@ -3124,10 +3138,14 @@
     <Content Include="Content\images\mmf-veo-voice.jpg" />
     <Content Include="Content\images\pchf.jpg" />
     <Content Include="Content\images\piramal-foundation.jpg" />
+    <Content Include="Content\images\sarva-web-experience-thum.jpg" />
+    <Content Include="Content\images\squad\aditya-chandra.png" />
     <Content Include="Content\images\star-the-voice-kv.png" />
     <Content Include="Content\images\star-the-voice.jpg" />
     <Content Include="Content\images\voice-bg.jpg" />
+    <Content Include="Content\images\work-bk.jpg" />
     <Content Include="Content\images\yaarii-bg.jpg" />
+    <Content Include="Content\js\functions - work.js" />
     <Content Include="Content\media\dd-divya.jpg" />
     <Content Include="Content\media\dd-divya.mp4" />
     <Content Include="Content\media\dd-drishti.jpg" />
@@ -3148,6 +3166,15 @@
     <Content Include="Content\media\the-voice.mp4" />
     <Content Include="Content\media\ucypher.jpg" />
     <Content Include="Content\media\ucypher.mp4" />
+    <Content Include="Content\work\images\._mobile-vector.png" />
+    <Content Include="Content\work\images\._usports-scratch-phone.png" />
+    <Content Include="Content\work\images\awards\cidca-2019-gold.png" />
+    <Content Include="Content\work\images\awards\cidca-2019-silver.png" />
+    <Content Include="Content\work\images\banner-video-trans-dektop.png" />
+    <Content Include="Content\work\images\banners\._mahindra-textmoji.jpg" />
+    <Content Include="Content\work\images\banners\._usports-hamnurger-cover.jpg" />
+    <Content Include="Content\work\images\banners\._usports-scratch.jpg" />
+    <Content Include="Content\work\images\banners\bharti-exa-cover.jpg" />
     <Content Include="Content\work\images\banners\birla-excel-putty-cover.jpg" />
     <Content Include="Content\work\images\banners\birla-wall-putty.jpg" />
     <Content Include="Content\images\business-features.png" />
@@ -3648,6 +3675,9 @@
     <Content Include="Content\work\images\banners\divya-drishti-innovation-cover.jpg" />
     <Content Include="Content\work\images\banners\dubsmash-cover.jpg" />
     <Content Include="Content\work\images\banners\editage-insight-banner.jpg" />
+    <Content Include="Content\work\images\banners\ek-bhram-banner-for-mobile.png" />
+    <Content Include="Content\work\images\banners\ek-bhram-banner-red.png" />
+    <Content Include="Content\work\images\banners\ek-bhram-banner.png" />
     <Content Include="Content\work\images\banners\hsubh-cover.jpg" />
     <Content Include="Content\work\images\banners\ikyawann-cover.jpg" />
     <Content Include="Content\work\images\banners\india-rf-cover.jpg" />
@@ -3688,6 +3718,7 @@
     <Content Include="Content\work\images\banners\sarva-app-cover.jpg" />
     <Content Include="Content\work\images\banners\sarva-brandbook-cover.jpg" />
     <Content Include="Content\work\images\banners\sarva-campaign-cover.jpg" />
+    <Content Include="Content\work\images\banners\sarva-web-experience-cover.jpg" />
     <Content Include="Content\work\images\banners\second-screen-cover.jpg" />
     <Content Include="Content\work\images\banners\seven-seas-ar-cover.jpg" />
     <Content Include="Content\work\images\banners\seven-seas-cover.jpg" />
@@ -3733,6 +3764,7 @@
     <Content Include="Content\work\images\cinema-hspubh.jpg" />
     <Content Include="Content\work\images\cinema-khichdi.jpg" />
     <Content Include="Content\work\images\cinema-kulfi.jpg" />
+    <Content Include="Content\work\images\clients\bharti-axa.png" />
     <Content Include="Content\work\images\clients\birla-white.png" />
     <Content Include="Content\work\images\clients\boutique.png" />
     <Content Include="Content\work\images\clients\brickex.png" />
@@ -3768,6 +3800,8 @@
     <Content Include="Content\work\images\dhoni-boomerang2.gif" />
     <Content Include="Content\work\images\dhoni-boomerang3.gif" />
     <Content Include="Content\work\images\divya-drishti-anim.gif" />
+    <Content Include="Content\work\images\drag-icon.png" />
+    <Content Include="Content\work\images\draggiphone.png" />
     <Content Include="Content\work\images\dubsmash-bg-vector.png" />
     <Content Include="Content\work\images\editage-bg.jpg" />
     <Content Include="Content\work\images\editage-slide-1.png" />
@@ -3782,6 +3816,8 @@
     <Content Include="Content\work\images\editage-video-5.png" />
     <Content Include="Content\work\images\editage-video-6.png" />
     <Content Include="Content\work\images\editage-video-7.png" />
+    <Content Include="Content\work\images\ek-bhram-bg.jpg" />
+    <Content Include="Content\work\images\ek-bhram-print.png" />
     <Content Include="Content\work\images\fb-live-icon.png" />
     <Content Include="Content\work\images\fevicon.png" />
     <Content Include="Content\work\images\future.jpg" />
@@ -3795,11 +3831,13 @@
     <Content Include="Content\work\images\icons\loading.png" />
     <Content Include="Content\work\images\icons\play.png" />
     <Content Include="Content\work\images\icons\quotes.png" />
+    <Content Include="Content\work\images\icons\youtube-live.png" />
     <Content Include="Content\work\images\ikyawan-creative-assets-bg.jpg" />
     <Content Include="Content\work\images\ikyawann-creative-approch.png" />
     <Content Include="Content\work\images\india-rf-desktop.jpg" />
     <Content Include="Content\work\images\india-rf-mobile.jpg" />
     <Content Include="Content\work\images\indiabulls-sky-desktop.jpg" />
+    <Content Include="Content\work\images\indiabulls-sky-mobile.jpg" />
     <Content Include="Content\work\images\insta-data-1.png" />
     <Content Include="Content\work\images\insta-data-2.png" />
     <Content Include="Content\work\images\insta-data-3.png" />
@@ -3896,6 +3934,7 @@
     <Content Include="Content\work\images\phfl-mobile.jpg" />
     <Content Include="Content\work\images\piramal-capital-desktop.jpg" />
     <Content Include="Content\work\images\piramal-capital-mobile.jpg" />
+    <Content Include="Content\work\images\piramal-foundation-desktop.jpg" />
     <Content Include="Content\work\images\piramal-foundation-mobile.jpg" />
     <Content Include="Content\work\images\piramal-foundation.jpg" />
     <Content Include="Content\work\images\pow-creative-assets-bg.jpg" />
@@ -3915,6 +3954,7 @@
     <Content Include="Content\work\images\sarva-post-7.jpg" />
     <Content Include="Content\work\images\sarva-post-8.jpg" />
     <Content Include="Content\work\images\sarva-post-9.jpg" />
+    <Content Include="Content\work\images\sarva-web-experience-thum.jpg" />
     <Content Include="Content\work\images\second-screen-1.jpg" />
     <Content Include="Content\work\images\second-screen-2.jpg" />
     <Content Include="Content\work\images\second-screen-3.jpg" />
@@ -4012,6 +4052,7 @@
     <Content Include="Content\work\images\thevoice-mobile-creative.png" />
     <Content Include="Content\work\images\thums\badhat-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\bhaghi-2-thum.jpg" />
+    <Content Include="Content\work\images\thums\bharti-axa-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-excel-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-wall-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\boutique-thum.jpg" />
@@ -4021,6 +4062,7 @@
     <Content Include="Content\work\images\thums\divya-drishti-innovation-thum.jpg" />
     <Content Include="Content\work\images\thums\dubsmash-thum.jpg" />
     <Content Include="Content\work\images\thums\editage-thum.jpg" />
+    <Content Include="Content\work\images\thums\ek-bhram-thum.jpg" />
     <Content Include="Content\work\images\thums\hspubh-thum.jpg" />
     <Content Include="Content\work\images\thums\hsubh-thum.jpg" />
     <Content Include="Content\work\images\thums\ikyawann-thum.jpg" />
@@ -4056,6 +4098,7 @@
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
     <Content Include="Content\work\images\thums\ruchi-soya-thum.jpg" />
     <Content Include="Content\work\images\thums\sanju-thum.jpg" />
+    <Content Include="Content\work\images\thums\sara-website-thum.jpg" />
     <Content Include="Content\work\images\thums\sarva-app-thum.jpg" />
     <Content Include="Content\work\images\thums\sarva-brandbook-thum.jpg" />
     <Content Include="Content\work\images\thums\sarva-campaign-thum.jpg" />
@@ -4229,6 +4272,7 @@
     <Content Include="Content\work\media\insta-fight.mp4" />
     <Content Include="Content\work\media\piramal-desktop.mp4" />
     <Content Include="Content\work\media\piramal-mobile.mp4" />
+    <Content Include="Content\work\media\sarva-web-experience.mp4" />
     <Content Include="Content\work\media\socailMediavideo1.jpg" />
     <Content Include="Content\work\media\socailMediavideo1.mp4" />
     <Content Include="Content\work\media\socailMediavideo2.jpg" />
@@ -4244,6 +4288,8 @@
     <Content Include="Content\work\media\sparkt-office.jpg" />
     <Content Include="Content\work\media\sparkt-office.mp4" />
     <Content Include="Content\work\media\sparkt-office.webm" />
+    <Content Include="Content\work\media\ted-ar.jpg" />
+    <Content Include="Content\work\media\ted-ar.mp4" />
     <Content Include="Content\work\media\textomoji.mp4" />
     <Content Include="Content\work\media\usports-desktop.mp4" />
     <Content Include="Content\work\media\usports-hamburger.mp4" />
@@ -4510,6 +4556,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\media\.DS_Store" />
+    <Content Include="Content\work\file\sarva-brand.pdf" />
+    <Content Include="Content\work\images\banners\.DS_Store" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -4626,6 +4675,15 @@
     <Content Include="Views\work\SarvaApp.cshtml" />
     <Content Include="Views\work\SarvaBrandbook.cshtml" />
     <Content Include="Views\work\SarvaCampaign.cshtml" />
+    <Content Include="Views\work\BhartiAxa.cshtml" />
+    <Content Include="Views\work\SarvaExperience.cshtml" />
+    <Content Include="Views\work\EkBhram.cshtml" />
+    <Content Include="Views\Home\Index - 26Mar2020.cshtml" />
+    <Content Include="Views\work\bk-Ted2019.cshtml" />
+    <Content Include="Views\work\Kullfi-missed-call.cshtml" />
+    <Content Include="Views\work\TheVoice - Copy.cshtml" />
+    <Content Include="Views\work\TheVoice-bk.cshtml" />
+    <Content Include="Views\work\Yaarii - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -424,5 +424,26 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        #region Added By moin on 26 March 2020
+
+        [Route("Bharti-AXA")]
+        public ActionResult BhartiAxa()
+        {
+            return View();
+        }
+
+        [Route("Sarva-Experience")]
+        public ActionResult SarvaExperience()
+        {
+            return View();
+        }
+
+        [Route("Ek-Bhram")]
+        public ActionResult EkBhram()
+        {
+            return View();
+        }
+        #endregion
     }
 }

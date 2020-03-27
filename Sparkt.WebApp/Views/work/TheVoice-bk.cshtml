@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Sparkt | Star Plus | The Voice";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Star Plus | The Voice";
+    ViewBag.MetaDescription = "A first-of-its-kind online platform for remote auditions.";
+    ViewBag.MetaURL = "https://sparkt.in/work/TheVoice";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/thevoice-thum.jpg";
+}
+@section BodyClass {star-plus}
+<main>
+    <div class="section">
+        <div class="work-banner">
+           <div class="banner-source">
+        <div class="banner-video">
+          <video class="bannerplayer" poster="/Content/work/images/banners/thevoice-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+            <source type="video/youtube" src="https://youtu.be/ZO0zyEN57o0"/>
+          </video>
+        </div>
+        <div class="banner-image" style="background-image: url(/Content/work/images/banners/thevoice-cover.jpg);"> </div>
+      </div>
+            <div class="head-title floated">
+                <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+                <h1>The Voice</h1>
+                <div class="clear"></div>
+                <span>A first-of-its-kind online platform for remote auditions</span>
+            </div>
+        </div>
+
+
+        @Html.Partial("_WorkMenu")
+    </div>
+    <div class="section">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+            <h2>Creative Assets</h2>
+        </div>
+        <div class="creative-assets-wrapp">
+            <div class="assets-carousel fixed " style="background-image: url('/Content/work/images/thevoice-bg.jpg');">
+                <div class="slider">
+
+                    <div>
+                        <div class="creative-assets">
+                            <div class="container">
+                                <div class="assets-title">
+                                    <h3>
+                                        Redefine the norms of auditions for reality shows by enabling the audience with
+                                        an innovative experience.
+                                    </h3>
+                                </div>
+                                <div class="mobile-experience center-mobile">
+                                    <figure>
+                                        <div class="vibrate-img sample-mobile">
+                                            <img src="/Content/work/images/thevoice-mobile-creative.png" alt="" />
+                                            <video id="mobile" poster="" style="max-width: 100%;" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
+                                                <source src="/Content/work/media/the-voice.mp4" type="video/mp4">
+
+                                            </video>
+                                            <script>document.getElementById("mobile").controls = false;</script>
+                                        </div>
+                                        <figcaption>
+
+
+                                            <a class="hvr-sweep-to-right " href="https://www.sparkt.in/voice" target="_blank"> experience application</a>
+                                            <div class="clear"></div><br>
+                                            (Only for mobile phones)
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section white-bg">
+      <!-- <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+         <h2>Results</h2>
+       </div>
+
+       <div class="container">
+         <div class="quotes-wrapp">
+           <div class="quotes">
+             <h3>Coming Soon</h3>
+             <span class="quotes-writer"></span> </div>
+         </div>
+       </div>
+     </div>-->
+</main>

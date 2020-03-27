@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Bharti-AXA";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Bharti-AXA";
+    ViewBag.MetaDescription = "Corporate Overview";
+    ViewBag.MetaURL = "https://sparkt.in/work/Bharti-AXA";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/bharti-axa-thum.jpg";
+}
+
+@section BodyClass {bharti-axa}
+
+    <main>
+        <div class="section">
+            <div class="work-banner">
+                <div class="banner-source">
+                    <div class="banner-video">
+                        <video class="bannerplayer" poster="~/Content/work/images/banners/bharti-exa-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                            <source type="video/youtube" src="https://youtu.be/CTC8rXtrdcc" />
+                        </video>
+                    </div>
+                    <div class="banner-image" style="background-image: url('/Content/work/images/banners/bharti-exa-cover.jpg');"> </div>
+                </div>
+                <div class="head-title floated">
+                    <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+                    <h1>Bharti AXA</h1>
+                    <div class="clear"></div>
+                    <span>Corporate Overview</span>
+                </div>
+            </div>
+            @Html.Partial("_WorkMenu")
+        </div>
+        <div class="section">
+            <div class="head-title floated ">
+                <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+                <h2>Creative Assets</h2>
+            </div>
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel fixed bharati-axa-bg">
+                    <div class="slider">
+                        <div>
+                            <div class="creative-assets ">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>AN INSIGHT INTO ONE OF INDIA’S LARGEST GENERAL INSURANCE COMPANY</h3>
+                                    </div>
+                                    <div class="three-img-carousel-wrapp">
+                                        <div class="single-video-carousel">
+                                            <div>
+                                                <div class="video-item">
+                                                    <video poster="http://img.youtube.com/vi/CTC8rXtrdcc/maxresdefault.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                                                        <source src="https://youtu.be/CTC8rXtrdcc" type="video/youtube" />
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="section white-bg">
+    <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+        <h2>Results</h2>
+      </div>
+
+      <div class="container">
+        <div class="quotes-wrapp">
+          <div class="quotes">
+            <h3>Coming Soon</h3>
+            <span class="quotes-writer"></span> </div>
+        </div>
+      </div>
+    </div>-->
+    </main>
+

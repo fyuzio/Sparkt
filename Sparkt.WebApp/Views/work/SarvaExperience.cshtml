@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Sarva - App";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Sarva - App";
+    ViewBag.MetaDescription = "A fresh look at yoga";
+    ViewBag.MetaURL = "https://sparkt.in/work/Sarva-Experience";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/sara-website-thum.jpg";
+}
+
+@section BodyClass {sarva}
+
+    <main>
+        <div class="section">
+            <div class="work-banner">
+                <div class="banner-source">
+                    <div class="banner-video">
+                        <video class="bannerplayer" poster="~/Content/work/images/banners/sarva-web-experience-cover.jpg" style="max-width: 100%; " preload="none" controls playsinline webkit-playsinline>
+                            <source type="video/youtube" src="https://youtu.be/U00o0uWEveE" />
+                        </video>
+                    </div>
+                    <div class="banner-image" style="background-image: url('/Content/work/images/banners/sarva-web-experience-cover.jpg');"> </div>
+                </div>
+                <div class="head-title floated">
+                    <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+                    <h1>Sarva</h1>
+                    <div class="clear"></div>
+                    <span>A fresh look at yoga</span>
+                </div>
+            </div>
+            @Html.Partial("_WorkMenu")
+        </div>
+        <div class="section">
+            <div class="head-title floated ">
+                <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+                <h2>Creative EXPERIENCE</h2>
+            </div>
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel sarva-bg fixed " style="background-image: url('/Content/work/images/sarva-campaign-bg.png'); background-position: left center">
+                    <div class="slider">
+                        <div>
+                            <div class="creative-assets ">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>Showcasing Intensity, Modernity, Variety and Inclusivity through a device agnostic experience.</h3>
+                                    </div>
+                                    <div class="website-operation">
+                                        <figure class="figure-img"> <img src="~/Content/work/images/banner-video-trans-dektop.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                        <div class="desktop-video desktop_vid_only">
+                                            <video id="desktop" poster="~/Content/work/images/sarva-web-experience-thum.jpg" style="max-width: 100%;" preload="none" controls="False" autoplay muted loop playsinline webkit-playsinline>
+                                                <source src="~/Content/work/media/sarva-web-experience.mp4" type="video/mp4">
+                                            </video>
+                                            <script>document.getElementById( "desktop" ).controls = false;</script>
+                                        </div>
+
+                                        <!--<a href="https://www.pchf.in/" target="_blank" class="view-website" >VIEW WEBSITE</a>-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="section white-bg">
+    <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+        <h2>Results</h2>
+      </div>
+
+      <div class="container">
+        <div class="quotes-wrapp">
+          <div class="quotes">
+            <h3>Coming Soon</h3>
+            <span class="quotes-writer"></span> </div>
+        </div>
+      </div>
+    </div>-->
+    </main>
+

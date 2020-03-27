@@ -1,0 +1,126 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | Ek Bhram Sarvagun Sampanna";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Ek Bhram Sarvagun Sampanna";
+    ViewBag.MetaDescription = "Asli Chehra";
+    ViewBag.MetaURL = "https://sparkt.in/work/Ek-Bhram";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/ek-bhram-thum.jpg";
+}
+
+@section BodyClass {star-plus}
+
+    <main>
+        <div class="section">
+            <div class="work-banner">
+                <div class="banner-source">
+                    <div class="banner-video middle-align" style="background-image: url('/Content/work/images/banners/ek-bhram-banner.png');">
+                        <div class="img-comp-container">
+                            <div class="img-comp-img color-overlay"> <img src="~/Content/work/images/banners/ek-bhram-banner-red.png"> </div>
+                            <div class="img-comp-img img-comp-overlay"> <img src="~/Content/work/images/banners/ek-bhram-banner.png"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-title floated">
+                    <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+                    <h1>Ek Bhram Sarvagun Sampanna</h1>
+                    <div class="clear"></div>
+                    <span>Asli Chehra</span>
+                </div>
+            </div>
+
+            <!--<div class="awards-wrap">
+               <ul >
+            <li class="tooltip" title="CAMPAIGN INDIA: Long Term Strategy - Silver"><img src="images/awards/campaign-india-silver.png" class="responsive-img" alt=""/> </li>
+            <li class="tooltip" title="MADDIES: Best Mobile Website - Gold"><img src="images/awards/maddies-gold.png" class="responsive-img" alt=""/> </li>
+
+            <li class="tooltip" title="ACEF: Mobile - Successful Use of Technology - Silver"><img src="images/awards/acef-silver.png" class="responsive-img" alt=""/> </li>
+            <li class="tooltip" title="ACEF: Mobile - Innovation - Gold"><img src="images/awards/acef-gold.png" class="responsive-img" alt=""/> </li>
+          </ul>
+          </div>-->
+           @Html.Partial("_WorkMenu") 
+        </div>
+        <div class="section ">
+            <div class="head-title floated ">
+                <i class="title-icon"><img src="images/title-icon.png" alt="" /></i>
+                <h2>Creative Assets</h2>
+            </div>
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel " style="background-image: url('/Content/work/images/ek-bhram-bg.jpg');">
+                    <div class="slider">
+
+                        <div>
+                            <div class="creative-assets fixed bottom  ek-bhram-print-bg ">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>DELIVERING A HYPER INVOLVED SAMPLING EXPERIENCE THROUGH A DISRUPTIVE VISUAL DEVICE</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="ek-bhram-banner">
+                                <div id="draggable" class="no-select"></div>
+                                <div class="cta">
+                                    <a href="https://www.facebook.com/fbcameraeffects/testit/2762518847175636/ODEyZjhiZDBkMjUxMjNhNTk3MjVlNGE2ODQ0ZTllYTM=/" target="_blank" class="btn">Experience AR Application</a>
+                                    <span>(Only for mobile)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script>
+        /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+        document.addEventListener("DOMContentLoaded", function () {
+
+            $(".img-comp-overlay").addClass("move-anim");
+
+            setTimeout(function () {
+                $(".img-comp-overlay").removeClass("move-anim");
+                $(".img-comp-slider").addClass("show-btn");
+            }, 7500);
+        });
+
+
+
+        var isMouseDown, initX, initY, height = draggable.offsetHeight, width = draggable.offsetWidth;
+
+        draggable.addEventListener('mousedown', function (e) {
+            isMouseDown = true;
+            document.body.classList.add('no-select');
+            initX = e.offsetX;
+            initY = e.offsetY;
+        })
+
+        document.addEventListener('mousemove', function (e) {
+            if (isMouseDown) {
+                var cx = e.clientX - initX,
+                    cy = e.clientY - initY;
+                if (cx < 0) {
+                    cx = 0;
+                }
+                if (cy < 0) {
+                    cy = 0;
+                }
+                if (window.innerWidth - e.clientX + initX < width) {
+                    cx = window.innerWidth - width;
+                }
+                if (e.clientY > window.innerHeight - height + initY) {
+                    cy = window.innerHeight - height;
+                }
+                draggable.style.left = cx + 'px';
+                draggable.style.top = cy + 'px';
+            }
+        })
+
+        draggable.addEventListener('mouseup', function () {
+            isMouseDown = false;
+            document.body.classList.remove('no-select');
+        })
+</script>
+

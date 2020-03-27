@@ -1,0 +1,2655 @@
+﻿@model Sparkt.WebApp.Models.ContactUsViewModel
+@{
+    /**/
+
+    ViewBag.Title = "Sparkt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    var pageSection = '@ViewBag.PageSection';
+</script>
+<main>
+    <div class="section home-banner dark-blue " id="home">
+        <div class="background-video">
+            <div class="video-overlay"> </div>
+            <video preload="metadata" poster="~/Content/media/sparkt-office.jpg" playsinline webkit-playsinline muted loop class="bg-video">
+                <source src="~/Content/media/sparkt-office.mp4" type="video/mp4">
+                <source src="~/Content/media/sparkt-office.webm" type="video/webm" onerror="fallback(parentNode)">
+            </video>
+            <!--  <div class="swipe">
+              <i class="fa fa-long-arrow-left"></i>
+              <i class="fa fa-hand-o-up"></i>
+              <i class="fa fa-long-arrow-right"></i>
+            </div> -->
+        </div>
+    </div>
+    <div class="section blue-base-bg" id="we">
+        <div class="section-title">
+            <label>We</label>
+            <span></span>
+        </div>
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>We</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>Sparkt is a collaboration of data sciences and emotional intelligence to bridge need gaps with creative and experiential solutions both for brands and consumers.</p>
+                <p>Naturally positioned at the sweet spot of culture, design and technology due to the diverse backgrounds of its co-founding team, Sparkt has aligned to produce not just numbers, but differentiated and world class experiences. </p>
+                <p>With a vision to mount an extraordinary creative workforce for the present and the future, Sparkt is committed to give equal importance both to its clients and to its own culture. </p>
+            </div>
+        </div>
+        <div class="container top-padding-none">
+            <div class="sparkt-table"> <a data-lity href="https://www.youtube.com/embed/BiWDL1zPwg4?rel=0&amp;showinfo=0 "><img src="~/Content/images/table-sparkt-office.png" alt=""></a> <span class="table-shaddow"></span> </div>
+        </div>
+
+
+    </div>
+    <div class="section blue" id="culture">
+        <!--<div class="section-title" >
+        <label>Culture</label>
+        <span></span></div>-->
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Culture</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <ul class="title-navigation">
+                    <li class="cultuer-title-nav"><a href="#culture2" data-id="culture1"><span>Self-governance</span></a></li>
+                    <li class="cultuer-title-nav"><a href="#culture3" data-id="culture2"><span>Truth</span></a></li>
+                    <li class="cultuer-title-nav"><a href="#culture4" data-id="culture3"><span>Value</span></a></li>
+                    <li class="cultuer-title-nav"><a href="#culture5" data-id="culture4"><span>Choices</span></a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="culture-wrapp fadIn-wrapp">
+                <div class="swiper-container culture-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" data-hash="culture1">
+                            <div class="slider-inside">
+                                <div class="text-wrapp">
+                                    <div class="swiper-container culture-inner-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg4.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg5.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg6.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="~/Content/images/cultureImg8.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-v"></div>
+                                    </div>
+
+                                    <p><strong>We believe most of Sparkt's value will come from the culture we are collectively building everyday.</strong></p>
+                                    <p>Our pursuit is the feeling of going back to school. Culture is embedded in our office design itself that transforms from a hot-desking workspace on weekdays to an experimental art space on weekends - with a switch, our workspaces rise up to the ceiling clearing the room for expression, showcase and collaboration.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-hash="culture2">
+                            <div class="slider-inside">
+                                <div class="text-wrapp">
+                                    <h3><span>Self-governance</span> </h3>
+                                    <p>It's clear through our experiences that autonomy leads to building true passion in what we do as individuals. The passionate by instinct, zoom into details and zoom out to see the larger picture, the blue sky, on their own accord. And expertise is born. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-hash="culture3">
+                            <div class="slider-inside">
+                                <div class="text-wrapp">
+                                    <h3><span>Truth</span> </h3>
+                                    <p>When intent, thoughts, words and actions align, truth is established. We like transparency, we identify our doubts and stand by them as much as we do when we are sure. Truth is our formula for freedom, a guiding principle for our actions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-hash="culture4">
+                            <div class="slider-inside">
+                                <div class="text-wrapp">
+                                    <h3><span>Value</span> </h3>
+                                    <p>We value every moment of our time, we value the cost of our thoughts, and the truth in our efforts and that every extra inch in the extra miles we go to find and create value for our partners. We deeply value, value that can't be bought. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-hash="culture5">
+                            <div class="slider-inside">
+                                <div class="text-wrapp">
+                                    <h3><span>Choices</span> </h3>
+                                    <p>All the right choices make the picture perfect but the choices only reveal themselves in their consequences. Growing multifold in our short tenure, we believe that it's amazingly fruitful to go by the gut, rather than the rut.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev swiper-btn"><i class="fas fa-chevron-down"></i></div>
+                    <div class="swiper-button-next"><i class="fas fa-chevron-up"></i></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section blue-base-bg" id="offering">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Offering</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>
+                    Creating value and impact with in-depth products and services
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offering-wrapp fadIn-wrapp">
+                @*<span class="services-lable">Services</span> <span class="core-lable">Core Value</span>*@
+                <div class="offering-container">
+                    <div class="ring-wrapp ring-8 bottom-center-angle  right-angle">
+                        <div class="ring-content">
+                            <div class="ring-space"></div>
+                            <a href="#" class="ring-click technology"><span class="caption">Technology</span></a>
+                            <ul class="offfering-details">
+                                <li>Platform Design & Development</li>
+                                <li>Software Development</li>
+                                <li>Data Engineering</li>
+                                <!--<li>Data & Sensor Design</li>
+                                <li>IOT</li>-->
+                                <li>Capabilities Assessment</li>
+                                <li>Technology Roadmapping</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-7 top-center-angle right-angle">
+                        <div class="ring-content">
+                            <div class="ring-space"></div>
+                            <a href="#" class="ring-click consulting"><span class="caption">Consulting</span></a>
+                            <ul class="offfering-details">
+                                <li>Brand Strategy & Positioning</li>
+                                <li>Brand Identity & Design</li>
+                                <li>Integrated Marketing Strategy</li>
+                                <li>Consumer Experience Strategy</li>
+                                <li>Technology & Digital Transformation</li>
+                                <li>Business Innovation  & Enablement</li>
+                                <li>Future-casting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-6">
+                        <div class="ring-content">
+                            <a href="#" class="ring-click  experiences"><span class="caption">Experiences</span></a>
+                            <div class="ring-space"></div>
+                            <ul class="offfering-details">
+                                <li>Enterprise Developement</li>
+                                <li>Websites & Microsites</li>
+                                <li>Mobile Apps</li>
+                                <li>Experiential Environments (AR/VR/MR)</li>
+                                @*<li>Intranet</li>*@
+                                <li>Conversational & Cognitive Interfaces</li>
+                                <li>Consumer Interaction Design</li>
+
+                                @*<li>Shopper Marketing & Activations</li>*@
+                                @*<li>Business Process Design</li>
+                                    <li>Blueprinting & Story Boarding</li>*@
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-5">
+                        <div class="ring-content">
+                            <a href="#" class="ring-click design"><span class="caption">Influence</span></a>
+                            <div class="ring-space"></div>
+                            <ul class="offfering-details">
+                                <li>Amplification Strategy</li>
+                                <li>Influencer Management</li>
+                                <li>Content Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-4">
+                        <div class="ring-content">
+                            <a href="#" class="ring-click media"><span class="caption">Media</span></a>
+                            <div class="ring-space"></div>
+                            <ul class="offfering-details">
+                                <li>Channel & Media Planning</li>
+                                <li>Measurement & Optimisation</li>
+                                <li>Unified Analytics</li>
+                                <li>Marketing Automation</li>
+                                <li>Customer Life Cycle Management</li>
+                                <li>Loyalty</li>
+                                <li>Search & Local Discovery</li>
+                                <!--<li>Influencer Management</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-3 ">
+                        <div class="ring-content">
+                            <a href="#" class="ring-click content"><span class="caption">Content</span></a>
+                            <div class="ring-space"></div>
+                            <ul class="offfering-details">
+                                <li>Content Strategy</li>
+                                <li>Creative Development</li>
+                                <li>Live Action & Production</li>
+                                @*<li>Photo & Art Production</li>*@
+                                <li>Syndication & Publishing</li>
+                                <li>Branded Content</li>
+                                <li>Long-form Editorial</li>
+                                <li>Motion Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-2">
+                        <div class="ring-content">
+                            <a href="#" class="ring-click communication"><span class="caption">Communication</span></a>
+                            <div class="ring-space"></div>
+                            <ul class="offfering-details">
+                                <li>Campaigns</li>
+                                <li>Creative Strategy</li>
+                                <li>Communication Development</li>
+                                <li>Social & Community Management</li>
+                                <li>Corporate Communication</li>
+                                @*<li>Employee Engagement</li>*@
+                                @*<li>Packaging</li>*@
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ring-wrapp ring-1 right-angle right-middle ">
+                        <div class="ring-content">
+                            <div class="ring-space"></div>
+                            <a href="#" class="ring-click marketing"><span class="caption">Marketing Sciences</span></a>
+                            <ul class="offfering-details">
+                                <li>Data Strategy</li>
+                                <li>Brand & Business analytics</li>
+                                <li>Data Mining & Modeling</li>
+                                <li>Data Visualisation & Insights</li>
+                                <li>Customer Data Management</li>
+                                <li>Market Segmentation</li>
+                                <li>Machine Learning & AI</li>
+                                <li>Experience Evaluation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offering-wrapp-mobile">
+                <div class="offering-blk">
+                    @*<h5>Services</h5>*@
+
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><span class="icons communication"> </span>Communication <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details communication">
+                                    <li>Campaigns</li>
+                                    <li>Creative Strategy</li>
+                                    <li>Social & Community Management</li>
+                                    <li>Communication Development</li>
+                                    <li>Corporate Communication</li>
+                                    <li>Employee Engagement</li>
+                                    @*<li>Packaging</li>*@
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><span class="icons content"> </span>Content <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details content">
+                                    <li>Content Strategy</li>
+                                    <li>Concept Development</li>
+                                    <li>Live Action & Production</li>
+                                    <li>Photo & Art Production</li>
+                                    <li>Syndication & Publishing</li>
+                                    <li>Branded Content</li>
+                                    <li>Long-form Editorial</li>
+                                    <li>Motion Design</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><span class="icons media"></span>Media <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details media">
+                                    <li>Channel & Media Planning</li>
+                                    <li>Measurement & Optimisation</li>
+                                    <li>Unified Analytics</li>
+                                    <li>Marketing Automation</li>
+                                    <li>Customer Life Cycle Management</li>
+                                    <li>Loyalty</li>
+                                    <li>Search & Local Discovery</li>
+                                    <!--<li>Influencer Management</li>-->
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><span class="icons influence "></span>Influence <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details design">
+                                    <li>Amplification Strategy</li>
+                                    <li>Influencer Management</li>
+                                    <li>Content Development</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><span class="icons  experiences"></span> Experiences<i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details experiences">
+                                    <li>Websites & Microsites</li>
+                                    <li>Mobile Apps</li>
+                                    @*<li>Intranet</li>*@
+                                    <li>Conversational & Cognitive Interfaces</li>
+                                    <li>Consumer Interaction Design</li>
+                                    <li>Experiential Environments (AR/VR/MR)</li>
+                                    @*<li>Shopper Marketing & Activations</li>*@
+                                    <li>Business Process Design</li>
+                                    <li>Blueprinting & Story Boarding</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="offering-blk">
+                    @*<h5>Core Value</h5>*@
+
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><span class="icons consulting"> </span>Consulting <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details consulting">
+                                    <li>Brand Strategy & Positioning</li>
+                                    <li>Brand Identity & Design</li>
+                                    <li>Integrated Marketing Strategy</li>
+                                    <li>Consumer Experience Strategy</li>
+                                    <li>Technology & Digital Transformation</li>
+                                    <li>Business Innovation  & Enablement</li>
+                                    <li>Future-casting</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><span class="icons marketing"> </span>Marketing Sciences <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details marketing">
+                                    <li>Data Strategy</li>
+                                    <li>Brand & Business analytics</li>
+                                    <li>Data Mining & Modeling</li>
+                                    <li>Data Visualisation & Insights</li>
+                                    <li>Customer Data Management</li>
+                                    <li>Market Segmentation</li>
+                                    <li>Machine Learning & AI</li>
+                                    <li>Experience Evaluation</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><span class="icons technology"></span>Technology <i class="fas fa-chevron-down"></i></div>
+                            <div class="collapsible-body">
+                                <ul class="offfering-details technology">
+                                    <li>Platform Design & Development</li>
+                                    <li>Software Development</li>
+                                    <li>Data Engineering</li>
+                                    <!--<li>Data & Sensor Design</li>
+                                    <li>IOT</li>-->
+                                    <li>Capabilities Assessment</li>
+                                    <li>Technology Roadmapping</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section blue" id="squad">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Squad</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>The Sparkt crew is a growing community indulging with and obsessing over the formula of speedy evolution.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="squad-wrapp fadIn-wrapp">
+                <div class="tabsAccordion squadTab">
+                    <ul class="resp-tabs-list">
+                        <li>
+                            <span>Team</span>
+                        </li>
+                        @*  <li>
+                                <span>Alumni</span>
+                            </li> *@
+
+                    </ul>
+                    <div class="resp-tabs-container">
+                        <div class="resp-tab-content " id="team">
+                            <ul>
+
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/aditya-chandra.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Managing Director</h5>
+                                            <h4 class="ellipsify"><span>Aditya</span> Chandra</h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/pritesh.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Chief Strategy Officer</h5>
+                                            <h4 class="ellipsify"><span>Pritesh</span> Angane</h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/ramesh-pai.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">VP Technology</h5>
+                                            <h4 class="ellipsify"><span>Ramesh</span> pai</h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/anmol-mahajan.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Creative Director</h5>
+                                            <h4 class="ellipsify"><span>Anmol</span> Mahajan </h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/sunil-nalawade.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Director - Media & Marketing Sciences</h5>
+                                            <h4 class="ellipsify"><span>Sunil</span> Nalawade</h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+
+
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/prathamesh-mirashi.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Creative Director</h5>
+                                            <h4 class="ellipsify"><span>Prathamesh</span> </h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+
+
+                                @*
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img  down-art"> <img src="~/Content/images/squad/guru.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Director Marketing Sciences</h5>
+                                                  <h4 class="ellipsify"><span>Guru</span></h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                    <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/waqt-shaikh.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Associate Creative Director</h5>
+                                                  <h4 class="ellipsify"><span>Waqt</span> Shaikh</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/ritesh.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Art Director</h5>
+                                                  <h4 class="ellipsify"><span>Ritesh</span> Sheth </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/vikas-pawar.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Art Director</h5>
+                                                  <h4 class="ellipsify"><span>VIKAS</span> PAWAR</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/rohit-makwana.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Producer - Content</h5>
+                                                  <h4 class="ellipsify"><span>Rohit</span> Makwana </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/sukumar-.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Sr. Manager Social Analytics</h5>
+                                                  <h4 class="ellipsify"><span>Sukumar</span> </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/shruti-ganu.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Art Director</h5>
+                                                  <h4 class="ellipsify"><span>SHRUTI</span> GANU </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+
+
+
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/vinod-jadhav.png" alt="Vinod Anant Jadhav"> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">UI Developer</h5>
+                                                  <h4 class="ellipsify"><span>Vinod</span> Jadhav </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/sudhakar.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Assist. Manager - Listening & ORM</h5>
+                                                  <h4 class="ellipsify"><span>Sudhakar</span> </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/ramananda.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Lead Software Engineer</h5>
+                                                  <h4 class="ellipsify"><span>Ramananda</span> </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/rahul-lall.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Associate Project Manager</h5>
+                                                  <h4 class="ellipsify"><span>Rahul</span> Lall</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img  down-art"> <img src="~/Content/images/squad/jinit-ghelani-down-art.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Executive Content</h5>
+                                                  <h4 class="ellipsify"><span>Jinit</span> Ghelani</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/prasad-bandkar.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Videographer</h5>
+                                                  <h4 class="ellipsify"><span>Prasad</span> Bandkar</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/ankit-verma.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Copy Supervisor</h5>
+                                                  <h4 class="ellipsify"><span>Ankit</span> Verma</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/shubham.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Content Producer</h5>
+                                                  <h4 class="ellipsify"><span>Shubham</span> </h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+
+
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img down-art "> <img src="~/Content/images/squad/mithul-rao.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">SR. SOFTWARE DEVELOPER</h5>
+                                                  <h4 class="ellipsify"><span>Mithul</span> Rao</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img down-art"> <img src="~/Content/images/squad/nayan.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">ART DIRECTOR</h5>
+                                                  <h4 class="ellipsify"><span>Nayan</span> Sampat</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/rushabh-porwal.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Jr Brand Partner</h5>
+                                                  <h4 class="ellipsify"><span>Rushabh</span></h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img "> <img src="~/Content/images/squad/harsh-udeshi.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">Trainee</h5>
+                                                  <h4 class="ellipsify"><span>Harsh</span> Udeshi</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>
+                                      <li>
+                                          <figure>
+                                              <span class="profile-img down-art"> <img src="~/Content/images/squad/alpesh.png" alt=""> </span>
+                                              <figcaption>
+                                                  <h5 class="ellipsify">ADMIN</h5>
+                                                  <h4 class="ellipsify"><span>Alpesh</span> Mestry</h4>
+                                              </figcaption>
+                                          </figure>
+                                      </li>*@
+                            </ul>
+                        </div>
+                        @* <div class="resp-tab-content" id="alumni">
+                                <ul>
+                                     <li>
+                                        <figure>
+                                            <span class="profile-img"> <img src="~/Content/images/squad/shazeb.png" alt=""> </span>
+                                            <figcaption>
+                                               <!--  <h5 class="ellipsify">Chief Creative Officer </h5> -->
+                                                <h4 class="ellipsify"><span>Shazeb</span> Shaikh</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/sheldon.png" alt=""> </span>
+                                            <figcaption>
+                                                <!-- <h5 class="ellipsify">CEO & Managing Partner</h5> -->
+                                                <h4 class="ellipsify"><span>Sheldon</span> D'Souza</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/kushal.png" alt=""> </span>
+                                            <figcaption>
+                                                <!-- <h5 class="ellipsify">Director Creative Strategy</h5>-->
+                                                <h4 class="ellipsify"><span>Kushal</span> Kaushik</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/pooja-mokashi.png" alt=""> </span>
+                                            <figcaption>
+                                              <!--  <h5 class="ellipsify">Sr. Brand Partner</h5> -->
+                                                <h4 class="ellipsify"><span>Pooja</span> Mokashi</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/warren-pinto.png" alt=""> </span>
+                                            <figcaption>
+                                                 <!--<h5 class="ellipsify">Sr. Brand Partner</h5>-->
+                                                <h4 class="ellipsify"><span>Warren</span> Pinto</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/keegan.png" alt=""> </span>
+                                            <figcaption>
+                                                 <!--<h5 class="ellipsify">Sr. Creative Director</h5>-->
+                                                <h4 class="ellipsify"><span>Keegan</span> Pereira</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                     <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/dhruv-chauhan.png" alt=""> </span>
+                                            <figcaption>
+                                               <!-- <h5 class="ellipsify">Brand Partner</h5> -->
+                                                <h4 class="ellipsify"><span>Dhruv</span> </h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/chintan.png" alt=""> </span>
+                                            <figcaption>
+                                               <!-- <h5 class="ellipsify">Producer - Content</h5> -->
+                                                <h4 class="ellipsify"><span>CHINTAN</span> PAREKH</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/banda.png" alt=""> </span>
+                                            <figcaption>
+                                                 <!--<h5 class="ellipsify">Jr. Copywriter</h5>-->
+                                                <h4 class="ellipsify"><span>Banda</span> Lamba</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                     <li>
+                                        <figure>
+                                            <span class="profile-img  down-art"> <img src="~/Content/images/squad/donald-samy-down-art.png" alt=""> </span>
+                                            <figcaption>
+                                                <!-- <h5 class="ellipsify">BRAND PARTNER </h5>-->
+                                                <h4 class="ellipsify"><span>Donald</span> Samy </h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/sybil-braganza.png" alt=""> </span>
+                                            <figcaption>
+                                               <!--  <h5 class="ellipsify">Jr. Copywriter</h5>-->
+                                                <h4 class="ellipsify"><span>Sybil</span> Braganza </h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                     <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/samia-iqbal.png" alt=""> </span>
+                                            <figcaption>
+                                              <!--  <h5 class="ellipsify">Associate Creative Director</h5>-->
+                                                <h4 class="ellipsify"><span>Samia</span> Iqbal </h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                     <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/alefiya.png" alt=""> </span>
+                                            <figcaption>
+                                             <!--   <h5 class="ellipsify">Jr. Copywriter</h5>-->
+                                                <h4 class="ellipsify"><span>alefiya</span> </h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/ipshita-khan.png" alt=""> </span>
+                                            <figcaption>
+                                              <!--  <h5 class="ellipsify">Brand Partner</h5>-->
+                                                <h4 class="ellipsify"><span>Ipshita</span> Khan</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <span class="profile-img "> <img src="~/Content/images/squad/vrushabh.png" alt=""> </span>
+                                            <figcaption>
+                                                <!-- <h5 class="ellipsify">Finance Executive</h5>-->
+                                                <h4 class="ellipsify"><span>Vrushabh</span> </h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                     <li>
+                                        <figure>
+                                            <span class="profile-img"> <img src="~/Content/images/squad/rahul-ugale.png" alt=""> </span>
+                                            <figcaption>
+                                                <!-- <h5 class="ellipsify">SOFTWARE DEVELOPER</h5>-->
+                                                <h4 class="ellipsify"><span>Rahul</span> Ugale</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>*@
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section blue-base-bg" id="accolades">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Accolades</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>Proud to showcase our awards and accolades that are shaping our present and the future </p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="accolades-wrapp fadIn-wrapp">
+
+                <div class="swiper-container accolades-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="caption"><span>2nd Highest metal tally at CIDCA</span></div>
+                            <img src="~/Content/images/achievements7.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="caption"><span>Agency of the Year at Campaign South Asia</span></div>
+                            <img src="~/Content/images/achievements1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="caption"><span>Capturing the only Grand Prix at Campaign India 2017</span></div>
+                            <img src="~/Content/images/achievements3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="caption"><span>Star Plus wins Brand of the Year in multiple shows</span></div>
+                            <img src="~/Content/images/achievements4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="caption"><span>STARTING OFF THE 2018 AWARD SEASON WITH PRECIOUS METALS!</span></div>
+                            <img src="~/Content/images/achievements5.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section blue" id="clients">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Clients</h2>
+
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>We not only work with the finest brands and products, but we ensure they remain that way. Take a peek!</p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="clients-wrapp fadIn-wrapp">
+                <div class="content-title">
+                    <h3>THOSE WHO BELIEVE IN US</h3>
+                </div>
+                <ul>
+				
+                    <li class="demo-3">
+                        <a href="@Url.Action("MahindraMF","work")"><img src="~/Content/images/clients/mahindra-mf-logo.png" alt="mahindra Mutual fund" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("NayiSoch","work")"><img src="~/Content/images/clients/star-plus-logo.png" alt="Star Plus" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Swp","work")"><img src="~/Content/images/clients/star-logo.png" alt="Star" /></a>
+                    </li>
+                    <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/p-and-g.png" alt="P & G" /></a> </li>
+                    <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/seven-seas.png" alt="Seven Seas" /></a> </li>
+
+                    <li> <a style="cursor:default"><img src="~/Content/images/clients/nasivion.png" alt="nasivion" /></a> </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
+                    </li>
+
+                    @*<li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>*@
+
+                    <li>
+					
+                        <a href="@Url.Action("sarva-campaign","work")"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
+                    </li>
+                    <li><a style="cursor:default"><img src="~/Content/images/clients/eurokids.png" alt="Euro Kids" /></a></li>
+
+
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/star-bharat-logo.png" alt="Star Bharat" /></a>
+                    </li>
+
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <a href="@Url.Action("Pchf","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("piramalfoundation","work")"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/piramalRealty-logo.png" alt="Piramal Realty" /></a>
+                    </li>
+					<li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/evion-logo.png" alt="Evion" /></a>
+                    </li>
+					<li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
+					<li>
+                        <a href="@Url.Action("Dubsmash","work")"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
+                    </li>
+					<li>
+                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
+                    </li>
+					<li>
+                        <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
+                    </li>
+                    <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>
+					<li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
+                    </li>
+					
+					
+
+                    @*<li>
+                        <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
+                    </li>*@
+                    @*<li>
+                            <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
+                        </li>*@
+
+
+                    @*<li>
+                            <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
+                        </li>*@
+					@* <li>
+                            <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
+                        </li>*@
+                    
+
+                    @*<li>
+                            <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
+                        </li>*@
+
+                    <!--<li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
+                    </li>-->
+                    <!-- <li> -->
+                    <!-- <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a> -->
+                    <!-- </li> -->
+
+                    
+
+                    @*<li>
+                            <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
+                        </li>*@
+
+                    @*<li>
+                            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
+                        </li>*@
+
+                    @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-mumba.png" alt="u-mumba" /></a> </li>*@
+                    @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-dream.png" alt="u-dream" /></a> </li>*@
+                    @*<li>
+                            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
+                        </li>*@
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/your-brand-here.png" alt="Your Brand is here" /></a>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section v-top " id="work">
+        <div class="section-title">
+            <label>Work</label>
+            <span></span>
+        </div>
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Work</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>Explore our work executed for a healthy mix of long-standing pan-India brands and the emerging superstars of tomorrow. </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="work-wrapp">
+                <div class="tabsAccordion work-tab">
+                    <ul class="resp-tabs-list sticky-tab-1">
+                        <li>
+                            <span>campaigns</span>
+                        </li>
+                        <li>
+                            <span>Innovations</span>
+                        </li>
+                        <li>
+                            <span>Experiences</span>
+                        </li>
+                        <li>
+                            <span>Content</span>
+                        </li>
+                        <li>
+                            <span>Media & Marketing Sciences</span>
+                        </li>
+                        @*<li>
+                                <span>Media</span>
+                            </li>*@
+                    </ul>
+                    <div class="resp-tabs-container">
+                        <div class="resp-tab-content" id="campaigns">
+                            <ul>
+
+
+                                <li>
+                                    <a href="@Url.Action("MahindraPragatiYojana","work")">
+                                        <img src="~/Content/work/images/thums/mmf-pragati-yojana-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Mahindra Pragati Bluechip Yojana</h4>
+                                            <p>A fresh look at yoga.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="@Url.Action("sarva-campaign","work")">
+                                        <img src="~/Content/work/images/thums/sarva-campaign-thum.jpg" alt="Sarva Campaign" />
+                                        <div class="caption">
+                                            <h4>Sarva</h4>
+                                            <p>Launching a new fund through unconventional content formats.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("seven-seas","work")">
+                                        <img src="~/Content/work/images/thums/seven-seas.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Seven Seas</h4>
+                                            <p>Celebrating the genius potential in every child with #MyLittleGenius</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("mahindra-top-nfo","work")">
+                                        <img src="~/Content/work/images/thums/mmf-top250.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TOP 250 NIVESH YOJANA</h4>
+                                            <p>Issey badhkar kya chahiye?</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("ted2019","work")">
+                                        <img src="~/Content/work/images/thums/ted-talks-nai-baat.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ted Talks India</h4>
+                                            <p>Nayi Baat</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="@Url.Action("kzk","work")">
+                                        <img src="~/Content/work/images/thums/kzk-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Kasautii Zindagii Kay</h4>
+                                            <p>Relaunching the legendary show Kasautii Zindagi Kay in a legendary way.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("kullfimissedcall","work")">
+                                        <img src="~/Content/work/images/thums/kulfi-missed-call-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Kulfi Missed Call</h4>
+                                            <p>Reinforcing Kullfi’s bond with the audience through a Missed Call.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("star-plus-brand-refresh","work")">
+                                        <img src="~/Content/work/images/thums/start-brand-refresh-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Star Plus Brand Refresh</h4>
+                                            <p>DONNING A NEW IDENTITY AND EMBODYING THE PHILOSOPHY IN WAY THAT IS WHOLISTIC.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a href="@Url.Action("UCypher","work")">
+                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>UCYPHER</h4>
+                                            <p>Naya Sport. Naye Superstars.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("yaarii-films","work")">
+                                        <img src="~/Content/work/images/thums/yaarii-film-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>YAARII</h4>
+                                            <p>
+                                                Ab Aasaan Hua Paisa.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Ted","work")">
+                                        <img src="~/Content/work/images/thums/ted-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TED TALKS INDIA</h4>
+                                            <p>Nayi Soch</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("HSPubh","work")">
+                                        <img src="~/Content/work/images/thums/hsubh-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4> Har Shaakh Pe Ullu Baithaa Hai</h4>
+                                            <p>Kya Ullu Banaya!</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Ikyawann","work")">
+                                        <img src="~/Content/work/images/thums/ikyawann-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>IKYAWANN</h4>
+                                            <p>Not a shaadi material</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("MahindraTah","work")">
+                                        <img src="~/Content/work/images/thums/tah-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Kar Bachat Yojana </h4>
+                                            <p>Igniting a national debate on ‘Taxes Acche Hain’ ahead of Budget 2017  </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("NayiSoch","work")">
+                                        <img src="~/Content/work/images/thums/nayosoch-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Nayi Soch </h4>
+                                            <p>Wear your Mother's name with pride. #NayiSoch</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("WomensDay","work")">
+                                        <img src="~/Content/work/images/thums/womens-day-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Women’s Day </h4>
+                                            <p>Igniting a Nayi Soch to break gender stereotypes</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("MadeByMom","work")">
+                                        <img src="~/Content/work/images/thums/mouthers-day-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Made By Mom</h4>
+                                            <p>Igniting a Nayi Soch on Mother’s Day</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("MahindraUnnati","work")">
+                                        <img src="~/Content/work/images/thums/mahindra-unnati-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>UNNATI EMERGING BUSINESS YOJANA</h4>
+                                            <p>Samay se Aagey</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                @*<li>
+                                        <a href="@Url.Action("MahindraNfoLaunches","work")">
+                                            <img src="~/Content/work/images/thums/mmf-info-thum.jpg" alt="">
+                                            <div class="caption">
+                                                <h4>MMF NFO Launches</h4>
+                                                <p>Ek Nayi Soch. Ek Nayi Raah.</p>
+                                            </div>
+                                        </a>
+                                    </li>*@
+                                <li>
+                                    <a href="@Url.Action("MahindraRuralBharat","work")">
+                                        <img src="~/Content/work/images/thums/mahindra-rural-bharat-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Mahindra Rural Bharat Consumption Yojana</h4>
+                                            <p>Bharat ki tarakki main aap ki tarakki.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <div class="resp-tab-content" id="Innovations">
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("ted-ar-innovation","work")">
+                                        <img src="~/Content/work/images/thums/ted-ar.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ted AR Innovation</h4>
+                                            <p>A first-of-its-kind online platform for remote auditions</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("seven-seas-ar","work")">
+                                        <img src="~/Content/work/images/thums/seven-seas-ar.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Seven Seas Ar</h4>
+                                            <p>Using Augmented Reality to felicitate the genius in every child.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("DivyaDrishtiInnovation","work")">
+                                        <img src="~/Content/work/images/thums/divya-drishti-innovation-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Divya Drishti</h4>
+                                            <p>Interactive AR Extension</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("TheVoice","work")">
+                                        <img src="~/Content/work/images/thums/thevoice-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>The Voice</h4>
+                                            <p>A first-of-its-kind online platform for remote auditions</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("KZK-AR","work")">
+                                        <img src="~/Content/work/images/thums/kzk-ar-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Kasautii Zindagii Kay AR</h4>
+                                            <p>Recreating the magic of love through Augmented Reality.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("TedGoogleCards","work")">
+                                        <img src="~/Content/work/images/thums/ted-google-cards-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TED GOOGLE CARDS</h4>
+                                            <p>Nayi Soch</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("TextMoji","work")">
+                                        <img src="~/Content/work/images/thums/textmoji-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>MMF Text Moji</h4>
+                                            <p>Ek Nayi Soch. Ek Nayi Raah.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("HSPUBHMedia","work")">
+                                        <img src="~/Content/work/images/thums/hspubh-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Har Shaakh Pe Ullu Baithaa Hai</h4>
+                                            <p>Kya Ullu Banaya!</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("UCypherInstafight","work")">
+                                        <img src="~/Content/work/images/thums/u-cypher-insta-fight-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>UCYPHER</h4>
+                                            <p>Insta Fight</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("USportsScratch","work")">
+                                        <img src="~/Content/work/images/thums/usports-scratch-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Scratch</h4>
+                                            <p>Scratch to unlock the website</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("USportsHamburger","work")">
+                                        <img src="~/Content/work/images/thums/usports-hamburger-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports Hamburger</h4>
+                                            <p>Bring alive the Hamburger menu!</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("VYNG","work")">
+                                        <img src="~/Content/work/images/thums/vyng-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>VYNG</h4>
+                                            <p>Enable linking characters on Star Plus with real-world relationships in a way never done before.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Total","work")">
+                                        <img src="~/Content/work/images/thums/total-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Total</h4>
+                                            <p>Creating a truly holistic road safety solution to communicate a seamless brand story through product innovation</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("MahindraMMF","work")">
+                                        <img src="~/Content/work/images/thums/mmf-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Mahindra Mutual Fund</h4>
+                                            <p>Conversational interface for enhanced experience</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Pow","work")">
+                                        <img src="~/Content/work/images/thums/pow-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>POW-Bandhi Yuddh Ke </h4>
+                                            <p>A first-of-a-kind banner that created true 'shock' value </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("DancePlus2","work")">
+                                        <img src="~/Content/work/images/thums/danceplus-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>DANCE+2</h4>
+                                            <p>Getting the nation to dance to our tune with video innovations and thumbstopping content</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+
+
+
+
+                            </ul>
+                        </div>
+                        <div class="resp-tab-content" id="Experiences">
+                            <ul>
+
+                                <li>
+                                    <a href="@Url.Action("Yaarii","work")">
+                                        <img src="~/Content/work/images/thums/yaarii-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Yaarii</h4>
+                                            <p>A first of its kind instant personal loan app</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("mmf-app","work")">
+                                        <img src="~/Content/work/images/thums/mmf-app-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Mahindra Mutual Fund</h4>
+                                            <p>On the move</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="@Url.Action("TheVoice","work")">
+                                        <img src="~/Content/work/images/thums/thevoice-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>The Voice</h4>
+                                            <p>A first-of-its-kind online platform for remote auditions</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("Sky","work")">
+                                        <img src="~/Content/work/images/thums/sky-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>India Bulls Sky</h4>
+                                            <p>Way way above the rest</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("star-second-screen","work")">
+                                        <img src="~/Content/work/images/thums/second-screen-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Star Second Screen</h4>
+                                            <p>Extending the content experience beyond traditional broadcast media to the consumer's mobile eco-system</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="@Url.Action("piramalfoundation","work")">
+                                        <img src="~/Content/work/images/thums/piramal-foundation-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Piramal Foundation</h4>
+                                            <p>Showcasing the essence of the foundation.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                @*<li>
+                                        <a href="@Url.Action("yaarii-website","work")">
+                                            <img src="~/Content/work/images/thums/yaarii-website-thum.jpg" alt="">
+                                            <div class="caption">
+                                                <h4>Yaarii Website</h4>
+                                                <p>Reingrovating Yaari’s Brand Experience.</p>
+                                            </div>
+                                        </a>
+                                    </li>*@
+
+
+
+                                <li>
+                                    <a href="@Url.Action("MahindraMFExperience","work")">
+                                        <img src="~/Content/work/images/thums/mmf-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Mahindra Mutual Fund</h4>
+                                            <p>Conversational interface for enhanced experience</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("USports","work")">
+                                        <img src="~/Content/work/images/thums/usports-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>USports</h4>
+                                            <p>A new-age multifaceted sports company</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Phfl","work")">
+                                        <img src="~/Content/work/images/thums/phfl-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Piramal Housing</h4>
+                                            <p>A customer-first approach to home loans</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("PiramalCapital","work")">
+                                        <img src="~/Content/work/images/thums/piramalcapital-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Piramal Capital</h4>
+                                            <p>Values create value</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Swp","work")">
+                                        <img src="~/Content/work/images/thums/swp-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>star writers program </h4>
+                                            <p>Wear your Mother's name with pride. #NayiSoch</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("brickex","work")">
+                                        <img src="~/Content/work/images/thums/brickex-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>BRICKEX</h4>
+                                            <p>India’s leading B2B platform providing real estate and financial services</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("IndiaRF","work")">
+                                        <img src="~/Content/work/images/thums/india-rf-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>INDIA RF</h4>
+                                            <p>One Vision. 2x the Impact.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("bql","work")">
+                                        <img src="~/Content/work/images/thums/boutique-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>boutique living</h4>
+                                            <p>Threads of Expression</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("MGage","work")">
+                                        <img src="~/Content/work/images/thums/mGage-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>mGage</h4>
+                                            <p>Powered by insights. Driven by mobile</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Pedderjohnson","work")">
+                                        <img src="~/Content/work/images/thums/pedderjohnson-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Peddar Jhonson</h4>
+                                            <p>An online store with high-quality products for senior citizens</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Pchf","work")">
+                                        <img src="~/Content/work/images/thums/pchf-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Piramal Capital Housing finance</h4>
+                                            <p>Home Loans For a Rising India.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="resp-tab-content" id="Content">
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("Ted","work")">
+                                        <img src="~/Content/work/images/thums/ted-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TED TALKS INDIA</h4>
+                                            <p>Nayi Soch</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("UCypher","work")">
+                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>UCYPHER</h4>
+                                            <p>Naya Sport. Naye Superstars.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Kullfi","work")">
+                                        <img src="~/Content/work/images/thums/kullfi-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Kullfi</h4>
+                                            <p>She sings about anything!</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("HSPubh","work")">
+                                        <img src="~/Content/work/images/thums/hsubh-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Har Shaakh Pe Ullu Baithaa Hai</h4>
+                                            <p>Kya Ullu Banaya!</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("DivyaDrishtiContent","work")">
+                                        <img src="~/Content/work/images/thums/divya-drishti-content-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Divya Drishti</h4>
+                                            <p>Strengthening character affinity</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+
+                                <li>
+                                    <a href="@Url.Action("birla-excel-putty","work")">
+                                        <img src="~/Content/work/images/thums/birla-excel-putty-thum.jpg" />
+                                        <div class="caption">
+                                            <h4>Birla Excel Putty	</h4>
+                                            <p>Seeing is believing</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("nutrela","work")">
+                                        <img src="~/Content/work/images/thums/ruchi-soya-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>NUTRELA</h4>
+                                            <p>Live Healthy. Live Happy.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("birla-white-repaint-putty","work")">
+                                        <img src="~/Content/work/images/thums/birla-wall-putty-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>
+                                                BIRLA WALL PUTTY
+                                            </h4>
+                                            <p>
+                                                Transforming Homes
+                                                .
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Khichdi","work")">
+                                        <img src="~/Content/work/images/thums/khichadi-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Khichdi</h4>
+                                            <p>Digital exclusive content to introduce iconic characters</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Ikyawann","work")">
+                                        <img src="~/Content/work/images/thums/ikyawann-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>IKYAWANN</h4>
+                                            <p>Not a shaadi material</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EditageInsights","work")">
+                                        <img src="~/Content/work/images/thums/editage-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Editage Insights</h4>
+                                            <p>Packaged the content in an effective manner to alleviate the brand’s perception</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("MadeByMom","work")">
+                                        <img src="~/Content/work/images/thums/mouthers-day-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Made By Mom</h4>
+                                            <p>Igniting a Nayi Soch on Mother’s Day</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("WomensDay","work")">
+                                        <img src="~/Content/work/images/thums/womens-day-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Women’s Day </h4>
+                                            <p>Igniting a Nayi Soch to break gender stereotypes</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("NachBaliye8","work")">
+                                        <img src="~/Content/work/images/thums/nach-baliye-8-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Nach Baliye 8</h4>
+                                            <p>Bringing alive the 'Romance-wala Dance'</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tgilc","work")">
+                                        <img src="~/Content/work/images/thums/tgilc-thums.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TGILC</h4>
+                                            <p>Getting the nation to join in on a laughter riot with thumbstopping content</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("OnePlus","work")">
+                                        <img src="~/Content/work/images/thums/oneplus-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>One Plus </h4>
+                                            <p>The power of 5 in customer care</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("JungleBook","work")">
+                                        <img src="~/Content/work/images/thums/junglebook-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>The Jungle Book </h4>
+                                            <p>Building anticipation for World Television Premiere through a distinctive digital experiential campaign </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Dhoni","work")">
+                                        <img src="~/Content/work/images/thums/ms-dhoni-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>M.S. Dhoni The Untold Story</h4>
+                                            <p>Thumb-stopping digital campaign to build excitement for World Television Premiere </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("DancePlus2","work")">
+                                        <img src="~/Content/work/images/thums/danceplus-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>DANCE+2</h4>
+                                            <p>Getting the nation to dance to our tune with video innovations and thumbstopping content</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("IshqBaaaz","work")">
+                                        <img src="~/Content/work/images/thums/ishqbaaaz-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ishqbaaaz</h4>
+                                            <p>Bringing alive the characters of the three brothers and their special bond with exclusive digital content</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Dubsmash","work")">
+                                        <img src="~/Content/work/images/thums/dubsmash-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Dubsmash</h4>
+                                            <p>A video messaging app for the creation of dubs and memes.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Sanju","work")">
+                                        <img src="~/Content/work/images/thums/sanju-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Sanju</h4>
+                                            <p>Innovative video integrations</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Stree","work")">
+                                        <img src="~/Content/work/images/thums/stree-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Stree</h4>
+                                            <p>Disruptive social media extensions</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Nazar","work")">
+                                        <img src="~/Content/work/images/thums/nazar-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Nazar</h4>
+                                            <p>Building intrigue through content</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="resp-tab-content" id="Marketing-Sciences">
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("UCypherUseOfDataMS","work")">
+                                        <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>U Sports - Leveraging Data Signals</h4>
+                                            <p>Augmenting data signals through a real-time dashboard to produce creative responses across the campaign on multiple platforms</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="resp-tab-content" id="Work-Media"> -->
+                        <!-- <ul> -->
+                        <!-- <li> -->
+                        <!-- <a href="@Url.Action("UCypher","work")"> -->
+                        <!-- <img src="~/Content/work/images/thums/ucypher-thum.jpg" alt=""> -->
+                        <!-- <div class="caption"> -->
+                        <!-- <h4>UCYPHER</h4> -->
+                        <!-- <p>Naya Sport. Naye Superstars.</p> -->
+                        <!-- </div> -->
+                        <!-- </a> -->
+                        <!-- </li> -->
+                        <!-- </ul> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section blue " id="showreel">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Showreel</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>Evolving digital storytelling with engaging forms and formats</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="showreel-wrapp fadIn-wrapp" id="testDiv">
+                <div class="swiper-container showreel-videos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <div class="video-wrapp ">
+                                <div class="videoWrapper">
+
+                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/BiWDL1zPwg4" src="" frameborder="0" allowfullscreen></iframe>*@
+                                    <div id="video1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-wrapp ">
+                                <div class="videoWrapper">
+                                    <div id="video2"></div>
+                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/63RY01oQHyc" src="" frameborder="0" allowfullscreen></iframe>*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-wrapp ">
+                                <div class="videoWrapper">
+                                    <div id="video3"></div>
+                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/63RY01oQHyc" src="" frameborder="0" allowfullscreen></iframe>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination" id="sliderClick"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section fixed-bg " id="AugmentedReality" style="background-image: url('/Content/images/ar-bg.jpg');">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Augmented Reality</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <ul class="title-navigation">
+                    <li class="cultuer-title-nav"><a data-my-element="FacebookAR" class="data-link active"><span>Facebook AR</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="WebAR" class="data-link"><span>Web AR</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="xms-wrapper">
+                <div class="xms-container">
+                    <div class="data-content active" data-my-element="FacebookAR">
+                        <div class="work-wrapp ">
+                            <div class="tabsAccordion work-tab">
+                                <ul class="resp-tabs-list sticky-tab-2 tab-ar-bg">
+                                    <li><span>Facemash</span> </li>
+                                    <li><span>Frame Overlap</span> </li>
+                                    <li><span>Eye Blink</span> </li>
+                                    <li><span>Mouth Open</span> </li>
+                                    <li><span>Hand Tracking</span> </li>
+                                    <!--<li><span>Tap</span> </li>-->
+                                </ul>
+                                <div class="resp-tabs-container fadIn-wrapp">
+                                    <div class="resp-tab-content" id="Facemash">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/seven-seas-ar.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/530080604220822/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/dd-drishti.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/dd-drishti.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/1083907948456294/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/dd-pishyachini.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/dd-pishyachini.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/355008378682367/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/ucypher.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/ucypher.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/525406454982891/OWQwZWYyNzEyNjlhMmZjMmQ1ZGFlZjBhMGFlZDliOTM=/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="FrameOverlap">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/seven-seas-ar.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/530080604220822/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="EyeBlink">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/star-bharat.jpg" playsinline webkit-playsinline loop autoplay muted>
+                                                                <source src="~/Content/media/star-bharat.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/852006108551087/OWJjYzc3OTMxMGE3ODBhZjllOGVjOWJjZmVjM2M5OTE=/" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="MouthOpen">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/jhjk.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/jhjk.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/1460023970828233/ZGNiN2I5NmNiYjc4ZmVhYjQwMGM3NmQxYzQ3YThiNmQ=/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="HandTracking">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/dd-divya.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/dd-divya.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/tryit/292231151454606/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="resp-tab-content" id="Tap">
+                                      <ul class="mobile-video-gallery" >
+                                        <li>
+                                          <div class="mobile-video-block" >
+                                            <div class="mobile-video" >
+                                              <figure class="video-figure" >
+                                                <video preload="metadata" poster="media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted >
+                                                  <source src="media/seven-seas-ar.mp4" type="video/mp4">
+                                                </video>
+                                              </figure>
+                                              <span class="tap-area" ></span> <img src="~/Content/images/iphone.png" alt=""> </div>
+                                            <a href="#" class="btn" >Try This Filter</a> </div>
+                                        </li>
+                                      </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-content" data-my-element="WebAR">
+                        <div class="work-wrapp ">
+                            <div class="tabsAccordion work-tab">
+                                <ul class="resp-tabs-list sticky-tab-3 tab-ar-bg">
+                                    <li><span>Tap</span> </li>
+                                </ul>
+                                <div class="resp-tabs-container fadIn-wrapp">
+                                    <div class="resp-tab-content" id="WebTap">
+                                        <ul class="mobile-video-gallery">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/ted-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/ted-ar.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://ted.madebysparkt.com/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section blue fixed-bg" id="Voice" style="background-image: url('/Content/images/voice-bg.jpg')">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Voice</h2>
+            <div class="clear"></div>
+            <!--<div class="head-title-content">
+              <ul class="title-navigation" >
+                <li class="cultuer-title-nav active" ><a data-my-element="Voice" class="data-link" ><span>Voice</span></a></li>
+              </ul>
+            </div>-->
+        </div>
+        <div class="container">
+            <div class="xms-wrapper full-width">
+                <div class="xms-container">
+                    <div class="data-content active" data-my-element="Voice" style="display: block">
+                        <div class="work-wrapp ">
+                            <div class="tabsAccordion work-tab">
+                                <ul class="resp-tabs-list sticky-tab-4 tab-voice-bg">
+                                    <li><span>Voice Auditions</span> </li>
+                                    <li><span>MMF VEO</span> </li>
+                                </ul>
+                                <div class="resp-tabs-container fadIn-wrapp">
+                                    <div class="resp-tab-content" id="VoiceAuditions">
+                                        <ul class="mobile-video-gallery gallery-with-kv">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/the-voice.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/the-voice.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
+                                                    </div>
+                                                    <div class="btn-wrapp"> <a href="https://www.sparkt.in/voice" target="_blank" class="btn">Try This Filter</a> </div>
+                                                </div>
+                                                <div class="gallery-bg"> <img src="~/Content/images/star-the-voice-kv.png" alt="" class="float-img"> <img src="~/Content/images/star-the-voice.jpg" alt=""> </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resp-tab-content" id="mmfVEO">
+                                        <ul class="mobile-video-gallery gallery-with-kv">
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/mmf-veo.jpg" playsinline webkit-playsinline loop muted>
+                                                                <source src="~/Content/media/mmf-veo.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
+                                                    </div>
+                                                   <!-- <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This</a> </div> -->
+                                                </div>
+                                                <div class="gallery-bg">
+                                                    <div class="veo-steps">
+                                                        <ul>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-1.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-2.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-3.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-4.jpg" alt=""></li>
+                                                            <li><img src="~/Content/work/images/mahindra-veo-5.jpg" alt=""></li>
+                                                        </ul>
+                                                    </div>
+                                                    <img src="~/Content/images/mmf-veo-voice.jpg" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="xms">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>XMS</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <ul class="title-navigation">
+                    <li class="cultuer-title-nav"><a data-my-element="Overview" class="data-link active"><span>Overview</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Features" class="data-link"><span>Features</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="FutureReady" class="data-link"><span>Future Ready</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Architecture" class="data-link"><span>Architecture</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="MarketingDataSciences" class="data-link"><span>Data Fusion</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Deployments" class="data-link"><span>Deployments</span></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="xms-wrapper">
+
+                <div class="xms-container">
+
+                    <div class="data-content active" data-my-element="Overview">
+                        <div class="data-content-insight">
+                            <div class="xms-line">
+                                <h4>Multidimensional platform built around Microsoft Azure, enabling seamless co-existence between your brand and business, imperative in today's consumer-driven digital economy. </h4>
+                            </div>
+
+                            <div class="xms-wheel-wrapp">
+                                <div class="xms-wheel">
+                                    <div class="custom-tabs rotation  " data-rotation="true" data-rotation-radius="100" data-rotation-wrapper-angle="0">
+                                        <div class="custom-tabs-ul-container">
+                                            <div class="center-logo">
+                                                <span><img src="~/Content/images/logo/xms.png" alt=""></span>
+                                                <ul class="center-border">
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <ul class="xmsNav">
+                                                <li id="li1" class="active">
+                                                    <a href="javascript:void(0);" class="clr-y-green">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-content.png" alt=""></span><span class="title">
+                                                            <label>CONTENT</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li2">
+                                                    <a href="javascript:void(0);" class="clr-pink">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-business.png" alt=""></span> <span class="title">
+                                                            <label>BUSINESS</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li3">
+                                                    <a href="javascript:void(0);" class="clr-green">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-video.png" alt=""></span><span class="title">
+                                                            <label>Video</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li4">
+                                                    <a href="javascript:void(0);" class="clr-yellow">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-user.png" alt=""></span><span class="title">
+                                                            <label>CONSUMER</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li5">
+                                                    <a href="javascript:void(0);" class="clr-blue">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-product.png" alt=""></span><span class="title">
+                                                            <label>PRODUCTS</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li6">
+                                                    <a href="javascript:void(0);" class="clr-purple">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-distributor.png" alt=""></span><span class="title">
+                                                            <label>DISTRIBUTORS</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li7">
+                                                    <a href="javascript:void(0);" class="clr-skyblue">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-transaction.png" alt=""></span><span class="title">
+                                                            <label>TRANSACTIONS</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li id="li8">
+                                                    <a href="javascript:void(0);" class="clr-o-yellow">
+                                                        <i class="border"></i><span class="icons"><img src="~/Content/images/icons/xms-leads.png" alt=""></span><span class="title">
+                                                            <label>LEADS</label>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="content clr-y-green active">
+                                           <ul>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-pink">
+                                           <ul>
+                                             <li>Add description to the video</li>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-green">
+                                           <ul>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-yellow">
+                                           <ul>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-blue">
+                                           <ul>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-purple">
+                                           <ul>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-skyblue">
+                                           <ul>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>
+                                         <div class="content clr-o-yellow">
+                                           <ul>
+                                             <li>Add videos from various sources (Youtube, Vimeo)</li>
+                                             <li>Tag videos to group similar videos</li>
+                                             <li>Add description to the video</li>
+                                             <li>Custom filtering</li>
+                                           </ul>
+                                         </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xms-wheel-mobile offering-wrapp-mobile">
+                                <div class="offering-blk">
+
+
+                                    <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-content"> </span>CONTENT</div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-business"> </span>BUSINESS</div>
+
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-video"></span>Video</div>
+
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-user"></span>USER</div>
+
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-product"></span>PRODUCT</div>
+
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-distributor"></span>Distributor</div>
+
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-transaction"></span>Transaction</div>
+
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><span class="icons xms-leads"></span>Leads</div>
+
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="xms-logo-mobile">
+
+                                        <div class="curly-brace">
+                                        </div>
+
+                                        <span><img src="~/Content/images/logo/xms.png" alt=""></span>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="data-content" data-my-element="Features">
+
+                        <div class="xms-line">
+                            <h4>Multidimensional platform built around Microsoft Azure, enabling seamless co-existence between your brand and business, imperative in today's consumer-driven digital economy. </h4>
+                        </div>
+
+                        <div class="data-content-insight">
+                            <div class="tabsAccordion xms-featuers-tab work-tab">
+                                <ul class="resp-tabs-list ">
+                                    <li class="resp-tab-active"><span>Core Features</span> </li>
+                                    <li><span>BFSI</span> </li>
+                                    <li><span>Sports Entertainment</span> </li>
+                                </ul>
+                                <div class="resp-tabs-container ">
+                                    <div class="resp-tab-content resp-tab-content-active" id="coreFeatures">
+                                        <div class="features-content">
+                                            <span class="img xms-circle-img "><img src="~/Content/images/core-features.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="resp-tab-content" id="businessCostomisation">
+                                        <div class="features-content">
+                                            <span class="img xms-circle-img"><img src="~/Content/images/business-features.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="resp-tab-content" id="soprtsEntertainment">
+                                        <div class="features-content">
+                                            <span class="img xms-circle-img"><img src="~/Content/images/sports-entertainment.png" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="data-content" data-my-element="FutureReady">
+                        <div class="data-content-insight">
+
+                            <div class="features-content">
+                                <div class="future-ready xms-circle-img">
+                                    <div class="future-ready-img">
+                                        <img src="~/Content/images/future-ready-2.png" alt="" class="img-2">
+                                        <img src="~/Content/images/future-ready-1.png" alt="" class="img-1">
+                                        <i class="search indicate"></i>
+                                        <i class="social indicate"></i>
+                                        <i class="voice indicate"></i>
+                                    </div>
+                                    <div class="future-ready-tooltip"><label><i class="search indicate"></i> Search</label><span>Optimised for Organic Search With Schema Markup</span></div>
+                                    <div class="future-ready-tooltip right-tl"><label><i class="social indicate"></i> Social</label><span>Optimised for Social Syndication</span></div>
+                                    <div class="future-ready-tooltip bottom-tl"><label><i class="voice indicate"></i> Voice</label><span>Voice Search Friendly</span></div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="data-content" data-my-element="Architecture">
+                        <div class="data-content-insight">
+                            <div class="features-content">
+                                <span class="img"><img src="~/Content/images/architecture.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-content" data-my-element="MarketingDataSciences">
+                        <div class="data-content-insight">
+                            <div class="features-content">
+                                <span class="img"><img src="~/Content/images/marketing-data-sciences.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-content" data-my-element="Deployments">
+                        <div class="data-content-insight">
+                            <div class="xms-clients">
+                                <ul>
+                                    <li><a href="@Url.Action("MahindraMFExperience","work")"><img src="~/Content/images/xms-client-mahindra.png" alt=""><span><img src="~/Content/work/images/clients/mahindra.png" alt=""></span></a></li>
+                                    <li><a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/xms-client-india-rf.png" alt=""><span><img src="~/Content/work/images/clients/india-rf.png" alt=""></span></a></li>
+                                    <li><a href="@Url.Action("USports","work")"><img src="~/Content/images/xms-client-usports.png" alt=""><span><img src="~/Content/work/images/clients/usports.png" alt=""></span></a></li>
+                                    <li><a href="@Url.Action("piramalfoundation","work")"><img src="~/Content/images/piramal-foundation.jpg" alt=""><span><img src="~/Content/work/images/clients/piramal-capital-phfl.png" alt=""></span></a></li>
+                                    <li><a href="@Url.Action("Phfl","work")"><img src="~/Content/images/pchf.jpg" alt=""><span><img src="~/Content/work/images/clients/piramal-housing.png" alt=""></span></a></li>
+                                    <li><a href="@Url.Action("brickex","work")"><img src="~/Content/images/xms-client-brickex.png" alt=""><span><img src="~/Content/work/images/clients/brickex.png" alt=""></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section blue" id="sparktlive">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Sparkt Live</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>An agency?<br> An arthouse?<br> What's going on here? </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="SparkMidd fadIn-wrapp">
+
+                <!-- Place <div> tag where you want the feed to appear -->
+                <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a></div>
+                <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+                <script type="text/javascript">
+                    /* curator-feed */
+                    (function () {
+                        var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1;
+                        i.src = "https://cdn.curator.io/published/6c2b4df9-5910-4e82-8341-97aa2ad11f97.js";
+                        e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
+                    })();
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="section background-image fixed" id="contact" style="background-image:url(../Content/images/contact-bg.jpg);">
+        <div class="head-title floated ">
+            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+            <h2>Get in Touch</h2>
+            <div class="clear"></div>
+            <div class="head-title-content">
+                <p>
+                    <strong>Monday–Friday | 10–6 IST</strong>
+                </p>
+                <address>
+                    <p>408, Satellite Gazebo,<br> Andheri-Ghatkopar Link Road,<br> Chakala, Andheri (East),<br> Mumbai - 400093<br> Phone: +91 22 45417777<br> Email: <a href="mailto:hello@sparkt.in">hello@sparkt.in</a> </p>
+                </address>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contact-wrapp fadIn-wrapp">
+                <ul id="contact-tab" class="tabs">
+                    <li class="tab">
+                        <a class="active" href="#getintouch"><span>Get in Touch</span> <i class="fa fa-handshake"></i></a>
+                    </li>
+                    <li class="tab"><a href="#locateus"><span>Locate Us</span> <i class="fas fa-map-marker"></i></a> </li>
+                </ul>
+                <div class="tabs-content-wrapp">
+                    <div id="getintouch" class="active tabs-content">
+                        <div class="row">
+                            <div class="col s12">
+                                <h5>Sparkt a conversation!</h5>
+                            </div>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12 m6 l4">
+                                        <input id="txtName" type="text" class="validate" maxlength="200">
+                                        <span class="error" id="spnName" style="display:none">Name is required.</span>
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l4">
+                                        <input id="txtCompanyName" type="text" class="validate" maxlength="200">
+                                        <label for="txtCompanyName">Company Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l4">
+                                        <input id="txtEmailID" type="email" class="validate" maxlength="100">
+                                        <span class="error" id="spnEmailID" style="display:none">EmailID is required.</span>
+                                        <label for="txtEmailID">Your Email</label>
+                                    </div>
+                                    <div class="input-field col s12 m6 l4">
+                                        <input id="txtPhoneNumber" type="number" class="validate" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                                        <span class="error" id="spnPhoneNumber" style="display:none">Phone No is required.</span>
+                                        <label for="txtPhoneNumber">Call me on</label>
+                                    </div>
+                                    <div class="input-field col s12 m12 l8">
+                                        <select id="drpConsultationType">
+                                            <option value="" disabled selected>Select a Category</option>
+                                            <option value="1">Join Sparkt</option>
+                                            <option value="6">New Business</option>
+                                            <option value="3">Partner with us</option>
+                                            <option value="4">Media Inquiries</option>
+                                            <option value="5">Everything Else</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <textarea id="txtMessage" class="materialize-textarea" maxlength="500"></textarea>
+                                        <span class="error" id="spnMessage" style="display:none">Message is required.</span>
+                                        <label for="txtMessage">Your message here!</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <div class="g-recaptcha" id="recaptcha1" data-theme="light" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                                    </div>
+                                    <div class="input-field col s12 center ">
+                                        <button class="submit-btn" type="submit" name="action" id="btnSubmit"> </button>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="locateus" class="tabs-content">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8998943137694!2d72.85740831437738!3d19.112047055806144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c836cd4666df%3A0x5cf69124e207f66c!2sSparkt!5e0!3m2!1sen!2sin!4v1488389699550" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
