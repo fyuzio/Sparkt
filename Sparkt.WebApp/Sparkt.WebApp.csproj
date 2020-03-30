@@ -3170,11 +3170,18 @@
     <Content Include="Content\work\images\._usports-scratch-phone.png" />
     <Content Include="Content\work\images\awards\cidca-2019-gold.png" />
     <Content Include="Content\work\images\awards\cidca-2019-silver.png" />
+    <Content Include="Content\work\images\axa-slide-1.jpg" />
+    <Content Include="Content\work\images\axa-slide-2.jpg" />
+    <Content Include="Content\work\images\axa-slide-3.jpg" />
+    <Content Include="Content\work\images\axa-slide-4.jpg" />
+    <Content Include="Content\work\images\axa-slide-5.jpg" />
+    <Content Include="Content\work\images\axa-slide-6.jpg" />
     <Content Include="Content\work\images\banner-video-trans-dektop.png" />
     <Content Include="Content\work\images\banners\._mahindra-textmoji.jpg" />
     <Content Include="Content\work\images\banners\._usports-hamnurger-cover.jpg" />
     <Content Include="Content\work\images\banners\._usports-scratch.jpg" />
     <Content Include="Content\work\images\banners\bharti-exa-cover.jpg" />
+    <Content Include="Content\work\images\banners\bharti-exa-policy-cover.jpg" />
     <Content Include="Content\work\images\banners\birla-excel-putty-cover.jpg" />
     <Content Include="Content\work\images\banners\birla-wall-putty.jpg" />
     <Content Include="Content\images\business-features.png" />
@@ -4052,6 +4059,7 @@
     <Content Include="Content\work\images\thevoice-mobile-creative.png" />
     <Content Include="Content\work\images\thums\badhat-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\bhaghi-2-thum.jpg" />
+    <Content Include="Content\work\images\thums\bharti-axa-policy-thum.jpg" />
     <Content Include="Content\work\images\thums\bharti-axa-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-excel-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-wall-putty-thum.jpg" />
@@ -4684,6 +4692,7 @@
     <Content Include="Views\work\TheVoice - Copy.cshtml" />
     <Content Include="Views\work\TheVoice-bk.cshtml" />
     <Content Include="Views\work\Yaarii - Copy.cshtml" />
+    <Content Include="Views\work\BhartiAxaPolicy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

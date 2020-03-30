@@ -444,6 +444,11 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("BhartiAxaPolicy")]
+        public ActionResult BhartiAxaPolicy()
+        {
+            return View();
+        }
         #endregion
     }
 }
