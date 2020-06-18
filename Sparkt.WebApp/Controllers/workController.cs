@@ -449,6 +449,16 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+        [Route("GandhiFellowship")]
+        public ActionResult GandhiFellowship()
+        {
+            return View();
+        }
+        [Route("ICan")]
+        public ActionResult ICan()
+        {
+            return View();
+        }
         #endregion
     }
 }

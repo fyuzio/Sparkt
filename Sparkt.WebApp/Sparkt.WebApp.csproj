@@ -3127,6 +3127,7 @@
     <Content Include="Content\images\clients\imprezz.png" />
     <Content Include="Content\images\clients\indiabulls-logo.png" />
     <Content Include="Content\images\clients\indiabulls.png" />
+    <Content Include="Content\images\clients\livogen.png" />
     <Content Include="Content\images\clients\star-bharat-logo.png" />
     <Content Include="Content\images\close.png" />
     <Content Include="Content\images\cultureImg1-bk.jpg" />
@@ -3144,6 +3145,9 @@
     <Content Include="Content\images\star-the-voice.jpg" />
     <Content Include="Content\images\voice-bg.jpg" />
     <Content Include="Content\images\work-bk.jpg" />
+    <Content Include="Content\images\xms-client-gandhi_feloowship.jpg" />
+    <Content Include="Content\images\xms-client-ican.jpg" />
+    <Content Include="Content\images\xms-client-mahindra.png" />
     <Content Include="Content\images\yaarii-bg.jpg" />
     <Content Include="Content\js\functions - work.js" />
     <Content Include="Content\media\dd-divya.jpg" />
@@ -3373,7 +3377,6 @@
     <Content Include="Content\images\work.jpg" />
     <Content Include="Content\images\xms-client-brickex.png" />
     <Content Include="Content\images\xms-client-india-rf.png" />
-    <Content Include="Content\images\xms-client-mahindra.png" />
     <Content Include="Content\images\xms-client-phfl.png" />
     <Content Include="Content\images\xms-client-piramal-capital.png" />
     <Content Include="Content\images\xms-client-usports.png" />
@@ -3700,6 +3703,7 @@
     <Content Include="Content\work\images\banners\kzk.jpg" />
     <Content Include="Content\work\images\banners\m-gage-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-badhat-yojana-cover.jpg" />
+    <Content Include="Content\work\images\banners\mahindra-manulife-cover.png" />
     <Content Include="Content\work\images\banners\mahindra-mmf-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-nfo-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-rural-bharat-cover.jpg" />
@@ -3779,6 +3783,7 @@
     <Content Include="Content\work\images\clients\editage.png" />
     <Content Include="Content\work\images\clients\india-rf.png" />
     <Content Include="Content\work\images\clients\indiabulls.png" />
+    <Content Include="Content\work\images\clients\mahindra_bkp.png" />
     <Content Include="Content\work\images\clients\mahindra.png" />
     <Content Include="Content\work\images\clients\mgage.png" />
     <Content Include="Content\work\images\clients\nutrela.png" />
@@ -3797,6 +3802,8 @@
     <Content Include="Content\work\images\clients\starplus.png" />
     <Content Include="Content\work\images\clients\times-network.png" />
     <Content Include="Content\work\images\clients\usports.png" />
+    <Content Include="Content\work\images\clients\xms-client-gandhi_fellowship.jpg" />
+    <Content Include="Content\work\images\clients\xms-client-ican.png" />
     <Content Include="Content\work\images\clients\yaarii.png" />
     <Content Include="Content\work\images\contact.jpg" />
     <Content Include="Content\work\images\dance-plus-2-creative-approch.png" />
@@ -4693,6 +4700,8 @@
     <Content Include="Views\work\TheVoice-bk.cshtml" />
     <Content Include="Views\work\Yaarii - Copy.cshtml" />
     <Content Include="Views\work\BhartiAxaPolicy.cshtml" />
+    <Content Include="Views\work\GandhiFellowship.cshtml" />
+    <Content Include="Views\work\ICan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
