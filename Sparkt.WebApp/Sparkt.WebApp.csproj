@@ -3073,6 +3073,7 @@
     <Content Include="Content\css\mejs-controls.png" />
     <Content Include="Content\css\mejs-controls.svg" />
     <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\reset_bkp.css" />
     <Content Include="Content\images\320x480_background.gif" />
     <Content Include="Content\images\320x480_background2.gif" />
     <Content Include="Content\images\320x480_background_uturn.gif" />
@@ -3162,6 +3163,9 @@
     <Content Include="Content\media\mmf-veo.mp4" />
     <Content Include="Content\media\seven-seas-ar.jpg" />
     <Content Include="Content\media\seven-seas-ar.mp4" />
+    <Content Include="Content\media\sparkt_logo.jpg" />
+    <Content Include="Content\media\sparkt_logo.mp4" />
+    <Content Include="Content\media\sparkt_logo.webm" />
     <Content Include="Content\media\star-bharat.jpg" />
     <Content Include="Content\media\star-bharat.mp4" />
     <Content Include="Content\media\ted-ar.jpg" />

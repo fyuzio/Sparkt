@@ -157,28 +157,52 @@
 <body>
     @if (ViewBag.Page == "Home")
     {
+        <!--  <div class="content--intro">
+              <div class="content__inner">
+                  <div class="intro-blk">
+                      <span class="intro-logo"><img src="~/Content/images/spakt.png" alt="sparkt"></span>
+                      <ul class="intro-nav">
+                          <li><a href="#offering"><span>Consulting</span></a></li>
+                          <li><a href="#offering"><span>Communication</span></a></li>
+                          <li><a href="#offering"><span>Content</span></a></li>
+                          <li><a href="#offering"><span>Media</span></a></li>
+                          <li><a href="#offering"><span>Influence</span></a></li>
+                          <li><a href="#offering"><span>Technology</span></a></li>
+                          <li><a href="#offering"><span>Experiences</span></a></li>
+                          <li><a href="#offering"><span>Marketing Sciences</span></a></li>
+                      </ul>
+                  </div>
+                  @*<a href="javascript:void(0);" class="enter">Explore Sparkt</a>*@
+                  <div class="scrollPage scrollUp">
+                      <div class="mouse"></div>
+                      <p>Explore</p>
+                  </div>
+              </div>
+          </div>-->
         <div class="content--intro">
-            <div class="content__inner">
-                <div class="intro-blk">
-                    <span class="intro-logo"><img src="~/Content/images/spakt.png" alt="sparkt"></span>
-                    <ul class="intro-nav">
-                        <li><a href="#offering"><span>Consulting</span></a></li>
-                        <li><a href="#offering"><span>Communication</span></a></li>
-                        <li><a href="#offering"><span>Content</span></a></li>
-                        <li><a href="#offering"><span>Media</span></a></li>
-                        <li><a href="#offering"><span>Influence</span></a></li>
-                        <li><a href="#offering"><span>Technology</span></a></li>
-                        <li><a href="#offering"><span>Experiences</span></a></li>
-                        <li><a href="#offering"><span>Marketing Sciences</span></a></li>
-                    </ul>
-                </div>
-                @*<a href="javascript:void(0);" class="enter">Explore Sparkt</a>*@
-                <div class="scrollPage scrollUp">
-                    <div class="mouse"></div>
-                    <p>Explore</p>
+            <div class="sparkt_web_intro" id="sparkt_web_intro">
+                <video id="IntroVideo" preload="metadata" poster="~/Content/media/sparkt_logo.jpg" playsinline webkit-playsinline muted>
+                    <source src="~/Content/media/sparkt_logo.mp4" type="video/mp4">
+                    <source src="~/Content/media/sparkt_logo.webm" type="video/webm" onerror="fallback(parentNode)">
+                </video>
+                <div class="intro_content">
+                    <div class="intro_navigation_wrapp">
+                        <ul class="intro_navigation">
+                            <li><a href="#offering"><span>Consulting</span></a></li>
+                            <li><a href="#offering"><span>Communication</span></a></li>
+                            <li><a href="#offering"><span>Content</span></a></li>
+                            <li><a href="#offering"><span>Media</span></a></li>
+                            <li><a href="#offering"><span>Influence</span></a></li>
+                            <li><a href="#offering"><span>Technology</span></a></li>
+                            <li><a href="#offering"><span>Experiences</span></a></li>
+                            <li><a href="#offering"><span>Marketing Sciences</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="icon-scroll"><span>Explore</span></div>
                 </div>
             </div>
         </div>
+
     }
     <header>
         <a href="/" class="sparkt-logo"> <img src="~/Content/images/spaktLogo.png" alt="Sparkt" /> <img src="~/Content/images/spaktLogo-text.png" alt="Sparkt" class="sparkt-text" /> </a>
@@ -209,8 +233,8 @@
                     </ul>
                 </li>
                 <li class="main-nav">
-                   <a class="hashScroll" href="#AugmentedReality"><span title="Experiential Solution">Experiential</span></a>
-                  
+                    <a class="hashScroll" href="#AugmentedReality"><span title="Experiential Solution">Experiential</span></a>
+
                     <ul class="sub-nav">
                         <li><a class="hashScroll" href="#AugmentedReality"><span>AR/MR</span></a></li>
                         <li><a class="hashScroll" href="#Voice"><span>Voice </span></a></li>
@@ -349,14 +373,14 @@
                     <li><a href="https://www.facebook.com/sparktindia" target="_blank" class="hvr-rectangle-out facebook"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://www.twitter.com/sparktindia" target="_blank" class="hvr-rectangle-out twitter"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://www.youtube.com/c/SparktIndia" target="_blank" class="hvr-rectangle-out youtube"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="https://www.instagram.com/sparktofficial/" target="_blank" class="hvr-rectangle-out instagram"><i class="fab fa-instagram"></i></a></li>
-					
-					
-                  <!--  <li><a href="https://plus.google.com/+SparktIn" target="_blank" class="hvr-rectangle-out google"><i class="fab fa-google-plus"></i></a></li> -->
+                    <li><a href="https://www.instagram.com/sparktofficial/" target="_blank" class="hvr-rectangle-out instagram"><i class="fab fa-instagram"></i></a></li>
+
+
+                    <!--  <li><a href="https://plus.google.com/+SparktIn" target="_blank" class="hvr-rectangle-out google"><i class="fab fa-google-plus"></i></a></li> -->
                 </ul>
             </div>
             <div class="revent-logo"><!--<span><img src="images/revent-logo.png" alt="Revent"/></span>--></div>
-            <div class="copyright"><span>Copyright © 2018-19 Sparkt Pvt. Ltd.</span></div>
+            <div class="copyright"><span>Copyright © 2018-20 Sparkt Pvt. Ltd.</span></div>
 
         </div>
 
@@ -395,9 +419,9 @@
     <script type="text/javascript" src="~/Content/js/functions.js"></script>
     @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
     <script src="~/Scripts/User/SparktHelper.js" defer></script>
-	
-	
-	
+
+
+
     <script>
 
 
@@ -411,16 +435,35 @@
             }
         });
 
-        jQuery(window).load(function () {
-            $('.se-pre-con').fadeOut('slow');
+        /*
+                jQuery(window).load(function () {
+                    $('.se-pre-con').fadeOut('slow');
+                });
+
+
+                function callback() {
+                    setTimeout(function () {
+                        $(".content--intro").addClass("open-page");
+                    }, 1000);
+                }
+        */
+
+        var Introvid = document.getElementById("IntroVideo");
+        var Intoelement = document.getElementById("sparkt_web_intro");
+        $(window).on('load', function () {
+            $('.se-pre-con').fadeOut();
+            Intoelement.classList.add("start");
+            Introvid.play();
+
+            setTimeout(function () {
+                Introvid.pause();
+                $(".content--intro").addClass("open-page");
+                $(".bg-video")[0].play();
+            }, 17000);
+
+
         });
 
-
-        function callback() {
-            setTimeout(function () {
-                $(".content--intro").addClass("open-page");
-            }, 1000);
-        }
 
     </script>
     <script>
