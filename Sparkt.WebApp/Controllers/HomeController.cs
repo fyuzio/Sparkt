@@ -166,5 +166,10 @@ namespace Sparkt.WebApp.Controllers
             return Json(new { Status = true });
         }
 
+        [Route("getintouch")]
+        public ActionResult GetInTouch()
+        {
+            return View();
+        }
     }
 }
