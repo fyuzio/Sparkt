@@ -3289,6 +3289,36 @@ h6.middle-title span:after {
     padding: 0 10px;
 }
 
+.thank_you_wrapp {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.thanks-icon {
+    display: inline-block;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 73px;
+    font-size: 40px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    background: rgba(255,26,0,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0, rgba(255,26,0,1)), color-stop(100%, rgba(217,36,135,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    background: linear-gradient(135deg, rgba(255,26,0,1) 0, rgba(217,36,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#d92487', GradientType=1 );
+}
+
 
 @media only screen and (max-width:1920px) {
 body {

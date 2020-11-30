@@ -36,14 +36,14 @@
         }); var f = d.getElementsByTagName(s)[0],
             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WC7VWX5');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-5G89M2V');</script>
     <!-- End Google Tag Manager -->
 </head>
 <body class="show">
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7VWX5"
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G89M2V"
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -145,12 +145,18 @@
                     <div class="input_field">
                         <div class=" col-2 text-center">
                             @*<a href="#" class="btn"> Get in touch </a>*@
-                            <button class="btn" id="btnGetInTouch"> Get in touch </button>
+                            <button class="btn large" id="btnGetInTouch"> Get in touch </button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
+    </div>
+    <div id="ThankYou" style="background:#fff" class="lity-hide">
+        <div class="thank_you_wrapp">
+            <span class="thanks-icon"><i class="far fa-smile"></i></span>
+            <p id="pThankYouMessage">Thank You!</p>
+        </div>
     </div>
     <aside class="fixed_side_text">
         <div class="aside_container">
@@ -1742,6 +1748,8 @@
                     $info.show();
                 }
             });
+
+
             $('#btnGetInTouch').click(function () {
                 if (FormValidation()) {
                     var guestData = {};
@@ -1773,6 +1781,7 @@
                                 //$("#divThankYouModal").modal("open");
                                 //$('#pThankYouMessage').html('Thank you for your Interest. We will get back to you.');
                                 $('[data-lity-close]', window.parent.document).trigger('click');
+                                lity('#ThankYou');
                             }
                         },
                         failure: function (response) {
@@ -1787,6 +1796,7 @@
                 }
                 return false;
             });
+            
 
             function FormValidation() {
                 var returnValue = true;
@@ -1807,17 +1817,30 @@
                     $('#spnEmail').show();
                     returnValue = false;
                 }
+
+                else if (!isValidEmailAddress($('#email').val())) {
+                    $('#spnEmail').html('Invalid Email.');
+                    $('#spnEmail').show();
+                    returnValue = false;
+                }
                 else
                     $('#spnEmail').hide();
-                //else {
-                //    if (!validateEmail($('#email').val())) {
-                //        $('#spnEmail').html('Invalid Email.');
-                //        $('#spnEmail').show();
-                //        returnValue = false;
-                //    }
-                //}
+                
 
                 if ($('#MobileNumber').val().length == 0) {
+                    $('#spnMobileNumber').html('Mobile Number is required.');
+                    $('#spnMobileNumber').show();
+                    returnValue = false;
+                }
+                else if ($('#MobileNumber').val().length !== 10)
+                {
+                    $('#spnMobileNumber').html('Invalid Mobile Number.');
+                    $('#spnMobileNumber').show();
+                    returnValue = false;
+                }
+                else if (!validate_Phone_Number($('#MobileNumber').val()))
+                {                    
+                    $('#spnMobileNumber').html('Invalid Mobile Number.');
                     $('#spnMobileNumber').show();
                     returnValue = false;
                 }
@@ -1828,13 +1851,27 @@
                 //    $('#spnMessage').show();
                 //    returnValue = false;
                 //}
-                
+
                 return returnValue;
             }
-            @*function validateEmail(email) {
-                var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-                return emailReg.test(email);
-            }*@
+
+            function isValidEmailAddress(emailAddress) {
+                var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+                return pattern.test(emailAddress);
+            }
+
+            function validate_Phone_Number(mobileNumber) {
+                //var number = $('field_Id').val();
+                var filter = /^[0-9-+]+$/;
+                return filter.test(mobileNumber);
+                //if (filter.test(number)) {
+                //    return true;
+                //}
+                //else {
+                //    return false;
+                //}
+            }
+
         });
     </script>
     <!--<script type="text/javascript" src="js/jquery.malihu.PageScroll2id.min.js"></script> -->

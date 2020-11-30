@@ -74,19 +74,19 @@ namespace Sparkt.WebApp.Controllers
         [Route("create")]
         [HttpPost]
         public ActionResult Create(GuestEntity guestEntity)
-        {            
+        {
             bool result = _guestManagementController.InsertGuestDetails(guestEntity);
-                if (result)
+            if (result)
             {
                 string emailString = "Name: " + guestEntity.Name + "<br>";
                 emailString = emailString + "Company: " + guestEntity.CompanyName + "<br>";
                 emailString = emailString + "Mobile: " + guestEntity.PhoneNumber + "<br>";
                 emailString = emailString + "Email: " + guestEntity.EmailId + "<br>";
-                emailString = emailString+ "How can we assist you?: "+ GetConsultationType(guestEntity.SeekAConsultation) + "<br>";
-                emailString = emailString + "Message:- " + guestEntity.Message+ "<br>";
+                emailString = emailString + "How can we assist you?: " + GetConsultationType(guestEntity.SeekAConsultation) + "<br>";
+                emailString = emailString + "Message:- " + guestEntity.Message + "<br>";
                 Utility.Utility.SendEmailViaSMTP(guestEntity.EmailId, "Sparkt Contact Us Form", emailString);
             }
-            return Json(new { Status = true, Message = "Saved Successfuly." },  JsonRequestBehavior.AllowGet);
+            return Json(new { Status = true, Message = "Saved Successfuly." }, JsonRequestBehavior.AllowGet);
         }
 
         /// <summary>
