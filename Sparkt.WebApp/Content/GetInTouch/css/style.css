@@ -3319,9 +3319,13 @@ h6.middle-title span:after {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#d92487', GradientType=1 );
 }
 
+.ThankyouSubtitle{
+    font-size:60%;
+    text-transform:none;
+}
 
 @media only screen and (max-width:1920px) {
-body {
+    body {
     font-size: 84%;
 }
 	
