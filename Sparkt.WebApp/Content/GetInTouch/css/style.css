@@ -3290,7 +3290,7 @@ h6.middle-title span:after {
 }
 
 .thank_you_wrapp {
-    max-width: 300px;
+    /*max-width: 300px;*/
     margin: 0 auto;
     text-align: center;
     padding: 50px;
