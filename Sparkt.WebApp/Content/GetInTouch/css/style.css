@@ -3324,6 +3324,11 @@ h6.middle-title span:after {
     text-transform:none;
 }
 
+.lity-inline .lity-container .lity-content > div {
+    max-height: 100%;
+    overflow: auto;
+}
+
 @media only screen and (max-width:1920px) {
     body {
     font-size: 84%;
