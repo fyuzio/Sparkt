@@ -29,6 +29,10 @@ $(document).ready(function () {
         $('#spnPhoneNumber').hide();
     });
 
+    $("#drpConsultationType").change(function () {
+        $('#spnCategory').hide();
+    });
+
     $("#txtEmailID").focus(function () {
         $('#spnEmailID').hide();
     });
@@ -77,6 +81,11 @@ function ContactusFormValidation() {
 
     if ($('#txtPhoneNumber').val().length == 0) {
         $('#spnPhoneNumber').show();
+        returnValue = false;
+    }
+
+    if ($('#drpConsultationType option:selected').val() === "") {
+        $('#spnCategory').show();
         returnValue = false;
     }
     
