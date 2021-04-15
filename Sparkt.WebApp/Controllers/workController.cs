@@ -454,11 +454,41 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
-        [Route("ICan")]
+        [Route("iCanhelp")]
         public ActionResult ICan()
         {
             return View();
         }
         #endregion
+
+        [Route("bharti-axa-cop-app")]
+        public ActionResult BhartiAxaCropApp()
+        {
+            return View();
+        }
+
+        [Route("cameo")]
+        public ActionResult Cameo()
+        { 
+            return View();
+        }
+
+        [Route("ourdaily")]
+        public ActionResult OurDaily()
+        {
+            return View();
+        }
+
+        [Route("triactive")]
+        public ActionResult TriActive()
+        {
+            return View();
+        }
+
+        [Route("indiabulls-blu")]
+        public ActionResult IndiabullsBlu()
+        {
+            return View();
+        }
     }
 }

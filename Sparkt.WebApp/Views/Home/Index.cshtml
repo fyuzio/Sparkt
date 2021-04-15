@@ -9,7 +9,7 @@
     var pageSection = '@ViewBag.PageSection';
 </script>
 <main>
-    <div class="section home-banner dark-blue " id="home" style="background-image:url('/Content/media/sparkt-office.jpg')" >
+    <div class="section home-banner dark-blue " id="home" style="background-image:url('/Content/media/sparkt-office.jpg')">
         <div class="background-video">
             <div class="video-overlay"> </div>
             <video preload="metadata" poster="~/Content/media/sparkt-office.jpg" playsinline webkit-playsinline muted loop class="bg-video">
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="container top-padding-none">
-            <div class="sparkt-table"> <a data-lity href="https://www.youtube.com/embed/BiWDL1zPwg4?rel=0&amp;showinfo=0 "><img src="~/Content/images/table-sparkt-office.png" alt=""></a> <span class="table-shaddow"></span> </div>
+            <div class="sparkt-table"> <a data-lity href="~/Content/media/sparkt-office.mp4"><img src="~/Content/images/table-sparkt-office.png" alt=""></a> <span class="table-shaddow"></span> </div>
         </div>
 
 
@@ -169,7 +169,7 @@
                             <a href="#" class="ring-click technology"><span class="caption">Technology</span></a>
                             <ul class="offfering-details">
                                 <li>Platform Design & Development</li>
-                                <li>Software Development</li>
+                                <li>Enterprise Software Development</li>
                                 <li>Data Engineering</li>
                                 <!--<li>Data & Sensor Design</li>
                                 <li>IOT</li>-->
@@ -198,17 +198,18 @@
                             <a href="#" class="ring-click  experiences"><span class="caption">Experiences</span></a>
                             <div class="ring-space"></div>
                             <ul class="offfering-details">
-                                <li>Enterprise Developement</li>
+                                @*<li>Enterprise Developement</li>*@
                                 <li>Websites & Microsites</li>
                                 <li>Mobile Apps</li>
                                 <li>Experiential Environments (AR/VR/MR)</li>
                                 @*<li>Intranet</li>*@
-                                <li>Conversational & Cognitive Interfaces</li>
+                                <li>Chat bots</li>
                                 <li>Consumer Interaction Design</li>
 
-                                @*<li>Shopper Marketing & Activations</li>*@
+
                                 @*<li>Business Process Design</li>
                                     <li>Blueprinting & Story Boarding</li>*@
+                                <li>Shopper Marketing</li>
                             </ul>
                         </div>
                     </div>
@@ -264,7 +265,7 @@
                                 <li>Creative Strategy</li>
                                 <li>Communication Development</li>
                                 <li>Social & Community Management</li>
-                                <li>Corporate Communication</li>
+                                <!--<li>Corporate Communication</li>-->
                                 @*<li>Employee Engagement</li>*@
                                 @*<li>Packaging</li>*@
                             </ul>
@@ -281,7 +282,7 @@
                                 <li>Data Visualisation & Insights</li>
                                 <li>Customer Data Management</li>
                                 <li>Market Segmentation</li>
-                                <li>Machine Learning & AI</li>
+                                <!--<li>Machine Learning & AI</li>-->
                                 <li>Experience Evaluation</li>
                             </ul>
                         </div>
@@ -301,7 +302,7 @@
                                     <li>Creative Strategy</li>
                                     <li>Social & Community Management</li>
                                     <li>Communication Development</li>
-                                    <li>Corporate Communication</li>
+                                    <!--<li>Corporate Communication</li>-->
                                     <li>Employee Engagement</li>
                                     @*<li>Packaging</li>*@
                                 </ul>
@@ -352,15 +353,18 @@
                             <div class="collapsible-header"><span class="icons  experiences"></span> Experiences<i class="fas fa-chevron-down"></i></div>
                             <div class="collapsible-body">
                                 <ul class="offfering-details experiences">
+                                    @*<li>Enterprise Developement</li>*@
                                     <li>Websites & Microsites</li>
                                     <li>Mobile Apps</li>
-                                    @*<li>Intranet</li>*@
-                                    <li>Conversational & Cognitive Interfaces</li>
-                                    <li>Consumer Interaction Design</li>
                                     <li>Experiential Environments (AR/VR/MR)</li>
-                                    @*<li>Shopper Marketing & Activations</li>*@
-                                    <li>Business Process Design</li>
-                                    <li>Blueprinting & Story Boarding</li>
+                                    @*<li>Intranet</li>*@
+                                    <li>Chat bots</li>
+                                    <li>Consumer Interaction Design</li>
+
+
+                                    @*<li>Business Process Design</li>
+                                        <li>Blueprinting & Story Boarding</li>*@
+                                    <li>Shopper Marketing</li>
                                 </ul>
                             </div>
                         </li>
@@ -396,7 +400,7 @@
                                     <li>Data Visualisation & Insights</li>
                                     <li>Customer Data Management</li>
                                     <li>Market Segmentation</li>
-                                    <li>Machine Learning & AI</li>
+                                    <!--<li>Machine Learning & AI</li>-->
                                     <li>Experience Evaluation</li>
                                 </ul>
                             </div>
@@ -406,7 +410,7 @@
                             <div class="collapsible-body">
                                 <ul class="offfering-details technology">
                                     <li>Platform Design & Development</li>
-                                    <li>Software Development</li>
+                                    <li>Enterprise Software Development</li>
                                     <li>Data Engineering</li>
                                     <!--<li>Data & Sensor Design</li>
                                     <li>IOT</li>-->
@@ -451,8 +455,17 @@
                                     <figure>
                                         <span class="profile-img "> <img src="~/Content/images/squad/aditya-chandra.png" alt=""> </span>
                                         <figcaption>
-                                            <h5 class="ellipsify">Managing Director</h5>
+                                            <h5 class="ellipsify">Managing Director & CEO </h5>
                                             <h4 class="ellipsify"><span>Aditya</span> Chandra</h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <span class="profile-img black_photo"> <img src="~/Content/images/squad/rahul_saigal.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Director</h5>
+                                            <h4 class="ellipsify"><span>Rahul</span> Saigal</h4>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -463,6 +476,15 @@
                                         <figcaption>
                                             <h5 class="ellipsify">Chief Strategy Officer</h5>
                                             <h4 class="ellipsify"><span>Pritesh</span> Angane</h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <span class="profile-img black_photo "> <img src="~/Content/images/squad/vipul.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Chief Creative Officer</h5>
+                                            <h4 class="ellipsify"><span>Vipul</span> Salvi</h4>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -486,22 +508,19 @@
                                 </li>
                                 <li>
                                     <figure>
-                                        <span class="profile-img "> <img src="~/Content/images/squad/sunil-nalawade.png" alt=""> </span>
-                                        <figcaption>
-                                            <h5 class="ellipsify">Director - Media & Marketing Sciences</h5>
-                                            <h4 class="ellipsify"><span>Sunil</span> Nalawade</h4>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-
-
-
-                                <li>
-                                    <figure>
                                         <span class="profile-img "> <img src="~/Content/images/squad/prathamesh-mirashi.png" alt=""> </span>
                                         <figcaption>
                                             <h5 class="ellipsify">Creative Director</h5>
                                             <h4 class="ellipsify"><span>Prathamesh</span> </h4>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <span class="profile-img "> <img src="~/Content/images/squad/sunil-nalawade.png" alt=""> </span>
+                                        <figcaption>
+                                            <h5 class="ellipsify">Director - Media & Marketing Sciences</h5>
+                                            <h4 class="ellipsify"><span>Sunil</span> Nalawade</h4>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -918,35 +937,37 @@
                         <a href="@Url.Action("MahindraMF","work")"><img src="~/Content/images/clients/mahindra-mf-logo.png" alt="mahindra Mutual fund" /></a>
                     </li>
                     <li>
-                        <a href="@Url.Action("NayiSoch","work")"><img src="~/Content/images/clients/star-plus-logo.png" alt="Star Plus" /></a>
+                        <a href="@Url.Action("sarva-campaign","work")"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("Swp","work")"><img src="~/Content/images/clients/star-logo.png" alt="Star" /></a>
                     </li>
                     <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/p-and-g.png" alt="P & G" /></a> </li>
-                    <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/seven-seas.png" alt="Seven Seas" /></a> </li>
-
-                    <li> <a style="cursor:default"><img src="~/Content/images/clients/nasivion.png" alt="nasivion" /></a> </li>
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/evion-logo.png" alt="Evion" /></a>
-                    </li>
-                    <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/livogen.png" alt="Livogen" /></a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Pchf","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
-                    </li>
-                    @*<li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>*@
-                    <li><a style="cursor:default"><img src="~/Content/images/clients/eurokids.png" alt="Euro Kids" /></a></li>
-
-
-                    <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/star-bharat-logo.png" alt="Star Bharat" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/piramal_logo.png" alt="Piramal" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("bharti-axa","work")"><img src="~/Content/images/clients/bharti-axa-logo.png" alt="Bharti AXA" /></a>
                     </li>
-
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("NayiSoch","work")"><img src="~/Content/images/clients/star-plus-logo.png" alt="Star Plus" /></a>
+                    </li>
+                    <li> <a style="cursor:default"><img src="~/Content/images/clients/nasivion.png" alt="nasivion" /></a> </li>
+                    <li> <a style="cursor:default"><img src="~/Content/images/clients/lacto.png" alt="Lacto Calamine" /></a> </li>
+                    <li>
+                        <a href="@Url.Action("Pchf","work")"><img src="~/Content/images/clients/piramal-Capital-housing.png" alt="Piramal Capital Housing" /></a>
+                    </li>
+                    <li><a style="cursor:default"><img src="~/Content/images/clients/eurokids.png" alt="Euro Kids" /></a></li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/star-bharat-logo.png" alt="Star Bharat" /></a>
+                    </li>
+                    <li> <a href="@Url.Action("seven-seas","work")"><img src="~/Content/images/clients/seven-seas.png" alt="Seven Seas" /></a> </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/saridon.png" alt="Saridon" /></a>
+                    </li>
                     <li>
                         <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
                     </li>
@@ -954,76 +975,123 @@
                         <a href="@Url.Action("Dubsmash","work")"><img src="~/Content/images/clients/dubsmash.png" alt="Dubsmash" /></a>
                     </li>
                     <li>
-                        <a href="@Url.Action("sarva-campaign","work")"><img src="~/Content/images/clients/sarve.png" alt="Sarve" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
                     </li>
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/divayoga.png" alt="Divayoga" /></a>
-                    </li>
-
-                    <li>
-                        <a href="@Url.Action("piramalfoundation","work")"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/livogen.png" alt="Livogen" /></a>
                     </li>
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/piramalRealty-logo.png" alt="Piramal Realty" /></a>
+                        <a href="@Url.Action("icanhelp","work")"><img src="~/Content/images/clients/inow.png" alt="i-know" /></a>
                     </li>
-
-                    <li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
-
                     <li>
-                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
+                        <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
                     </li>
                     <li>
                         <a href="@Url.Action("OnePlus","work")"><img src="~/Content/images/clients/one-plus-logo.png" alt="One Plus" /></a>
                     </li>
+                    <li><a style="cursor:default"><img src="~/Content/images/clients/star-pravah.png" alt="Star Pravah" /></a></li>
+
                     <li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/star-utsav.png" alt="Star Utsav" /></a>
+                        <a style="cursor:default"><img src="~/Content/images/clients/evion-logo.png" alt="Evion" /></a>
                     </li>
-                    <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/ploycrol.png" alt="Polycrol" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/piramalRealty-logo.png" alt="Piramal Realty" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("piramalfoundation","work")"><img src="~/Content/images/clients/piramal-foundation.png" alt="Piramal Foundation" /></a>
+                    </li>
+                    <li><a style="cursor:default"><img src="~/Content/images/clients/pro-kabaddi.png" alt="Pro Kabaddi" /></a></li>
+
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/polybion-logo.png" alt="jungle Magic" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/littles.png" alt="Littles" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("USports","work")"><img src="~/Content/images/clients/uSports-logo.png" alt="U Sports" /></a>
+                    </li>
+
+                    <li>
+                        <a href="@Url.Action("ourdaily","work")"><img src="~/Content/images/clients/ourdaily-logo.png" alt="Our Daily" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("triactive","work")"><img src="~/Content/images/clients/tri_active.png" alt="Tri Active" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/neurobion.png" alt="Neurobion" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/jungle.png" alt="jungle Magic" /></a>
+                    </li>
+
+                    <li>
+                        <a href="@Url.Action("nutrela","work")"><img src="~/Content/images/clients/ruchi-soya.png" alt="Ruchi Soya" /></a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("birla-white-repaint-putty","work")"><img src="~/Content/images/clients/birla-white.png" alt="Birla White" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/i-feel.png" alt="i-feel" /></a>
+                    </li>
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/i-active.png" alt="i-active" /></a>
+                    </li>
+
+                    <li>
+                        <a style="cursor:default"><img src="~/Content/images/clients/philips.png" alt="philips" /></a>
+                    </li>
+
+
+                    @*<li><a href="@Url.Action("Yaarii","work")"><img src="~/Content/images/clients/yaarii.png" alt="yaarii" /></a></li>
+                        <li>
+                            <a href="@Url.Action("sky","work")"><img src="~/Content/images/clients/indiabulls-logo.png" alt="Indiabulls Real Estate" /></a>
+                        </li>
+                        <li> <a style="cursor:default"><img src="~/Content/images/clients/evolis.png" alt="Evolis" /></a> </li>*@
                     @*<li>
-                        <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
-                    </li>*@
+                            <a style="cursor:default"><img src="~/Content/images/clients/fanatic-sports.png" alt="Fanatic Sports" /></a>
+                        </li>*@
 
 
 
                     @*<li>
-            <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
-        </li>*@
+                            <a href="@Url.Action("Pedderjohnson","work")"><img src="~/Content/images/clients/pedder.png" alt="Pedder" /></a>
+                        </li>*@
                     @*<li>
-            <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
-        </li>*@
+                            <a href="@Url.Action("brickex","work")"><img src="~/Content/images/clients/brickex-logo.png" alt="Brickex" /></a>
+                        </li>*@
 
 
                     @*<li>
-            <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
-        </li>*@
+                            <a style="cursor:default"><img src="~/Content/images/clients/dabang-logo.png" alt="Dabang" /></a>
+                        </li>*@
                     @* <li>
-            <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
-        </li>*@
+                            <a href="@Url.Action("EditageInsights","work")"><img src="~/Content/images/clients/editage.png" alt="editage" /></a>
+                        </li>*@
 
 
                     @*<li>
-            <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
-        </li>*@
+                            <a href="@Url.Action("UCypher","work")"><img src="~/Content/images/clients/uCypher-logo.png" alt="U Cypher" /></a>
+                        </li>*@
 
                     <!--<li>
-        <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
-    </li>-->
+                        <a style="cursor:default"><img src="~/Content/images/clients/imprezz.png" alt="Imprezz" /></a>
+                    </li>-->
                     <!-- <li> -->
                     <!-- <a style="cursor:default"><img src="~/Content/images/clients/lkp-logo.png" alt="LKP" /></a> -->
                     <!-- </li> -->
                     @*<li>
-            <a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/clients/rf-india-logo.png" alt="RF India" /></a>
-        </li>*@
-
-                    @*<li>
-            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
-        </li>*@
+                            <a href="@Url.Action("Phfl","work")"><img src="~/Content/images/clients/phfl-logo.png" alt="Piramal Housing Finance" /></a>
+                        </li>*@
 
                     @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-mumba.png" alt="u-mumba" /></a> </li>*@
                     @*<li> <a tyle="cursor:default"><img src="~/Content/images/clients/u-dream.png" alt="u-dream" /></a> </li>*@
                     @*<li>
-            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
-        </li>*@
+                            <a href="@Url.Action("bql","work")"><img src="~/Content/images/clients/indo-count-logo.png" alt="Boutique Living" /></a>
+                        </li>*@
                     <li>
                         <a style="cursor:default"><img src="~/Content/images/clients/your-brand-here.png" alt="Your Brand is here" /></a>
                     </li>
@@ -1065,7 +1133,10 @@
                             <span>Content</span>
                         </li>
                         <li>
-                            <span>Media & Marketing Sciences</span>
+                            <span>Marketing Sciences</span>
+                        </li>
+                        <li>
+                            <span>Shopper Marketing</span>
                         </li>
                         @*<li>
                                 <span>Media</span>
@@ -1289,7 +1360,7 @@
                                         </div>
                                     </a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="@Url.Action("Ek-Bhram","work")">
                                         <img src="~/Content/work/images/thums/ek-bhram-thum.jpg" alt="">
                                         <div class="caption">
@@ -1409,7 +1480,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("MahindraMMF","work")">
+                                    <a href="@Url.Action("MahindraMF","work")">
                                         <img src="~/Content/work/images/thums/mmf-thum.jpg" alt="">
                                         <div class="caption">
                                             <h4>Mahindra Mutual Fund</h4>
@@ -1476,7 +1547,7 @@
                                         </div>
                                     </a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="@Url.Action("sarva-app","work")">
                                         <img src="~/Content/work/images/thums/sarva-app-thum.jpg" alt="">
                                         <div class="caption">
@@ -1485,7 +1556,7 @@
                                         </div>
                                     </a>
                                 </li>
-								<li>
+                                <li>
                                     <a href="@Url.Action("Sarva-Experience","work")">
                                         <img src="~/Content/work/images/thums/sara-website-thum.jpg" alt="">
                                         <div class="caption">
@@ -1526,14 +1597,14 @@
                                     </a>
                                 </li>
                                 @*<li>
-                                        <a href="@Url.Action("yaarii-website","work")">
-                                            <img src="~/Content/work/images/thums/yaarii-website-thum.jpg" alt="">
-                                            <div class="caption">
-                                                <h4>Yaarii Website</h4>
-                                                <p>Reingrovating Yaari’s Brand Experience.</p>
-                                            </div>
-                                        </a>
-                                    </li>*@
+            <a href="@Url.Action("yaarii-website","work")">
+                <img src="~/Content/work/images/thums/yaarii-website-thum.jpg" alt="">
+                <div class="caption">
+                    <h4>Yaarii Website</h4>
+                    <p>Reingrovating Yaari’s Brand Experience.</p>
+                </div>
+            </a>
+        </li>*@
 
 
 
@@ -1555,12 +1626,77 @@
                                         </div>
                                     </a>
                                 </li>
+                                @*<li>
+            <a href="@Url.Action("Phfl","work")">
+                <img src="~/Content/work/images/thums/phfl-thum.jpg" alt="">
+                <div class="caption">
+                    <h4>Piramal Housing</h4>
+                    <p>A customer-first approach to home loans</p>
+                </div>
+            </a>
+        </li>*@
                                 <li>
-                                    <a href="@Url.Action("Phfl","work")">
-                                        <img src="~/Content/work/images/thums/phfl-thum.jpg" alt="">
+                                    <a href="@Url.Action("Pchf","work")">
+                                        <img src="~/Content/work/images/thums/pchf-thum.jpg" alt="">
                                         <div class="caption">
-                                            <h4>Piramal Housing</h4>
-                                            <p>A customer-first approach to home loans</p>
+                                            <h4>Piramal Capital Housing finance</h4>
+                                            <p>Home Loans For a Rising India.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("GandhiFellowship","work")">
+                                        <img src="~/Content/work/images/thums/gandhi-fellowship-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Gandhi Fellowship</h4>
+                                            <p>Unfold Impact</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("iCanHelp","work")">
+                                        <img src="~/Content/work/images/thums/ican-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>iCanhelp</h4>
+                                            <p>Intimate Confidant</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("triactive","work")">
+                                        <img src="~/Content/work/images/thums/triactive-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>TriActive</h4>
+                                            <p>Be TriActiv Safe</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("ourdaily","work")">
+                                        <img src="~/Content/work/images/thums/ourdaily-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Ourdaily</h4>
+                                            <p>Fit.Sharp.Active</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("cameo","work")">
+                                        <img src="~/Content/work/images/thums/cameo-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Cameo</h4>
+                                            <p>Alternate Entertainment </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("indiabulls-blu","work")">
+                                        <img src="~/Content/work/images/thums/indiabulls-blu-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Indiabulls BLU</h4>
+                                            <p>Higher Still  </p>
                                         </div>
                                     </a>
                                 </li>
@@ -1628,15 +1764,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="@Url.Action("Pchf","work")">
-                                        <img src="~/Content/work/images/thums/pchf-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>Piramal Capital Housing finance</h4>
-                                            <p>Home Loans For a Rising India.</p>
-                                        </div>
-                                    </a>
-                                </li>
+
 
                             </ul>
                         </div>
@@ -1698,40 +1826,9 @@
                                 </li>
 
 
-                                <li>
-                                    <a href="@Url.Action("birla-excel-putty","work")">
-                                        <img src="~/Content/work/images/thums/birla-excel-putty-thum.jpg" />
-                                        <div class="caption">
-                                            <h4>Birla Excel Putty	</h4>
-                                            <p>Seeing is believing</p>
-                                        </div>
-                                    </a>
-                                </li>
 
-                                <li>
-                                    <a href="@Url.Action("nutrela","work")">
-                                        <img src="~/Content/work/images/thums/ruchi-soya-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>NUTRELA</h4>
-                                            <p>Live Healthy. Live Happy.</p>
-                                        </div>
-                                    </a>
-                                </li>
 
-                                <li>
-                                    <a href="@Url.Action("birla-white-repaint-putty","work")">
-                                        <img src="~/Content/work/images/thums/birla-wall-putty-thum.jpg" alt="">
-                                        <div class="caption">
-                                            <h4>
-                                                BIRLA WALL PUTTY
-                                            </h4>
-                                            <p>
-                                                Transforming Homes
-                                                .
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
+
                                 <li>
                                     <a href="@Url.Action("Khichdi","work")">
                                         <img src="~/Content/work/images/thums/khichadi-thum.jpg" alt="">
@@ -1885,6 +1982,15 @@
                                         </div>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="@Url.Action("bharti-axa-cop-app","work")">
+                                        <img src="~/Content/work/images/thums/bharti-axa-cop-app-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>Bharti AXA COP App</h4>
+                                            <p>Crop Insurance Reimagined</p>
+                                        </div>
+                                    </a>
+                                </li>
 
                             </ul>
                         </div>
@@ -1896,6 +2002,43 @@
                                         <div class="caption">
                                             <h4>U Sports - Leveraging Data Signals</h4>
                                             <p>Augmenting data signals through a real-time dashboard to produce creative responses across the campaign on multiple platforms</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="resp-tab-content" id="Shopper-Marketing">
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("nutrela","work")">
+                                        <img src="~/Content/work/images/thums/ruchi-soya-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>NUTRELA</h4>
+                                            <p>Live Healthy. Live Happy.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("birla-white-repaint-putty","work")">
+                                        <img src="~/Content/work/images/thums/birla-wall-putty-thum.jpg" alt="">
+                                        <div class="caption">
+                                            <h4>
+                                                BIRLA WALL PUTTY
+                                            </h4>
+                                            <p>
+                                                Transforming Homes
+                                                .
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("birla-excel-putty","work")">
+                                        <img src="~/Content/work/images/thums/birla-excel-putty-thum.jpg" />
+                                        <div class="caption">
+                                            <h4>Birla Excel Putty	</h4>
+                                            <p>Seeing is believing</p>
                                         </div>
                                     </a>
                                 </li>
@@ -1937,7 +2080,7 @@
                             <div class="video-wrapp ">
                                 <div class="videoWrapper">
 
-                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/BiWDL1zPwg4" src="" frameborder="0" allowfullscreen></iframe>*@
+                                    <iframe class="iframe_id" data-src="https://www.youtube.com/embed/pM1IMgG0CaU" src="" frameborder="0" allowfullscreen></iframe>
                                     <div id="video1"></div>
                                 </div>
                             </div>
@@ -1946,18 +2089,14 @@
                             <div class="video-wrapp ">
                                 <div class="videoWrapper">
                                     <div id="video2"></div>
-                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/63RY01oQHyc" src="" frameborder="0" allowfullscreen></iframe>*@
+                                    <iframe class="iframe_id" data-src="https://www.youtube.com/embed/o-UhWer1n34" src="" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="video-wrapp ">
-                                <div class="videoWrapper">
-                                    <div id="video3"></div>
-                                    @*<iframe class="iframe_id" data-src="https://www.youtube.com/embed/63RY01oQHyc" src="" frameborder="0" allowfullscreen></iframe>*@
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
                     </div>
 
                     <div class="swiper-pagination" id="sliderClick"></div>
@@ -1970,12 +2109,13 @@
     <div class="section fixed-bg " id="AugmentedReality" style="background-image: url('/Content/images/ar-bg.jpg');">
         <div class="head-title floated ">
             <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
-            <h2>Augmented Reality</h2>
+            <h2>Experiential</h2>
             <div class="clear"></div>
             <div class="head-title-content">
                 <ul class="title-navigation">
                     <li class="cultuer-title-nav"><a data-my-element="FacebookAR" class="data-link active"><span>Facebook AR</span></a></li>
                     <li class="cultuer-title-nav"><a data-my-element="WebAR" class="data-link"><span>Web AR</span></a></li>
+                    <li class="cultuer-title-nav"><a data-my-element="Voice" class="data-link"><span>Voice</span></a></li>
                 </ul>
             </div>
         </div>
@@ -2000,7 +2140,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/seven-seas-ar.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2013,7 +2153,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/dd-drishti.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/dd-drishti.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/dd-drishti.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2026,7 +2166,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/dd-pishyachini.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/dd-pishyachini.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/dd-pishyachini.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2039,13 +2179,26 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/ucypher.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/ucypher.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/ucypher.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
                                                         <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
                                                     </div>
                                                     <a href="https://www.facebook.com/fbcameraeffects/testit/525406454982891/OWQwZWYyNzEyNjlhMmZjMmQ1ZGFlZjBhMGFlZDliOTM=/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/star-bharat-holi.jpg" muted autoplay loop playsinline webkit-playsinline>
+                                                                <source src="~/Content/media/star-bharat-holi.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://www.facebook.com/fbcameraeffects/testit/278800190516218/ZjMzNzNmNTgyMmY3ODljOWNhMDY2NjA4YWM2NWUzOWY=/" target="_blank" class="btn">Try This Filter</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -2056,7 +2209,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/seven-seas-ar.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/seven-seas-ar.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2073,7 +2226,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/star-bharat.jpg" playsinline webkit-playsinline loop autoplay muted>
+                                                            <video preload="metadata" poster="~/Content/media/star-bharat.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/star-bharat.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2090,7 +2243,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/jhjk.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/jhjk.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/jhjk.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2107,7 +2260,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/dd-divya.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/dd-divya.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/dd-divya.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2124,7 +2277,7 @@
                                           <div class="mobile-video-block" >
                                             <div class="mobile-video" >
                                               <figure class="video-figure" >
-                                                <video preload="metadata" poster="media/seven-seas-ar.jpg" playsinline webkit-playsinline loop muted >
+                                                <video preload="metadata" poster="media/seven-seas-ar.jpg" muted autoplay loop playsinline webkit-playsinline >
                                                   <source src="media/seven-seas-ar.mp4" type="video/mp4">
                                                 </video>
                                               </figure>
@@ -2150,7 +2303,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/ted-ar.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/ted-ar.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/ted-ar.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2159,32 +2312,27 @@
                                                     <a href="https://ted.madebysparkt.com/" target="_blank" class="btn">Try This Filter</a>
                                                 </div>
                                             </li>
+                                            <li>
+                                                <div class="mobile-video-block">
+                                                    <div class="mobile-video">
+                                                        <figure class="video-figure">
+                                                            <video preload="metadata" poster="~/Content/media/star_pravah.jpg" muted autoplay loop playsinline webkit-playsinline>
+                                                                <source src="~/Content/media/star_pravah.mp4" type="video/mp4">
+                                                            </video>
+                                                        </figure>
+                                                        <span class="tap-area"></span> <img src="~/Content/images/iphone.png" alt="">
+                                                    </div>
+                                                    <a href="https://starpravahparivaarpuraskar.hotstar.com/" target="_blank" class="btn">Try This Filter</a>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section blue fixed-bg" id="Voice" style="background-image: url('/Content/images/voice-bg.jpg')">
-        <div class="head-title floated ">
-            <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
-            <h2>Voice</h2>
-            <div class="clear"></div>
-            <!--<div class="head-title-content">
-              <ul class="title-navigation" >
-                <li class="cultuer-title-nav active" ><a data-my-element="Voice" class="data-link" ><span>Voice</span></a></li>
-              </ul>
-            </div>-->
-        </div>
-        <div class="container">
-            <div class="xms-wrapper full-width">
-                <div class="xms-container">
-                    <div class="data-content active" data-my-element="Voice" style="display: block">
+                    <div class="data-content" data-my-element="Voice">
                         <div class="work-wrapp ">
                             <div class="tabsAccordion work-tab">
                                 <ul class="resp-tabs-list sticky-tab-4 tab-voice-bg">
@@ -2198,7 +2346,7 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/the-voice.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/the-voice.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/the-voice.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
@@ -2216,13 +2364,13 @@
                                                 <div class="mobile-video-block">
                                                     <div class="mobile-video">
                                                         <figure class="video-figure">
-                                                            <video preload="metadata" poster="~/Content/media/mmf-veo.jpg" playsinline webkit-playsinline loop muted>
+                                                            <video preload="metadata" poster="~/Content/media/mmf-veo.jpg" muted autoplay loop playsinline webkit-playsinline>
                                                                 <source src="~/Content/media/mmf-veo.mp4" type="video/mp4">
                                                             </video>
                                                         </figure>
                                                         <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
                                                     </div>
-                                                   <!-- <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This</a> </div> -->
+                                                    <!-- <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This</a> </div> -->
                                                 </div>
                                                 <div class="gallery-bg">
                                                     <div class="veo-steps">
@@ -2247,7 +2395,85 @@
             </div>
         </div>
     </div>
-    <div class="section" id="xms">
+
+    <!--  <div class="section blue fixed-bg" id="Voice" style="background-image: url('/Content/images/voice-bg.jpg')">
+          <div class="head-title floated ">
+              <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
+              <h2>Bring Voice Under Experiential</h2>
+              <div class="clear"></div>
+              <!--<div class="head-title-content">
+                <ul class="title-navigation" >
+                  <li class="cultuer-title-nav active" ><a data-my-element="Voice" class="data-link" ><span>Voice</span></a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="container">
+              <div class="xms-wrapper full-width">
+                  <div class="xms-container">
+                      <div class="data-content active" data-my-element="Voice" style="display: block">
+                          <div class="work-wrapp ">
+                              <div class="tabsAccordion work-tab">
+                                  <ul class="resp-tabs-list sticky-tab-4 tab-voice-bg">
+                                      <li><span>Voice Auditions</span> </li>
+                                      <li><span>MMF VEO</span> </li>
+                                  </ul>
+                                  <div class="resp-tabs-container fadIn-wrapp">
+                                      <div class="resp-tab-content" id="VoiceAuditions">
+                                          <ul class="mobile-video-gallery gallery-with-kv">
+                                              <li>
+                                                  <div class="mobile-video-block">
+                                                      <div class="mobile-video">
+                                                          <figure class="video-figure">
+                                                              <video preload="metadata" poster="~/Content/media/the-voice.jpg" playsinline webkit-playsinline loop muted>
+                                                                  <source src="~/Content/media/the-voice.mp4" type="video/mp4">
+                                                              </video>
+                                                          </figure>
+                                                          <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
+                                                      </div>
+                                                      <div class="btn-wrapp"> <a href="https://www.sparkt.in/voice" target="_blank" class="btn">Experience App</a> </div>
+                                                  </div>
+                                                  <div class="gallery-bg"> <img src="~/Content/images/star-the-voice-kv.png" alt="" class="float-img"> <img src="~/Content/images/star-the-voice.jpg" alt=""> </div>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="resp-tab-content" id="mmfVEO">
+                                          <ul class="mobile-video-gallery gallery-with-kv">
+                                              <li>
+                                                  <div class="mobile-video-block">
+                                                      <div class="mobile-video">
+                                                          <figure class="video-figure">
+                                                              <video preload="metadata" poster="~/Content/media/mmf-veo.jpg" playsinline webkit-playsinline loop muted>
+                                                                  <source src="~/Content/media/mmf-veo.mp4" type="video/mp4">
+                                                              </video>
+                                                          </figure>
+                                                          <span class="tap-area"></span> <img src="~/Content/images/iphone-light.png" alt="">
+                                                      </div>
+                                                     <!-- <div class="btn-wrapp"> <a href="https://www.mahindramutualfund.com/" target="_blank" class="btn">Try This</a> </div>
+                                                  </div>
+                                                  <div class="gallery-bg">
+                                                      <div class="veo-steps">
+                                                          <ul>
+                                                              <li><img src="~/Content/work/images/mahindra-veo-1.jpg" alt=""></li>
+                                                              <li><img src="~/Content/work/images/mahindra-veo-2.jpg" alt=""></li>
+                                                              <li><img src="~/Content/work/images/mahindra-veo-3.jpg" alt=""></li>
+                                                              <li><img src="~/Content/work/images/mahindra-veo-4.jpg" alt=""></li>
+                                                              <li><img src="~/Content/work/images/mahindra-veo-5.jpg" alt=""></li>
+                                                          </ul>
+                                                      </div>
+                                                      <img src="~/Content/images/mmf-veo-voice.jpg" alt="">
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>-->
+    <div class="section blue" id="xms">
         <div class="head-title floated ">
             <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
             <h2>XMS</h2>
@@ -2277,7 +2503,7 @@
                             </div>
 
                             <div class="xms-wheel-wrapp">
-                                <div class="xms-wheel">
+                                <!--<div class="xms-wheel">
                                     <div class="custom-tabs rotation  " data-rotation="true" data-rotation-radius="100" data-rotation-wrapper-angle="0">
                                         <div class="custom-tabs-ul-container">
                                             <div class="center-logo">
@@ -2417,8 +2643,12 @@
                                              <li>Add description to the video</li>
                                              <li>Custom filtering</li>
                                            </ul>
-                                         </div>-->
+                                         </div>--
                                     </div>
+                                </div>-->
+
+                                <div class="features-content">
+                                    <span class="img xms-circle-img "><img src="/Content/images/xms_overview.jpg" alt=""></span>
                                 </div>
                             </div>
 
@@ -2566,10 +2796,11 @@
                                     <li><a href="@Url.Action("IndiaRF","work")"><img src="~/Content/images/xms-client-india-rf.png" alt=""><span><img src="~/Content/work/images/clients/india-rf.png" alt=""></span></a></li>
                                     <li><a href="@Url.Action("USports","work")"><img src="~/Content/images/xms-client-usports.png" alt=""><span><img src="~/Content/work/images/clients/usports.png" alt=""></span></a></li>
                                     <li><a href="@Url.Action("piramalfoundation","work")"><img src="~/Content/images/piramal-foundation.jpg" alt=""><span><img src="~/Content/work/images/clients/piramal-capital-phfl.png" alt=""></span></a></li>
-                                    <li><a href="@Url.Action("Phfl","work")"><img src="~/Content/images/pchf.jpg" alt=""><span><img src="~/Content/work/images/clients/piramal-housing.png" alt=""></span></a></li>
+                                    <li><a href="@Url.Action("Pchf","work")"><img src="~/Content/images/pchf.jpg" alt=""><span><img src="~/Content/work/images/clients/piramal-housing.png" alt=""></span></a></li>
                                     <li><a href="@Url.Action("brickex","work")"><img src="~/Content/images/xms-client-brickex.png" alt=""><span><img src="~/Content/work/images/clients/brickex.png" alt=""></span></a></li>
                                     <li><a @*href="@Url.Action("GandhiFellowship","work")"*@><img src="~/Content/images/xms-client-gandhi_feloowship.jpg" alt=""><span><img src="~/Content/work/images/clients/xms-client-gandhi_fellowship.jpg" alt=""></span></a></li>
                                     <li><a @*href="@Url.Action("ICan","work")"*@><img src="~/Content/images/xms-client-ican.jpg" alt=""><span><img src="~/Content/work/images/clients/xms-client-ican.png" alt=""></span></a></li>
+                                    <li><a @*href="@Url.Action("ICan","work")"*@><img src="~/Content/images/xms-client-ourdaily.jpg" alt=""><span><img src="~/Content/work/images/clients/xms-client-ourdaily.png" alt=""></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -2581,7 +2812,7 @@
         </div>
     </div>
 
-    <div class="section blue" id="sparktlive">
+    <div class="section " id="sparktlive">
         <div class="head-title floated ">
             <i class="title-icon"><img src="~/Content/images/title-icon.png" alt=""></i>
             <h2>Sparkt Live</h2>

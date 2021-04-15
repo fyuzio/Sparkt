@@ -3470,10 +3470,12 @@
     <Content Include="Content\work\images\axa-slide-4.jpg" />
     <Content Include="Content\work\images\axa-slide-5.jpg" />
     <Content Include="Content\work\images\axa-slide-6.jpg" />
+    <Content Include="Content\work\images\b-a-copp-app.png" />
     <Content Include="Content\work\images\banner-video-trans-dektop.png" />
     <Content Include="Content\work\images\banners\._mahindra-textmoji.jpg" />
     <Content Include="Content\work\images\banners\._usports-hamnurger-cover.jpg" />
     <Content Include="Content\work\images\banners\._usports-scratch.jpg" />
+    <Content Include="Content\work\images\banners\bharti-axa-cop-app-cover.jpg" />
     <Content Include="Content\work\images\banners\bharti-exa-cover.jpg" />
     <Content Include="Content\work\images\banners\bharti-exa-policy-cover.jpg" />
     <Content Include="Content\work\images\banners\birla-excel-putty-cover.jpg" />
@@ -3969,6 +3971,7 @@
     <Content Include="Content\work\images\banners\bhaghi-2-cover.jpg" />
     <Content Include="Content\work\images\banners\bql-cover.jpg" />
     <Content Include="Content\work\images\banners\brickex-cover.jpg" />
+    <Content Include="Content\work\images\banners\cameo-cover.jpg" />
     <Content Include="Content\work\images\banners\dance-plus-cover.jpg" />
     <Content Include="Content\work\images\banners\dhoni-cover.jpg" />
     <Content Include="Content\work\images\banners\divya-drishti-content-cover.jpg" />
@@ -3978,9 +3981,12 @@
     <Content Include="Content\work\images\banners\ek-bhram-banner-for-mobile.png" />
     <Content Include="Content\work\images\banners\ek-bhram-banner-red.png" />
     <Content Include="Content\work\images\banners\ek-bhram-banner.png" />
+    <Content Include="Content\work\images\banners\gandhi-fellowship-cover.jpg" />
     <Content Include="Content\work\images\banners\hsubh-cover.jpg" />
+    <Content Include="Content\work\images\banners\ican-cover.jpg" />
     <Content Include="Content\work\images\banners\ikyawann-cover.jpg" />
     <Content Include="Content\work\images\banners\india-rf-cover.jpg" />
+    <Content Include="Content\work\images\banners\indiabulls-blu-cover.jpg" />
     <Content Include="Content\work\images\banners\insta-fight-top.png" />
     <Content Include="Content\work\images\banners\instafight-bg.jpg" />
     <Content Include="Content\work\images\banners\ishaqbaaaz-cover.jpg" />
@@ -4008,6 +4014,7 @@
     <Content Include="Content\work\images\banners\nfo-digram-bk.png" />
     <Content Include="Content\work\images\banners\nfo-digram.png" />
     <Content Include="Content\work\images\banners\oneplus-cover.jpg" />
+    <Content Include="Content\work\images\banners\ourdaily-cover.jpg" />
     <Content Include="Content\work\images\banners\pchf-cover.jpg" />
     <Content Include="Content\work\images\banners\pedder-johnson-cover.jpg" />
     <Content Include="Content\work\images\banners\phfl-cover.jpg" />
@@ -4033,6 +4040,7 @@
     <Content Include="Content\work\images\banners\tgilc-cover.jpg" />
     <Content Include="Content\work\images\banners\thevoice-cover.jpg" />
     <Content Include="Content\work\images\banners\total-banner.gif" />
+    <Content Include="Content\work\images\banners\triactive-cover.jpg" />
     <Content Include="Content\work\images\banners\ucypher-cover.jpg" />
     <Content Include="Content\work\images\banners\usports-cover.jpg" />
     <Content Include="Content\work\images\banners\usports-hamnurger-cover.jpg" />
@@ -4044,6 +4052,7 @@
     <Content Include="Content\work\images\banners\yaarii-cover.jpg" />
     <Content Include="Content\work\images\banners\yaarii-film.jpg" />
     <Content Include="Content\work\images\banners\yaarii-website.jpg" />
+    <Content Include="Content\work\images\bharti-axa-cop-app-bg.jpg" />
     <Content Include="Content\work\images\black-iphone.png" />
     <Content Include="Content\work\images\bombay-times.png" />
     <Content Include="Content\work\images\bottom-shadow.png" />
@@ -4053,6 +4062,7 @@
     <Content Include="Content\work\images\bql-mobile.jpg" />
     <Content Include="Content\work\images\brickex-desktop.jpg" />
     <Content Include="Content\work\images\brickex-mobile.jpg" />
+    <Content Include="Content\work\images\cameo-viewer.png" />
     <Content Include="Content\work\images\chaitulal-aaj-ki-adalat-bg.jpg" />
     <Content Include="Content\work\images\chaitulal-aaj-ki-adalat.png" />
     <Content Include="Content\work\images\chaitulala-elem-1.png" />
@@ -4125,12 +4135,16 @@
     <Content Include="Content\work\images\fb-live-icon.png" />
     <Content Include="Content\work\images\fevicon.png" />
     <Content Include="Content\work\images\future.jpg" />
+    <Content Include="Content\work\images\gandhi-fellowship-desktop.jpg" />
+    <Content Include="Content\work\images\gandhi-fellowship-mobile.jpg" />
     <Content Include="Content\work\images\heart-warming-film-1.jpg" />
     <Content Include="Content\work\images\heart-warming-film-2.jpg" />
     <Content Include="Content\work\images\home.jpg" />
     <Content Include="Content\work\images\hotstar-elem-1.png" />
     <Content Include="Content\work\images\hotstar-logo.png" />
     <Content Include="Content\work\images\i-phone.png" />
+    <Content Include="Content\work\images\ican-desktop.jpg" />
+    <Content Include="Content\work\images\ican-mobile.jpg" />
     <Content Include="Content\work\images\icons\insta-icon.png" />
     <Content Include="Content\work\images\icons\loading.png" />
     <Content Include="Content\work\images\icons\play.png" />
@@ -4140,6 +4154,8 @@
     <Content Include="Content\work\images\ikyawann-creative-approch.png" />
     <Content Include="Content\work\images\india-rf-desktop.jpg" />
     <Content Include="Content\work\images\india-rf-mobile.jpg" />
+    <Content Include="Content\work\images\indiabulls-blu-desktop.jpg" />
+    <Content Include="Content\work\images\indiabulls-blu-mobile.jpg" />
     <Content Include="Content\work\images\indiabulls-sky-desktop.jpg" />
     <Content Include="Content\work\images\indiabulls-sky-mobile.jpg" />
     <Content Include="Content\work\images\insta-data-1.png" />
@@ -4223,6 +4239,8 @@
     <Content Include="Content\work\images\nayisoch-twitter-tweets-5.jpg" />
     <Content Include="Content\work\images\nayosoch-cover-star.jpg" />
     <Content Include="Content\work\images\nayosoch-cover.jpg" />
+    <Content Include="Content\work\images\ourdaily-desktop.jpg" />
+    <Content Include="Content\work\images\ourdaily-mobile.jpg" />
     <Content Include="Content\work\images\outdoor-1.jpg" />
     <Content Include="Content\work\images\outdoor-2.jpg" />
     <Content Include="Content\work\images\outdoor-3.jpg" />
@@ -4356,22 +4374,27 @@
     <Content Include="Content\work\images\thevoice-mobile-creative.png" />
     <Content Include="Content\work\images\thums\badhat-yojana-thum.jpg" />
     <Content Include="Content\work\images\thums\bhaghi-2-thum.jpg" />
+    <Content Include="Content\work\images\thums\bharti-axa-cop-app-thum.jpg" />
     <Content Include="Content\work\images\thums\bharti-axa-policy-thum.jpg" />
     <Content Include="Content\work\images\thums\bharti-axa-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-excel-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\birla-wall-putty-thum.jpg" />
     <Content Include="Content\work\images\thums\boutique-thum.jpg" />
     <Content Include="Content\work\images\thums\brickex-thum.jpg" />
+    <Content Include="Content\work\images\thums\cameo-thum.jpg" />
     <Content Include="Content\work\images\thums\danceplus-thum.jpg" />
     <Content Include="Content\work\images\thums\divya-drishti-content-thum.jpg" />
     <Content Include="Content\work\images\thums\divya-drishti-innovation-thum.jpg" />
     <Content Include="Content\work\images\thums\dubsmash-thum.jpg" />
     <Content Include="Content\work\images\thums\editage-thum.jpg" />
     <Content Include="Content\work\images\thums\ek-bhram-thum.jpg" />
+    <Content Include="Content\work\images\thums\gandhi-fellowship-thum.jpg" />
     <Content Include="Content\work\images\thums\hspubh-thum.jpg" />
     <Content Include="Content\work\images\thums\hsubh-thum.jpg" />
+    <Content Include="Content\work\images\thums\ican-thum.jpg" />
     <Content Include="Content\work\images\thums\ikyawann-thum.jpg" />
     <Content Include="Content\work\images\thums\india-rf-thum.jpg" />
+    <Content Include="Content\work\images\thums\indiabulls-blu-thum.jpg" />
     <Content Include="Content\work\images\thums\insta-fight-top.png" />
     <Content Include="Content\work\images\thums\ishqbaaaz-thum.jpg" />
     <Content Include="Content\work\images\thums\junglebook-thum.jpg" />
@@ -4395,6 +4418,7 @@
     <Content Include="Content\work\images\thums\nayosoch-thum.jpg" />
     <Content Include="Content\work\images\thums\nazar-thum.jpg" />
     <Content Include="Content\work\images\thums\oneplus-thum.jpg" />
+    <Content Include="Content\work\images\thums\ourdaily-thum.jpg" />
     <Content Include="Content\work\images\thums\pchf-thum.jpg" />
     <Content Include="Content\work\images\thums\pedderjohnson-thum.jpg" />
     <Content Include="Content\work\images\thums\phfl-thum.jpg" />
@@ -4423,6 +4447,7 @@
     <Content Include="Content\work\images\thums\tgilc-thums.jpg" />
     <Content Include="Content\work\images\thums\thevoice-thum.jpg" />
     <Content Include="Content\work\images\thums\total-thum.jpg" />
+    <Content Include="Content\work\images\thums\triactive-thum.jpg" />
     <Content Include="Content\work\images\thums\u-cypher-insta-fight-thum.jpg" />
     <Content Include="Content\work\images\thums\ucypher-thum.jpg" />
     <Content Include="Content\work\images\thums\usports-hamburger-thum.jpg" />
@@ -4439,6 +4464,9 @@
     <Content Include="Content\work\images\top250_nfo-open.gif" />
     <Content Include="Content\work\images\top250_nfo-open.jpg" />
     <Content Include="Content\work\images\total-insight.jpg" />
+    <Content Include="Content\work\images\triactive-cover.jpg" />
+    <Content Include="Content\work\images\triactive-desktop.jpg" />
+    <Content Include="Content\work\images\triactive-mobile.jpg" />
     <Content Include="Content\work\images\u-cypher-akshay-akramaks.jpg" />
     <Content Include="Content\work\images\u-cypher-bg.jpg" />
     <Content Include="Content\work\images\u-cypher-creative-assets-water-flow.png" />
@@ -5009,6 +5037,11 @@
     <Content Include="Views\work\GandhiFellowship.cshtml" />
     <Content Include="Views\work\ICan.cshtml" />
     <Content Include="Views\Home\GetInTouch.cshtml" />
+    <Content Include="Views\work\BhartiAxaCropApp.cshtml" />
+    <Content Include="Views\work\IndiabullsBlu.cshtml" />
+    <Content Include="Views\work\TriActive.cshtml" />
+    <Content Include="Views\work\OurDaily.cshtml" />
+    <Content Include="Views\work\Cameo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

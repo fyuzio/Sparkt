@@ -3,14 +3,80 @@
     ViewBag.Title = "Sparkt Work | Gandhi Fellowship";
     Layout = "~/Views/Shared/_LayoutWork.cshtml";
     ViewBag.MetaTitle = "Sparkt | Gandhi Fellowship";
-    ViewBag.MetaDescription = "Corporate Overview";
+    ViewBag.MetaDescription = "Unfold Impact";
     ViewBag.MetaURL = "https://sparkt.in/work/GandhiFellowship";
-    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/GandhiFellowship.jpg";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/gandhi-fellowship-thum.jpg";
 }
 
 @section BodyClass {GandhiFellowship}
-<main>
-    <h2>GandhiFellowship</h2>
-</main>
+    <main>
+        <div class="section">
+            <div class="work-banner">
+                <div class="banner-source">
+                    <div class="banner-video  middle-align" style="background-image: url('/Content/work/images/banners/gandhi-fellowship-cover.jpg');"> </div>
+                </div>
+                <div class="head-title floated">
+                    <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+                    <h1>Gandhi Fellowship</h1>
+                    <div class="clear"></div>
+                    <span>Unfold Impact</span>
+                </div>
+            </div>
+            @Html.Partial("_WorkMenu")
+        </div>
+        <div class="section">
+            <div class="head-title floated ">
+                <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+                <h2>Creative Experience</h2>
+            </div>
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel piramal-gf-bg ">
+                    <div class="slider">
+                        <div>
+                            <div class="creative-assets ">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>The Fellowship Journey & Experience </h3>
+                                    </div>
+                                    <div class="website-operation">
+                                        <figure class="figure-img"> <img src="/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
+                                        <div class="desktop-video">
+                                            <video id="desktop" poster="/Content/work/images/gandhi-fellowship-desktop.jpg" style="max-width: 100%; background-image: url('/Content/work/images/gandhi-fellowship-desktop.jpg');" preload="none" controls="False" muted autoplay loop playsinline webkit-playsinline>
+                                                <!-- <source  src="media/brickex-desktop.mp4" type="video/mp4" >-->
+
+                                            </video>
+                                            <script>document.getElementById( "desktop" ).controls = false;</script>
+                                        </div>
+                                        <div class="mobile-video">
+                                            <video id="mobile" poster="/Content/work/images/gandhi-fellowship-mobile.jpg" style="max-width: 100%; background-image: url('/Content/work/images/gandhi-fellowship-mobile.jpg');" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
+                                                <!-- <source  src="media/brickex-mob.mp4" type="video/mp4" >-->
+
+                                            </video>
+                                            <script>document.getElementById("mobile").controls = false;</script>
+                                        </div>
+                                        <!--                  <a href="https://www.pchf.in/" target="_blank" class="view-website" >VIEW WEBSITE</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section white-bg">
+            <!-- <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+          <h2>Results</h2>
+        </div>-->
+
+            <div class="container">
+                <div class="quotes-wrapp">
+                    <div class="quotes">
+                        <h3>Coming Soon</h3>
+                        <span class="quotes-writer"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
