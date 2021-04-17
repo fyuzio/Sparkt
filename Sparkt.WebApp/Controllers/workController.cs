@@ -490,5 +490,17 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [Route("star-pravah-ar")]
+        public ActionResult StarPravah()
+        {
+            return View();
+        }
+
+        [Route("philips")]
+        public ActionResult Philips()
+        {
+            return View();
+        }
     }
 }

@@ -7,7 +7,7 @@
     ViewBag.MetaURL = "https://sparkt.in/work/triactive";
     ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/triactive-thum.jpg";
 }
-
+@section BodyClass {piramal}
     <main>
         <div class="section ">
             <div class="work-banner">
@@ -43,15 +43,15 @@
                                     <div class="website-operation">
                                         <figure class="figure-img"> <img src="/Content/work/images/banner-video-trans.png" alt="brickex" class="responsive-img" style="width: 100%; vertical-align: top;" /> </figure>
                                         <div class="desktop-video">
-                                            <video id="desktop" poster="/Content/work/images/triactive-desktop.jpg" style="max-width: 100%; background-image: url('/Content/work/images/triactive-desktop.jpg');" preload="none" controls="False" muted autoplay loop playsinline webkit-playsinline>
-                                                <!-- <source  src="media/brickex-desktop.mp4" type="video/mp4" >-->
+                                            <video id="desktop" style="max-width: 100%; background-image: url('/Content/work/images/triactive-desktop.jpg');" preload="none" controls="False" muted autoplay loop playsinline webkit-playsinline>
+                                                 <source  src="~/Content/work/media/triactive-desktop.mp4" type="video/mp4" >
 
                                             </video>
                                             <script>document.getElementById( "desktop" ).controls = false;</script>
                                         </div>
                                         <div class="mobile-video">
-                                            <video id="mobile" poster="/Content/work/images/triactive-mobile.jpg" style="max-width: 100%; background-image: url('/Content/work/images/triactive-mobile.jpg');" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
-                                                <!-- <source  src="media/brickex-mob.mp4" type="video/mp4" >-->
+                                            <video id="mobile" style="max-width: 100%; background-image: url('/Content/work/images/triactive-mobile.jpg');" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
+                                                <source  src="~/Content/work/media/triactive-mobile.mp4" type="video/mp4" >
 
                                             </video>
                                             <script>document.getElementById("mobile").controls = false;</script>

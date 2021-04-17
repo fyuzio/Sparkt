@@ -3408,14 +3408,33 @@
     <Content Include="Content\images\backup\squad\waqt-shaikh.png" />
     <Content Include="Content\images\backup\squad\warren-pinto.png" />
     <Content Include="Content\images\banner_320x50_Background.gif" />
+    <Content Include="Content\images\clients\birla-white.png" />
     <Content Include="Content\images\clients\divayoga.png" />
     <Content Include="Content\images\clients\eurokids-blue.png" />
     <Content Include="Content\images\clients\evion-logo.png" />
+    <Content Include="Content\images\clients\i-active.png" />
+    <Content Include="Content\images\clients\i-feel.png" />
     <Content Include="Content\images\clients\imprezz.png" />
     <Content Include="Content\images\clients\indiabulls-logo.png" />
     <Content Include="Content\images\clients\indiabulls.png" />
+    <Content Include="Content\images\clients\indoa_rf.png" />
+    <Content Include="Content\images\clients\inow.png" />
+    <Content Include="Content\images\clients\jungle.png" />
+    <Content Include="Content\images\clients\lacto.png" />
+    <Content Include="Content\images\clients\littles.png" />
     <Content Include="Content\images\clients\livogen.png" />
+    <Content Include="Content\images\clients\neurobion.png" />
+    <Content Include="Content\images\clients\ourdaily-logo.png" />
+    <Content Include="Content\images\clients\philips.png" />
+    <Content Include="Content\images\clients\piramal_logo.png" />
+    <Content Include="Content\images\clients\ploycrol.png" />
+    <Content Include="Content\images\clients\polybion-logo.png" />
+    <Content Include="Content\images\clients\ruchi-soya.png" />
+    <Content Include="Content\images\clients\saridon.png" />
     <Content Include="Content\images\clients\star-bharat-logo.png" />
+    <Content Include="Content\images\clients\star-pravah.png" />
+    <Content Include="Content\images\clients\tri_active.png" />
+    <Content Include="Content\images\clients\xms-client-ourdaily.png" />
     <Content Include="Content\images\close.png" />
     <Content Include="Content\images\cultureImg1-bk.jpg" />
     <Content Include="Content\images\future-bk.jpg" />
@@ -3424,10 +3443,15 @@
     <Content Include="Content\images\iphone-light.png" />
     <Content Include="Content\images\iphone.png" />
     <Content Include="Content\images\mmf-veo-voice.jpg" />
+    <Content Include="Content\images\pchf-bk.jpg" />
     <Content Include="Content\images\pchf.jpg" />
     <Content Include="Content\images\piramal-foundation.jpg" />
     <Content Include="Content\images\sarva-web-experience-thum.jpg" />
     <Content Include="Content\images\squad\aditya-chandra.png" />
+    <Content Include="Content\images\squad\rahul_saigal-bk.png" />
+    <Content Include="Content\images\squad\rahul_saigal.png" />
+    <Content Include="Content\images\squad\vipul-BK.png" />
+    <Content Include="Content\images\squad\vipul.png" />
     <Content Include="Content\images\star-the-voice-kv.png" />
     <Content Include="Content\images\star-the-voice.jpg" />
     <Content Include="Content\images\voice-bg.jpg" />
@@ -3435,6 +3459,8 @@
     <Content Include="Content\images\xms-client-gandhi_feloowship.jpg" />
     <Content Include="Content\images\xms-client-ican.jpg" />
     <Content Include="Content\images\xms-client-mahindra.png" />
+    <Content Include="Content\images\xms-client-ourdaily.jpg" />
+    <Content Include="Content\images\xms_overview.jpg" />
     <Content Include="Content\images\yaarii-bg.jpg" />
     <Content Include="Content\js\functions - work.js" />
     <Content Include="Content\media\dd-divya.jpg" />
@@ -4018,6 +4044,7 @@
     <Content Include="Content\work\images\banners\pchf-cover.jpg" />
     <Content Include="Content\work\images\banners\pedder-johnson-cover.jpg" />
     <Content Include="Content\work\images\banners\phfl-cover.jpg" />
+    <Content Include="Content\work\images\banners\philips-cover.jpg" />
     <Content Include="Content\work\images\banners\piramal-capital-cover.jpg" />
     <Content Include="Content\work\images\banners\piramal-foundation-cover.jpg" />
     <Content Include="Content\work\images\banners\pow-cover.jpg" />
@@ -4032,6 +4059,7 @@
     <Content Include="Content\work\images\banners\seven-seas-cover.jpg" />
     <Content Include="Content\work\images\banners\sky.jpg" />
     <Content Include="Content\work\images\banners\star-plus-brand-cover.png" />
+    <Content Include="Content\work\images\banners\star-pravah-cover.jpeg" />
     <Content Include="Content\work\images\banners\stree-cover.jpg" />
     <Content Include="Content\work\images\banners\swp-cover.jpg" />
     <Content Include="Content\work\images\banners\ted-19-cover.jpg" />
@@ -4081,6 +4109,8 @@
     <Content Include="Content\work\images\clients\brickex.png" />
     <Content Include="Content\work\images\clients\dubsmash.png" />
     <Content Include="Content\work\images\clients\editage.png" />
+    <Content Include="Content\work\images\clients\i-active.png" />
+    <Content Include="Content\work\images\clients\i-feel.png" />
     <Content Include="Content\work\images\clients\india-rf.png" />
     <Content Include="Content\work\images\clients\indiabulls.png" />
     <Content Include="Content\work\images\clients\mahindra_bkp.png" />
@@ -4104,6 +4134,7 @@
     <Content Include="Content\work\images\clients\usports.png" />
     <Content Include="Content\work\images\clients\xms-client-gandhi_fellowship.jpg" />
     <Content Include="Content\work\images\clients\xms-client-ican.png" />
+    <Content Include="Content\work\images\clients\xms-client-ourdaily.png" />
     <Content Include="Content\work\images\clients\yaarii.png" />
     <Content Include="Content\work\images\contact.jpg" />
     <Content Include="Content\work\images\dance-plus-2-creative-approch.png" />
@@ -4254,6 +4285,17 @@
     <Content Include="Content\work\images\pedderjohnson-mobile.jpg" />
     <Content Include="Content\work\images\phfl-desktop.jpg" />
     <Content Include="Content\work\images\phfl-mobile.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-1.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-10.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-11.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-2.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-3.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-4.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-5.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-6.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-7.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-8.jpg" />
+    <Content Include="Content\work\images\philips-fb-post-9.jpg" />
     <Content Include="Content\work\images\piramal-capital-desktop.jpg" />
     <Content Include="Content\work\images\piramal-capital-mobile.jpg" />
     <Content Include="Content\work\images\piramal-foundation-desktop.jpg" />
@@ -4420,8 +4462,10 @@
     <Content Include="Content\work\images\thums\oneplus-thum.jpg" />
     <Content Include="Content\work\images\thums\ourdaily-thum.jpg" />
     <Content Include="Content\work\images\thums\pchf-thum.jpg" />
+    <Content Include="Content\work\images\thums\pchf-thum_old.jpg" />
     <Content Include="Content\work\images\thums\pedderjohnson-thum.jpg" />
     <Content Include="Content\work\images\thums\phfl-thum.jpg" />
+    <Content Include="Content\work\images\thums\philips-thum.jpg" />
     <Content Include="Content\work\images\thums\piramal-foundation-thum.jpg" />
     <Content Include="Content\work\images\thums\piramalcapital-thum.jpg" />
     <Content Include="Content\work\images\thums\pow-thum.jpg" />
@@ -4435,6 +4479,7 @@
     <Content Include="Content\work\images\thums\seven-seas-ar.jpg" />
     <Content Include="Content\work\images\thums\seven-seas.jpg" />
     <Content Include="Content\work\images\thums\sky-thum.jpg" />
+    <Content Include="Content\work\images\thums\star-pravah-thum.jpg" />
     <Content Include="Content\work\images\thums\start-brand-refresh-thum.jpg" />
     <Content Include="Content\work\images\thums\stree-thum.jpg" />
     <Content Include="Content\work\images\thums\swp-thum.jpg" />
@@ -4592,6 +4637,7 @@
     <Content Include="Content\work\images\yaarii-bg.jpg" />
     <Content Include="Content\work\images\yaarii-desktop.jpg" />
     <Content Include="Content\work\images\yaarii-mobile-creative.png" />
+    <Content Include="Content\work\images\yaarii-mobile.jpg" />
     <Content Include="Content\work\images\youtube-c-panel.png" />
     <Content Include="Content\work\images\youtube.png" />
     <Content Include="Content\work\js\bundle.js" />
@@ -4621,6 +4667,8 @@
     <Content Include="Content\work\media\sparkt-office.jpg" />
     <Content Include="Content\work\media\sparkt-office.mp4" />
     <Content Include="Content\work\media\sparkt-office.webm" />
+    <Content Include="Content\work\media\star-pravah-ar.jpg" />
+    <Content Include="Content\work\media\star-pravah-ar.mp4" />
     <Content Include="Content\work\media\ted-ar.jpg" />
     <Content Include="Content\work\media\ted-ar.mp4" />
     <Content Include="Content\work\media\textomoji.mp4" />
@@ -5042,6 +5090,8 @@
     <Content Include="Views\work\TriActive.cshtml" />
     <Content Include="Views\work\OurDaily.cshtml" />
     <Content Include="Views\work\Cameo.cshtml" />
+    <Content Include="Views\work\StarPravah.cshtml" />
+    <Content Include="Views\work\Philips.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

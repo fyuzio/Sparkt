@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Sparkt Work | StarPravah";
+    Layout = "~/Views/Shared/_LayoutWork.cshtml";
+    ViewBag.MetaTitle = "Sparkt | Star Pravah";
+    ViewBag.MetaDescription = "Apla kutumb Apla sohala";
+    ViewBag.MetaURL = "https://sparkt.in/work/star-pravah-ar";
+    ViewBag.MetaImage = "https://sparkt.in/Content/work/images/thums/star-pravah-thum.jpg";
+}
+
+    <main>
+        <div class="section">
+            <div class="work-banner">
+                <div class="banner-source">
+                    <div class="banner-source">
+                        <div class="banner-video  middle-align ted-ar-cover" style="background-image: url('/Content/work/images/banners/star-pravah-cover.jpeg');"> </div>
+                    </div>
+                    <div class="banner-image" style="background-image: url('/Content/work/images/banners/star-pravah-cover.jpeg');"> </div>
+                </div>
+                <div class="head-title floated">
+                    <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+                    <h1>Star Pravah AR Innovation</h1>
+                    <div class="clear"></div>
+                    <span>Apla kutumb Apla sohala</span>
+                </div>
+            </div>
+            @Html.Partial("_WorkMenu")
+        </div>
+        <div class="section">
+            <div class="head-title floated ">
+                <i class="title-icon"><img src="/Content/work/images/title-icon.png" alt="" /></i>
+                <h2>Creative Assets</h2>
+            </div>
+            <div class="creative-assets-wrapp">
+                <div class="assets-carousel fixed star-pravah-bg">
+                    <div class="slider">
+                        <div>
+                            <div class="creative-assets">
+                                <div class="container">
+                                    <div class="assets-title">
+                                        <h3>Pravah Family in Audience Homes</h3>
+                                    </div>
+                                    <div class="mobile-experience center-mobile">
+                                        <figure>
+                                            <div class="vibrate-img sample-mobile">
+                                                <img src="/Content/work/images/ted-ar-mobile-creative-white.png" alt="" />
+                                                <video id="mobile" poster="" style="max-width: 100%;" preload="none" controls="false" muted autoplay loop playsinline webkit-playsinline>
+                                                    <source src="/Content/work/media/star-pravah-ar.mp4" type="video/mp4">
+                                                </video>
+                                                <script>document.getElementById("mobile").controls = false;</script>
+                                            </div>
+                                            <figcaption>
+                                                <a class="hvr-sweep-to-right " href="https://pravah.madebysparkt.com/" target="_blank"> experience application</a>
+                                                <div class="clear"></div>
+                                                (Only for mobile phones)
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="section white-bg">
+     <!-- <div class="head-title floated text-color-dark"> <i class="title-icon"><img src="images/title-icon.png" alt=""/></i>
+        <h2>Results</h2>
+      </div>
+
+      <div class="container">
+        <div class="quotes-wrapp">
+          <div class="quotes">
+            <h3>Coming Soon</h3>
+            <span class="quotes-writer"></span> </div>
+        </div>
+      </div>
+    </div>-->
+    </main>
+
