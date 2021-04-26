@@ -4004,6 +4004,7 @@
     <Content Include="Content\work\images\banners\divya-drishti-innovation-cover.jpg" />
     <Content Include="Content\work\images\banners\dubsmash-cover.jpg" />
     <Content Include="Content\work\images\banners\editage-insight-banner.jpg" />
+    <Content Include="Content\work\images\banners\edufront-cover.jpg" />
     <Content Include="Content\work\images\banners\ek-bhram-banner-for-mobile.png" />
     <Content Include="Content\work\images\banners\ek-bhram-banner-red.png" />
     <Content Include="Content\work\images\banners\ek-bhram-banner.png" />
@@ -4429,6 +4430,7 @@
     <Content Include="Content\work\images\thums\divya-drishti-innovation-thum.jpg" />
     <Content Include="Content\work\images\thums\dubsmash-thum.jpg" />
     <Content Include="Content\work\images\thums\editage-thum.jpg" />
+    <Content Include="Content\work\images\thums\edufront-thum.jpg" />
     <Content Include="Content\work\images\thums\ek-bhram-thum.jpg" />
     <Content Include="Content\work\images\thums\gandhi-fellowship-thum.jpg" />
     <Content Include="Content\work\images\thums\hspubh-thum.jpg" />
@@ -5092,6 +5094,7 @@
     <Content Include="Views\work\Cameo.cshtml" />
     <Content Include="Views\work\StarPravah.cshtml" />
     <Content Include="Views\work\Philips.cshtml" />
+    <Content Include="Views\work\Edufront.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

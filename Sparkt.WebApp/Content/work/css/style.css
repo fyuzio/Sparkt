@@ -2233,6 +2233,14 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#2e476a',GradientType=1 );
 }
 
+.edufront-bg {
+    background: rgb(38,34,44);
+    background: -moz-linear-gradient(45deg, rgba(38,34,44,1) 0%, rgba(53,136,208,1) 49%, rgba(53,136,208,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(38,34,44,1) 0%,rgba(53,136,208,1) 49%,rgba(53,136,208,1) 100%);
+    background: linear-gradient(45deg, rgba(38,34,44,1) 0%,rgba(53,136,208,1) 49%,rgba(53,136,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26222c', endColorstr='#3588d0',GradientType=1 );
+}
+
 .sarva-bg {
     background-color: #20272e;
 }
@@ -2277,6 +2285,7 @@ footer {
     background: linear-gradient(to bottom, rgba(214, 28, 2, 1) 0, rgba(187, 26, 0, 1) 52%, rgba(143, 22, 0, 1) 81%, rgba(193, 28, 14, 1) 86%, rgba(141, 22, 0, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d61c02', endColorstr='#8d1600', GradientType=0)
 }
+
 
 .brown-bg {
     background: #280d20;

@@ -502,5 +502,11 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [Route("edufront")]
+        public ActionResult Edufront()
+        {
+            return View();
+        }
     }
 }
