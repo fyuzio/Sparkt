@@ -4024,6 +4024,8 @@
     <Content Include="Content\work\images\banners\kulfi-missed-call-cover.jpg" />
     <Content Include="Content\work\images\banners\kzk-ar-cover.jpg" />
     <Content Include="Content\work\images\banners\kzk.jpg" />
+    <Content Include="Content\work\images\banners\livogen-break-free-cover.jpg" />
+    <Content Include="Content\work\images\banners\livogen-cover.jpg" />
     <Content Include="Content\work\images\banners\m-gage-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-badhat-yojana-cover.jpg" />
     <Content Include="Content\work\images\banners\mahindra-manulife-cover.png" />
@@ -4204,6 +4206,17 @@
     <Content Include="Content\work\images\laptop-side-angle.png" />
     <Content Include="Content\work\images\lead-up-to-the-launch.jpg" />
     <Content Include="Content\work\images\live-srk.jpg" />
+    <Content Include="Content\work\images\livogen-carousel\carousel-1.jpg" />
+    <Content Include="Content\work\images\livogen-carousel\carousel-2.jpg" />
+    <Content Include="Content\work\images\livogen-carousel\carousel-3.jpg" />
+    <Content Include="Content\work\images\livogen-carousel\carousel-4.jpg" />
+    <Content Include="Content\work\images\livogen-carousel\carousel-5.jpg" />
+    <Content Include="Content\work\images\livogen-efforst\morning-walk.jpg" />
+    <Content Include="Content\work\images\livogen-efforst\playing.jpg" />
+    <Content Include="Content\work\images\livogen-efforst\sofa-moving.jpg" />
+    <Content Include="Content\work\images\livogen-efforst\stairs-climbing.jpg" />
+    <Content Include="Content\work\images\livogen-press-articls.jpg" />
+    <Content Include="Content\work\images\livogen_bumper_channel.png" />
     <Content Include="Content\work\images\m-gage-desktop.jpg" />
     <Content Include="Content\work\images\m-gage-mobile.jpg" />
     <Content Include="Content\work\images\mahindra-badhat-creative-assest1.png" />
@@ -4448,6 +4461,8 @@
     <Content Include="Content\work\images\thums\kullfi-thum.jpg" />
     <Content Include="Content\work\images\thums\kzk-ar-thum.jpg" />
     <Content Include="Content\work\images\thums\kzk-thum.jpg" />
+    <Content Include="Content\work\images\thums\livogen-break-free-thum.jpg" />
+    <Content Include="Content\work\images\thums\livogen-thum.jpg" />
     <Content Include="Content\work\images\thums\mahindra-rural-bharat-thum.jpg" />
     <Content Include="Content\work\images\thums\mahindra-unnati-thum.jpg" />
     <Content Include="Content\work\images\thums\mGage-thum.jpg" />
@@ -4958,6 +4973,7 @@
     <Content Include="Content\GetInTouch\images\work\.DS_Store" />
     <Content Include="Content\GetInTouch\js\chartist.min.js.map" />
     <Content Include="Content\GetInTouch\js\functions.js.zip" />
+    <Content Include="Content\work\images\livogen-carousel\.DS_Store" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -5095,6 +5111,8 @@
     <Content Include="Views\work\StarPravah.cshtml" />
     <Content Include="Views\work\Philips.cshtml" />
     <Content Include="Views\work\Edufront.cshtml" />
+    <Content Include="Views\work\Livogen.cshtml" />
+    <Content Include="Views\work\LivogenBreakFree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

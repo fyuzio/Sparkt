@@ -508,5 +508,17 @@ namespace Sparkt.WebApp.Controllers
         {
             return View();
         }
+
+        [Route("livogen")]
+        public ActionResult Livogen()
+        {
+            return View();
+        }
+
+        [Route("livogen-break-free")]
+        public ActionResult LivogenBreakFree()
+        {
+            return View();
+        }
     }
 }
